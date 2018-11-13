@@ -15,14 +15,14 @@ const users = [
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/docusaurus.svg',
-    infoLink: 'https://www.facebook.com',
+    infoLink: 'https://libpag.org',
     pinned: true,
   },
 ];
 
 const siteConfig = {
-  title: 'Test Site', // Title for your website.
-  tagline: 'A website for testing',
+  title: 'PAG', // Title for your website.
+  tagline: 'Portalbe Animated Graphics',
   url: 'https://libpag.org', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
