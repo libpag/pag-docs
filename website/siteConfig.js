@@ -14,7 +14,7 @@ const users = [
     caption: 'User1',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/docusaurus.svg',
+    image: '/img/pag-256x256.png',
     infoLink: 'https://libpag.org',
     pinned: true,
   },
@@ -22,7 +22,7 @@ const users = [
 
 const siteConfig = {
   title: 'PAG', // Title for your website.
-  tagline: 'Portalbe Animated Graphics',
+  tagline: 'Portable Animated Graphics',
   url: 'https://libpag.org', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -48,8 +48,8 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/docusaurus.svg',
-  footerIcon: 'img/docusaurus.svg',
+  headerIcon: 'img/pag-256x256.png',
+  footerIcon: 'img/pag-256x256.png',
   favicon: 'img/favicon.png',
 
   /* Colors for website */
