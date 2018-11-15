@@ -11,11 +11,27 @@
 // List of projects/orgs using your project for the users page.
 const users = [
   {
-    caption: 'User1',
+    caption: '猫饼',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/pag-256x256.png',
-    infoLink: 'https://libpag.org',
+    image: '/img/maobing.png',
+    infoLink: 'http://xiaodaotv.com/',
+    pinned: true,
+  },
+  {
+    caption: 'Yoo视频',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/yoo.png',
+    infoLink: 'http://yoo.qq.com/',
+    pinned: true,
+  },
+  {
+    caption: '腾讯视频',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/tencentvideo.jpg',
+    infoLink: 'https://v.qq.com/',
     pinned: true,
   },
 ];
@@ -23,7 +39,7 @@ const users = [
 const siteConfig = {
   title: 'PAG', // Title for your website.
   tagline: 'Portable Animated Graphics',
-  url: 'https://libpag.org', // Your website URL
+  url: 'https://pag.im', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
@@ -38,10 +54,11 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'doc1', label: 'Docs'},
+    {doc: 'doc1', label: '文档'},
     {doc: 'doc4', label: 'API'},
-    {page: 'help', label: 'Help'},
-    {blog: true, label: 'Blog'},
+    {page: 'help', label: '帮助'},
+    { search: true },
+    { languages: true }
   ],
 
   // If you have users set above, you add it here:
@@ -73,7 +90,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} Your Name or Your Company Name`,
+  copyright: `Copyright © ${new Date().getFullYear()} pag.im`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
@@ -86,7 +103,7 @@ const siteConfig = {
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
   // No .html extensions for paths.
-  cleanUrl: true,
+  cleanUrl: false,
 
   // Open Graph and Twitter card images.
   ogImage: 'img/docusaurus.png',

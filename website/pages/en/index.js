@@ -81,9 +81,8 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle />
           <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html', language)}>Example Link</Button>
-            <Button href={docUrl('doc2.html', language)}>Example Link 2</Button>
+            <Button href="#try">立即安装</Button>
+            <Button href={docUrl('doc1.html', language)}>快速开始</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -180,8 +179,8 @@ const Showcase = props => {
 
   return (
     <div className="productShowcaseSection paddingBottom">
-      <h2>Who is Using This?</h2>
-      <p>This project is used by all these people</p>
+      <h2>使用PAG动画方案构建的应用</h2>
+      <p>PAG动画方案为这些应用引入了高性能且易用的动画工作流</p>
       <div className="logos">{showcase}</div>
       <div className="more-users">
         <a className="button" href={pageUrl('users.html', props.language)}>
