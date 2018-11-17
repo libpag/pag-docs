@@ -117,7 +117,7 @@ const PAGEditing = () => (
     {[
       {
         content: '运行时可在保留动画效果前提下，任意动态修改文本内容字体大小样式或替换图片内容，实现丰富多样的动画内容定制效果。',
-        image: imgUrl('pagfile.png'),
+        image: imgUrl('editing.jpg'),
         imageAlign: 'left',
         title: '运行时编辑',
       },
@@ -130,7 +130,7 @@ const PAGProfiler = () => (
     {[
       {
         content: '能够量化展示每个动画文件所占用的显存大小，渲染耗时等一系列性能指标，帮助设计师制作效果和性能俱佳的动画特效。',
-        image: imgUrl('pagfile.png'),
+        image: imgUrl('profiler.jpg'),
         imageAlign: 'right',
         title: '性能监测',
       },
@@ -155,7 +155,7 @@ const Showcase = props => {
       <div className="logos">{showcase}</div>
       <div className="more-users">
         <a className="button" href={pageUrl('users.html', props.language)}>
-          More {siteConfig.title} Users
+          更多应用
         </a>
       </div>
     </div>
