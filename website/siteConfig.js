@@ -39,7 +39,7 @@ const users = [
 const siteConfig = {
   title: 'PAG', // Title for your website.
   tagline: 'Portable Animated Graphics',
-  url: 'https://libpag.org', // Your website URL
+  url: 'https://pag.im', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
@@ -54,7 +54,7 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'install', label: '文档'},
+    {doc: 'sdk', label: '文档'},
     {doc: 'api', label: 'API参考'},
     {doc: 'faq', label: '常见问题'}
     //{ search: true },
