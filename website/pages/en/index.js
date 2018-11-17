@@ -11,7 +11,6 @@ const CompLibrary = require('../../core/CompLibrary.js');
 
 const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
 const Container = CompLibrary.Container;
-const GridBlock = CompLibrary.GridBlock;
 
 const siteConfig = require(`${process.cwd()}/siteConfig.js`);
 
@@ -90,6 +89,90 @@ class HomeSplash extends React.Component {
   }
 }
 
+const classNames = require('classnames');
+
+class GridBlock extends React.Component {
+  renderBlock(block) {
+    const blockClasses = classNames('blockElement', this.props.className, {
+      alignCenter: this.props.align === 'center',
+      alignRight: this.props.align === 'right',
+      fourByGridBlock: this.props.layout === 'fourColumn',
+      imageAlignSide:
+        block.image &&
+        (block.imageAlign === 'left' || block.imageAlign === 'right'),
+      imageAlignTop: block.image && block.imageAlign === 'top',
+      imageAlignRight: block.image && block.imageAlign === 'right',
+      imageAlignBottom: block.image && block.imageAlign === 'bottom',
+      imageAlignLeft: block.image && block.imageAlign === 'left',
+      threeByGridBlock: this.props.layout === 'threeColumn',
+      twoByGridBlock: this.props.layout === 'twoColumn',
+    });
+
+    const topLeftImage =
+      (block.imageAlign === 'top' || block.imageAlign === 'left') &&
+      this.renderBlockImage(block.image, block.imageLink, block.imageAlt, block.imageWidth, block.imageHeight);
+
+    const bottomRightImage =
+      (block.imageAlign === 'bottom' || block.imageAlign === 'right') &&
+      this.renderBlockImage(block.image, block.imageLink, block.imageAlt, block.imageWidth, block.imageHeight);
+
+    return (
+      <div className={blockClasses} key={block.title}>
+        {topLeftImage}
+        <div className="blockContent">
+          {this.renderBlockTitle(block.title)}
+          <MarkdownBlock>{block.content}</MarkdownBlock>
+        </div>
+        {bottomRightImage}
+      </div>
+    );
+  }
+
+  renderBlockImage(image, imageLink, imageAlt, imageWidth, imageHeight) {
+    if (!image) {
+      return null;
+    }
+
+    return (
+      <div className="blockImage">
+        {imageLink ? (
+          <a href={imageLink}>
+            <img src={image} alt={imageAlt} width={imageWidth} height={imageHeight} />
+          </a>
+        ) : (
+          <img src={image} alt={imageAlt} width={imageWidth} height={imageHeight} />
+        )}
+      </div>
+    );
+  }
+
+  renderBlockTitle(title) {
+    if (!title) {
+      return null;
+    }
+
+    return (
+      <h2>
+        <MarkdownBlock>{title}</MarkdownBlock>
+      </h2>
+    );
+  }
+
+  render() {
+    return (
+      <div className="gridBlock">
+        {this.props.contents.map(this.renderBlock, this)}
+      </div>
+    );
+  }
+}
+
+GridBlock.defaultProps = {
+  align: 'left',
+  contents: [],
+  layout: 'twoColumn',
+};
+
 const Block = props => (
   <Container
     padding={['bottom', 'top']}
@@ -106,6 +189,8 @@ const PAGFile = () => (
         content: '可扩展的原生二进制文件格式，可做到同时向前向后兼容，图片等资源可直接集成于单文件内，并采用了极高压缩率的动态比特位存储技术。',
         image: imgUrl('pagfile.png'),
         imageAlign: 'right',
+        imageWidth: 256,
+        imageHeight: 256,
         title: '二进制文件',
       },
     ]}
@@ -119,6 +204,8 @@ const PAGEditing = () => (
         content: '运行时可在保留动画效果前提下，任意动态修改文本内容字体大小样式或替换图片内容，实现丰富多样的动画内容定制效果。',
         image: imgUrl('editing.jpg'),
         imageAlign: 'left',
+        imageWidth: 200,
+        imageHeight: 266,
         title: '运行时编辑',
       },
     ]}
@@ -132,6 +219,8 @@ const PAGProfiler = () => (
         content: '能够量化展示每个动画文件所占用的显存大小，渲染耗时等一系列性能指标，帮助设计师制作效果和性能俱佳的动画特效。',
         image: imgUrl('profiler.jpg'),
         imageAlign: 'right',
+        imageWidth: 280,
+        imageHeight: 266,
         title: '性能监测',
       },
     ]}
