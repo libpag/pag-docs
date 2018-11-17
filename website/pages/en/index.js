@@ -240,7 +240,7 @@ const Showcase = props => {
 
   return (
     <div className="productShowcaseSection paddingBottom">
-      <h2>使用PAG动画方案构建的应用</h2>
+      <h2>使用PAG动画方案的应用</h2>
       <div className="logos">{showcase}</div>
       <div className="more-users">
         <a className="button" href={pageUrl('users.html', props.language)}>
