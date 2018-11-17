@@ -1,10 +1,8 @@
 {
   "docs": {
-    "Docusaurus": ["install","doc1"],
-    "First Category": ["doc2"],
-    "Second Category": ["doc3"]
+    "快速开始": ["install","sdk"]
   },
-  "docs-other": {
+  "api-references": {
     "First Category": ["doc4", "doc5"]
   }
 }
