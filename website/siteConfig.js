@@ -56,7 +56,7 @@ const siteConfig = {
   headerLinks: [
     {doc: 'doc1', label: '文档'},
     {doc: 'doc4', label: 'API'},
-    {page: 'help', label: '帮助'},
+    {page: 'faq', label: '常见问题'},
     { search: true },
     { languages: true }
   ],

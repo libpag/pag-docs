@@ -77,12 +77,12 @@ class HomeSplash extends React.Component {
     const language = this.props.language || '';
     return (
       <SplashContainer>
-        <Logo img_src={imgUrl('docusaurus.svg')} />
         <div className="inner">
+          <img width="128" height="128" src={imgUrl('pag-256x256.png')} />
           <ProjectTitle />
           <PromoSection>
-            <Button href="#try">立即安装</Button>
-            <Button href={docUrl('doc1.html', language)}>快速开始</Button>
+            <Button href={docUrl('install.html', language)}>安装插件</Button>
+            <Button href={docUrl('doc1.html', language)}>接入SDK</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -99,68 +99,40 @@ const Block = props => (
   </Container>
 );
 
-const Features = () => (
-  <Block layout="fourColumn">
-    {[
-      {
-        content: 'This is the content of my feature',
-        image: imgUrl('docusaurus.svg'),
-        imageAlign: 'top',
-        title: 'Feature One',
-      },
-      {
-        content: 'The content of my second feature',
-        image: imgUrl('docusaurus.svg'),
-        imageAlign: 'top',
-        title: 'Feature Two',
-      },
-    ]}
-  </Block>
-);
-
-const FeatureCallout = () => (
-  <div
-    className="productShowcaseSection paddingBottom"
-    style={{textAlign: 'center'}}>
-    <h2>Feature Callout</h2>
-    <MarkdownBlock>These are features of this project</MarkdownBlock>
-  </div>
-);
-
-const LearnHow = () => (
+const PAGFile = () => (
   <Block background="light">
     {[
       {
-        content: 'Talk about learning how to use this',
-        image: imgUrl('docusaurus.svg'),
+        content: '可扩展的原生二进制文件格式，可做到同时向前向后兼容，图片等资源可直接集成于单文件内，并采用了极高压缩率的动态比特位存储技术。',
+        image: imgUrl('pagfile.png'),
         imageAlign: 'right',
-        title: 'Learn How',
+        title: '二进制文件',
       },
     ]}
   </Block>
 );
 
-const TryOut = () => (
-  <Block id="try">
+const PAGEditing = () => (
+  <Block>
     {[
       {
-        content: 'Talk about trying this out',
-        image: imgUrl('docusaurus.svg'),
+        content: '运行时可在保留动画效果前提下，任意动态修改文本内容字体大小样式或替换图片内容，实现丰富多样的动画内容定制效果。',
+        image: imgUrl('pagfile.png'),
         imageAlign: 'left',
-        title: 'Try it Out',
+        title: '运行时编辑',
       },
     ]}
   </Block>
 );
 
-const Description = () => (
-  <Block background="dark">
+const PAGProfiler = () => (
+  <Block background="light">
     {[
       {
-        content: 'This is another description of how this project is useful',
-        image: imgUrl('docusaurus.svg'),
+        content: '能够量化展示每个动画文件所占用的显存大小，渲染耗时等一系列性能指标，帮助设计师制作效果和性能俱佳的动画特效。',
+        image: imgUrl('pagfile.png'),
         imageAlign: 'right',
-        title: 'Description',
+        title: '性能监测',
       },
     ]}
   </Block>
@@ -180,7 +152,6 @@ const Showcase = props => {
   return (
     <div className="productShowcaseSection paddingBottom">
       <h2>使用PAG动画方案构建的应用</h2>
-      <p>PAG动画方案为这些应用引入了高性能且易用的动画工作流</p>
       <div className="logos">{showcase}</div>
       <div className="more-users">
         <a className="button" href={pageUrl('users.html', props.language)}>
@@ -199,11 +170,9 @@ class Index extends React.Component {
       <div>
         <HomeSplash language={language} />
         <div className="mainContainer">
-          <Features />
-          <FeatureCallout />
-          <LearnHow />
-          <TryOut />
-          <Description />
+          <PAGFile />
+          <PAGEditing />
+          <PAGProfiler />
           <Showcase language={language} />
         </div>
       </div>
