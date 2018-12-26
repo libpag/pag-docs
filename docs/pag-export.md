@@ -16,11 +16,13 @@ title: 导出PAG文件
 
 将需要导出为序列帧的合成(Compostion)修改为后缀为"_bmp"或"_BMP"的名字，其他操作同上矢量导出模式。
 
-注意：目前的插件版本序列帧功能处于测试阶段，需要手动在[插件选项面板](/docs/plugin-config.html)里切换到beta导出模式才能开启序列帧功能，操作步骤如下：
-1，在AE点击左上角菜单栏"After Effects CC" -> "首选项" -> "PAG Config..."，
+注意：目前的插件版本序列帧功能处于测试阶段，需要手动在[插件选项面板](/docs/plugin-config.html)里切换到beta导出模式才能开启序列帧功能，操作步骤如下：<br/>
+1，在AE点击左上角菜单栏"After Effects CC" -> "首选项" -> "PAG Config..."<br/>
 ![PAGConfig1截图](/img/PAGConfig1.jpg)
-2，然后在弹出窗里选择："通用" -> "导出版本控制" -> "beta"，然后点击确定。
+<br/>
+2，然后在弹出窗里选择："通用" -> "导出版本控制" -> "beta"，然后点击确定。<br/>
 ![PAGConfig2截图](/img/PAGConfig2.jpg)
+<br/>
 
 ### 导出混合矢量和序列帧的PAG文件
 
