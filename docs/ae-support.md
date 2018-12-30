@@ -66,7 +66,6 @@ title: AE功能支持列表
 
 ### 图层样式 (Layer Styles)
 	投影 (Drop Shadow)
-		混合模式 (Blend Mode)
    		颜色 (Color)
 		不透明度 (Opacity)
 		角度 (Angle)
