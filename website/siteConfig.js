@@ -34,6 +34,14 @@ const users = [
     infoLink: 'https://v.qq.com/',
     pinned: true,
   },
+  {
+    caption: '天天P图',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/pitu.png',
+    infoLink: 'https://tu.qq.com/',
+    pinned: true,
+  },
 ];
 
 const siteConfig = {
