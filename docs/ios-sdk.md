@@ -35,7 +35,7 @@ pod 'libpag', :git => 'http://git.code.oa.com/MaoBing/libpag.git', :tag => 'v1.3
 ###注意事项
 &emsp;&emsp;&emsp;&emsp;libpag内部依赖有WebP库，如果你的项目中也引用有WebP的C++库，编译后可能会存在冲突，推荐以下三种解决方式：<br/>
 
- - 1) 使用CocoaPods安装方式；
+ - 1) 使用CocoaPods安装方式, 并添加 use_frameworks!；
  - 2) 修改项目中WebP库的入口函数名；
  - 3）单独创建一个测试工程，用CocoPods引用并编译出一个libpag.framework，拷贝出来放进项目中使用。
 
