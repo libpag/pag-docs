@@ -1,6 +1,6 @@
 {
   "docs": {
-    "快速开始": ["install","update","sdk"],
+    "快速开始": ["install","update","sdk","ios-sdk"],
     "使用指南": ["pag-export","ae-support","editable-text","plugin-config","profiler","cms-verify"],
     "API参考": ["api"],
     "更多": ["faq"]
