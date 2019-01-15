@@ -2,12 +2,15 @@
 id: ios-sdk
 title: libpag for iOS 接入指南
 ---
-###基本要求
+
+### 基本要求<br/>
+
 - libpag 支持iOS8及以上； 
 - libpag 需要使用Xcode8.0以上版本进行编译；
 - 需要使用Objective-C++。
 
 ###安装<br>
+
 &emsp;&emsp;&emsp;&emsp;推荐使用以下两种安装方式：
 
 - **通过CocoaPods安装**
@@ -33,9 +36,10 @@ pod 'libpag', :git => 'http://git.code.oa.com/MaoBing/libpag.git', :tag => 'v1.3
  		* 2) 确保工程中有.mm,如果没有可以将AppDelegate.m修改为AppDelegate.mm.
 
 ###注意事项<br>
+
 &emsp;&emsp;&emsp;&emsp;libpag内部依赖有WebP库，如果你的项目中也引用有WebP的C++库，编译后可能会存在冲突，推荐以下三种解决方式：<br/>
 
- - 1) 使用CocoaPods安装方式, 并添加 use_frameworks!；
- - 2) 修改项目中WebP库的入口函数名；
+ - 1) 使用CocoaPods安装方式, 并添加 use_frameworks!；<br>
+ - 2) 修改项目中WebP库的入口函数名；<br>
  - 3）单独创建一个测试工程，用CocoPods引用并编译出一个libpag.framework，拷贝出来放进项目中使用。
 
