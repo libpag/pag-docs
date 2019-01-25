@@ -49,10 +49,10 @@ title: 自动化测试
 
 ## 用例增加或更新
  1. 测试用例增加<br/>
-    在**libpag/ios/Resources/Test/PAG** 目录下增加测试用例文件，运行该项目，在log信息中，根据测试用例文件名查找到对应的MD5加密数组，在**libpag/ios/Resources/Test/JSON**目录下增加对应的json校验文件，pag文件名和json文件名需要保持一致，区分大小写，将MD5加密数组放到json文件中作为标准值。
+    在**libpag/ios/Resources/Test/PAG** 目录下增加测试用例文件，运行该项目，在log信息中，根据测试用例文件名查找到对应的MD5数组，在**libpag/ios/Resources/Test/JSON**目录下增加对应的json校验文件，pag文件名和json文件名需要保持一致，区分大小写，将MD5数组放到json文件中作为标准值。
  
  2. 测试用例更新<br/>
-    在**libpag/ios/Resources/Test/PAG** 目录下更新测试用例文件，运行该项目，在log信息中，根据测试用例文件名查找到对应的MD5加密数组，作为标准值更新至相应json文件即可。
+    在**libpag/ios/Resources/Test/PAG** 目录下更新测试用例文件，运行该项目，在log信息中，根据测试用例文件名查找到对应的MD5数组，作为标准值更新至相应json文件即可。
     
     
    
