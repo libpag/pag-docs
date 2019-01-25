@@ -16,7 +16,7 @@ title: 自动化测试
 测试用例文件目录：**libpag/ios/Resources/Test/PAG** <br/>
 测试用例为pag文件格式
 
-检验文件目录：**libpag/ios/Resources/Test/JSON** <br/>
+校验文件目录：**libpag/ios/Resources/Test/JSON** <br/>
 校验文件为json文件格式，数据内容为pag文件每一帧数据的MD5值组成的数组
 
 
