@@ -3,7 +3,6 @@ id: test
 title: 自动化测试
 ---
 
-# 自动化测试
 自动化测试暂时只支持iOS版本
 
 
@@ -32,7 +31,7 @@ title: 自动化测试
 ## 错误信息
  1. pag file not found under Resources/Test/PAG !
  
-    测试用例文件目录下无测试用例
+    测试用例文件目录下无测试文件
  
  2.  1 json file not found under Resources/Test/JSON !<br/>
      data.json
