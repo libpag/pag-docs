@@ -24,9 +24,11 @@ title: 自动化测试
  1. 切换项目Target至PAGViewerTest
  2. 运行该项目，当出现以下界面时，测试通过
 
+
 ![](/img/success.jpg)
  
-    出现以下界面时，测试失败
+   &nbsp;&nbsp;&nbsp;&nbsp;出现以下界面时，测试失败
+
 
 ![](/img/fail.jpg)
 
