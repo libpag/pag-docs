@@ -47,7 +47,7 @@ title: 自动化测试
     测试用例文件data.pag与校验文件的帧数不一致！
  4. FileName:data.pag<br/>
     currentFrame:112, progress:0.9412 <br/>
-    测试用例文件data.pag第112帧、进度0.9412处与检验文件不一致
+    测试用例文件data.pag第112帧、进度0.9412处与校验文件不一致
 
 
 ## 用例增加或更新
