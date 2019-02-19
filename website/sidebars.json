@@ -3,7 +3,6 @@
     "快速开始": ["install","update","sdk"],
     "使用指南": ["pag-export","ae-support","editable-text","plugin-config","profiler","cms-verify","export-png"],
     "API参考": ["api"],
-    "架构设计": ["pag-file-render-optimize"],
     "更多": ["faq"]
   }
 }
