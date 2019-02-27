@@ -6,9 +6,9 @@ title: 视频解码器接入
 ### 概述
 PAG贴纸现在支持三类导出方式，序列帧导出、矢量导出、视频帧导出。针对视频帧导出的pag文件中的视频解码，默认会选择硬解码器解码。目前在android上，能够支持动态接入用户自研的解码器。
 
-###如何接入
-####1、派生实现如下2个父类：
-``` 
+### 如何接入
+#### 1、派生实现如下2个父类：
+```
     /**
      * the factory of software decoder, need implement the createSoftwareDecoder function
      */
@@ -70,12 +70,12 @@ PAG贴纸现在支持三类导出方式，序列帧导出、矢量导出、视�
          * @return
          */
         virtual SoftwareDecodeResult onEndOfStream() { return SoftwareDecodeResult::Success; };
-    };```
-
-####2、实例化派生SoftwareDecoderFactory的子类，将该实例的指针动态注册给pag模块。
+    };
+```
+#### 2、实例化派生SoftwareDecoderFactory的子类，将该实例的指针动态注册给pag模块。
 该factory的实例，作为long形java参数通过jni传递到Java层，然后调用如下方法注入指针到pag模块。
-```    
-VideoDecoder.RegisterDecoderFactory(FFmpegDecoderFactory.GetDecoderFactory());
-```    
-###接入解码器样例：
+```
+    VideoDecoder.RegisterDecoderFactory(FFmpegDecoderFactory.GetDecoderFactory());
+```
+### 接入解码器样例：
 [pag_decoder_sample.zip](https://qzonestyle.gtimg.cn/qzone/qzact/act/external/weishi-sucai/interact/pag_decoder_sample.zip) 
