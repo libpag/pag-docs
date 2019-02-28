@@ -73,7 +73,7 @@ PAG贴纸现在支持三类导出方式，序列帧导出、矢量导出、视�
     };
 ```
 #### 2、实例化派生SoftwareDecoderFactory的子类，将该实例的指针动态注册给pag模块。
-该factory的实例，作为long形java参数通过jni传递到Java层，然后调用如下方法注入指针到pag模块。
+该 factory 的实例指针，强转为 long 类形参数通过 jni 传递到 Java 层，然后调用如下方法注入指针到 libpag 模块。
 ```
     VideoDecoder.RegisterDecoderFactory(FFmpegDecoderFactory.GetDecoderFactory());
 ```
