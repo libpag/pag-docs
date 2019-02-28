@@ -10,66 +10,62 @@ PAG贴纸现在支持三类导出方式，序列帧导出、矢量导出、视�
 #### 1、派生实现如下2个父类：
 ```
     /**
-     * the factory of software decoder, need implement the createSoftwareDecoder function
+     * The factory of software decoder.
      */
     class SoftwareDecoderFactory {
     public:
-        virtual ~SoftwareDecoderFactory() {};
+        virtual ~SoftwareDecoderFactory() = default;
+
         /**
-         * Create software decoder
-         * @return: the unique pointer of software decoder
+         * Create a software decoder
          */
-        virtual std::unique_ptr<SoftwareDecoder> createSoftwareDecoder() { return nullptr; }
+        virtual std::unique_ptr<SoftwareDecoder> createSoftwareDecoder() = 0;
     };
 
     class SoftwareDecoder {
     public:
-        SoftwareDecoder() {};
-
-        virtual ~SoftwareDecoder() {};
+        virtual ~SoftwareDecoder()  = default;
 
         /**
-         * configure the software decoder
-         * @param headers: contain the configure data. for example: csd-0、csd-1.
-         * @param mime: mime type. for example: video/avc
-         * @param width: video width
-         * @param height: video height
-         * @return: true:success， false:fail
+         * Configure the software decoder.
+         * @param headers Codec specific data. for example: csd-0、csd-1.
+         * @param mime MIME type. for example: "video/avc"
+         * @param width video width
+         * @param height video height
+         * @return Return true if configure successfully.
          */
-        virtual bool onConfigure(const std::vector<ByteData*>& headers, std::string mime, int width, int height) { return true; };
+        virtual bool onConfigure(const std::vector<ByteData*>& headers, std::string mime,
+                                 int width, int height) = 0;
 
         /**
-         * send the video sample data to the software decoder
-         * @param bytes: video sample data
-         * @param length: the size of data
-         * @param frame: sample timestamp
-         * @return
+         * Send a frame of bytes for decoding. The same bytes will be sent next time if it returns
+         * SoftwareDecodeResult::TryAgainLater
+         * @param bytes: The sample data for decoding.
+         * @param length: The size of sample data
+         * @param frame: The timestamp of this sample data.
          */
-        virtual SoftwareDecodeResult onSendBytes(void* bytes, size_t length, int64_t frame) { return SoftwareDecodeResult::Success; };
+        virtual SoftwareDecodeResult onSendBytes(void* bytes, size_t length, int64_t frame) = 0;
 
         /**
-         * decode the video sample data that you have sent(onSendBytes) to the decoder
-         * @return
+         * Try to decode a new frame from the pending frames sent by onSendBytes(). More pending
+         * frames will be sent by onSendBytes() if it returns SoftwareDecodeResult::TryAgainLater.
          */
-        virtual SoftwareDecodeResult onDecodeFrame() { return SoftwareDecodeResult::Success; };
+        virtual SoftwareDecodeResult onDecodeFrame() = 0;
 
         /**
-         * flush the software decoder
+         * Called when seeking happens to clear all pending frames.
          */
-        virtual void onFlush() {};
+        virtual void onFlush() = 0;
 
         /**
-         * return decoded data to render.
-         * @Note: the format of decoded data must be YUV format
-         * @return:
+         * Return decoded data to render, the format of decoded data must be in YUV420p format.
          */
-        virtual VFrame* onRenderFrame() { return nullptr; };
+        virtual OutputFrame* onRenderFrame() = 0;
 
         /**
-         * notify end of stream, express complete the playback of pag file
-         * @return
+         * Called to notify there is no more sample bytes available.
          */
-        virtual SoftwareDecodeResult onEndOfStream() { return SoftwareDecodeResult::Success; };
+        virtual SoftwareDecodeResult onEndOfStream() = 0;
     };
 ```
 #### 2、实例化派生SoftwareDecoderFactory的子类，将该实例的指针动态注册给pag模块。
