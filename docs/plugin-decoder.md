@@ -1,6 +1,6 @@
 ---
 id: plugin-decoder
-title: 视频解码器接入
+title: 注入视频解码器
 ---
 
 ### 概述
@@ -77,5 +77,5 @@ PAG贴纸现在支持三类导出方式，序列帧导出、矢量导出、视�
 ```
     VideoDecoder.RegisterDecoderFactory(FFmpegDecoderFactory.GetDecoderFactory());
 ```
-### 接入解码器样例：
-[pag_decoder_sample.zip](https://qzonestyle.gtimg.cn/qzone/qzact/act/external/weishi-sucai/interact/pag_decoder_sample.zip) 
+### 注入解码器范例工程：
+ligpag 注入视频解码器范例工程的获取请联系我们的产品经理： **bosslin(林泽容), bosslin@tencent.com**
