@@ -11,7 +11,7 @@ PAG贴纸现在支持两类导出方式，序列帧导出和矢量导出。序�
 
 PAGViewer上的Profiler性能检测面板可以很直观地帮助设计师进行性能调优。预览贴纸时按下键盘上的P键即可呼出该面板，再次按下关闭面板。<br/><br/>
 
-![Profiler截图](/img/profiler.jpg)
+![Profiler截图](/img/docs/profiler.jpg)
 <br/>
 
 
