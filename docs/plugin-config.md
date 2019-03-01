@@ -6,7 +6,7 @@ title: 插件选项配置面板
 ## 配置面板入口
 
 "After Effects CC" -> "首选项" -> "PAG Config..." （如下图）
-![](/img/docs/pag_config.png)
+![](/img/docs/plugin_config1.png)
 
 ## 配置面板说明
 
@@ -14,7 +14,7 @@ title: 插件选项配置面板
 
 可配置整个PAG文件相关的参数（如下图：）
 
-![](/img/docs/pag_config2.png)
+![](/img/docs/plugin_config2.png)
 
 1.导出版本控制：
 
@@ -39,7 +39,7 @@ custom：自定版，表示导出指定版本的PAG文件，（需搭配TagLevel
 ### “序列帧”页。
 
 可配置位图序列帧导出方式的相关参数（如下图：）
-![](/img/docs/pag_config3.png)
+![](/img/docs/plugin_config3.png)
 
 1.导出尺寸上限：
 
