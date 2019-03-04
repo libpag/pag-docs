@@ -217,7 +217,7 @@ const PAGProfiler = () => (
     {[
       {
         content: '能够量化展示每个动画文件所占用的显存大小，渲染耗时等一系列性能指标，帮助设计师制作效果和性能俱佳的动画特效。',
-        image: imgUrl('profiler.jpg'),
+        image: imgUrl('docs/profiler.jpg'),
         imageAlign: 'right',
         imageWidth: 280,
         imageHeight: 266,
