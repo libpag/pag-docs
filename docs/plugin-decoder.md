@@ -7,7 +7,7 @@ title: 注入视频解码器
 PAG贴纸现在支持三类导出方式，序列帧导出、矢量导出、视频帧导出。针对视频帧导出的pag文件中的视频解码，默认会选择硬解码器解码。目前在android上，能够支持动态接入用户自研的解码器。
 
 ### 如何接入
-#### 1、派生实现如下2个父类：
+#### 1、include SoftwareDecoder.h,派生实现如下2个父类：
 ```
     /**
      * The factory of software decoder.
@@ -34,7 +34,7 @@ PAG贴纸现在支持三类导出方式，序列帧导出、矢量导出、视�
          * @param height video height
          * @return Return true if configure successfully.
          */
-        virtual bool onConfigure(const std::vector<ByteData*>& headers, std::string mime,
+        virtual bool onConfigure(const std::vector<CodecHeader>& headers, std::string mime,
                                  int width, int height) = 0;
 
         /**
@@ -44,13 +44,18 @@ PAG贴纸现在支持三类导出方式，序列帧导出、矢量导出、视�
          * @param length: The size of sample data
          * @param frame: The timestamp of this sample data.
          */
-        virtual SoftwareDecodeResult onSendBytes(void* bytes, size_t length, int64_t frame) = 0;
+        virtual SoftwareDecodingResult onSendBytes(void* bytes, size_t length, int64_t frame) = 0;
 
         /**
          * Try to decode a new frame from the pending frames sent by onSendBytes(). More pending
          * frames will be sent by onSendBytes() if it returns SoftwareDecodeResult::TryAgainLater.
          */
-        virtual SoftwareDecodeResult onDecodeFrame() = 0;
+        virtual SoftwareDecodingResult onDecodeFrame() = 0;
+
+        /**
+         * Called to notify there is no more sample bytes available.
+         */
+        virtual SoftwareDecodingResult onEndOfStream() = 0;
 
         /**
          * Called when seeking happens to clear all pending frames.
@@ -60,18 +65,16 @@ PAG贴纸现在支持三类导出方式，序列帧导出、矢量导出、视�
         /**
          * Return decoded data to render, the format of decoded data must be in YUV420p format.
          */
-        virtual OutputFrame* onRenderFrame() = 0;
+        virtual std::unique_ptr<OutputFrame> onRenderFrame() = 0;
 
-        /**
-         * Called to notify there is no more sample bytes available.
-         */
-        virtual SoftwareDecodeResult onEndOfStream() = 0;
+
     };
 ```
-#### 2、实例化派生SoftwareDecoderFactory的子类，将该实例的指针动态注册给pag模块。
+#### 2、实例化派生SoftwareDecoderFactory的子类，将该实例的指针动态注册给pag模块，同时设置最大硬件码器个数为0.
 该 factory 的实例指针，强转为 long 类形参数通过 jni 传递到 Java 层，然后调用如下方法注入指针到 libpag 模块。
 ```
-    VideoDecoder.RegisterDecoderFactory(FFmpegDecoderFactory.GetDecoderFactory());
+    VideoDecoder.RegisterSoftwareDecoderFactory(FFmpegDecoderFactory.GetDecoderFactory());
+    VideoDecoder.SetMaxHardwareDecoderCount(0);
 ```
 ### 注入解码器范例工程：
 ligpag 注入视频解码器范例工程的获取请联系我们的产品经理： **bosslin(林泽容), bosslin@tencent.com**
