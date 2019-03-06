@@ -35,6 +35,7 @@ title: AE功能支持列表
 	变暗 (Darken)
 	相乘 (Multiply)
 	颜色加深 (ColorBurn)
+	相加（Add）
 	变亮 (Lighten)
 	屏幕 (Screen)
 	颜色减淡 (ColorDodge)
