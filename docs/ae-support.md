@@ -28,7 +28,7 @@ title: AE功能支持列表
 	位置分离XY轴 (Position Separated X/Y )
 	缩放 (Scale)
 	旋转 (Rotation)
-	透明度 (Opactiy)
+	透明度 (Opactiy) [注：不支持整体透明度(可能产生叠影)，只支持分散到各个图层的透明度]
 
 ### 混合模式 (Blend Modes)
 	正常 (Normal)
@@ -54,6 +54,7 @@ title: AE功能支持列表
 	无 (None)
 	Alpha 蒙板 (Alpha)
 	反向 Alpha 蒙板 (Alpha Inverted)
+	[蒙版不支持半透明的擦除，只支持纯色的擦除]
 
 ### 遮罩 (Masks)
 	遮罩形状 (Mask Path)
@@ -64,6 +65,7 @@ title: AE功能支持列表
 		相减 (Subtract)
 		交集 (Intersect)
 		差值 (Difference)
+	[注：不支持mask的alpha属性]
 
 ### 图层样式 (Layer Styles)
 	投影 (Drop Shadow)
