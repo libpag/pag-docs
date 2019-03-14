@@ -1,15 +1,10 @@
----
-id: plugin-decoder
-title: 注入视频解码器
----
+#ifndef PAG_SOFTWARE_DECODER_H
+#define PAG_SOFTWARE_DECODER_H
 
-### 概述
-PAG贴纸现在支持三类导出方式，序列帧导出、矢量导出、视频帧导出。针对视频帧导出的pag文件中的视频解码，默认会选择硬解码器解码。目前在android上，能够支持动态接入用户自研的解码器。
+#include <vector>
+#include <string>
+#include <memory>
 
-### 如何接入
-#### 1、include [<font color=blue>SoftwareDecoder.h</font>](/file/SoftwareDecoder.h),派生实现如下2个父类：
-
-```
 namespace pag {
     struct OutputFrame {
         /**
@@ -103,16 +98,4 @@ namespace pag {
     };
 }
 
-```
-#### 2、实例化派生SoftwareDecoderFactory的子类，将该实例的指针动态注册给pag模块.
-该 factory 的实例指针，强转为 long 类形参数通过 jni 传递到 Java 层，然后调用如下方法注入指针到 libpag 模块。
-```
-    VideoDecoder.RegisterSoftwareDecoderFactory(FFmpegDecoderFactory.GetDecoderFactory());
-```
-若需要测试软解解码器是否生效，可以通过如下代码来设置最大硬件码器个数为0，强制使用软解解码器：
-```
-VideoDecoder.SetMaxHardwareDecoderCount(0);
-```
-
-### 注入解码器范例工程：
-ligpag 注入视频解码器范例工程的获取请联系我们的产品经理： **bosslin(林泽容), bosslin@tencent.com**
+#endif
