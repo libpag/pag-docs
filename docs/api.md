@@ -3,8 +3,10 @@ id: api
 title: API参考
 ---
 
-最新版本的API文档可以通过rdm的自动构建获取。
+历史版本的API文档可以通过rdm的自动构建下载获取， RDM权限开通请联系我们的产品经理： **bosslin(林泽容), bosslin@tencent.com**
 
-[iOS API文档](https://pag.im/api/iOS/index.html)
+最新版本的API文档请点击如下链接查看：
 
-[Android API文档](https://pag.im/api/Android/index.html)
+[<font color=blue>iOS API文档</font>](https://pag.im/api/ios/)
+
+[<font color=blue>Android API文档</font>](https://pag.im/api/android/)

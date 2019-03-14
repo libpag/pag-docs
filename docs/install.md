@@ -14,7 +14,7 @@ title: 安装
 
 
 ### 图形化安装
-[PAGInstaller.dmg](http://dldir1.qq.com/qqmi/libpag/PAGInstaller.dmg) 点击下载图形安装器，双击内部安装程序开始在线安装，安装过程可能会要求输入本机密码以获取文件写入权限。
+[<font color=blue>PAGInstaller.dmg</font>](http://dldir1.qq.com/qqmi/libpag/PAGInstaller.dmg) 点击下载图形安装器，双击内部安装程序开始在线安装，安装过程可能会要求输入本机密码以获取文件写入权限。
 
 
 	

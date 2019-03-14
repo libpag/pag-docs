@@ -61,7 +61,7 @@ const siteConfig = {
   //   organizationName: 'JoelMarcey'
 
   // For no header links in the top nav bar -> headerLinks: [],
-  separateCss: ["static/api/Android/stylesheet.css", "static/api/iOS/css/style.css"],
+  separateCss: ["static/apis/android/stylesheet.css", "static/apis/ios/css/style.css"],
   headerLinks: [
     {doc: 'pag-export', label: '文档'},
     {doc: 'api', label: 'API参考'},
