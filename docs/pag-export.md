@@ -4,7 +4,7 @@ title: 导出PAG文件
 ---
 
 ### 准备工作：
-1，确保已经安装了PAGViewer。[如何安装](/docs/install.html)<br/>
+1，确保已经安装了PAGViewer。[<font color=blue>如何安装</font>](/docs/install.html)<br/>
 2，已经安装的请更新到最新版本。<br/>
 3，打开AE软件，在菜单项中将会看到：“文件” -> “导出” -> “PAG File...”，则说明已经成功安装。<br/>
 
@@ -16,7 +16,7 @@ title: 导出PAG文件
 
 ### 二，导出全序列帧的PAG文件
 
-将需要导出为序列帧的合成(Compostion)修改为后缀为"_bmp"或"_BMP"的名字，其他操作同上矢量导出模式。（注：序列帧后缀可以更改，详见《[插件选项配置面板](/docs/plugin-config.html)）》
+将需要导出为序列帧的合成(Compostion)修改为后缀为"_bmp"或"_BMP"的名字，其他操作同上矢量导出模式。（注：序列帧后缀可以更改，详见《[<font color=blue>插件选项配置面板</font>](/docs/plugin-config.html)）》
 
 注意：第一次导出序列帧之前，需进行如下配置（仅需配置一次）：<br/>
 1，打开配置面板：<br/>
