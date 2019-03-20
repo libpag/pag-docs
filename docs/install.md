@@ -16,5 +16,8 @@ title: 安装
 ### 图形化安装
 [<font color=blue>PAGInstaller.dmg</font>](http://dldir1.qq.com/qqmi/libpag/PAGInstaller.dmg) 点击下载图形安装器，双击内部安装程序开始在线安装，安装过程可能会要求输入本机密码以获取文件写入权限。
 
+### 测试
+下载 [<font color=blue> pag_test.zip </font>](/file/pag_test.zip) 并解压，直接双击文件夹里的 pag 文件，即可看到动画的预览效果。其中的 **Replacement.pag** 文件是个占位图动画示例，你可以双击打开它后拖拽任意一张其他图片到窗口里，即可看到窗口里的动画效果被套用到了拖进去的图片上。
+
 
 	
