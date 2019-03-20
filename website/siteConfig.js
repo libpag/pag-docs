@@ -42,6 +42,14 @@ const users = [
     infoLink: 'https://tu.qq.com/',
     pinned: true,
   },
+  {
+    caption: '微视',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/weishi.png',
+    infoLink: 'https://itunes.apple.com/cn/app/wei-shi-8miao-duan-shi-pin/id691828408',
+    pinned: true,
+  },
 ];
 
 const siteConfig = {
