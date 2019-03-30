@@ -4,7 +4,7 @@ title: 注入视频软件解码器
 ---
 
 ### 概述
-PAG 贴纸现在支持三类导出方式，序列帧导出、矢量导出、视频帧导出。针对视频帧导出的 pag 文件中的视频解码，默认会选择硬解码器解码。目前在 android 上，能够支持动态注入用户自研的软件解码器。
+PAG 贴纸现在支持三类导出方式，序列帧导出、矢量导出、视频帧导出。针对视频帧导出的 PAG 文件中的视频解码，默认会选择硬解码器解码。目前在 android 上，能够支持动态注入用户自研的软件解码器。
 
 ### 如何接入
 #### 1、include [<font color=blue>SoftwareDecoder.h</font>](/file/SoftwareDecoder.h),派生实现如下2个父类：
@@ -106,7 +106,7 @@ namespace pag {
 ```
 #### 2、实例化派生 SoftwareDecoderFactory 的子类，将该实例的指针动态注册给 libpag 模块.
 
-##### Android 端注入
+##### 在 Android 端注入
 将该 factory 的实例指针，强转为 long 类形参数通过 JNI 传递到 Java 层，然后调用如下方法注入指针到 libpag 模块。
 ```
 VideoDecoder.RegisterSoftwareDecoderFactory(FFmpegDecoderFactory.GetDecoderFactory());
@@ -116,7 +116,7 @@ VideoDecoder.RegisterSoftwareDecoderFactory(FFmpegDecoderFactory.GetDecoderFacto
 VideoDecoder.SetMaxHardwareDecoderCount(0);
 ```
 
-##### iOS 端注入
+##### 在 iOS 端注入
 将该 factory 的实例指针，调用如下方法注入指针到 libpag 模块。
 ```
 [PAGVideoDecoder RegisterSoftwareDecoderFactory:(void*)&decoderFactory];
