@@ -104,14 +104,26 @@ namespace pag {
 }
 
 ```
-#### 2、实例化派生SoftwareDecoderFactory的子类，将该实例的指针动态注册给pag模块.
-该 factory 的实例指针，强转为 long 类形参数通过 jni 传递到 Java 层，然后调用如下方法注入指针到 libpag 模块。
+#### 2、实例化派生 SoftwareDecoderFactory 的子类，将该实例的指针动态注册给 libpag 模块.
+
+##### Android 端注入
+将该 factory 的实例指针，强转为 long 类形参数通过 JNI 传递到 Java 层，然后调用如下方法注入指针到 libpag 模块。
 ```
-    VideoDecoder.RegisterSoftwareDecoderFactory(FFmpegDecoderFactory.GetDecoderFactory());
+VideoDecoder.RegisterSoftwareDecoderFactory(FFmpegDecoderFactory.GetDecoderFactory());
 ```
 若需要测试软解解码器是否生效，可以通过如下代码来设置最大硬件码器个数为0，强制使用软解解码器：
 ```
 VideoDecoder.SetMaxHardwareDecoderCount(0);
+```
+
+##### iOS 端注入
+将该 factory 的实例指针，调用如下方法注入指针到 libpag 模块。
+```
+[PAGVideoDecoder RegisterSoftwareDecoderFactory:(void*)&decoderFactory];
+```
+若需要测试软解解码器是否生效，可以通过如下代码来设置最大硬件码器个数为0，强制使用软解解码器：
+```
+[PAGVideoDecoder SetMaxHardwareDecoderCount:0];
 ```
 
 ### 注入解码器范例工程：
