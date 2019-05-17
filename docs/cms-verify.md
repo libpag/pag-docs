@@ -9,7 +9,7 @@ title: PAG性能校验使用指南
 ### 操作指引
 1. 打开PAGViewer，检查软件版本，确保PAGViewer的版本号为1.3.2或以上。(如果低于1.3.2请更新到最新版本)
 2. 正常打开某pag文件。
-3. 点击文件菜单“File”下的Verify。如下图：<br/>
+3. 点击文件菜单“File”下的“Verify”。(1.4.34之后，为“文件”菜单下的“性能校验”)如下图：<br/>
 ![PAGConfig1截图](/img/docs/cms-verify-1.jpg)
 <br/>
 
