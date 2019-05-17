@@ -1,6 +1,6 @@
 ---
 id: pag-edit
-title: PAG图层编辑
+title: 使用PAGViewer编辑预览图层
 ---
 
 ### 编辑文字
