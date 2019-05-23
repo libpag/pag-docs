@@ -50,6 +50,14 @@ const users = [
     infoLink: 'https://itunes.apple.com/cn/app/wei-shi-8miao-duan-shi-pin/id691828408',
     pinned: true,
   },
+  {
+    caption: '起点',
+     // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/qidian.png',
+    infoLink: 'https://www.qidian.com',
+    pinned: true,
+  },
 ];
 
 const siteConfig = {
