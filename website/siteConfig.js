@@ -58,6 +58,14 @@ const users = [
     infoLink: 'https://www.qidian.com',
     pinned: true,
   },
+  {
+    caption: '腾讯动漫',
+     // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/dongman.png',
+    infoLink: 'https://ac.qq.com',
+    pinned: true,
+  },
 ];
 
 const siteConfig = {
