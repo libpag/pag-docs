@@ -19,16 +19,22 @@ PAGViewer上的Profiler性能检测面板可以很直观地帮助设计师进行
 
 	FrameRate : 播放帧率，每秒刷新画面的次数。
 	Duration : 动画时长， 单位为 s(秒)、m(分钟)、h(小时) 。
-	File： 文件大小，单位为 B(字节)、KB、MB、GB。
-	Graphics：贴纸播放时占用的显存大小，单位同上。
-	TagLevel：贴纸内包含的最高的Tag等级。
+	Graphics : 贴纸播放时占用的显存大小，单位同上。
+    Videos : 贴纸内视频序列帧的数量。
+	TagLevel : 贴纸内包含的最高的Tag等级。
 	Width : 贴纸设计宽度。
-	Height ： 贴纸设计高度。
+	Height : 贴纸设计高度。
 	Layers  : 贴纸内包含的图层总数量。
 	Render : 当前一帧的渲染耗时，单位微秒。
-	Image ：当前一帧的解码耗时，单位微秒。
-	Prensent：当前一帧的上屏耗时，单位微秒。
-
+    Render(AVG) : 当前面板图像内的平均渲染耗时，单位微秒。
+    Render(MAX) : 当前面板图像内的最大渲染耗时，单位微秒。
+	Image : 当前一帧的解码耗时，单位微秒。
+    Image(AVG) : 当前面板图像内的平均解码耗时，单位微秒。
+    Image(MAX) : 当前面板图像内的最大解码耗时，单位微秒。
+	Prensent : 当前一帧的上屏耗时，单位微秒。
+    Prensent(AVG) : 当前面板图像内的上屏耗时，单位微秒。
+    Prensent(MAX) : 当前面板图像内的上屏耗时，单位微秒。
+    
 波形图每个柱代表某一帧 Render+Image+Prensent 的总耗时，可以根据颜色区分占比。
 
 ### 如何解读利用这些信息
