@@ -27,14 +27,6 @@ const users = [
     pinned: true,
   },
   {
-    caption: '腾讯视频',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/tencentvideo.jpg',
-    infoLink: 'https://v.qq.com/',
-    pinned: true,
-  },
-  {
     caption: '天天P图',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
