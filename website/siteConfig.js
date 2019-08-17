@@ -63,7 +63,7 @@ const users = [
 const siteConfig = {
   title: 'PAG', // Title for your website.
   tagline: 'Portable Animated Graphics',
-  url: 'https://pag.im', // Your website URL
+  url: 'https://pag.io', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
@@ -115,7 +115,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} pag.im`,
+  copyright: `Copyright © ${new Date().getFullYear()} pag.io`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
