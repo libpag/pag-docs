@@ -78,6 +78,8 @@ libpag SDK及范例工程的获取请联系我们的邮箱：**libpag@tencent.co
 - Android端SDK为aar文件，支持armv7a
 - iOS端SDK为framework文件，分为四个版本：真机版（arm64、arm64/armv7）和真机模拟器版（arm64/x64、arm64/armv7/x64）
 
+Lottie迁移PAGSDK说明文档  [<font color=blue>文章地址</font>](/docs/SDK-migration.html)
+
 ##### 2.PAG快速接入
 
 接入SDK [<font color=blue>文章地址</font>](/docs/sdk.html)
