@@ -11,7 +11,11 @@ title: 素材迁移说明
 
 视频素材和图片序列帧素材可以直接转换为PAG素材文件，转换工具为PAGConvertor。需要转换工具请联系我们的邮箱：**libpag@tencent.com**
 
-PAGConvertor是一个视频、gif、apng和图片序列帧以及Lottie的json转PAG文件的工具。（*注：目前Lottie的json文件转换目前不支持TextLayer（文字）和ImageLayer（图片），其余均可使用转换工具）
+PAGConvertor是一个视频、gif、apng和图片序列帧以及Lottie的json转PAG文件的工具。
+
+> *注：目前Lottie的json文件转换目前不支持ImageLayer（图片）和Marker，其余均可使用转换工具
+>
+> 在使用Lottie文字图层时，Lottie客户端对文本图层支持的不太好，很多功能显示效果在web和客户端显示不一致。同时，PAG的文字图层不支持AE中animator功能，如果Lottie文字图层中有animator，显示效果可能不一致。
 
 目录中，tool是已经生成的工具，包含MacOS和Linux x64两个版本。
 
