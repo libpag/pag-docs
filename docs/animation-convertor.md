@@ -13,9 +13,11 @@ title: 素材迁移说明
 
 PAGConvertor是一个视频、gif、apng和图片序列帧以及Lottie的json转PAG文件的工具。
 
-> *注：目前Lottie的json文件转换目前不支持ImageLayer（图片）和Marker，其余均可使用转换工具
+> *注：Lottie目前不支持Marker，目前是由于未确定Marker在Lottie中如何添加，如果有兴趣帮助我们解决这个问题，请联系我们。
 >
 > 在使用Lottie文字图层时，Lottie客户端对文本图层支持的不太好，很多功能显示效果在web和客户端显示不一致。同时，PAG的文字图层不支持AE中animator功能，如果Lottie文字图层中有animator，显示效果可能不一致。
+>
+> 如果转换的LottieJson中有外挂图片，不要将资源文件夹直接拖入input文件夹，否则会导出错误的pag。最好是直接使用可执行文件Convertor进行转换。
 
 目录中，tool是已经生成的工具，包含MacOS和Linux x64两个版本。
 
@@ -53,12 +55,12 @@ etc. `./PAGConvertor animation.mov 25`
 
 
 
-#### 针对转换工具目前不支持的Lottie素材：
+#### 针对转换工具目前不支持的其他素材：
 
-目前，如果Lottie素材仍然存在AE项目，可以通过PAG的AE导出插件将素材导出成PAG文件。
+目前，如果素材仍然存在AE项目，可以通过PAG的AE导出插件将素材导出成PAG文件。
 
 AE导出插件的使用指南，可以查看[<font color=blue>使用指南-导出PAG文件</font>](/docs/pag-export.html)。
 
 
 
-PAG项目组正着手更新PAGConvertor，让Convertor支持所有的Lottie素材转PAG素材。
+欢迎向我们提出迁移中的遇到问题，PAG项目组会竭尽全力帮助你们的项目迁移。
