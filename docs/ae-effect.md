@@ -13,7 +13,7 @@ title: AE内置特效支持
 ### 凹凸效果 (Bulge)
 
 ![启用凹凸效果](/img/docs/Effect/3.1.gif)
-![关闭凹凸效果](/img/docs/Effect/3.2.gif)
+![关闭凹凸效果](/img/docs/Effect/3.2.png)
 
 ### 辉光效果 (Glow)
 
@@ -33,4 +33,4 @@ title: AE内置特效支持
 ### 动态拼贴 （Motion Tile）
 
 ![启用动态拼贴](/img/docs/Effect/4.1.gif)
-![关闭动态拼贴](/img/docs/Effect/4.2.gif)
+![关闭动态拼贴](/img/docs/Effect/4.2.png)
