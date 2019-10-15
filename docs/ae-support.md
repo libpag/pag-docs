@@ -79,6 +79,13 @@ title: AE功能支持列表
 		距离 (Distance)
 		大小 (Size)
 
+### 特效 (Effect)
+    运动模糊 (Motion Blur)
+    凹凸效果 (Bulge)
+    辉光效果 (Glow)
+    色阶控制 (Levels Individual Controls)
+    边角定位 (Corner Pin)
+    动态拼贴 (Motion Tile)
 
 ### 其他图层属性 (Others Layer Properties)
 	图层父级 (Layer Parenting)
