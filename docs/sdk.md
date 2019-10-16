@@ -60,3 +60,5 @@ libpag SDK及范例工程的获取请联系我们的邮箱：**libpag@tencent.co
 ## 其他接入方式
 内网用户android已经支持maven引入，ios支持cocoapods引入，详细的引用方法可以联系：**libpag@tencent.com**
 
+## 测试素材
+PAG动画测试素材下载：[<font color=blue> pag_files.zip </font>](/file/pag_files.zip) 
