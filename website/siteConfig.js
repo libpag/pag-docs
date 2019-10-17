@@ -11,27 +11,19 @@
 // List of projects/orgs using your project for the users page.
 const users = [
   {
-    caption: '猫饼',
+    caption: 'QQ',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/maobing.png',
-    infoLink: 'http://xiaodaotv.com/',
+    image: '/img/qq.png',
+    infoLink: 'https://im.qq.com',
     pinned: true,
   },
   {
-    caption: 'Yoo视频',
+    caption: '王者荣耀',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/yoo.png',
-    infoLink: 'http://yoo.qq.com/',
-    pinned: true,
-  },
-  {
-    caption: '天天P图',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/pitu.png',
-    infoLink: 'https://tu.qq.com/',
+    image: '/img/wangzhe.png',
+    infoLink: 'https://pvp.qq.com',
     pinned: true,
   },
   {
@@ -43,11 +35,27 @@ const users = [
     pinned: true,
   },
   {
-    caption: '起点',
-     // You will need to prepend the image path with your baseUrl
+    caption: '天天P图',
+    // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/qidian.png',
-    infoLink: 'https://www.qidian.com',
+    image: '/img/pitu.png',
+    infoLink: 'https://tu.qq.com/',
+    pinned: true,
+  },
+  {
+    caption: '猫饼',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/maobing.png',
+    infoLink: 'http://xiaodaotv.com/',
+    pinned: true,
+  },
+  {
+    caption: '火锅视频',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/yoo.png',
+    infoLink: 'http://yoo.qq.com/',
     pinned: true,
   },
   {
@@ -58,6 +66,15 @@ const users = [
     infoLink: 'https://ac.qq.com',
     pinned: true,
   },
+  {
+    caption: '起点',
+     // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/qidian.png',
+    infoLink: 'https://www.qidian.com',
+    pinned: true,
+  },
+
 ];
 
 const siteConfig = {
