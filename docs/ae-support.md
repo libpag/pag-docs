@@ -101,6 +101,7 @@ title: AE功能支持列表
 	填充 (Fill)
 	描边 (Stroke)
 	合并路径 (Merge Paths)
+	中继器 (Repeater)
 	修剪路径 (Trim Paths)
 	圆角 (Round Corners)
 	渐变填充 (Gradient Fill)
@@ -137,8 +138,6 @@ title: AE功能支持列表
 ### 变换 (Transforms)
 	3D 属性 (3D Properties)
 
-### 形状图层 (Shapes)
-	中继器 (Repeater)
 
 ### 文本图层 (Texts)
 	路径选项 (Path Options)
