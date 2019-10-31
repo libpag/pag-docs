@@ -24,11 +24,9 @@ title: Lottie迁移指南
 | Fill中不支持blendMode与composite                         | Fill图形中支持blendMode与composite                 |
 | GradientFill中不支持fillRule、blendMode与composite       | GradientFill中支持fillRule、blendMode与composite   |
 | Stroke/GradientStroke不支持blendMode与composite          | Stroke/GradientStroke支持blendMode与composite      |
-| GradientColor不支持alpha渐变                             | GradientColor支持alpha渐变                         |
 | GradientColor支持highlightLength和highlightAngle         | GradientColor不支持highlightLength和highlightAngle |
 | PathDirection支持userSetClockwise                        | PathDirection只支持顺时针和逆时针                  |
 | Repeater中RepeaterOrder只支持Below                       | RepeaterOrder支持Below和Above                      |
-| ShapePath支持方向                                        | ShapePath不支持方向                                |
 | <b>Composition</b>                                       |                                                    |
 | 支持timeRemapping                                        | 不支持timeRemapping，只有ImageLayer支持            |
 | <b>TextLayer</b>                                         |                                                    |
