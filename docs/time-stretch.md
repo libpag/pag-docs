@@ -1,9 +1,9 @@
 ---
 id: time-stretch
-title: 如何使用TimeStretch(时间伸缩)插件
+title: 如何使用时间伸缩插件
 ---
 
-### 如何使用TimeStretch(时间伸缩)插件
+### 如何使用时间伸缩(TimeStretch)插件
 #### 一、准备：确认版本和配置 <br/>
 1. 版本：确保 PAGViewer 已经更新至 beta 版 2.1.15 或以上。 [<font color=blue>如何升级至beta版</font>](/docs/beta.html) <br/>
 2. 配置：打开 AE，点击 “After Effect CC” -> “首选项” -> “PAG Config...”，在弹出窗口中设置 “导出版本控制”为“beta”，然后“确定”保存配置。如下图：<br/>
@@ -20,22 +20,22 @@ title: 如何使用TimeStretch(时间伸缩)插件
   标注内容如下几种：<br/>
 
     a. 无：
-#timestretchmode
-none
+#timestretchmode<br/>
+none<br/>
 
     b. 伸缩：
-#timestretchmode
-scale
+#timestretchmode<br/>
+scale<br/>
 
     c. 重复：
-#timestretchmode
-repeat
+#timestretchmode<br/>
+repeat<br/>
 
     d. 倒序重复（播放到结尾后倒序播放）
-#timestretchmode
-repeatinverted
+#timestretchmode<br/>
+repeatinverted<br/>
 
-5. 修改伸缩的起始时间。(见上图步骤3)
+5. 修改伸缩的起始时间(当模式为scale时有效)。(见上图步骤3)<br/>
 6. 导出：正常导出 pag 文件即可。<br/>
 
 ### 注意：
