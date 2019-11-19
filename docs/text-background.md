@@ -11,7 +11,7 @@ title: 如何添加文本背景框
 <br/>
 #### 二、添加文本背景框：<br/>
 3. 添加文本背景效果：在AE中选中文本图层，点击“效果”->"PAG"->"Text Background",即为该文本图层添加了文本背景效果，可以修改背景颜色和背景透明度。如下图：<br/>
-![导出beta](/img/docs/text-background-1.jpg)
+![添加文本背景](/img/docs/text-background-1.jpg)
 <br/>
 4. 导出：正常导出 pag 文件即可。<br/>
 #### 三、预览效果：<br/>
