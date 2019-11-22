@@ -5,7 +5,7 @@ title: 如何添加文本背景框
 
 ### 如何添加文本背景框
 #### 一、准备：确认版本和配置 <br/>
-1. 版本：确保 PAGViewer 已经更新至 beta 版 2.1.15 或以上。 [<font color=blue>如何升级至beta版</font>](/docs/beta.html) <br/>
+1. 版本：确保 PAGViewer 已经更新至 beta 版 2.1.17 或以上。 [<font color=blue>如何升级至beta版</font>](/docs/beta.html) <br/>
 2. 配置：打开 AE，点击 “After Effect CC” -> “首选项” -> “PAG Config...”，在弹出窗口中设置 “导出版本控制”为“beta”，然后“确定”保存配置。如下图：<br/>
 ![导出beta](/img/docs/export-beta.jpg)
 <br/>
