@@ -29,7 +29,7 @@ PAGPlayer 预览程序提供了跨平台的方案。目前 Windows 用户可以�
 [<font color=blue>PAGPlayer_Installer.exe</font>](https://dldir1.qq.com/qqmi/libpag/test/PAGPlayer_Installer.exe) 点击下载安装程序，双击即可安装，安装过程中可能会要求取得管理员权限。
 
 #### 快速上手
-[<font color=blue>点击这里</font>](pag-player.html) 来快速上手使用 PAGPlayer 吧。
+[<font color=blue>点击这里</font>](pag-player.html) 查看 PAGPlayer 使用指南。
 
 
 
