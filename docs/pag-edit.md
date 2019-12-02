@@ -15,7 +15,7 @@ title: 使用PAGViewer编辑预览图层
 
 #### 基础文字编辑功能
 
-1. 在图层编辑面板中点击希望更改的文字区域，可以直接修改图层文字。![Jietu20190517-162913](/img/docs/layer_edit_text_1.jpg)
+1. 在图层编辑面板中点击希望更改的文字区域，可以直接修改图层文字。Tips: 如果希望输入换行，可以 ALT+ENTER 输入。![Jietu20190517-162913](/img/docs/layer_edit_text_1.jpg)
 2. 编辑完成后，对应图层会展示更改后的文字。Tips:如果输入文字为空，图层会使用上一次使用的文字。
 
 ![Jietu20190517-163102](/img/docs/layer_edit_text_2.jpg)
