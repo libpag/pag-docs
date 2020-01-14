@@ -1,7 +1,7 @@
 {
   "docs": {
     "快速开始": ["install","update","sdk"],
-    "使用指南": ["pag-export", "ae-support", "pag-export-verify", "editable-text","plugin-config","profiler","cms-verify","export-png","pag-edit","pag-file","pag-file-optimization","plugin-decoder", "hot-key", "error-code","beta", "export-font", "pag-music-mark", "text-background", "time-stretch","pag-player"],
+    "使用指南": ["pag-export", "ae-support", "pag-export-verify", "editable-text","plugin-config","profiler","cms-verify","export-png","pag-edit","pag-file","pag-file-optimization","plugin-decoder", "hot-key", "error-code","beta", "export-font", "pag-music-mark", "text-background", "time-stretch","pag-player","render-tree"],
     "API参考": ["api"],
     "更多": ["faq","lottie-migration","animation-convertor","SDK-migration","ae-effect"]
   }
