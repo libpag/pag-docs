@@ -49,7 +49,7 @@ PAG主要通过matrix进行位置的控制，该接口位于PAGLayer中：
 @end
 ```
 
-PAGLayer的matrix属性不受素材本身的设置影响，默认值在iOS中为CGAffineTransformIdentity。resetMatrix将会把matrix重新设置成默认值。
+PAGLayer的matrix属性不受素材影响，默认值在iOS中为CGAffineTransformIdentity。resetMatrix将会把matrix重新设置成默认值。
 
 虽然通过setMatrix可以影响图层在父节点中的位置，但是计算matrix通常需要用到原始PAGLayer的位置信息。
 
