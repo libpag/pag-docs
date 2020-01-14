@@ -86,10 +86,15 @@ PAGComposition继承自PAGLayer，拥有Layer的所有对外接口。作为渲�
 **addLayer时，PAGLayer会自动从其父节点中移除并添加进当前PAGComposition。**同时addLayer会有以下几种情况会添加失败：
 
 > //PAGLayer为空
+>
 > 1）pagLayer == nullptr 
+>
 > //PAGComposition添加自己
+>
 > 2）pagLayer == this 
+>
 > //循环添加
+>
 > 3）pagLayer->layerType() == LayerType::PreCompose && pagLayer->Contains(this) == true 
 
 **removeLayer和swapLayer都需要保证输入的layer都在composition之中，否则也会失败。**
