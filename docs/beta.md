@@ -17,5 +17,6 @@ PAGViewer是一个不断更新，不断优化的浏览工具。为了在满足�
 4. 在弹窗中选择使用beta版本。
 ![beta_step2](/img/docs/beta_step2.jpg)
 4. 点击顶部菜单 PAGViewer-> 检查更新![beta_step3](/img/docs/beta_step3.jpg)
-5. 更新后，点击顶部菜单 PAGViewer->关于PAGViewer![beta_step4](/img/docs/beta_step4.jpg)
-6. 版本变为beta版本啦。![beta_step5](/img/docs/beta_step5.jpg)
+5. 更新后，点击顶部菜单 PAGViewer->关于PAGViewer![beta_step4](/img/docs/beta_step4.png)
+6. 版本变为beta版本啦。![beta_step5](/img/docs/beta_step5.png)
+7. [<font color=blue>点击这里</font>](pag-viewer.html) 查看 PAGViewer Beta 版使用指南。

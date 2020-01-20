@@ -1,10 +1,10 @@
 ---
-id: pag-player
-title: PAGPlayer 快速上手 (Windows)
+id: pag-viewer
+title: PAGViewer Beta 版快速上手
 ---
 
 ### 主界面
-启动 PAGPlayer 后，您可以通过“文件”菜单，或者拖动一个 pag 文件到窗口中开始预览。打开 pag 文件后会自动开始播放，您可以使用按钮或者快捷键来控制播放状态。
+启动 PAGViewer 后，您可以通过“文件”菜单，或者拖动一个 pag 文件到窗口中开始预览。打开 pag 文件后会自动开始播放，您可以使用按钮或者快捷键来控制播放状态。
 
 ![主界面](/img/docs/player-ui.png)
 
@@ -27,14 +27,14 @@ title: PAGPlayer 快速上手 (Windows)
 ![菜单](/img/docs/player-menu.png)
 
 ### 显示 pag 背景色
-默认状态下，PAGPlayer 使用灰白格子作为背景，方便查看 pag 中的透明区域，您可以点击“开关背景”按钮或者菜单项（快捷键 B）来显示 pag 的背景色。
+默认状态下，PAGViewer 使用灰白格子作为背景，方便查看 pag 中的透明区域，您可以点击“开关背景”按钮或者菜单项（快捷键 B）来显示 pag 的背景色。
     
 >提示：您可以在 AE 中设置需要导出的合成(Composition)的背景色，会自动导出到 pag 文件中。
 
 ![显示 pag 背景色](/img/docs/player-toggle-bg.png)
 
 ### 功能面板
-PAGPlayer 内置了调试 pag 文件的许多功能，比如性能分析面板，文本和占位图替换面板。您可以点击“开关功能面板”按钮或者菜单项（快捷键 L）来打开它。
+PAGViewer 内置了调试 pag 文件的许多功能，比如性能分析面板，文本和占位图替换面板。您可以点击“开关功能面板”按钮或者菜单项（快捷键 L）来打开它。
 
 ![功能面板](/img/docs/player-toggle-panel.png)
 
@@ -77,6 +77,6 @@ PAGPlayer 内置了调试 pag 文件的许多功能，比如性能分析面板�
 ![设置面板](/img/docs/player-settings.png)
 您可以通过菜单 “文件/设置” 打开设置菜单。
 
-* 显示文件中的视频序列帧。可以设置 PAGPlayer 是否跳过视频序列帧的渲染。
-* 自动检查更新。可以设置 PAGPlayer 是否自定检查更新。
+* 显示文件中的视频序列帧。可以设置 PAGViewer 是否跳过视频序列帧的渲染。
+* 自动检查更新。可以设置 PAGViewer 是否自定检查更新。
 * 使用 Beta 版本的 PAG 和 AE 导出工具。设置是否使用 beta 版功能。
