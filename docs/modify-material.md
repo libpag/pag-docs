@@ -8,11 +8,19 @@ title: 修改素材的时间属性和位置属性
 PAG素材关于控制时间属性的API分布在PAGFile类中：
 
 ```objectivec
+//iOS
 @interface PAGFile : PAGComposition
 ……
 - (void)setDuration:(int64_t)duration;
 ……
 @end
+```
+
+```java
+//Android
+public class PAGFile extends PAGComposition {
+	public native void setDuration(long duration);
+}
 ```
 
 setDuration是PAGFile独有的方法，目的是配合设计师在AE中设置的TimeStretch属性。
@@ -36,6 +44,7 @@ setDuration是PAGFile独有的方法，目的是配合设计师在AE中设置的
 PAG主要通过matrix进行位置的控制，该接口位于PAGLayer中：
 
 ```objectivec
+//iOS
 @interface PAGLayer : NSObject
 ……
 - (CGAffineTransform)matrix;
@@ -49,7 +58,19 @@ PAG主要通过matrix进行位置的控制，该接口位于PAGLayer中：
 @end
 ```
 
-PAGLayer的matrix属性不受素材影响，默认值在iOS中为CGAffineTransformIdentity。resetMatrix将会把matrix重新设置成默认值。
+```java
+//Android
+public class PAGLayer {
+    public Matrix matrix();
+    public void setMatrix(Matrix matrix);
+    public native void resetMatrix();
+    public Matrix getTotalMatrix();
+}
+```
+
+
+
+PAGLayer的matrix属性不受素材影响，默认值在iOS中为CGAffineTransformIdentity，Android等同系统函数Matrix.reset()。resetMatrix将会把matrix重新设置成默认值。
 
 虽然通过setMatrix可以影响图层在父节点中的位置，但是计算matrix通常需要用到原始PAGLayer的位置信息。
 
@@ -60,6 +81,7 @@ PAGLayer的matrix属性不受素材影响，默认值在iOS中为CGAffineTransfo
 对于PAGLayer来说，本身是没有width和height属性的，但是PAGLayer可以获取到Layer的Bounds属性。
 
 ```objectivec
+//iOS
 @interface PAGLayer : NSObject
 ……
 - (CGRect)getBounds;
@@ -67,9 +89,17 @@ PAGLayer的matrix属性不受素材影响，默认值在iOS中为CGAffineTransfo
 @end
 ```
 
+```java
+//Android
+public class PAGLayer {
+    public native RectF getBounds();
+}
+```
+
 对于非PAGComposition的PAGLayer来说，getBounds获取的值就代表了PAGLayer的宽和高，因此直接使用即可。
 
 ```objective-c
+//iOS
 @interface PAGComposition : PAGLayer
 ……
 - (NSInteger)width;
@@ -77,6 +107,14 @@ PAGLayer的matrix属性不受素材影响，默认值在iOS中为CGAffineTransfo
 - (NSInteger)height;
 ……
 @end
+```
+
+```java
+//Android
+public class PAGComposition extends PAGLayer {
+    public native int width();
+    public native int height();
+}
 ```
 
 PAGComposition和PAGFile可以直接获取width和height，同时getBounds获取的rect代表的是其**内容**所占的位置和大小。
