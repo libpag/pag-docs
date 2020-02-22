@@ -58,7 +58,7 @@ title: AE功能支持列表
 	无 (None)
 	Alpha 蒙板 (Alpha)
 	反向 Alpha 蒙板 (Alpha Inverted)
-	[蒙版不支持半透明的擦除，只支持纯色的擦除]
+	[均可支持半透明擦除]
 
 ### 遮罩 (Masks)
 	遮罩形状 (Mask Path)
