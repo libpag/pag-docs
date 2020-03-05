@@ -10,7 +10,7 @@ libpag 目前支持Android和iOS平台，web的支持目前处于开发过程中
 ### SDK及范例工程获取
 libpag SDK及范例工程的获取请联系我们的邮箱：**libpag@tencent.com**
 
- - Android端SDK为aar文件，支持armv7a
+ - Android端SDK为aar文件，支持armeabi, armv7a, arm64
  - iOS端SDK为framework文件，分为四个版本：真机版（arm64、arm64/armv7）和真机模拟器版（arm64/x64、arm64/armv7/x64）
 
 
@@ -39,12 +39,14 @@ libpag SDK及范例工程的获取请联系我们的邮箱：**libpag@tencent.co
     	implementation(name: 'libpag_release_2.1.1.23', ext: 'aar')
 	}
 	
+``` 
+
+**注意：** 需要在混淆列表里面，添加libpag的keep规则：
+   
 ```
-	  
+	-keep class org.libpag.* {*;}
+```
 配置完以后，sync一下，再编译。<br/><br/>
-
-
-
 ## iOS端接入
 
 ### 基本要求<br/>
