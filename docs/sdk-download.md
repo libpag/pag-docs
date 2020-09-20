@@ -3,7 +3,6 @@ id: sdk-download
 title: SDK与DEMO下载
 ---
 
-# SDK与DEMO下载
 ## SDK下载
 SDK android目前支持aar以及maven方式引入; ios支持Cocopods接入。
 
@@ -17,11 +16,11 @@ v3.2.4.37：（2020年9月20日）
 
 附件：
 
-<a href='../website/static/pag/ios/3.2.4.37/'>libpag_x64.zip</a>
+[<font color=blue>libpag_x64.zip</font>](/pag/ios/3.2.4.37/) 
 
-<a href='../website/static/pag/ios/3.2.4.37/'>libpag_armv7.zip</a>
+[<font color=blue>libpag_armv7.zip</font>](/pag/ios/3.2.4.37/) 
 
-<a href='../website/static/pag/ios/3.2.4.37/'>libpag_arm64.zip</a>
+[<font color=blue>libpag_arm64.zip</font>](/pag/ios/3.2.4.37/) 
 
 
 **Android下载：**
@@ -34,17 +33,17 @@ v3.2.5.1：（2020年9月20日）
 
 附件：
 
-<a href='../website/static/pag/android/3.2.5.1/libpag_release_3.2.5.1_armeabi.zip'>libpag_armeabi.zip</a>
+[<font color=blue>libpag_armeabi.zip</font>](/pag/android/3.2.5.1/libpag_release_3.2.5.1_armeabi.zip)
+ 
+[<font color=blue>libpag_armv7a.zip</font>](/pag/android/3.2.5.1/libpag_release_3.2.5.1_armv7a.zip) 
 
-<a href='../website/static/pag/android/3.2.5.1/libpag_release_3.2.5.1_armv7a.zip'>libpag_armv7a.zip</a>
-
-<a href='../website/static/pag/android/3.2.5.1/libpag_release_3.2.5.1_armeabi_armv7a_arm64v8a.zp'>libpag_arm64.zip</a> 
+[<font color=blue>libpag_arm64.zip</font>](/pag/android/3.2.5.1/libpag_release_3.2.5.1_armeabi_armv7a_arm64v8a.zip) 
 
 ## DEMO下载
 **iOS DEMO下载:**
 
-<a href='../website/static/pag/demo/pag-ios-demo.zip'>pag-ios-demo.zip</a>
+[<font color=blue>pag-ios-demo.zip</font>](/pag/demo/pag-ios-demo.zip)
 
 **Android DEMO下载:**
 
-<a href='../website/static/pag/demo/pag-android-demo.zip'>pag-android-demo.zip</a>
+[<font color=blue>pag-android-demo.zip</font>](/pag/demo/pag-android-demo.zip)
