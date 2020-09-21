@@ -11,6 +11,14 @@
 // List of projects/orgs using your project for the users page.
 const users = [
   {
+    caption: '微信',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/wechat.png',
+    infoLink: 'https://weixin.qq.com',
+    pinned: true,
+  },
+  {
     caption: 'QQ',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
@@ -32,6 +40,30 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/weishi.png',
     infoLink: 'https://weishi.qq.com/',
+    pinned: true,
+  },
+  {
+    caption: '腾讯视频',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/tencentvideo.jpg',
+    infoLink: 'https://v.qq.com',
+    pinned: true,
+  },
+  {
+    caption: '腾讯云',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/tencentcloud.png',
+    infoLink: 'https://cloud.tencent.com/',
+    pinned: true,
+  },
+  {
+    caption: 'QQ空间',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/qzone.png',
+    infoLink: 'https://qzone.qq.com/',
     pinned: true,
   },
   {
@@ -74,7 +106,34 @@ const users = [
     infoLink: 'https://www.qidian.com',
     pinned: true,
   },
-
+  {
+    caption: '企鹅电竞',
+     // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/qiedianjing.jpeg',
+    infoLink: 'https://egame.qq.com/',
+  },
+  {
+    caption: '央视频',
+     // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/yangvideo.jpeg',
+    infoLink: 'https://www.yangshipin.cn/',
+  },
+  {
+    caption: 'Q音宝贝',
+     // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/qyingbaby.png',
+    infoLink: '',
+  },
+  {
+    caption: '欢遇',
+     // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/huanyu.png',
+    infoLink: '',
+  },
 ];
 
 const siteConfig = {
