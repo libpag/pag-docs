@@ -80,7 +80,6 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/maobing.png',
     infoLink: 'http://xiaodaotv.com/',
-    pinned: true,
   },
   {
     caption: '腾讯动漫',
@@ -88,7 +87,6 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/dongman.png',
     infoLink: 'https://ac.qq.com',
-    pinned: true,
   },
   {
     caption: '起点',
@@ -96,7 +94,6 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/qidian.png',
     infoLink: 'https://www.qidian.com',
-    pinned: true,
   },
   {
     caption: '红袖添香',
@@ -104,7 +101,6 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/hongxiu.png',
     infoLink: 'https://www.hongxiu.com/',
-    pinned: true,
   },
   {
     caption: '央视频',
@@ -112,7 +108,6 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/yangvideo.jpeg',
     infoLink: 'https://www.yangshipin.cn/',
-    pinned: true,
   },
   {
     caption: '企鹅电竞',
