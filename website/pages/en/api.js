@@ -41,22 +41,36 @@ class Page extends React.Component {
                         var iosPathname = "/apis/ios/";
                         var androidPathname = "/apis/android/";
                         var innerDocClick = false;
+                        var hasInit = false;
+                        var isAndroid = function (){
+                            return location.hash.indexOf('apis/android')>1;
+                        }
                         document.onmouseover = function() { innerDocClick = true; }
                         document.onmouseleave = function() { innerDocClick = false; }
                         function formatUrl(loc){
                             return location.pathname + "#" + loc.pathname
-                            // return loc.pathname + (loc.hash ? loc.hash : '');
                         }
-                        var initHash = location.hash;
-                        function updateIframe (url){
+                        function updateIframe (url,cb){
                             iframe.onload = function(){
                                 iframe.style.height = Math.max(iframe.contentWindow.document.documentElement.scrollHeight,document.body.clientHeight) + 'px';
+                                hasInit = true;
+                                if(isAndroid()){
+                                    var subFrame = location.hash.indexOf('allclasses-frame.html')>-1 
+                                    ? 'org/libpag/package-summary.html#'
+                                    : location.hash.split('/apis/android/')[1];
+                                    if(iframe.contentDocument.getElementsByTagName('frameset')[0].children[1]){
+                                        iframe.contentDocument.getElementsByTagName('frameset')[0].children[1].src = subFrame
+                                    }
+                                }
                             }
-                            iframe.src = url;
+                            iframe.src = isAndroid() ? '/apis/android/' :url;
                         }
-                        if(initHash){
+                        if(location.hash){ //初始化
                             document.getElementById('js_original_part').style.display = 'none';
-                            updateIframe(initHash.replace('#',''))
+                            updateIframe(location.hash.replace('#',''))
+                        }
+                        else{
+                            hasInit = true;
                         }
                         document.getElementById('js_ios_doc').onclick = ()=>{ 
                             document.getElementById('js_original_part').style.display = 'none';
@@ -68,19 +82,22 @@ class Page extends React.Component {
                             document.getElementById('js_iframe_part').style.display = 'block';
                             updateIframe(androidPathname)
                         }
+                        //监听子页面URL的变化事件，同步到壳的URL
                         window.addEventListener("message", function(e){
-                            // history.pushState({},'', formatUrl(iframe.contentWindow.location))
-                            // location.href = location.pathname + "#" + iframe.contentWindow.location.pathname
-                            location.href = e.data && e.data.indexOf('iframe_url_change') === -1 ? "#"+e.data : formatUrl(iframe.contentWindow.location);
+                            if(!hasInit || !innerDocClick){ //过滤掉浏览器的后退和初始化
+                                return;
+                            }
+                            let url =  e.data && e.data.indexOf('iframe_url_change') === -1 ? "#"+e.data : formatUrl(iframe.contentWindow.location);
+                            if(url.indexOf('package-summary.html')>-1
+                            || url.indexOf('allclasses-frame.html')>-1){
+                                return;
+                            }
+                            location.href = url;
                         }, false);
-                        // window.onpopstate = function(event) {
-                        //     if(document.location.pathname !== '/api.html'){
-                        //         iframe.contentWindow.location.pathname = document.location.pathname;
-                        //     }
-                        // };
+                        //URL的变化更新到Iframe
                         window.onhashchange = function(){
-                            if(innerDocClick){
-                                return
+                            if(!innerDocClick || !hasInit){
+                                return;
                             }
                             updateIframe(location.hash.replace('#',''))
                         }
