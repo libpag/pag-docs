@@ -86,6 +86,7 @@ title: AE功能支持列表
     色阶控制 (Levels Individual Controls)
     边角定位 (Corner Pin)
     动态拼贴 (Motion Tile)
+    置换效果（Displacement Map）
     
 （效果预览：[<font color=blue>当前支持的AE内置特效</font>](/docs/ae-effect.html)）
 
