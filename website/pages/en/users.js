@@ -31,7 +31,7 @@ class Users extends React.Component {
         <Container padding={['bottom', 'top']}>
           <div className="showcaseSection">
             <div className="prose">
-              <h1>使用PAG动画方案构建的应用</h1>
+              <h1>使用PAG动画方案的应用</h1>
             </div>
             <div className="logos">{showcase}</div>
             <p>正在使用PAG动画方案?</p>
