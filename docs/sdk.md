@@ -108,6 +108,17 @@ buildscript {
 	pod 'libpag', '~>3.2.4.37' 
 ```
 **注意：** 最新SDK版本请参考：[<font color=blue>SDK与DEMO下载</font>](/docs/sdk-download.html)<br/>
+
+
+# DEMO下载
+**iOS DEMO下载:**
+
+[<font color=blue>pag-ios-demo.zip</font>](/pag/demo/pag-ios-demo.zip)
+
+**Android DEMO下载:**
+
+[<font color=blue>pag-android-demo.zip</font>](/pag/demo/pag-android-demo.zip)
+
 ## 测试素材
 PAG动画测试素材下载：[<font color=blue> pag_files.zip </font>](/file/pag_files.zip) 
 

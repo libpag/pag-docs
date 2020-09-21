@@ -1,10 +1,9 @@
 ---
 id: sdk-download
-title: SDK与DEMO下载
+title: SDK下载
 ---
 
-# SDK下载
-SDK android目前支持aar以及maven方式引入; ios支持Cocopods接入。
+SDK android目前支持aar以及maven方式引入; ios支持Cocopods接入。 您也可以通过以下链接手动下载指定架构的版本：
 
 **iOS下载：**
 
@@ -38,12 +37,3 @@ v3.2.5.1：（2020年9月20日）
 [<font color=blue>libpag_android_armv7a.zip</font>](/pag/android/3.2.5.1/libpag_android_armv7a.zip) 
 
 [<font color=blue>libpag_android_armeabi_armv7a_arm64v8a.zip</font>](/pag/android/3.2.5.1/libpag_android_armeabi_armv7a_arm64v8a.zip) 
-
-# DEMO下载
-**iOS DEMO下载:**
-
-[<font color=blue>pag-ios-demo.zip</font>](/pag/demo/pag-ios-demo.zip)
-
-**Android DEMO下载:**
-
-[<font color=blue>pag-android-demo.zip</font>](/pag/demo/pag-android-demo.zip)
