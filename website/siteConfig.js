@@ -106,7 +106,7 @@ const users = [
     caption: '央视频',
      // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/yangvideo.jpeg',
+    image: '/img/yangvideo.png',
     infoLink: 'https://www.yangshipin.cn/',
   },
   {
