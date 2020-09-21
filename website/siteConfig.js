@@ -83,14 +83,6 @@ const users = [
     pinned: true,
   },
   {
-    caption: '火锅视频',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/yoo.png',
-    infoLink: 'http://yoo.qq.com/',
-    pinned: true,
-  },
-  {
     caption: '腾讯动漫',
      // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
@@ -107,11 +99,12 @@ const users = [
     pinned: true,
   },
   {
-    caption: '企鹅电竞',
+    caption: '红袖添香',
      // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/qiedianjing.jpeg',
-    infoLink: 'https://egame.qq.com/',
+    image: '/img/hongxiu.png',
+    infoLink: 'https://www.hongxiu.com/',
+    pinned: true,
   },
   {
     caption: '央视频',
@@ -119,6 +112,21 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/yangvideo.jpeg',
     infoLink: 'https://www.yangshipin.cn/',
+    pinned: true,
+  },
+  {
+    caption: '企鹅电竞',
+     // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/qiedianjing.jpeg',
+    infoLink: 'https://egame.qq.com/',
+  },
+  {
+    caption: '火锅视频',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/yoo.png',
+    infoLink: 'http://yoo.qq.com/',
   },
   {
     caption: 'Q音宝贝',
