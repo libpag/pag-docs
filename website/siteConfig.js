@@ -80,6 +80,7 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/maobing.png',
     infoLink: 'http://xiaodaotv.com/',
+    pinned: true
   },
   {
     caption: '腾讯动漫',
