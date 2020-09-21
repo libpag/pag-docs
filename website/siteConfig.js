@@ -164,7 +164,7 @@ const siteConfig = {
   separateCss: ["static/apis/android/stylesheet.css", "static/apis/ios/css/style.css"],
   headerLinks: [
     {doc: 'pag-export', label: '文档'},
-    {doc: 'api', label: 'API参考'},
+    {href: 'api', label: 'API参考'},
     {doc: 'faq', label: '常见问题'}
     //{ search: true },
     //{ languages: true }
