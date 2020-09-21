@@ -101,7 +101,6 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/hongxiu.png',
     infoLink: 'https://www.hongxiu.com/',
-    pinned: true,
   },
   {
     caption: '央视频',
@@ -109,7 +108,6 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/yangvideo.jpeg',
     infoLink: 'https://www.yangshipin.cn/',
-    pinned: true,
   },
   {
     caption: '企鹅电竞',
