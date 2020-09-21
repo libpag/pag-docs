@@ -80,7 +80,7 @@ class HomeSplash extends React.Component {
           <img width="128" height="128" src={imgUrl('pag-256x256.png')} />
           <ProjectTitle />
           <PromoSection>
-            <Button href={docUrl('install.html', language)}>安装插件</Button>
+            <Button href={docUrl('install.html', language)}>免费安装</Button>
             <Button href={docUrl('sdk.html', language)}>接入SDK</Button>
           </PromoSection>
         </div>
