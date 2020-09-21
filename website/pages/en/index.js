@@ -186,42 +186,72 @@ const PAGFile = () => (
   <Block background="light">
     {[
       {
-        content: '可扩展的原生二进制文件格式，可做到同时向前向后兼容，图片等资源可直接集成于单文件内，并采用了极高压缩率的动态比特位存储技术。',
+        content: '采用可扩展的二进制文件格式，可单文件集成图片等任意资源实现快速交付。导出相同的AE动画内容，在文件解码速度和压缩率上均大幅领先于同类型方案。',
         image: imgUrl('pagfile.png'),
         imageAlign: 'right',
         imageWidth: 256,
         imageHeight: 256,
-        title: '二进制文件',
+        title: '高效动画文件',
       },
     ]}
   </Block>
 );
 
-const PAGEditing = () => (
+const AESupport = () => (
   <Block>
     {[
       {
-        content: '运行时可在保留动画效果前提下，任意动态修改文本内容字体大小样式或替换图片内容，实现丰富多样的动画内容定制效果。',
-        image: imgUrl('editing.jpg'),
+        content: '不仅在纯矢量导出方式上支持更多的AE特性，还引入了视频序列帧结合矢量的混合导出能力，实现支持所有AE特性的同时又能保持动画运行时的可编辑性。',
+        image: imgUrl('ae.png'),
         imageAlign: 'left',
-        imageWidth: 200,
-        imageHeight: 266,
-        title: '运行时编辑',
+        imageWidth: 211,
+        imageHeight: 206,
+        title: '全AE特性支持',
+      },
+    ]}
+  </Block>
+);
+
+const DesktopTools = () => (
+  <Block background="light">
+    {[
+      {
+        content: '提供从导出插件到桌面预览等一系列完善的桌面效率工具，让设计师可以所见即所得地生产素材，无需研发介入还原效果，极大简化了设计跟研发对接的成本。',
+        image: imgUrl('desktop.png'),
+        imageAlign: 'right',
+        imageWidth: 357,
+        imageHeight: 265,
+        title: '桌面工具完善',
       },
     ]}
   </Block>
 );
 
 const PAGProfiler = () => (
+  <Block>
+    {[
+      {
+        content: '通过导出插件内置的自动优化策略，以及预览工具集成的性能监测面板，能够可视化地看到每个素材的性能状态，帮助设计师制作效果和性能俱佳的动画特效。',
+        image: imgUrl('profiler.jpg'),
+        imageAlign: 'left',
+        imageWidth: 262.5,
+        imageHeight: 266,
+        title: '可视化性能监测',
+      },
+    ]}
+  </Block>
+);
+
+const Editing = () => (
   <Block background="light">
     {[
       {
-        content: '能够量化展示每个动画文件所占用的显存大小，渲染耗时等一系列性能指标，帮助设计师制作效果和性能俱佳的动画特效。',
-        image: imgUrl('docs/profiler.jpg'),
+        content: '运行时可在保留动画效果前提下，动态修改替换文本或替换占位图内容，甚至对任意子图层进行增删改及移动，轻松实现照片和视频模板等素材的批量化生产。',
+        image: imgUrl('template.jpg'),
         imageAlign: 'right',
-        imageWidth: 280,
-        imageHeight: 266,
-        title: '性能监测',
+        imageWidth: 260,
+        imageHeight: 368,
+        title: '运行时可编辑',
       },
     ]}
   </Block>
@@ -260,8 +290,10 @@ class Index extends React.Component {
         <HomeSplash language={language} />
         <div className="mainContainer">
           <PAGFile />
-          <PAGEditing />
+          <AESupport />
+          <DesktopTools />
           <PAGProfiler />
+          <Editing />
           <Showcase language={language} />
         </div>
       </div>
