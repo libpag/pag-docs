@@ -118,7 +118,7 @@ Lottie迁移PAGSDK说明文档  [<font color=blue>文章地址</font>](/docs/SDK
 
 API参考
 
-API参考 [<font color=blue>文章地址</font>](/docs/api.html)
+API参考 [<font color=blue>文章地址</font>](/api.html)
 
 ##### 4.PAGViewer使用方法
 
