@@ -110,3 +110,5 @@ buildscript {
 
 ## 测试素材
 PAG动画测试素材下载：[<font color=blue> pag_files.zip </font>](/file/pag_files.zip) 
+
+接入使用过程若遇到问题请联系我们的邮箱：**libpag@tencent.com**
