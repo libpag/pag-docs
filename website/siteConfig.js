@@ -35,6 +35,14 @@ const users = [
     pinned: true,
   },
   {
+    caption: 'QQ音乐',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/qqmusic.png',
+    infoLink: 'https://y.qq.com/',
+    pinned: true
+  },
+  {
     caption: '微视',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
@@ -51,11 +59,11 @@ const users = [
     pinned: true,
   },
   {
-    caption: '腾讯云',
+    caption: '全民K歌',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/tencentcloud.png',
-    infoLink: 'https://cloud.tencent.com/',
+    image: '/img/kg.png',
+    infoLink: 'https://kg.qq.com/index-pc.html',
     pinned: true,
   },
   {
@@ -67,34 +75,26 @@ const users = [
     pinned: true,
   },
   {
-    caption: '天天P图',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/pitu.png',
-    infoLink: 'https://tu.qq.com/',
-    pinned: true,
-  },
-  {
-    caption: 'QQ音乐',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/qqmusic.png',
-    infoLink: 'https://y.qq.com/',
-    pinned: true
-  },
-  {
     caption: 'NOW直播',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/now.png',
     infoLink: 'https://now.qq.com/',
+    pinned: true,
   },
   {
-    caption: '全民K歌',
+    caption: '天天P图',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/kg.png',
-    infoLink: 'https://kg.qq.com/index-pc.html',
+    image: '/img/pitu.png',
+    infoLink: 'https://tu.qq.com/',
+  },
+  {
+    caption: '腾讯云',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/tencentcloud.png',
+    infoLink: 'https://cloud.tencent.com/',
   },
   {
     caption: '猫饼',
