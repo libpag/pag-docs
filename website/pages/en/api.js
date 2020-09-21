@@ -17,7 +17,7 @@ class Page extends React.Component {
                                 <article>
                                     <div>
                                         <span>
-                                            <p>历史版本的API文档可以通过 <a href="/docs/sdk.html"><font color="blue">RDM</font></a> 的自动构建下载获取，最新版本的API文档请点击如下链接查看：</p>
+                                            <p>最新版本的API文档请点击如下链接查看：</p>
                                             <p id='js_ios_doc'><font color="blue">iOS API文档</font></p>
                                             <p id='js_android_doc'><font color="blue">Android API文档</font></p>
                                         </span>
