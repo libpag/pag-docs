@@ -75,12 +75,33 @@ const users = [
     pinned: true,
   },
   {
+    caption: 'QQ音乐',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/qqmusic.jpeg',
+    infoLink: 'https://y.qq.com/',
+    pinned: true
+  },
+  {
+    caption: 'NOW直播',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/now.png',
+    infoLink: 'https://now.qq.com/',
+  },
+  {
+    caption: '全民K歌',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/kg.png',
+    infoLink: 'https://kg.qq.com/index-pc.html',
+  },
+  {
     caption: '猫饼',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/maobing.png',
     infoLink: 'http://xiaodaotv.com/',
-    pinned: true
   },
   {
     caption: '腾讯动漫',
@@ -136,6 +157,48 @@ const users = [
      // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/huanyu.png',
+    infoLink: '',
+  },
+  {
+    caption: '猫呼',
+     // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/catcall.png',
+    infoLink: '',
+  },
+  {
+    caption: '猜歌星球',
+     // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/caige.png',
+    infoLink: 'https://caige.qq.com/',
+  },
+  {
+    caption: 'Q音探歌',
+     // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/tangge.png',
+    infoLink: '',
+  },
+  {
+    caption: '相册管家',
+     // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/xianchemanager.png',
+    infoLink: '',
+  },
+  {
+    caption: '轻聊',
+     // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/qingliao.png',
+    infoLink: '',
+  },
+  {
+    caption: '波动星球',
+     // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/bodongxingqiu.png',
     infoLink: '',
   },
 ];
