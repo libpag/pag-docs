@@ -8,7 +8,7 @@ SDK android目前支持aar以及maven方式引入; ios支持Cocopods接入。
 
 **iOS下载：**
 
-v3.2.5.1：（2020年9月20日）
+v3.2.4.37：（2020年9月20日）
 
 1. 修复activeTexture参数问题
 2. 修复某些情况下opengl在后台运行的问题
@@ -16,11 +16,11 @@ v3.2.5.1：（2020年9月20日）
 
 附件：
 
-[<font color=blue>libpag_ios_arm64_armv7_x64.zip</font>](/pag/ios/3.2.5.1/libpag_ios_arm64_armv7_x64.zip) 
+[<font color=blue>libpag_ios_arm64.zip</font>](/pag/ios/3.2.4.37/libpag_ios_arm64.zip) 
 
-[<font color=blue>libpag_ios_arm64_armv7.zip</font>](/pag/ios/3.2.5.1/libpag_ios_arm64_armv7.zip) 
-
-[<font color=blue>libpag_ios_arm64.zip</font>](/pag/ios/3.2.5.1/libpag_ios_arm64.zip) 
+[<font color=blue>libpag_ios_arm64_armv7.zip</font>](/pag/ios/3.2.4.37/libpag_ios_arm64_armv7.zip)
+ 
+[<font color=blue>libpag_ios_arm64_armv7_x64.zip</font>](/pag/ios/3.2.4.37/libpag_ios_arm64_armv7_x64.zip) 
 
 
 **Android下载：**
