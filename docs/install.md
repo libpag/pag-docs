@@ -18,7 +18,7 @@ title: 安装
 
 
 #### 图形化安装
-[<font color=blue>PAGInstaller.dmg</font>](http://dldir1.qq.com/qqmi/libpag/PAGInstaller.dmg) 点击下载图形安装器，双击内部安装程序开始在线安装，安装过程可能会要求输入本机密码以获取文件写入权限。
+[<font color=blue>PAGViewer.dmg</font>](http://dldir1.qq.com/qqmi/libpag/PAGViewer.dmg) 点击下载离线安装包，双击打开PAGViewer.dmg文件，拖拽PAGViewer到应用程序文件夹即可。
 
 >PAGViewer 支持切换到 Beta 版本来使用最新的 PAG 特性。关于如何升级到 Beta 版可以 [<font color=blue>点击这里</font>](/docs/beta.html)。
 
