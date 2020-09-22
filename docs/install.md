@@ -3,7 +3,7 @@ id: install
 title: 安装
 ---
 
-目前 PAG 预览程序支持 macOS 和 Windows 操作系统(Beta)。
+目前 PAG 预览程序支持 macOS 和 Windows 操作系统。
 
 > 安装若遇到问题请提交 [<font color=blue>issue</font>](https://github.com/libpag/libpag/issues/new?assignees=&labels=&template=bug_report.md&title=) 反馈<br/>
 
