@@ -5,6 +5,8 @@ title: 安装
 
 目前 PAG 预览程序支持 macOS 和 Windows 操作系统(Beta)。AE 导出插件仅目前支持 macOS，Windows 版本正在开发当中。
 
+> 安装若遇到问题请提交 [<font color=blue>issue</font>](https://github.com/libpag/libpag/issues/new?assignees=&labels=&template=bug_report.md&title=) 反馈<br/>
+
 ## macOS
 目前 PAGViewer 预览程序和 AE 导出插件仅支持 macOS 10.9以上。安装成功后，PAGViewer会出现在「应用程序」文件夹中，并自动关联本地pag文件，双击pag文件即可呼起 PAGViewer 直接预览播放。有如下两种安装方式：
 
