@@ -56,12 +56,15 @@ class Page extends React.Component {
                                 hasInit = true;
                                 if(isAndroid()){
                                     var subFrame = location.hash.indexOf('allclasses-frame.html')>-1 
-                                    ? 'org/libpag/package-summary.html#'
+                                    ? 'org/libpag/package-summary.html'
                                     : location.hash.split('/apis/android/')[1];
                                     if(iframe.contentDocument.getElementsByTagName('frameset')[0].children[1]){
                                         iframe.contentDocument.getElementsByTagName('frameset')[0].children[1].src = subFrame
                                     }
                                 }
+                            }
+                            if(isAndroid()){
+                                return ;
                             }
                             iframe.src = isAndroid() ? '/apis/android/' :url;
                         }
@@ -88,6 +91,9 @@ class Page extends React.Component {
                                 return;
                             }
                             let url =  e.data && e.data.indexOf('iframe_url_change') === -1 ? "#"+e.data : formatUrl(iframe.contentWindow.location);
+                            if(url && url.substr(url.length-1) === "#"){
+                                url = url.substr(0,url.length-1)
+                            }
                             if(url.indexOf('package-summary.html')>-1
                             || url.indexOf('allclasses-frame.html')>-1){
                                 return;
