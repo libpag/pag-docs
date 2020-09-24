@@ -225,8 +225,7 @@ const siteConfig = {
     {doc: 'pag-export', label: '文档'},
     {doc: 'sdk-download', label: 'SDK下载'},
     {href: '/api', label: 'API参考'},
-    {href: 'https://github.com/libpag/libpag/issues/new?assignees=&labels=&template=bug_report.md&title=', label: '问题反馈'},
-    {doc: 'faq', label: 'FAQ'}
+    {href: 'https://github.com/libpag/libpag/issues/new?assignees=&labels=&template=bug_report.md&title=', label: '问题反馈'}
     //{ search: true },
     //{ languages: true }
   ],
