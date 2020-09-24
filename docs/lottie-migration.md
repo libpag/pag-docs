@@ -5,7 +5,7 @@ title: Lottie迁移指南
 
 虽然PAG与Lottie在使用上基本类似，但是在迁移过程中仍然可能会遇到一些问题。本文希望能够尽可能减少相关的迁移成本，希望能够帮助设计师、运营、开发者尽快的掌握PAG。
 
-目前，PAG迁移文档还在不断的迭代，欢迎大家随时查看。如果使用过程中有什么问题，可以直接联系**libpag@tencent.com**。我们会将问题转给相应的接口人。
+目前，PAG迁移文档还在不断的迭代，欢迎大家随时查看。如果使用过程中有什么问题，可以直接[<font color=blue>提交issue</font>](https://github.com/libpag/libpag/issues/new?assignees=&labels=&template=bug_report.md&title=)。我们会将问题转给相应的接口人。
 
 #### 通用迁移指南
 

@@ -9,7 +9,7 @@ title: 素材迁移说明
 
 #### 针对接入项目中的视频素材、图片序列帧素材和部分Lottie素材：
 
-视频素材和图片序列帧素材可以直接转换为PAG素材文件，转换工具为PAGConvertor。[<font color=blue>PAGConvertor下载</font>](/file/PAGConvertor.zip) 
+视频素材和图片序列帧素材可以直接转换为PAG素材文件，转换工具为PAGConvertor，[<font color=blue>PAGConvertor下载</font>](/file/PAGConvertor.zip) 。
 
 PAGConvertor是一个视频、gif、apng和图片序列帧以及Lottie的json转PAG文件的工具。
 
@@ -25,7 +25,7 @@ PAGConvertor使用方法有两种：
 
 convert.sh脚本或者直接使用PAGConvertor文件。
 
-##### convert.sh脚本使用方法：
+#### convert.sh脚本使用方法：
 
 1.将所有需要转换的资源放入input文件夹内，目前支持视频/gif/apng/Lottie的json文件/图片序列帧。注：图片序列帧是以文件夹为单位进行转换的，其余资源不要新建文件夹。
 
@@ -37,7 +37,7 @@ convert.sh脚本或者直接使用PAGConvertor文件。
 
 4.转换完成后，在input文件夹内可以看到转换后的同名.pag文件
 
-##### PAGConvertor可执行文件使用方法：
+#### PAGConvertor可执行文件使用方法：
 
 1.打开终端，cd到资源所在文件夹。
 
@@ -51,7 +51,7 @@ etc. `./PAGConvertor animation.mov 25`
 
 
 
-##### 转换完成后，请注意检查素材效果是否一致，如果有转换效果不正确的素材，欢迎联系**libpag@tencent.com**。同时，如果在使用PAGConvertor中有什么疑问和建议，也欢迎联系邮箱。
+#### 转换完成后，请注意检查素材效果是否一致，如果有转换效果不正确的素材，或者在使用PAGConvertor中有什么疑问和建议，请[<font color=blue>提交issue</font>](https://github.com/libpag/libpag/issues/new?assignees=&labels=&template=bug_report.md&title=)。
 
 
 
