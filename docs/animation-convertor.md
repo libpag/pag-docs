@@ -9,7 +9,7 @@ title: 素材迁移说明
 
 #### 针对接入项目中的视频素材、图片序列帧素材和部分Lottie素材：
 
-视频素材和图片序列帧素材可以直接转换为PAG素材文件，转换工具为PAGConvertor。需要转换工具请联系我们的邮箱：**libpag@tencent.com**
+视频素材和图片序列帧素材可以直接转换为PAG素材文件，转换工具为PAGConvertor。[<font color=blue>PAGConvertor下载</font>](/file/PAGConvertor.zip) 
 
 PAGConvertor是一个视频、gif、apng和图片序列帧以及Lottie的json转PAG文件的工具。
 
