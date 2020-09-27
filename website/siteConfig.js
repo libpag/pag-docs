@@ -222,10 +222,27 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   separateCss: ["static/apis/android/stylesheet.css", "static/apis/ios/css/style.css"],
   headerLinks: [
-    {doc: 'pag-export', label: '文档'},
-    {doc: 'sdk-download', label: 'SDK下载'},
-    {href: '/api', label: 'API参考'},
-    {href: 'https://github.com/libpag/libpag/issues/new?assignees=&labels=&template=bug_report.md&title=', label: '问题反馈'}
+    {
+      href:'/a',label:'首页'
+    },
+    {
+      href:'/a',label:'说明文档'
+    },
+    {
+      href:'/a',label:'API参考'
+    },
+    {
+      href:'/a',label:'接入SDK'
+    },
+    {
+      href:'/a',label:'免费下载'
+    }
+
+
+    // {doc: 'pag-export', label: '文档'},
+    // {doc: 'sdk-download', label: 'SDK下载'},
+    // {href: '/api', label: 'API参考'},
+    // {href: 'https://github.com/libpag/libpag/issues/new?assignees=&labels=&template=bug_report.md&title=', label: '问题反馈'}
     //{ search: true },
     //{ languages: true }
   ],
@@ -234,7 +251,7 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/pag-256x256.png',
+  headerIcon: 'img/new_official_website/logo.png',
   footerIcon: 'img/pag-256x256.png',
   favicon: 'img/favicon.png',
 

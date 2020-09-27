@@ -1,303 +1,291 @@
-/**
- * Copyright (c) 2017-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-const React = require('react');
-
-const CompLibrary = require('../../core/CompLibrary.js');
-
-const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
-const Container = CompLibrary.Container;
-
+const React =  require('react');
 const siteConfig = require(`${process.cwd()}/siteConfig.js`);
-
+const Component = React.Component;
 function imgUrl(img) {
   return `${siteConfig.baseUrl}img/${img}`;
 }
 
-function docUrl(doc, language) {
-  return `${siteConfig.baseUrl}docs/${language ? `${language}/` : ''}${doc}`;
-}
-
-function pageUrl(page, language) {
-  return siteConfig.baseUrl + (language ? `${language}/` : '') + page;
-}
-
-class Button extends React.Component {
-  render() {
+class Button extends Component{
+  render(){
+    const {text,img,blue} = this.props;
     return (
-      <div className="pluginWrapper buttonWrapper">
-        <a className="button" href={this.props.href} target={this.props.target}>
-          {this.props.children}
-        </a>
-      </div>
-    );
+      <a class={'btn ' + (blue ? 'blue':'')}>
+        <img src={imgUrl(img)}/>
+        <span>{text}</span>
+      </a>
+    )
   }
 }
-
-Button.defaultProps = {
-  target: '_self',
-};
-
-const SplashContainer = props => (
-  <div className="homeContainer">
-    <div className="homeSplashFade">
-      <div className="wrapper homeWrapper">{props.children}</div>
-    </div>
-  </div>
-);
-
-const Logo = props => (
-  <div className="projectLogo">
-    <img src={props.img_src} alt="Project Logo" />
-  </div>
-);
-
-const ProjectTitle = () => (
-  <h2 className="projectTitle">
-    {siteConfig.title}
-    <small>{siteConfig.tagline}</small>
-  </h2>
-);
-
-const PromoSection = props => (
-  <div className="section promoSection">
-    <div className="promoRow">
-      <div className="pluginRowBlock">{props.children}</div>
-    </div>
-  </div>
-);
-
-class HomeSplash extends React.Component {
-  render() {
-    const language = this.props.language || '';
+class Intro extends Component{
+  render(){
     return (
-      <SplashContainer>
-        <div className="inner">
-          <img width="128" height="128" src={imgUrl('pag-256x256.png')} />
-          <ProjectTitle />
-          <PromoSection>
-            <Button href={docUrl('install.html', language)}>免费安装</Button>
-            <Button href={docUrl('sdk.html', language)}>接入SDK</Button>
-          </PromoSection>
+      <div class='intro-box'>
+        <div class='wrap'>
+          <img class='pag' src={imgUrl('new_official_website/fill2.png')}/>
+          <span class='strong'>
+          Portable Animated Graphics </span> 是一套完整的动画工作流。提供从<br/>
+          AE（Adobe After Effects）导出插件，到桌面预览工具，再到 iOS<br/>
+          和 Android 的渲染 SDK。
+          <br/>
+          <br/>
+          <span class='strong'>PAG </span>的目标是降低或消除动画研发成本，打通设计师创作到素材交<br/>
+          付上线的流程，不断输出运行时可编辑的高质量动画内容。
+          <div class='btn-bar'>
+            <Button img={'new_official_website/sdk.png'} text='接入SDK'/>
+            <Button img={'new_official_website/download.png'} text='免费下载' blue={true}/>
+          </div>
+          <span class='tip'>
+          同时支持 MacOS 与 Windows
+          </span>
+          <img class='logo-l' src={imgUrl('new_official_website/logo_l.png')}/>
         </div>
-      </SplashContainer>
-    );
+      </div>
+    )
   }
 }
 
-const classNames = require('classnames');
-
-class GridBlock extends React.Component {
-  renderBlock(block) {
-    const blockClasses = classNames('blockElement', this.props.className, {
-      alignCenter: this.props.align === 'center',
-      alignRight: this.props.align === 'right',
-      fourByGridBlock: this.props.layout === 'fourColumn',
-      imageAlignSide:
-        block.image &&
-        (block.imageAlign === 'left' || block.imageAlign === 'right'),
-      imageAlignTop: block.image && block.imageAlign === 'top',
-      imageAlignRight: block.image && block.imageAlign === 'right',
-      imageAlignBottom: block.image && block.imageAlign === 'bottom',
-      imageAlignLeft: block.image && block.imageAlign === 'left',
-      threeByGridBlock: this.props.layout === 'threeColumn',
-      twoByGridBlock: this.props.layout === 'twoColumn',
-    });
-
-    const topLeftImage =
-      (block.imageAlign === 'top' || block.imageAlign === 'left') &&
-      this.renderBlockImage(block.image, block.imageLink, block.imageAlt, block.imageWidth, block.imageHeight);
-
-    const bottomRightImage =
-      (block.imageAlign === 'bottom' || block.imageAlign === 'right') &&
-      this.renderBlockImage(block.image, block.imageLink, block.imageAlt, block.imageWidth, block.imageHeight);
-
+class Chapter extends Component{
+  render(){
+    const { idx,content ,title} = this.props;
+    const numImg = imgUrl(`new_official_website/number_${idx+1}.png`),
+      thumbImg = imgUrl(`new_official_website/intro_${idx+1}.png`);
+    let isOdd = idx%2 == 1
     return (
-      <div className={blockClasses} key={block.title}>
-        {topLeftImage}
-        <div className="blockContent">
-          {this.renderBlockTitle(block.title)}
-          <MarkdownBlock>{block.content}</MarkdownBlock>
+      <div class='chapter'>
+        {
+          idx === 0 ? <img class='feature' src={imgUrl('new_official_website/feature.png')}/> : null
+        }
+        <div class={'wrap '+(isOdd?'reverse':'')}>
+          <div>
+              <img class='num' src={numImg}></img>
+              <div class='title'>{title}</div>
+              {content()}
+              <div class='btn-bar'>
+                <Button text='演示动画' img={'new_official_website/play.png'}></Button>
+                <Button text='了解更多' blue={true} img={'new_official_website/more.png'}></Button>
+              </div>
+          </div>
+          <img src={thumbImg}></img>
         </div>
-        {bottomRightImage}
+        {
+          idx !== 4 ? <img class={'arrow '+( isOdd ? 'reverse':'')} src={imgUrl(`new_official_website/arrow.png`)}/> : null
+        }
       </div>
-    );
+    )
   }
-
-  renderBlockImage(image, imageLink, imageAlt, imageWidth, imageHeight) {
-    if (!image) {
-      return null;
-    }
-
+}
+class Main extends Component{
+  render(){
     return (
-      <div className="blockImage">
-        {imageLink ? (
-          <a href={imageLink}>
-            <img src={image} alt={imageAlt} width={imageWidth} height={imageHeight} />
-          </a>
-        ) : (
-          <img src={image} alt={imageAlt} width={imageWidth} height={imageHeight} />
-        )}
+      <div class='main'>
+        {
+          [{
+            link1:'',
+            link2:'',
+            title:"高效的动画文件",
+            content:()=>{//1
+              return (
+                <div class='text'>
+                  采用可扩展的二进制文件格式，可集成包含图片等<br/>
+                  任意设计资源的单文件，实现快速交付。导出相同<br/>
+                  的 AE 动画内容，在文件解码速度和压缩率上均大<br/>
+                  幅领先于同类型方案。
+                </div>
+              )
+            }
+          },
+          {
+            link1:'',
+            link2:'',
+            title:"AE 特性全面支持",
+            content:()=>{//2
+              return (
+                <div class='text'>
+                  在纯矢量导出方式上支持更多 AE 特性的同时，还<br/>
+                  引入了视频序列帧结合矢量的混合导出能力，实现<br/>
+                  支持所有 AE 特性的同时又能保持动画运行时的可<br/>
+                  编辑性。
+                </div>
+              )
+            }
+          },{
+            link1:'',
+            link2:'',
+            title:"完善的桌面工具",
+            content:()=>{//3
+              return (
+                <div class='text'>
+                提供从「导出插件」到「桌面预览」等一系列完善<br/>
+                的桌面效率工具，让设计师可以所见即所得地生产<br/>
+                素材，研发无需介入还原效果，极大降低了设计与<br/>
+                研发的对接成本。
+                </div>
+              )
+            }
+          },{
+            link1:'',
+            link2:'',
+            title:"性能监测可视化",
+            content:()=>{//4
+              return (
+                <div class='text'>
+                  通过导出插件内置的自动优化策略，以及预览工具<br/>
+                  集成的性能监测面板，能够直观地看到每个素材的<br/>
+                  性能状态，以帮助设计师制作效果和性能俱佳的动画<br/>特效。
+                </div>
+              )
+            }
+          },{
+            link1:'',
+            link2:'',
+            title:"运行时可编辑",
+            content:()=>{//5
+              return (
+                <div class='text'>
+                  运行时，可在保留动画效果前提下，动态修改替换<br/>
+                  文本或替换占位图内容，甚至对任意子图层进行增<br/>
+                  删改及移动，轻松实现照片和视频模板等素材的批<br/>
+                  量化生产。
+                </div>
+              )
+            }
+          }].map((unit,idx)=>{
+            return (
+              <Chapter idx={idx} 
+                      content={unit.content}
+                      title={unit.title}/>
+            )
+          })
+        }
       </div>
-    );
+    )
   }
-
-  renderBlockTitle(title) {
-    if (!title) {
-      return null;
-    }
-
-    return (
-      <h2>
-        <MarkdownBlock>{title}</MarkdownBlock>
-      </h2>
-    );
-  }
-
+}
+class Partner extends Component{
   render() {
     return (
-      <div className="gridBlock">
-        {this.props.contents.map(this.renderBlock, this)}
+      <div class='partner'>
+        <div class='wrap'>
+          <img src={imgUrl(`new_official_website/user.png`)}/>
+          <div class='title'>他们都在使用……</div>
+          <div class='gallery'>
+          {
+            siteConfig.users.filter(unit=>unit.pinned).map(unit=>{
+              return (
+                <a class='item' href={unit.infoLink}>
+                  <img class='thumb' src={unit.image}/>
+                  <div class='name'>{unit.caption}</div>
+                </a>
+              )
+            })
+          }
+          </div>
+          <div class='btn-bar'>
+            <Button text='查看更多' img={'new_official_website/more-b.png'}></Button>
+            <Button text='免费使用' blue={true} img={'new_official_website/download.png'}></Button>
+          </div>
+        </div>
       </div>
-    );
+      );
+  }
+}
+class Download extends Component{
+  render(){
+    return (
+      <div class='download'>
+        <div class='wrap'>
+          <div class='pkg'>
+            <img class='' src={imgUrl('new_official_website/pkg_download.png')}/>
+            <a class='mac-download' href=''></a>
+            <a class='win-download' href=''></a>
+          </div>
+        </div>
+      </div>
+    )
   }
 }
 
-GridBlock.defaultProps = {
-  align: 'left',
-  contents: [],
-  layout: 'twoColumn',
-};
-
-const Block = props => (
-  <Container
-    padding={['bottom', 'top']}
-    id={props.id}
-    background={props.background}>
-    <GridBlock align="center" contents={props.children} layout={props.layout} />
-  </Container>
-);
-
-const PAGFile = () => (
-  <Block background="light">
-    {[
-      {
-        content: '采用可扩展的二进制文件格式，可单文件集成图片等任意资源实现快速交付。导出相同的AE动画内容，在文件解码速度和压缩率上均大幅领先于同类型方案。',
-        image: imgUrl('pagfile.png'),
-        imageAlign: 'right',
-        imageWidth: 256,
-        imageHeight: 256,
-        title: '高效动画文件',
-      },
-    ]}
-  </Block>
-);
-
-const AESupport = () => (
-  <Block>
-    {[
-      {
-        content: '不仅在纯矢量导出方式上支持更多的AE特性，还引入了视频序列帧结合矢量的混合导出能力，实现支持所有AE特性的同时又能保持动画运行时的可编辑性。',
-        image: imgUrl('ae.png'),
-        imageAlign: 'left',
-        imageWidth: 211,
-        imageHeight: 206,
-        title: '全AE特性支持',
-      },
-    ]}
-  </Block>
-);
-
-const DesktopTools = () => (
-  <Block background="light">
-    {[
-      {
-        content: '提供从导出插件到桌面预览等一系列完善的桌面效率工具，让设计师可以所见即所得地生产素材，无需研发介入还原效果，极大简化了设计跟研发对接的成本。',
-        image: imgUrl('desktop.png'),
-        imageAlign: 'right',
-        imageWidth: 357,
-        imageHeight: 265,
-        title: '桌面工具完善',
-      },
-    ]}
-  </Block>
-);
-
-const PAGProfiler = () => (
-  <Block>
-    {[
-      {
-        content: '通过导出插件内置的自动优化策略，以及预览工具集成的性能监测面板，能够可视化地看到每个素材的性能状态，帮助设计师制作效果和性能俱佳的动画特效。',
-        image: imgUrl('profiler.jpg'),
-        imageAlign: 'left',
-        imageWidth: 262.5,
-        imageHeight: 266,
-        title: '可视化性能监测',
-      },
-    ]}
-  </Block>
-);
-
-const Editing = () => (
-  <Block background="light">
-    {[
-      {
-        content: '运行时可在保留动画效果前提下，动态修改替换文本或替换占位图内容，甚至对任意子图层进行增删改及移动，轻松实现照片和视频模板等素材的批量化生产。',
-        image: imgUrl('template.jpg'),
-        imageAlign: 'right',
-        imageWidth: 260,
-        imageHeight: 368,
-        title: '运行时可编辑',
-      },
-    ]}
-  </Block>
-);
-
-const Showcase = props => {
-  if ((siteConfig.users || []).length === 0) {
-    return null;
-  }
-
-  const showcase = siteConfig.users.filter(user => user.pinned).map(user => (
-    <a href={user.infoLink} key={user.infoLink}>
-      <img src={user.image} alt={user.caption} title={user.caption} />
-    </a>
-  ));
-
-  return (
-    <div className="productShowcaseSection paddingBottom">
-      <h2>使用PAG动画方案的应用</h2>
-      <div className="logos">{showcase}</div>
-      <div className="more-users">
-        <a className="button" href={pageUrl('users.html', props.language)}>
-          更多应用
-        </a>
+class CustomerService extends Component{
+  render(){
+    return (
+      <div class='customer-service'>
+        <div class='panel' id='js_cs_popup'>
+          <div class='title'>
+          你好：）
+          </div>
+          <div class='content'>
+            这里是 PAG 团队，有任何问题，随时欢迎告诉我们，PAG 团队会尽力帮助你。在联系我们之前，你可以先查看下方的「常见问题」。
+          </div>
+          <div class='questions'>
+            <div class='q-wrap'>
+              {
+                [{
+                  text:"Q ：如何安装PAG？",
+                  link:""
+                },{
+                  text:"Q ：如何安装PAG？",
+                  link:""
+                },{
+                  text:"Q ：如何安装PAG？",
+                  link:""
+                },{
+                  text:"Q ：如何安装PAG？",
+                  link:""
+                },{
+                  text:"Q ：如何安装PAG？",
+                  link:""
+                }].map(unit=>{
+                  return (
+                    <div class='unit'>
+                      <div class='unit-wrap'>
+                        {unit.text}
+                      </div>
+                    </div> 
+                  )
+                })
+              }
+            </div>
+          </div>
+          <div class='more'>
+              没有合适的答案 ？<br/>
+              请前往<span class='strong'> 说明文档 </span> 或 <span class='strong'> 联系我们 </span>
+          </div>
+        </div>
+        <img id='js_cs' src={imgUrl('new_official_website/cs.png')}/>
       </div>
-    </div>
-  );
-};
-
+    )
+  }
+}
+class InjectScript extends Component{
+  render(){
+    return (
+      <script
+          dangerouslySetInnerHTML={{
+              __html: `
+              var csBtn = document.getElementById('js_cs');
+              var popup = document.getElementById('js_cs_popup');
+              csBtn.onclick = function(){
+                var display = popup.style.display;
+                popup.style.display = (!display || display == 'none')  ? 'block' : 'none'
+              }
+              `,
+          }}
+      />
+    )
+  }
+}
 class Index extends React.Component {
   render() {
-    const language = this.props.language || '';
-
     return (
-      <div>
-        <HomeSplash language={language} />
-        <div className="mainContainer">
-          <PAGFile />
-          <AESupport />
-          <DesktopTools />
-          <PAGProfiler />
-          <Editing />
-          <Showcase language={language} />
-        </div>
+      <div class='intro-container'>
+        <Intro/>
+        <Main/>
+        <Partner/>
+        <Download/>
+        <CustomerService/>
+        <InjectScript/>
       </div>
-    );
+      );
   }
 }
 
