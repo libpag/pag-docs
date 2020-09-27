@@ -223,19 +223,19 @@ const siteConfig = {
   separateCss: ["static/apis/android/stylesheet.css", "static/apis/ios/css/style.css"],
   headerLinks: [
     {
-      href:'/a',label:'首页'
+      href:'/',label:'首页'
     },
     {
-      href:'/a',label:'说明文档'
+      href:'/docs/pag-export',label:'说明文档'
     },
     {
-      href:'/a',label:'API参考'
+      href:'/api',label:'API参考'
     },
     {
-      href:'/a',label:'接入SDK'
+      href:'/docs/sdk',label:'接入SDK'
     },
     {
-      href:'/a',label:'免费下载'
+      href:'/docs/sdk-download',label:'免费下载'
     }
 
 
@@ -284,8 +284,7 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['https://buttons.github.io/buttons.js'],
-
+  scripts: ['/javascript/page.js','https://buttons.github.io/buttons.js'],
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
   // No .html extensions for paths.

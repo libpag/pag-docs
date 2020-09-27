@@ -21,22 +21,26 @@ class Intro extends Component{
     return (
       <div class='intro-box'>
         <div class='wrap'>
-          <img class='pag' src={imgUrl('new_official_website/fill2.png')}/>
-          <span class='strong'>
-          Portable Animated Graphics </span> 是一套完整的动画工作流。提供从<br/>
-          AE（Adobe After Effects）导出插件，到桌面预览工具，再到 iOS<br/>
-          和 Android 的渲染 SDK。
-          <br/>
-          <br/>
-          <span class='strong'>PAG </span>的目标是降低或消除动画研发成本，打通设计师创作到素材交<br/>
-          付上线的流程，不断输出运行时可编辑的高质量动画内容。
-          <div class='btn-bar'>
-            <Button img={'new_official_website/sdk.png'} text='接入SDK'/>
-            <Button img={'new_official_website/download.png'} text='免费下载' blue={true}/>
+          <div class='main-content'>
+            <img class='pag' src={imgUrl('new_official_website/fill2.png')}/>
+            <div class='paragraph'>
+              <span class='strong'>
+              Portable Animated Graphics </span> 是一套完整的动画工作流。提供从<br/>
+              AE（Adobe After Effects）导出插件，到桌面预览工具，再到 iOS<br/>
+              和 Android 的渲染 SDK。
+            </div>
+            <div class='paragraph'>
+              <span class='strong'>PAG </span>的目标是降低或消除动画研发成本，打通设计师创作到素材交<br/>
+              付上线的流程，不断输出运行时可编辑的高质量动画内容。
+            </div>
+            <div class='btn-bar'>
+              <Button img={'new_official_website/sdk.png'} text='接入 SDK'/>
+              <Button img={'new_official_website/download.png'} text='免费下载' blue={true}/>
+            </div>
+            <span class='tip'>
+            同时支持 MacOS 与 Windows
+            </span>
           </div>
-          <span class='tip'>
-          同时支持 MacOS 与 Windows
-          </span>
           <img class='logo-l' src={imgUrl('new_official_website/logo_l.png')}/>
         </div>
       </div>
@@ -195,7 +199,7 @@ class Download extends Component{
       <div class='download'>
         <div class='wrap'>
           <div class='pkg'>
-            <img class='' src={imgUrl('new_official_website/pkg_download.png')}/>
+            <span class='pkg-download'></span>
             <a class='mac-download' href=''></a>
             <a class='win-download' href=''></a>
           </div>
