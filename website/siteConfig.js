@@ -204,7 +204,6 @@ const users = [
 ];
 
 const links = {
-  "github":"github链接",
   "feature":[
     '了解更多链接1',
     '了解更多链接2',
