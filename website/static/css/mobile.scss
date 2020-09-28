@@ -26,6 +26,7 @@
         span{
             text-align: left;
             margin-left: rem(13);
+            font-size: rem(16);
         }
     }
     a.btn.blue{
@@ -213,6 +214,7 @@
         background-color: #222;
         position: relative;
         margin-top: rem(127);
+        padding-bottom: rem(24);
         .wrap{
             margin: 0 auto;
             .pkg{
@@ -261,7 +263,7 @@
             border-top: 1px solid rgba(255,255,255,.16);
             // padding: rem(24);
             padding-top: rem(24);
-            margin-top: rem(24);
+            // margin-top: rem(24);
             margin-left: rem(24);
             margin-right: rem(24);
             padding-bottom: rem(24);
@@ -409,7 +411,78 @@
         left: rem(24);
     }
     .navPusher{
-        padding-top: 0;
+        // padding-top: 0;
+    }
+    //users.html
+    .navPusher{
+        .usersContainer{
+            margin-top: rem(-52);
+            padding: 0 ;
+        }
+        .mainContainer{
+            .container{
+                padding-top: 0;
+                .wrapper{
+                    .showcaseSection{
+                        .logos{
+                            display: flex;
+                            flex-wrap: wrap;
+                            margin-bottom: rem(24);
+                            justify-content: flex-start;
+                            >a:nth-child(3n){
+                                margin-right: 0;
+                            }
+                            >a{
+                                margin-right: rem(14);
+                                width: rem(99);
+                                text-align: center;
+                                border-top: 1px solid rgba(0,0,0,.16);
+                                padding-top: rem(23);
+                                img{
+                                    width: rem(60);
+                                    height: rem(60);
+                                    border-radius: rem(13.5);
+                                    box-shadow: 0 0 rem(6) rgba(0,0,0,.16);
+                                    padding:0;
+                                }
+                                .name{
+                                    margin-top: rem(11);
+                                    line-height: rem(24);
+                                    font-size: rem(14);
+                                    margin-bottom: rem(23);
+                                }
+                            }
+                            .contact{
+                                position: relative;
+                                img{
+                                    box-shadow: none;
+                                }
+                                .name{
+                                    position: relative;
+                                }
+                                .ts{
+                                    position: absolute;
+                                    font-size: rem(14);
+                                    line-height: rem(24);
+                                    color: $theme-blue;
+                                    width: 100%;
+                                    text-align: center;
+                                    bottom: 0;
+                                }
+                            }
+                        }
+                        .prose{
+                            line-height: rem(48);
+                            font-size: rem(32);
+                            h1{
+                                text-align: left;
+                                margin-bottom: rem(21);
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

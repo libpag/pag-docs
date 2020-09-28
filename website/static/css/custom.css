@@ -565,6 +565,7 @@ body {
 }
 .pc-mode.separateOnPageNav .navPusher .mainContainer {
   max-width: 720px;
+  padding: 48px 0 0;
 }
 .pc-mode .navPusher .docMainWrapper.wrapper {
   padding: 0 20px 0 0;
@@ -579,6 +580,61 @@ body {
 }
 .pc-mode.separateOnPageNav .toc {
   width: 360px;
+}
+.pc-mode .navPusher .usersContainer .container .wrapper .showcaseSection {
+  max-width: 980px;
+}
+.pc-mode .navPusher .usersContainer .container .wrapper .showcaseSection .prose {
+  max-width: 980px;
+}
+.pc-mode .navPusher .usersContainer .container .wrapper .showcaseSection .prose h1 {
+  text-align: left;
+  font-size: 32px;
+  line-height: 40px;
+}
+.pc-mode .navPusher .usersContainer .container .wrapper .showcaseSection .logos {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 180px;
+  justify-content: flex-start;
+}
+.pc-mode .navPusher .usersContainer .container .wrapper .showcaseSection .logos > a:nth-child(6n) {
+  margin-right: 0;
+}
+.pc-mode .navPusher .usersContainer .container .wrapper .showcaseSection .logos > a {
+  margin-right: 15px;
+  width: 150px;
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.16);
+  padding-top: 25px;
+}
+.pc-mode .navPusher .usersContainer .container .wrapper .showcaseSection .logos > a > img {
+  width: 80px;
+  height: 80px;
+  border-radius: 18px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.16);
+  padding: 0;
+}
+.pc-mode .navPusher .usersContainer .container .wrapper .showcaseSection .logos > a .name {
+  margin-top: 14px;
+  line-height: 24px;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+.pc-mode .navPusher .usersContainer .container .wrapper .showcaseSection .logos .contact {
+  position: relative;
+}
+.pc-mode .navPusher .usersContainer .container .wrapper .showcaseSection .logos .contact img {
+  box-shadow: none;
+}
+.pc-mode .navPusher .usersContainer .container .wrapper .showcaseSection .logos .contact .ts {
+  position: absolute;
+  font-size: 14px;
+  line-height: 24px;
+  color: #005AD9;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
 }
 
 .mobile-mode {
@@ -607,6 +663,7 @@ body {
 .mobile-mode a.btn span {
   text-align: left;
   margin-left: 0.1733333333rem;
+  font-size: 0.2133333333rem;
 }
 .mobile-mode a.btn.blue {
   border: 1px solid #005AD9;
@@ -781,6 +838,7 @@ body {
   background-color: #222;
   position: relative;
   margin-top: 1.6933333333rem;
+  padding-bottom: 0.32rem;
 }
 .mobile-mode .download .wrap {
   margin: 0 auto;
@@ -827,7 +885,6 @@ body {
 .mobile-mode .nav-footer .copyright {
   border-top: 1px solid rgba(255, 255, 255, 0.16);
   padding-top: 0.32rem;
-  margin-top: 0.32rem;
   margin-left: 0.32rem;
   margin-right: 0.32rem;
   padding-bottom: 0.32rem;
@@ -956,8 +1013,67 @@ body {
   position: absolute;
   left: 0.32rem;
 }
-.mobile-mode .navPusher {
+.mobile-mode .navPusher .usersContainer {
+  margin-top: -0.6933333333rem;
+  padding: 0;
+}
+.mobile-mode .navPusher .mainContainer .container {
   padding-top: 0;
+}
+.mobile-mode .navPusher .mainContainer .container .wrapper .showcaseSection .logos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0.32rem;
+  justify-content: flex-start;
+}
+.mobile-mode .navPusher .mainContainer .container .wrapper .showcaseSection .logos > a:nth-child(3n) {
+  margin-right: 0;
+}
+.mobile-mode .navPusher .mainContainer .container .wrapper .showcaseSection .logos > a {
+  margin-right: 0.1866666667rem;
+  width: 1.32rem;
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.16);
+  padding-top: 0.3066666667rem;
+}
+.mobile-mode .navPusher .mainContainer .container .wrapper .showcaseSection .logos > a img {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 0.18rem;
+  box-shadow: 0 0 0.08rem rgba(0, 0, 0, 0.16);
+  padding: 0;
+}
+.mobile-mode .navPusher .mainContainer .container .wrapper .showcaseSection .logos > a .name {
+  margin-top: 0.1466666667rem;
+  line-height: 0.32rem;
+  font-size: 0.1866666667rem;
+  margin-bottom: 0.3066666667rem;
+}
+.mobile-mode .navPusher .mainContainer .container .wrapper .showcaseSection .logos .contact {
+  position: relative;
+}
+.mobile-mode .navPusher .mainContainer .container .wrapper .showcaseSection .logos .contact img {
+  box-shadow: none;
+}
+.mobile-mode .navPusher .mainContainer .container .wrapper .showcaseSection .logos .contact .name {
+  position: relative;
+}
+.mobile-mode .navPusher .mainContainer .container .wrapper .showcaseSection .logos .contact .ts {
+  position: absolute;
+  font-size: 0.1866666667rem;
+  line-height: 0.32rem;
+  color: #005AD9;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+}
+.mobile-mode .navPusher .mainContainer .container .wrapper .showcaseSection .prose {
+  line-height: 0.64rem;
+  font-size: 0.4266666667rem;
+}
+.mobile-mode .navPusher .mainContainer .container .wrapper .showcaseSection .prose h1 {
+  text-align: left;
+  margin-bottom: 0.28rem;
 }
 
 /*# sourceMappingURL=custom.css.map */

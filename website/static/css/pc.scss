@@ -609,6 +609,7 @@
     &.separateOnPageNav  {
         .navPusher .mainContainer{
             max-width: 720px;
+            padding:48px 0 0;
         }
     }
     .navPusher{
@@ -626,5 +627,69 @@
     }
     &.separateOnPageNav .toc{
         width: 360px;
+    }
+    // users.html
+    .navPusher{
+        .usersContainer{
+            .container{
+                .wrapper{
+                    .showcaseSection{
+                        max-width: 980px;
+                        .prose{
+                            max-width: 980px;
+                            h1{
+                                text-align: left;
+                                font-size: 32px;
+                                line-height: 40px;
+                            }
+                        }
+                        .logos{
+                            display: flex;
+                            flex-wrap: wrap;
+                            padding-bottom: 180px;
+                            justify-content: flex-start;
+                            >a:nth-child(6n){
+                                margin-right: 0;
+                            }
+                            >a{
+                                margin-right: 15px;
+                                width: 150px;
+                                text-align: center;
+                                border-top: 1px solid rgba(0,0,0,.16);
+                                padding-top: 25px;
+                                >img{
+                                    width: 80px;
+                                    height: 80px;
+                                    border-radius: 18px;
+                                    box-shadow: 0 0 8px rgba(0,0,0,.16);
+                                    padding:0;
+                                }
+                                .name{
+                                    margin-top: 14px;
+                                    line-height: 24px;
+                                    font-size: 16px;
+                                    margin-bottom: 24px;
+                                }
+                            }
+                            .contact{
+                                position: relative;
+                                img{
+                                    box-shadow: none;
+                                }
+                                .ts{
+                                    position: absolute;
+                                    font-size: 14px;
+                                    line-height: 24px;
+                                    color: $theme-blue;
+                                    width: 100%;
+                                    text-align: center;
+                                    bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

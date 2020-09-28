@@ -6,7 +6,7 @@ let isIOS = () => {
     // return /(iPhone\sOS)\s([\d_]+)/i.test(navigator.userAgent);
 };
 let isMobile = () => isAndroid() || isIOS();
-
+let isIndexPage = () => location.pathname === '/' || location.pathname === '/index' || location.pathname === ''
 function docReady(fn) {
     if (document.readyState === "complete" || document.readyState === "interactive") {
         setTimeout(fn, 1);
@@ -23,10 +23,12 @@ function appendMeta(){
 docReady(()=>{
     if(isMobile()){
         var html = document.getElementsByTagName("html")[0]; html.style.fontSize =
-        Math.min( (document.body.clientWidth || document.documentElement.clientWidth) / 375 * 75 ,80) + "px";
+        Math.min(  document.documentElement.clientWidth / 375 * 75 ,80) + "px";
         document.body.classList.add('mobile-mode')
         appendMeta();
-        document.body.style.backgroundImage = "url('/img/new_official_website/bg_m.png')"
+        if(isIndexPage()){
+            document.body.style.backgroundImage = "url('/img/new_official_website/bg_m.png')"
+        }
         function appendNav(){
             var header = document.getElementsByClassName('fixedHeaderContainer')[0]
             var node=document.createElement("div");
@@ -74,7 +76,9 @@ docReady(()=>{
         appendMenu()
     }
     else{
-        document.body.style.backgroundImage = "url('/img/new_official_website/fill1.png')"
+        if(isIndexPage()){
+            document.body.style.backgroundImage = "url('/img/new_official_website/fill1.png')"
+        }
         document.body.classList.add('pc-mode')
     }
     //append git icon

@@ -65,7 +65,7 @@ class Chapter extends Component{
               <div class='title'>{title}</div>
               {content()}
               <div class='btn-bar'>
-                <Button text='演示动画' img={'new_official_website/play.png'}></Button>
+                {/* <Button text='演示动画' img={'new_official_website/play.png'}></Button> */}
                 <Button text='了解更多' blue={true} img={'new_official_website/more.png'}></Button>
               </div>
           </div>
