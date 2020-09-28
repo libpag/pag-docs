@@ -50,7 +50,7 @@ class Users extends React.Component {
             </div>
             <div className="logos">
               {showcase}
-              <a class='contact' href="https://github.com/libpag/pag-docs/blob/master/website/siteConfig.js">
+              <a class='contact' href={`https://qm.qq.com/cgi-bin/qm/qr?k=Wa65DTnEKo2hnPsvY-1EgJOF8tvKQ-ZT&jump_from=webapi`}>
                 <img src='/img/new_official_website/contact_us.png'/>
                 <div class='name'>正在使用 PAG?</div>
                 <div class='ts'>告诉我们</div>
