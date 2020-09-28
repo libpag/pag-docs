@@ -208,11 +208,11 @@ const users = [
 
 const links = {
   "feature":[
-    '/docs/install',
-    '/docs/install',
-    '/docs/install',
-    '/docs/install',
-    '/docs/install'
+    '/docs/pag-export.html',
+    '/docs/ae-support.html',
+    '/docs/install.html',
+    '/docs/profiler.html',
+    '/docs/pag-edit.html'
   ],
   "download":{
     mac:"https://dldir1.qq.com/qqmi/libpag/PAGViewer.dmg",
