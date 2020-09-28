@@ -91,7 +91,7 @@ docReady(()=>{
         git.className='git-icon';
         footer.children[0].appendChild(git)
         document.getElementById('js_git').onclick = function(){
-            location.href = '//github.com/libpag/libpag.github.io'
+            location.href = '//github.com/libpag/libpag'
         }
 
         //qq group
