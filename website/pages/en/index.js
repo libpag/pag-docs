@@ -160,7 +160,7 @@ class Partner extends Component{
     return (
       <div class='partner'>
         <div class='wrap'>
-          <img src={imgUrl(`new_official_website/user.png`)}/>
+          <img class='users' src={imgUrl(`new_official_website/user.png`)}/>
           <div class='title'>他们都在使用……</div>
           <div class='gallery'>
           {

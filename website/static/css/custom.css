@@ -168,6 +168,9 @@ body {
   width: 1080px;
   margin: 0 auto;
 }
+.pc-mode .partner .wrap .users {
+  width: 65px;
+}
 .pc-mode .partner .wrap .title {
   margin-top: 25px;
   margin-bottom: 25px;
@@ -252,6 +255,7 @@ body {
   position: fixed;
   right: 40px;
   bottom: 36px;
+  z-index: 1;
 }
 .pc-mode .customer-service #js_cs_popup {
   display: none;
@@ -869,6 +873,9 @@ body {
 }
 .mobile-mode .partner .wrap > img:first-child {
   margin-bottom: 0.3066666667rem;
+}
+.mobile-mode .partner .wrap .users {
+  width: 0.8666666667rem;
 }
 .mobile-mode .partner .wrap .title {
   font-size: 0.4266666667rem;
