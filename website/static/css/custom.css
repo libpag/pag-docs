@@ -62,7 +62,7 @@ body {
   height: 465px;
 }
 .pc-mode .intro-box .wrap {
-  width: 980px;
+  width: 1080px;
   margin: 0 auto;
   position: relative;
   font-weight: 100;
@@ -101,7 +101,7 @@ body {
 }
 .pc-mode .main .chapter {
   margin: 0 auto;
-  width: 980px;
+  width: 1080px;
 }
 .pc-mode .main .chapter .wrap {
   display: flex;
@@ -121,7 +121,7 @@ body {
 }
 .pc-mode .main .chapter .arrow {
   display: block;
-  margin: 55px auto 48px auto;
+  margin: 72px auto 72px auto;
   position: relative;
   right: -10px;
 }
@@ -157,7 +157,7 @@ body {
   padding-bottom: 255px;
 }
 .pc-mode .partner .wrap {
-  width: 980px;
+  width: 1080px;
   margin: 0 auto;
 }
 .pc-mode .partner .wrap .title {
@@ -205,7 +205,7 @@ body {
   position: relative;
 }
 .pc-mode .download .wrap {
-  width: 980px;
+  width: 1080px;
   margin: 0 auto;
   padding-bottom: 95px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
@@ -330,7 +330,7 @@ body {
   margin: 0 auto !important;
 }
 .pc-mode .navigationWrapper .slidingNav {
-  width: 980px !important;
+  width: 1080px !important;
   margin: 0 auto !important;
 }
 .pc-mode .navigationSlider .slidingNav ul {
@@ -414,7 +414,7 @@ body {
   display: flex;
 }
 .pc-mode .nav-footer .copyright {
-  min-width: 980px;
+  min-width: 1080px;
   font-size: 12px;
   line-height: 24px;
   margin: 0 auto;
@@ -608,10 +608,10 @@ body {
   padding: 48px 0 0;
 }
 .pc-mode .navPusher .usersContainer .container .wrapper .showcaseSection {
-  max-width: 980px;
+  max-width: 1080px;
 }
 .pc-mode .navPusher .usersContainer .container .wrapper .showcaseSection .prose {
-  max-width: 980px;
+  max-width: 1080px;
 }
 .pc-mode .navPusher .usersContainer .container .wrapper .showcaseSection .prose h1 {
   text-align: left;

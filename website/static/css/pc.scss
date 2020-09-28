@@ -44,7 +44,7 @@
         font-size: 16px;
         height: 465px;
         .wrap{
-            width: 980px;
+            width: 1080px;
             margin: 0 auto;
             position: relative;
             font-weight: 100;
@@ -83,7 +83,7 @@
         padding-top: 95px;
         .chapter{
             margin: 0 auto;
-            width: 980px;
+            width: 1080px;
             .wrap{
                 display: flex;
                 justify-content:space-between
@@ -102,7 +102,7 @@
             }
             .arrow{
                 display: block;
-                margin: 55px auto 48px auto;
+                margin: 72px auto 72px auto;
                 position: relative;
                 right: -10px;
             }
@@ -139,7 +139,7 @@
         position: relative;
         padding-bottom: 255px;
         .wrap{
-            width: 980px;
+            width: 1080px;
             margin: 0 auto;
             .title{
                 margin-top: 25px;
@@ -188,7 +188,7 @@
         background-color: #222;
         position: relative;
         .wrap{
-            width: 980px;
+            width: 1080px;
             margin: 0 auto;
             padding-bottom: 95px;
             border-bottom: 1px solid rgba(255,255,255,.16);
@@ -334,7 +334,7 @@
     .navigationWrapper{
         margin: 0 auto !important;
         .slidingNav{
-            width: 980px !important;
+            width: 1080px !important;
             margin: 0 auto !important;
         }
     }
@@ -427,7 +427,7 @@
     .nav-footer{
         display: flex;
         .copyright{
-            min-width: 980px;
+            min-width: 1080px;
             font-size: 12px;
             line-height: 24px;
             margin: 0 auto;
@@ -655,9 +655,9 @@
             .container{
                 .wrapper{
                     .showcaseSection{
-                        max-width: 980px;
+                        max-width: 1080px;
                         .prose{
-                            max-width: 980px;
+                            max-width: 1080px;
                             h1{
                                 text-align: left;
                                 font-size: 32px;
