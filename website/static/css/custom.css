@@ -230,6 +230,7 @@ body {
   width: 507px;
   height: 616px;
   margin-top: -160px;
+  background-size: 507px;
   background-image: url("/img/new_official_website/pkg_download.png");
 }
 .pc-mode .download .wrap .mac-download,
@@ -249,8 +250,8 @@ body {
 }
 .pc-mode .customer-service {
   position: fixed;
-  right: 45px;
-  bottom: 65px;
+  right: 40px;
+  bottom: 36px;
 }
 .pc-mode .customer-service #js_cs_popup {
   display: none;
@@ -425,6 +426,33 @@ body {
 }
 .pc-mode .nav-site.nav-site-internal li:nth-child(5) a:hover {
   background-color: #005AD9 !important;
+}
+.pc-mode .nav-site.nav-site-internal li.active a {
+  color: #000 !important;
+  text-align: center;
+  position: relative;
+  background-color: transparent !important;
+  color: #005AD9 !important;
+}
+.pc-mode .nav-site.nav-site-internal li.active a:after {
+  content: "";
+  border-top: 2px solid #005AD9;
+  position: absolute;
+}
+.pc-mode .nav-site.nav-site-internal li:nth-child(1).active a:after {
+  width: 30px;
+  height: 1px;
+  bottom: -13px;
+}
+.pc-mode .nav-site.nav-site-internal li:nth-child(2).active a:after {
+  width: 65px;
+  height: 1px;
+  bottom: -13px;
+}
+.pc-mode .nav-site.nav-site-internal li:nth-child(3).active a:after {
+  width: 56px;
+  height: 1px;
+  bottom: -13px;
 }
 .pc-mode .nav-footer {
   display: flex;
