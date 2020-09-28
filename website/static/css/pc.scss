@@ -427,7 +427,6 @@
     .nav-footer{
         display: flex;
         .copyright{
-            display: flex;
             min-width: 980px;
             font-size: 12px;
             line-height: 24px;
@@ -445,7 +444,7 @@
             float: left;
         }
         .qq-group-icon{
-            flex:1;
+            float: left;
             cursor: pointer;
             padding-left: 33px;
             height: 24px;
@@ -453,6 +452,9 @@
             background-repeat: no-repeat;
             background-image: url('/img/new_official_website/qq.png');
             color: #ccc;
+        }
+        div:nth-child(3){
+            float: right;
         }
     }
     // 文档页箭头

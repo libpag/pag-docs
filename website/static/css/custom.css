@@ -414,7 +414,6 @@ body {
   display: flex;
 }
 .pc-mode .nav-footer .copyright {
-  display: flex;
   min-width: 980px;
   font-size: 12px;
   line-height: 24px;
@@ -432,7 +431,7 @@ body {
   float: left;
 }
 .pc-mode .nav-footer .qq-group-icon {
-  flex: 1;
+  float: left;
   cursor: pointer;
   padding-left: 33px;
   height: 24px;
@@ -440,6 +439,9 @@ body {
   background-repeat: no-repeat;
   background-image: url("/img/new_official_website/qq.png");
   color: #ccc;
+}
+.pc-mode .nav-footer div:nth-child(3) {
+  float: right;
 }
 .pc-mode .docs-prevnext .docs-prev > span:nth-child(1) {
   color: transparent;
