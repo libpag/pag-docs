@@ -186,7 +186,7 @@ class Partner extends Component{
 class Download extends Component{
   render(){
     return (
-      <div class='download'>
+      <div class='download' id='download'>
         <div class='wrap'>
           <div class='pkg'>
             <span class='pkg-download'></span>

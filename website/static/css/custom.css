@@ -596,7 +596,7 @@ body {
 .pc-mode .onPageNav {
   position: fixed;
   top: 90px;
-  right: 0;
+  right: 138px;
 }
 .pc-mode .docMainWrapper > *:first-child {
   flex: 0 0 360px;

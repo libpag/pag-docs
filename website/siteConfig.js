@@ -254,7 +254,7 @@ const siteConfig = {
       href:'/docs/sdk',label:'接入SDK'
     },
     {
-      href:'/docs/sdk-download',label:'免费下载'
+      href:'/#download',label:'免费下载'
     }
 
 
