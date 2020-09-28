@@ -220,10 +220,25 @@ const links = {
   }
 }
 
-const faq = [{
-  issue:"如何安装PAG ?",
-  link:"http://pag.io"
-}]
+const faq = [
+{
+  issue:"如何安装PAG?",
+  link:"/docs/install.html"
+},
+{
+  issue:"如何接入SDK?",
+  link:"/docs/sdk.html"
+}
+,
+{
+  issue:"如何导出PAG文件?",
+  link:"/docs/pag-export.html"
+},
+{
+  issue:"PAG支持哪些AE特性?",
+  link:"/docs/ae-support.html"
+}
+]
 
 const siteConfig = {
   title: 'PAG', // Title for your website.
