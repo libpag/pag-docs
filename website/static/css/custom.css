@@ -585,9 +585,6 @@ body {
 .pc-mode .toc .toggleNav ul li.navListItemActive a {
   color: #005AD9;
 }
-.pc-mode.separateOnPageNav .wrapper, .pc-mode.separateOnPageNav .headerWrapper.wrapper {
-  max-width: 99999px;
-}
 .pc-mode.separateOnPageNav .navPusher .mainContainer {
   max-width: 720px;
   padding: 48px 0 0;
