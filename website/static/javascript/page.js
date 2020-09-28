@@ -109,4 +109,12 @@ docReady(()=>{
         footer.children[0].appendChild(copyright)
     }
     appendBottomNav()
+    var btns = document.getElementsByClassName('download-btn');
+    
+    for (var i=0; i < btns.length; i++) {
+        btns[i].onclick = function(){
+            var pkg = document.getElementsByClassName('pkg-download')[0];
+            pkg.scrollIntoView()
+        }
+    };
 })

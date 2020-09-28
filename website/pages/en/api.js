@@ -42,7 +42,7 @@ class Page extends React.Component {
                         var androidPathname = "/apis/android/";
                         var innerDocClick = false;
                         var hasInit = false;
-                        var isAndroid = function (){
+                        var android = function (){
                             return location.hash.indexOf('apis/android')>1;
                         }
                         document.onmouseover = function() { innerDocClick = true; }
@@ -54,7 +54,7 @@ class Page extends React.Component {
                             iframe.onload = function(){
                                 iframe.style.height = Math.max(iframe.contentWindow.document.documentElement.scrollHeight,document.body.clientHeight) + 'px';
                                 hasInit = true;
-                                if(isAndroid()){
+                                if(android()){
                                     var subFrame = location.hash.indexOf('allclasses-frame.html')>-1 
                                     ? 'org/libpag/package-summary.html'
                                     : location.hash.split('/apis/android/')[1];
@@ -63,10 +63,10 @@ class Page extends React.Component {
                                     }
                                 }
                             }
-                            if(isAndroid()){
+                            if(android()){
                                 return ;
                             }
-                            iframe.src = isAndroid() ? '/apis/android/' :url;
+                            iframe.src = android() ? '/apis/android/' :url;
                         }
                         if(location.hash){ //初始化
                             document.getElementById('js_original_part').style.display = 'none';

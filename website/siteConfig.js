@@ -205,15 +205,15 @@ const users = [
 
 const links = {
   "feature":[
-    '了解更多链接1',
-    '了解更多链接2',
-    '了解更多链接3',
-    '了解更多链接4',
-    '了解更多链接5'
+    '/docs/install',
+    '/docs/install',
+    '/docs/install',
+    '/docs/install',
+    '/docs/install'
   ],
   "download":{
-    mac:"mac",
-    win:"win"
+    mac:"https://dldir1.qq.com/qqmi/libpag/PAGViewer.dmg",
+    win:"https://dldir1.qq.com/qqmi/libpag/beta/PAGViewer_Installer.exe"
   }
 }
 
@@ -245,7 +245,7 @@ const siteConfig = {
       href:'/',label:'首页'
     },
     {
-      href:'/docs/pag-export',label:'说明文档'
+      href:'/docs/install',label:'说明文档'
     },
     {
       href:'/api',label:'API参考'

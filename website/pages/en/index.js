@@ -7,9 +7,9 @@ function imgUrl(img) {
 
 class Button extends Component{
   render(){
-    const {text,img,blue,link} = this.props;
+    const {text,img,blue,link ,className} = this.props;
     return (
-      <a href={link} class={'btn ' + (blue ? 'blue':'')}>
+      <a href={link} class={'btn ' + (blue ? 'blue':'') + ( className ? ` ${className} ` : '')}>
         <img src={imgUrl(img)}/>
         <span>{text}</span>
       </a>
@@ -35,7 +35,7 @@ class Intro extends Component{
             </div>
             <div class='btn-bar'>
               <Button link='/docs/sdk' img={'new_official_website/sdk.png'} text='接入 SDK'/>
-              <Button link='/docs/sdk-download' img={'new_official_website/download.png'} text='免费下载' blue={true}/>
+              <Button img={'new_official_website/download.png'} text='免费下载' className='download-btn' blue={true}/>
             </div>
             <span class='tip'>
             同时支持 MacOS 与 Windows
@@ -175,8 +175,8 @@ class Partner extends Component{
           }
           </div>
           <div class='btn-bar'>
-            <Button text='查看更多' img={'new_official_website/more-b.png'}></Button>
-            <Button text='免费使用' blue={true} img={'new_official_website/download.png'}></Button>
+            <Button text='查看更多' link='/users.html' img={'new_official_website/more-b.png'}></Button>
+            {/* <Button text='免费下载' blue={true} img={'new_official_website/download.png'} className='download-btn'></Button> */}
           </div>
         </div>
       </div>
@@ -229,7 +229,7 @@ class CustomerService extends Component{
           </div>
           <div class='more'>
               没有合适的答案 ？<br/>
-              请前往<span class='strong'> <a href='/docs/pag-export'>说明文档</a> </span> 或 <span class='strong'> <a href={`https://github.com/libpag/libpag/issues/new?assignees=&labels=&template=bug_report.md&title=`}>联系我们</a> </span>
+              请前往<span class='strong'> <a href='/docs/install'>说明文档</a> </span> 或 <span class='strong'> <a href={`https://qm.qq.com/cgi-bin/qm/qr?k=Wa65DTnEKo2hnPsvY-1EgJOF8tvKQ-ZT&jump_from=webapi`}>联系我们</a> </span>
           </div>
         </div>
         <img id='js_cs' src={imgUrl('new_official_website/cs.png')}/>
