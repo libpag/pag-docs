@@ -602,6 +602,9 @@ body {
 .pc-mode.separateOnPageNav .toc {
   width: 360px;
 }
+.pc-mode .navPusher .usersContainer {
+  padding: 48px 0 0;
+}
 .pc-mode .navPusher .usersContainer .container .wrapper .showcaseSection {
   max-width: 980px;
 }
