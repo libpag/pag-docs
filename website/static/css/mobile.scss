@@ -269,13 +269,32 @@
             padding-bottom: rem(24);
             font-size: rem(12);
             line-height: rem(24);
-            text-align: left;
+            text-align: left !important;
         }   
         .git-icon{
-            float: right;
-            width: 24px;
-            height: 24px;
+            float: left;
+            margin-right: rem(24);
+            width: rem(24);
+            height: rem(24);
+            background-repeat: no-repeat;
+            background-size: contain;
             background-image: url('/img/new_official_website/github.png');
+        }
+        .qq-group-icon{
+            display: inline-block;
+            // width: 24px;
+            flex:1;
+            cursor: pointer;
+            padding-left: rem(30);
+            font-size: rem(12);
+            height: rem(24);
+            line-height: rem(24);
+            background-repeat: no-repeat;
+            background-size: rem(24);
+            background-image: url('/img/new_official_website/qq.png');
+            color: #ccc;
+            margin-right: rem(24);
+            margin-bottom: rem(15);
         }
     }
     .navigationSlider{

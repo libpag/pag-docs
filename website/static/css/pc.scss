@@ -425,20 +425,34 @@
         }
     }
     .nav-footer{
+        display: flex;
         .copyright{
             display: flex;
-            width: 980px;
+            min-width: 980px;
             font-size: 12px;
-            line-height: 18px;
+            line-height: 24px;
             margin: 0 auto;
             text-align: left !important;
             justify-content: space-between;
-
         }
         .git-icon{
             width: 24px;
             height: 24px;
             background-image: url('/img/new_official_website/github.png');
+            background-repeat: no-repeat;
+            margin-right: 20px;
+            cursor: pointer;
+            float: left;
+        }
+        .qq-group-icon{
+            flex:1;
+            cursor: pointer;
+            padding-left: 33px;
+            height: 24px;
+            line-height: 24px;
+            background-repeat: no-repeat;
+            background-image: url('/img/new_official_website/qq.png');
+            color: #ccc;
         }
     }
     // 文档页箭头

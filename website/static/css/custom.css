@@ -410,11 +410,14 @@ body {
 .pc-mode .nav-site.nav-site-internal li:nth-child(5) a:hover {
   background-color: #005AD9 !important;
 }
+.pc-mode .nav-footer {
+  display: flex;
+}
 .pc-mode .nav-footer .copyright {
   display: flex;
-  width: 980px;
+  min-width: 980px;
   font-size: 12px;
-  line-height: 18px;
+  line-height: 24px;
   margin: 0 auto;
   text-align: left !important;
   justify-content: space-between;
@@ -423,6 +426,20 @@ body {
   width: 24px;
   height: 24px;
   background-image: url("/img/new_official_website/github.png");
+  background-repeat: no-repeat;
+  margin-right: 20px;
+  cursor: pointer;
+  float: left;
+}
+.pc-mode .nav-footer .qq-group-icon {
+  flex: 1;
+  cursor: pointer;
+  padding-left: 33px;
+  height: 24px;
+  line-height: 24px;
+  background-repeat: no-repeat;
+  background-image: url("/img/new_official_website/qq.png");
+  color: #ccc;
 }
 .pc-mode .docs-prevnext .docs-prev > span:nth-child(1) {
   color: transparent;
@@ -894,13 +911,31 @@ body {
   padding-bottom: 0.32rem;
   font-size: 0.16rem;
   line-height: 0.32rem;
-  text-align: left;
+  text-align: left !important;
 }
 .mobile-mode .nav-footer .git-icon {
-  float: right;
-  width: 24px;
-  height: 24px;
+  float: left;
+  margin-right: 0.32rem;
+  width: 0.32rem;
+  height: 0.32rem;
+  background-repeat: no-repeat;
+  background-size: contain;
   background-image: url("/img/new_official_website/github.png");
+}
+.mobile-mode .nav-footer .qq-group-icon {
+  display: inline-block;
+  flex: 1;
+  cursor: pointer;
+  padding-left: 0.4rem;
+  font-size: 0.16rem;
+  height: 0.32rem;
+  line-height: 0.32rem;
+  background-repeat: no-repeat;
+  background-size: 0.32rem;
+  background-image: url("/img/new_official_website/qq.png");
+  color: #ccc;
+  margin-right: 0.32rem;
+  margin-bottom: 0.2rem;
 }
 .mobile-mode .navigationSlider .slidingNav {
   top: -0.0266666667rem;

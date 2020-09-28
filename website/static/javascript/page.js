@@ -81,16 +81,32 @@ docReady(()=>{
         }
         document.body.classList.add('pc-mode')
     }
-    //append git icon
-    function appendGit(){
+    //append git/QQ group icon
+    function appendBottomNav(){
         var footer = document.getElementById('footer');
-        var node=document.createElement("div"); //创建一个li节点
-        node.id='js_git'
-        node.className='git-icon';
-        footer.children[0].appendChild(node)
+        footer.children[0].innerHTML = '';
+        // git
+        var git = document.createElement("div"); 
+        git.id = 'js_git'
+        git.className='git-icon';
+        footer.children[0].appendChild(git)
         document.getElementById('js_git').onclick = function(){
             location.href = '//github.com/libpag/libpag.github.io'
         }
+
+        //qq group
+        var qqgroup = document.createElement("div");
+        qqgroup.id = 'js_qqgroup'
+        qqgroup.className='qq-group-icon';
+        qqgroup.innerText = 'QQ 群: 893379574';
+        footer.children[0].appendChild(qqgroup)
+        document.getElementById('js_qqgroup').onclick = function(){
+            window.open('https://qm.qq.com/cgi-bin/qm/qr?k=Wa65DTnEKo2hnPsvY-1EgJOF8tvKQ-ZT&jump_from=webapi')
+        }
+
+        var copyright = document.createElement("div"); 
+        copyright.innerText = 'Copyright © 2020 pag.io'
+        footer.children[0].appendChild(copyright)
     }
-    appendGit()
+    appendBottomNav()
 })
