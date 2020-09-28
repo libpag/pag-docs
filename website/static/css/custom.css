@@ -315,6 +315,9 @@ body {
 .pc-mode .headerTitleWithLogo {
   display: none !important;
 }
+.pc-mode .headerWrapper header a {
+  float: left;
+}
 .pc-mode .headerWrapper header a .logo {
   margin-top: 39px;
   width: 133px;
@@ -324,6 +327,9 @@ body {
   height: 80px;
   backdrop-filter: saturate(180%) blur(20px);
   background-color: rgba(255, 255, 255, 0.8);
+}
+.pc-mode .fixedHeaderContainer header {
+  display: block;
 }
 .pc-mode .fixedHeaderContainer .wrapper {
   padding: 0;
@@ -627,7 +633,7 @@ body {
   margin-right: 0;
 }
 .pc-mode .navPusher .usersContainer .container .wrapper .showcaseSection .logos > a {
-  margin-right: 15px;
+  margin-right: 35px;
   width: 150px;
   text-align: center;
   border-top: 1px solid rgba(0, 0, 0, 0.16);
