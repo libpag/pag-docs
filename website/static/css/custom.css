@@ -78,6 +78,7 @@ body {
   position: absolute;
   right: 0;
   top: 0;
+  width: 360px;
 }
 .pc-mode .intro-box .wrap .btn-bar {
   display: flex;
@@ -107,12 +108,16 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.pc-mode .main .chapter .wrap > img {
+  width: 564px;
+}
 .pc-mode .main .chapter .reverse {
   flex-direction: row-reverse;
 }
 .pc-mode .main .chapter .feature {
   display: block;
   margin-bottom: 45px;
+  width: 80px;
 }
 .pc-mode .main .chapter .text {
   font-size: 16px;
@@ -120,6 +125,7 @@ body {
   font-weight: 100;
 }
 .pc-mode .main .chapter .arrow {
+  width: 33px;
   display: block;
   margin: 72px auto 72px auto;
   position: relative;
@@ -131,6 +137,7 @@ body {
 }
 .pc-mode .main .chapter .num {
   margin-bottom: 15px;
+  width: 108px;
 }
 .pc-mode .main .chapter .title {
   font-size: 32px;
@@ -434,6 +441,7 @@ body {
   height: 24px;
   background-image: url("/img/new_official_website/github.png");
   background-repeat: no-repeat;
+  background-size: 24px;
   margin-right: 20px;
   cursor: pointer;
   float: left;
@@ -445,6 +453,7 @@ body {
   height: 24px;
   line-height: 24px;
   background-repeat: no-repeat;
+  background-size: 24px;
   background-image: url("/img/new_official_website/qq.png");
   color: #ccc;
 }
@@ -773,6 +782,7 @@ body {
   padding: 0.6rem 0.32rem 0.6266666667rem 0.32rem;
 }
 .mobile-mode .main .feature {
+  width: 1.0666666667rem;
   margin-bottom: 0.3066666667rem;
 }
 .mobile-mode .main .wrap {
@@ -975,6 +985,7 @@ body {
   top: 0.1333333333rem;
   right: 0.2rem;
   position: fixed;
+  background-size: 0.32rem;
   background-image: url("/img/new_official_website/nav-m.png");
 }
 .mobile-mode .expand {
