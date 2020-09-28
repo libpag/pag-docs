@@ -256,6 +256,9 @@ body {
 .pc-mode .customer-service #js_cs_popup {
   display: none;
 }
+.pc-mode .customer-service #js_cs {
+  width: 96px;
+}
 .pc-mode .customer-service .panel {
   position: absolute;
   width: 384px;
@@ -652,6 +655,8 @@ body {
 }
 .pc-mode .navPusher .usersContainer .container .wrapper .showcaseSection {
   max-width: 1080px;
+  min-width: 1080px;
+  width: 1080px;
 }
 .pc-mode .navPusher .usersContainer .container .wrapper .showcaseSection .prose {
   max-width: 1080px;
