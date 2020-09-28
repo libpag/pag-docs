@@ -88,6 +88,7 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/pitu.png',
     infoLink: 'https://tu.qq.com/',
+    pinned: true
   },
   {
     caption: '腾讯云',
@@ -95,6 +96,7 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/tencentcloud.png',
     infoLink: 'https://cloud.tencent.com/',
+    pinned: true
   },
   {
     caption: '猫饼',
@@ -102,6 +104,7 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/maobing.png',
     infoLink: 'http://xiaodaotv.com/',
+    pinned: true
   },
   {
     caption: '腾讯动漫',
