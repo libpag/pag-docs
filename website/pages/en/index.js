@@ -7,9 +7,9 @@ function imgUrl(img) {
 
 class Button extends Component{
   render(){
-    const {text,img,blue} = this.props;
+    const {text,img,blue,link} = this.props;
     return (
-      <a class={'btn ' + (blue ? 'blue':'')}>
+      <a href={link} class={'btn ' + (blue ? 'blue':'')}>
         <img src={imgUrl(img)}/>
         <span>{text}</span>
       </a>
@@ -34,8 +34,8 @@ class Intro extends Component{
               付上线的流程，不断输出运行时可编辑的高质量动画内容。
             </div>
             <div class='btn-bar'>
-              <Button img={'new_official_website/sdk.png'} text='接入 SDK'/>
-              <Button img={'new_official_website/download.png'} text='免费下载' blue={true}/>
+              <Button link='/docs/sdk' img={'new_official_website/sdk.png'} text='接入 SDK'/>
+              <Button link='/docs/sdk-download' img={'new_official_website/download.png'} text='免费下载' blue={true}/>
             </div>
             <span class='tip'>
             同时支持 MacOS 与 Windows
@@ -50,7 +50,7 @@ class Intro extends Component{
 
 class Chapter extends Component{
   render(){
-    const { idx,content ,title} = this.props;
+    const { idx,content ,title,link} = this.props;
     const numImg = imgUrl(`new_official_website/number_${idx+1}.png`),
       thumbImg = imgUrl(`new_official_website/intro_${idx+1}.png`);
     let isOdd = idx%2 == 1
@@ -65,8 +65,7 @@ class Chapter extends Component{
               <div class='title'>{title}</div>
               {content()}
               <div class='btn-bar'>
-                {/* <Button text='演示动画' img={'new_official_website/play.png'}></Button> */}
-                <Button text='了解更多' blue={true} img={'new_official_website/more.png'}></Button>
+                <Button link={link} text='了解更多' img={'new_official_website/more-b.png'}></Button>
               </div>
           </div>
           <img src={thumbImg}></img>
@@ -84,8 +83,6 @@ class Main extends Component{
       <div class='main'>
         {
           [{
-            link1:'',
-            link2:'',
             title:"高效的动画文件",
             content:()=>{//1
               return (
@@ -99,8 +96,6 @@ class Main extends Component{
             }
           },
           {
-            link1:'',
-            link2:'',
             title:"AE 特性全面支持",
             content:()=>{//2
               return (
@@ -113,8 +108,6 @@ class Main extends Component{
               )
             }
           },{
-            link1:'',
-            link2:'',
             title:"完善的桌面工具",
             content:()=>{//3
               return (
@@ -127,8 +120,6 @@ class Main extends Component{
               )
             }
           },{
-            link1:'',
-            link2:'',
             title:"性能监测可视化",
             content:()=>{//4
               return (
@@ -140,8 +131,6 @@ class Main extends Component{
               )
             }
           },{
-            link1:'',
-            link2:'',
             title:"运行时可编辑",
             content:()=>{//5
               return (
@@ -155,7 +144,8 @@ class Main extends Component{
             }
           }].map((unit,idx)=>{
             return (
-              <Chapter idx={idx} 
+              <Chapter idx={idx}
+                      link={siteConfig.links.feature[idx]}
                       content={unit.content}
                       title={unit.title}/>
             )
@@ -200,8 +190,8 @@ class Download extends Component{
         <div class='wrap'>
           <div class='pkg'>
             <span class='pkg-download'></span>
-            <a class='mac-download' href=''></a>
-            <a class='win-download' href=''></a>
+            <a class='mac-download' href={siteConfig.links.download.mac}></a>
+            <a class='win-download' href={siteConfig.links.download.win}></a>
           </div>
         </div>
       </div>
@@ -223,26 +213,13 @@ class CustomerService extends Component{
           <div class='questions'>
             <div class='q-wrap'>
               {
-                [{
-                  text:"Q ：如何安装PAG？",
-                  link:""
-                },{
-                  text:"Q ：如何安装PAG？",
-                  link:""
-                },{
-                  text:"Q ：如何安装PAG？",
-                  link:""
-                },{
-                  text:"Q ：如何安装PAG？",
-                  link:""
-                },{
-                  text:"Q ：如何安装PAG？",
-                  link:""
-                }].map(unit=>{
+                siteConfig.faq.map(unit=>{
                   return (
                     <div class='unit'>
                       <div class='unit-wrap'>
-                        {unit.text}
+                        <a href={unit.link}>
+                        Q ：{unit.issue}
+                        </a>
                       </div>
                     </div> 
                   )
@@ -252,7 +229,7 @@ class CustomerService extends Component{
           </div>
           <div class='more'>
               没有合适的答案 ？<br/>
-              请前往<span class='strong'> 说明文档 </span> 或 <span class='strong'> 联系我们 </span>
+              请前往<span class='strong'> <a href='/docs/pag-export'>说明文档</a> </span> 或 <span class='strong'> <a href={`https://github.com/libpag/libpag/issues/new?assignees=&labels=&template=bug_report.md&title=`}>联系我们</a> </span>
           </div>
         </div>
         <img id='js_cs' src={imgUrl('new_official_website/cs.png')}/>

@@ -18,8 +18,8 @@ class Download extends React.Component{
         <div class='wrap'>
           <div class='pkg'>
             <span class='pkg-download'></span>
-            <a class='mac-download' href=''></a>
-            <a class='win-download' href=''></a>
+            <a class='mac-download' href={siteConfig.links.download.mac}></a>
+            <a class='win-download' href={siteConfig.links.download.win}></a>
           </div>
         </div>
       </div>

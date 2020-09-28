@@ -49,8 +49,8 @@ docReady(()=>{
                 var nav =  document.getElementsByClassName('nav-site')[0];
                 header.style.backdropFilter = close ? 'saturate(180%) blur(20px)' : 'none';
                 nav.style.backdropFilter = close ? 'none' :'saturate(180%) blur(20px)';
-                box.style.height = window.innerHeight+'px'
-                menu.style.display = close ? 'none' : 'block'
+                box.style.height = close ? '0' : window.innerHeight+'px';
+                menu.style.display = close ? 'none' : 'block';
             }
         }
         appendNav()
@@ -89,7 +89,7 @@ docReady(()=>{
         node.className='git-icon';
         footer.children[0].appendChild(node)
         document.getElementById('js_git').onclick = function(){
-            console.log('git link')
+            location.href = '//github.com/libpag/libpag.github.io'
         }
     }
     appendGit()

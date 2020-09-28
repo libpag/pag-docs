@@ -36,6 +36,7 @@
         .logo{
             margin-left: 24px;
             margin-top: 16px;
+            max-width: 999px;
         }
     }
     .intro-box{
@@ -295,6 +296,9 @@
              line-height: 24px;
              .strong{
                  cursor: pointer;
+                 a{
+                     color: $theme-blue;
+                 }
              }
          }
         }

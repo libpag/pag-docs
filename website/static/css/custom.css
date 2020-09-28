@@ -54,6 +54,7 @@ body {
 .pc-mode .fixedHeaderContainer .logo {
   margin-left: 24px;
   margin-top: 16px;
+  max-width: 999px;
 }
 .pc-mode .intro-box {
   margin-top: 125px;
@@ -302,6 +303,9 @@ body {
 }
 .pc-mode .customer-service .panel .more .strong {
   cursor: pointer;
+}
+.pc-mode .customer-service .panel .more .strong a {
+  color: #005AD9;
 }
 .pc-mode .nav-footer {
   background-color: #222;

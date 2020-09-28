@@ -203,6 +203,26 @@ const users = [
   },
 ];
 
+const links = {
+  "github":"github链接",
+  "feature":[
+    '了解更多链接1',
+    '了解更多链接2',
+    '了解更多链接3',
+    '了解更多链接4',
+    '了解更多链接5'
+  ],
+  "download":{
+    mac:"mac",
+    win:"win"
+  }
+}
+
+const faq = [{
+  issue:"如何安装PAG ?",
+  link:"http://pag.io"
+}]
+
 const siteConfig = {
   title: 'PAG', // Title for your website.
   tagline: 'Portable Animated Graphics',
@@ -249,7 +269,8 @@ const siteConfig = {
 
   // If you have users set above, you add it here:
   users,
-
+  links,
+  faq,
   /* path to images for header/footer */
   headerIcon: 'img/new_official_website/logo.png',
   footerIcon: 'img/pag-256x256.png',
