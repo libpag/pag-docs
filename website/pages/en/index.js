@@ -27,7 +27,7 @@ class Intro extends Component{
               <span class='strong'>
               Portable Animated Graphics </span> 是一套完整的动画工作流。提供从<br/>
               AE（Adobe After Effects）导出插件，到桌面预览工具，再到各端<br/>
-              的跨平台渲染 SDK。
+              的渲染 SDK。
             </div>
             <div class='paragraph'>
               <span class='strong'>PAG </span>的目标是降低或消除动画研发成本，打通设计师创作到素材交<br/>
