@@ -34,7 +34,7 @@ class Intro extends Component{
               付上线的流程，不断输出运行时可编辑的高质量动画内容。
             </div>
             <div class='btn-bar'>
-              <Button link='/docs/sdk' img={'new_official_website/sdk.png'} text='接入 SDK'/>
+              <Button link='/docs/sdk.html' img={'new_official_website/sdk.png'} text='接入 SDK'/>
               <Button img={'new_official_website/download.png'} text='免费下载' className='download-btn' blue={true}/>
             </div>
             <span class='tip'>
