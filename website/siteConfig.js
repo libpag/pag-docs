@@ -263,13 +263,13 @@ const siteConfig = {
       href:'/',label:'首页'
     },
     {
-      href:'/docs/install',label:'说明文档'
+      href:'/docs/install.html',label:'说明文档'
     },
     {
-      href:'/api',label:'API参考'
+      href:'/api.html',label:'API参考'
     },
     {
-      href:'/docs/sdk',label:'接入SDK'
+      href:'/docs/sdk.html',label:'接入SDK'
     },
     {
       href:'/#download',label:'免费下载'

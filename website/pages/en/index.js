@@ -34,7 +34,7 @@ class Intro extends Component{
               付上线的流程，不断输出运行时可编辑的高质量动画内容。
             </div>
             <div class='btn-bar'>
-              <Button link='/docs/sdk' img={'new_official_website/sdk.png'} text='接入 SDK'/>
+              <Button link='/docs/sdk.html' img={'new_official_website/sdk.png'} text='接入 SDK'/>
               <Button img={'new_official_website/download.png'} text='免费下载' className='download-btn' blue={true}/>
             </div>
             <span class='tip'>
@@ -229,7 +229,7 @@ class CustomerService extends Component{
           </div>
           <div class='more'>
               没有合适的答案 ？<br/>
-              请前往<span class='strong'> <a href='/docs/install'>说明文档</a> </span> 或 <span class='strong'> <a href={`https://qm.qq.com/cgi-bin/qm/qr?k=Wa65DTnEKo2hnPsvY-1EgJOF8tvKQ-ZT&jump_from=webapi`}>联系我们</a> </span>
+              请前往<span class='strong'> <a href='/docs/install.html'>说明文档</a> </span> 或 <span class='strong'> <a href={`https://qm.qq.com/cgi-bin/qm/qr?k=Wa65DTnEKo2hnPsvY-1EgJOF8tvKQ-ZT&jump_from=webapi`}>联系我们</a> </span>
           </div>
         </div>
         <img id='js_cs' src={imgUrl('new_official_website/cs.png')}/>
