@@ -229,7 +229,7 @@ class CustomerService extends Component{
           </div>
           <div class='more'>
               没有合适的答案 ？<br/>
-              请前往<span class='strong'> <a href='/docs/install'>说明文档</a> </span> 或 <span class='strong'> <a href={`https://qm.qq.com/cgi-bin/qm/qr?k=Wa65DTnEKo2hnPsvY-1EgJOF8tvKQ-ZT&jump_from=webapi`}>联系我们</a> </span>
+              请前往<span class='strong'> <a href='/docs/install'>说明文档</a> </span> 或 <span class='strong'> <a class='js_qqgroup'>联系我们</a> </span>
           </div>
         </div>
         <img id='js_cs' src={imgUrl('new_official_website/cs.png')}/>
