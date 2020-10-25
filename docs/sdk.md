@@ -113,7 +113,7 @@ buildscript {
 # DEMO下载
 **iOS DEMO下载:**
 
-[<font color=blue>pag-ios-demo.zip</font>](/pag/demo/pag-ios-demo.zip)
+[<font color=blue>https://github.com/libpag/pag-ios.git</font>](https://github.com/libpag/pag-ios.git)
 
 **Android DEMO下载:**
 
