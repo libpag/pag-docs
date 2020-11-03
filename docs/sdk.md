@@ -117,7 +117,7 @@ buildscript {
 
 **Android DEMO下载:**
 
-[<font color=blue>pag-android-demo.zip</font>](/pag/demo/pag-android-demo.zip)
+[<font color=blue>https://github.com/libpag/pag-android.git</font>](https://github.com/libpag/pag-android.git)
 
 ## 测试素材
 PAG动画测试素材下载：[<font color=blue> pag_files.zip </font>](/file/pag_files.zip) 
