@@ -32,7 +32,7 @@ class Page extends React.Component {
 
                 {/* iframe part */}
                 <div id='js_iframe_part' style={{width:"100%"}}>
-                    <iframe id="ifame" style={{width:"100%"}}></iframe>
+                    <iframe id="ifame" style={{width:"100%",paddingTop:'32px'}}></iframe>
                 </div>
                 <script
                     dangerouslySetInnerHTML={{
@@ -42,6 +42,7 @@ class Page extends React.Component {
                         var androidPathname = "/apis/android/";
                         var innerDocClick = false;
                         var hasInit = false;
+                        var ignore = false;
                         var android = function (){
                             return location.hash.indexOf('apis/android')>1;
                         }
@@ -52,6 +53,10 @@ class Page extends React.Component {
                         }
                         function updateIframe (url,cb){
                             iframe.onload = function(){
+                                try{
+                                    iframe.contentDocument.getElementById('header-buttons').style.background = '#fff';
+                                    iframe.contentDocument.getElementById('header-buttons').children[0].children[0].style.color='#fff';
+                                }catch(e){}
                                 iframe.style.height = Math.max(iframe.contentWindow.document.documentElement.scrollHeight,document.body.clientHeight) + 'px';
                                 hasInit = true;
                                 if(android()){
@@ -63,7 +68,7 @@ class Page extends React.Component {
                                     }
                                 }
                             }
-                            if(android()){
+                            if(hasInit && android()){ 
                                 return ;
                             }
                             iframe.src = android() ? '/apis/android/' :url;
@@ -75,6 +80,7 @@ class Page extends React.Component {
                         else{
                             hasInit = true;
                         }
+                        // 入口按钮
                         document.getElementById('js_ios_doc').onclick = ()=>{ 
                             document.getElementById('js_original_part').style.display = 'none';
                             document.getElementById('js_iframe_part').style.display = 'block';
@@ -83,7 +89,9 @@ class Page extends React.Component {
                         document.getElementById('js_android_doc').onclick = ()=>{ 
                             document.getElementById('js_original_part').style.display = 'none';
                             document.getElementById('js_iframe_part').style.display = 'block';
+                            ignore = true;
                             updateIframe(androidPathname)
+                            window.location.hash = '#'+androidPathname + 'org/libpag/package-summary.html' ;
                         }
                         //监听子页面URL的变化事件，同步到壳的URL
                         window.addEventListener("message", function(e){
@@ -102,11 +110,23 @@ class Page extends React.Component {
                         }, false);
                         //URL的变化更新到Iframe
                         window.onhashchange = function(){
+                            if(ignore){
+                                ignore = false;
+                                return;
+                            }
                             if(!innerDocClick || !hasInit){
                                 return;
                             }
                             updateIframe(location.hash.replace('#',''))
                         }
+
+                        //
+                        var css = document.createElement('style');
+                        css.type = 'text/css';
+                        css.appendChild(document.createTextNode(
+                            'aside #header-buttons{  background: #fff !important;}aside #header-buttons > li > a{ color:transparent !important; }'
+                        ));
+                        document.head.appendChild(css)
                         `,
                     }}
                 />
