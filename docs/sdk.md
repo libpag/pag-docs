@@ -67,13 +67,6 @@ buildscript {
    ii. 在app的gradle文件app/build.gradle，添加libpag的库依赖
    
 ```
-	android {
-    	defaultConfig {
-        	ndk {
-            abiFilters "armeabi-v7a"
-        	}
-    	}
-    }
 	
 	dependencies {
 	    //libpag的核心库
