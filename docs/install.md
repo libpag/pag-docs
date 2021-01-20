@@ -23,9 +23,7 @@ title: 安装
 >PAGViewer 支持切换到 Beta 版本来使用最新的 PAG 特性。关于如何升级到 Beta 版可以 [<font color=blue>点击这里</font>](/docs/beta.html)。
 
 ## Windows
-PAGViewer Beta 版现在支持在 Windows 下预览 PAG 文件。AE 导出插件还在开发过程中，我们将在开发完成后提供，请留意 PAGViewer 的自动更新提示。
-
-安装成功后，PAGViewer 会出现在开始菜单中，并自动关联本地 pag 文件，双击 pag 文件即可呼起 PAGViewer 直接预览播放。
+PAGViewer Beta 版现在支持在 Windows 下预览 PAG 文件。安装成功后，PAGViewer 会出现在开始菜单中，并自动关联本地 pag 文件，双击 pag 文件即可呼起 PAGViewer 直接预览播放。
 
 #### 下载安装
 [<font color=blue>PAGViewer_Installer.exe</font>](https://dldir1.qq.com/qqmi/libpag/beta/PAGViewer_Installer.exe) 点击下载安装程序，双击即可安装，安装过程中可能会要求取得管理员权限。

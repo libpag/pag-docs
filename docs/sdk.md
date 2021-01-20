@@ -7,8 +7,8 @@ title: 接入SDK
 
 libpag 目前支持Android和iOS平台，web的支持目前处于开发过程中，接入采用SDK的方式<br/>
 
-### SDK及范例工程获取
-最新SDK及范例工程：[<font color=blue>SDK下载</font>](/docs/sdk-download.html)<br/>
+### SDK获取
+最新SDK：[<font color=blue>SDK下载页面</font>](https://github.com/libpag/libpag/releases)<br/>
 
  - Android端SDK为aar文件，支持armeabi, armv7a, arm64
  - iOS端SDK为framework文件，分为四个版本：真机版（arm64、arm64/armv7）和真机模拟器版（arm64/x64、arm64/armv7/x64）
@@ -100,7 +100,7 @@ buildscript {
 ```
 	pod 'libpag', '~>3.2.4.37' 
 ```
-**注意：** 最新SDK版本请参考：[<font color=blue>SDK下载</font>](/docs/sdk-download.html)<br/>
+**注意：** 最新SDK版本请参考：[<font color=blue>SDK下载页面</font>](https://github.com/libpag/libpag/releases)<br/>
 
 
 # DEMO下载
