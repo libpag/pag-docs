@@ -1,6 +1,6 @@
 ---
 id: install
-title: 安装
+title: 安装PAGViewer
 ---
 
 目前 PAG 预览程序支持 macOS 和 Windows 操作系统。
