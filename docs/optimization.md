@@ -27,9 +27,9 @@ PAGViewer不仅仅是PAG素材的桌面预览工具，同时还提供了性能�
 * 	支持所有AE动画效果
 
 **视频序列帧缺点： **<br/>
-	* 	PAG导出文件较大 <br/>
-	* 	在终端渲染的性能稍差，会使用到终端的硬件解码器资源，渲染显存较大  <br/>
-	* 	不可编辑视频序列帧中的文本或图片  <br/>
+* 	PAG导出文件较大 <br/>
+* 	在终端渲染的性能稍差，会使用到终端的硬件解码器资源，渲染显存较大  <br/>
+* 	不可编辑视频序列帧中的文本或图片  <br/>
 
 #### 2、 矢量贴纸优化策略
 
@@ -44,8 +44,9 @@ PAGViewer不仅仅是PAG素材的桌面预览工具，同时还提供了性能�
 
 	视频序列帧优化案例:<br/>
 	(1)  相邻多个不同视频序列帧可合并
-	
-	![](/img/docs/opt_0.png#pic_left)
+	<div align="left">
+    <img src=/img/docs/opt_0.png/>
+   </div>    
 	
 	(2）不同BlendMode的视频序列帧不能合并
 	
@@ -53,27 +54,37 @@ PAGViewer不仅仅是PAG素材的桌面预览工具，同时还提供了性能�
 	
 	(3）不可编辑图层内容合入相近视频序列帧
 	
-	![](/img/docs/opt_2.png#pic_left)
+	<div align="left">
+    <img src=/img/docs/opt_2.png/>
+   </div>   
 	
 	(4) 跨图层视频序列帧合并 <br/>
 	如下图，有两个视频序列帧，分别处于不同的图层
 	
-	![](/img/docs/opt_3.png#pic_left)
+	<div align="left">
+    <img src=/img/docs/opt_3.png/>
+   </div>   
 	
 	序列帧跨图层合并后，只有一个视频序列帧
 	
-	![](/img/docs/opt_4.png#pic_left)
+	<div align="left">
+    <img src=/img/docs/opt_4.png/>
+   </div>   
 	
 	(5）视频序列帧错误使用案例 <br/>
 	如下图，做了两个内容和名字都相同的预合成
 	
-	![](/img/docs/opt_5.png#pic_left)
+	<div align="left">
+    <img src=/img/docs/opt_5.png/>
+   </div>   
 	
 	正确做法：一个预合成被引用两次 <br/>
 	
 	(6）重叠区间视频序列帧优化
 	
-	![](/img/docs/opt_6.png#pic_left)
+	<div align="left">
+    <img src=/img/docs/opt_6.png/>
+   </div>   
 	
 	如上图，虽然是相同内容，但是有重叠时间段，不能做成一个预合成复用，否则重叠时间段内会不断seek解码 <br/>
 	优化建议：合成一个视频序列帧 <br/>
@@ -85,14 +96,14 @@ PAGViewer不仅仅是PAG素材的桌面预览工具，同时还提供了性能�
 
 ![](/img/docs/opt_8.png#pic_left)
 
-挑选使用分辨率比较大的图片素材，降低分辨率 <br/>
+	挑选使用分辨率比较大的图片素材，降低分辨率 <br/>
 
 * 	对于视频序列帧素材一样，视频序列帧的尺寸也不宜大于所在图层的尺寸 <br/>
-<div align="left">
-<img src=/img/docs/opt_9.png width=60%/>
-</div>
-
-同时，降低视频序列帧素材的分辨率同样可以提升性能 <br/>
+	<div align="left">
+	<img src=/img/docs/opt_9.png width=60%/>
+	</div>
+	
+	同时，降低视频序列帧素材的分辨率同样可以提升性能 <br/>
 
 ##### 5、 性能检测面板提醒 <br/>
 
