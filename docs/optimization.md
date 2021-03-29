@@ -44,9 +44,8 @@ PAGViewer不仅仅是PAG素材的桌面预览工具，同时还提供了性能�
 
 	视频序列帧优化案例:<br/>
 	(1)  相邻多个不同视频序列帧可合并
-	<div align="left">
-    <img src=/img/docs/opt_0.png/>
-   </div>    
+	
+	![](/img/docs/opt_0.png#pic_left)
 	
 	(2）不同BlendMode的视频序列帧不能合并
 	
@@ -54,37 +53,27 @@ PAGViewer不仅仅是PAG素材的桌面预览工具，同时还提供了性能�
 	
 	(3）不可编辑图层内容合入相近视频序列帧
 	
-	<div align="left">
-    <img src=/img/docs/opt_2.png/>
-   </div>   
+	![](/img/docs/opt_2.png#pic_left)
 	
 	(4) 跨图层视频序列帧合并 <br/>
 	如下图，有两个视频序列帧，分别处于不同的图层
 	
-	<div align="left">
-    <img src=/img/docs/opt_3.png/>
-   </div>   
+	![](/img/docs/opt_3.png#pic_left)
 	
 	序列帧跨图层合并后，只有一个视频序列帧
 	
-	<div align="left">
-    <img src=/img/docs/opt_4.png/>
-   </div>   
+	![](/img/docs/opt_4.png#pic_left)
 	
 	(5）视频序列帧错误使用案例 <br/>
 	如下图，做了两个内容和名字都相同的预合成
 	
-	<div align="left">
-    <img src=/img/docs/opt_5.png/>
-   </div>   
+	![](/img/docs/opt_5.png#pic_left)
 	
 	正确做法：一个预合成被引用两次 <br/>
 	
 	(6）重叠区间视频序列帧优化
 	
-	<div align="left">
-    <img src=/img/docs/opt_6.png/>
-   </div>   
+	![](/img/docs/opt_6.png#pic_left)
 	
 	如上图，虽然是相同内容，但是有重叠时间段，不能做成一个预合成复用，否则重叠时间段内会不断seek解码 <br/>
 	优化建议：合成一个视频序列帧 <br/>
