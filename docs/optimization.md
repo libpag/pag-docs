@@ -96,6 +96,6 @@ PAGViewer不仅仅是PAG素材的桌面预览工具，同时还提供了性能�
 
 #### 5、 性能检测面板提醒 <br/>
 
-当导出PAG素材预览的时候有红色警告信息，可以结合提示信息对PAG素材进行优化，如何解读参考 [<font color=blue>P使用性能检测面板</font>](https://pag.io/docs/profiler.html) 和 [<font color=blue>AE导出自动检测规则</font>](https://pag.io/docs/pag-export-verify.html)
+当导出PAG素材预览的时候有红色警告信息，可以结合提示信息对PAG素材进行优化，如何解读参考 [<font color=blue>使用性能检测面板</font>](https://pag.io/docs/profiler.html) 和 [<font color=blue>AE导出自动检测规则</font>](https://pag.io/docs/pag-export-verify.html)
 
 
