@@ -5,7 +5,8 @@ title: 导出PAG文件
 
 ### 准备工作：
 1，确保已经安装PAGViewer。[<font color=blue>如何安装PAGViewer</font>](/docs/install.html)<br/>
-2，打开AE软件，在菜单项中将会看到：“文件” -> “导出” -> “PAG File...”，则说明已经成功安装。<br/>
+2，确保已经安装AE导出插件。[<font color=blue>如何安装AE导出插件</font>](/docs/install-PAGExporter.html)<br/>
+3，打开AE软件，在菜单项中将会看到：“文件” -> “导出” -> “PAG File...”，则说明已经成功安装。<br/>
 
 ### 一，导出全矢量的PAG文件
 
