@@ -1,6 +1,6 @@
 ---
 id: install-PAGExporter
-title: 安装 AE 导出插件（设计师用）
+title: 安装 AE 导出插件
 ---
 
 设计师需要安装 AE 导出插件，将AE工程导出 pag 文件
