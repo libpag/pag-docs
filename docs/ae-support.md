@@ -77,16 +77,18 @@ title: AE功能支持列表
 		不透明度 (Opacity)
 		角度 (Angle)
 		距离 (Distance)
+		扩展（Spread）
 		大小 (Size)
 
 ### 特效 (Effect)
     运动模糊 (Motion Blur)
+    高斯模糊（Gaussian Blur）
     凹凸效果 (Bulge)
     辉光效果 (Glow)
     色阶控制 (Levels Individual Controls)
     边角定位 (Corner Pin)
     动态拼贴 (Motion Tile)
-    置换效果（Displacement Map）
+    置换效果（Displacement Map）(暂要求将置换图层修改为预合成图层并改合成名为"_bmp"后缀)
     
 （效果预览：[<font color=blue>当前支持的AE内置特效</font>](/docs/ae-effect.html)）
 
@@ -132,6 +134,20 @@ title: AE功能支持列表
 			最后一行居中对齐 (Full Justify Last Line Center)
 			最后一行右对齐 (Full Justify Last Line Right)
 			两端对齐 (Full Justify Last Line Full)
+		横排/竖排（Horizontal/Vertical）
+
+	动画制作工具（Animate）
+		范围选择器
+			起始（Start）
+			结束（End）
+			偏移（Offset）
+			（高级属性正在开发支持中：模式、数量、形状、随机排序，等等）
+		属性
+			字间距（Tracking）
+				字符间距类型（Track Type）
+				字符间距大小（Tracking Amount）
+			位置（Position）
+			（其它属性正在开发支持中：旋转、缩放、透明度，等等）
 
 
 # 计划中将要支持的特性
@@ -143,13 +159,11 @@ title: AE功能支持列表
 ### 文本图层 (Texts)
 	路径选项 (Path Options)
 	更多选项 (More Options)
-	动画制作工具 (Animator)
+	动画制作工具 (Animate)
 	
 ### 图层效果 (Layer Effects)
 	浅色调 (Tint)
 	填充 (Fill)
 	描边 (Stroke)
 	三色调 (Tritone)
-	投影 (Drop Shadow)
 	径向擦除 (Radial Wipe)
-	置换 (Displacement Map)
