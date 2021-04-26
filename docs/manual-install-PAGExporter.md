@@ -3,7 +3,7 @@ id: manual-install-PAGExporter
 title: 手动安装 AE 导出插件（windows）
 ---
 
-windows上安装 AE 导出插件时，因为权限和兼容性等问题，偶尔出现安装失败的情况，这是可以采用手动安装。
+windows上安装 AE 导出插件时，因为权限和兼容性等问题，偶尔出现安装失败的情况，这时可以采用手动安装。
 
 ### 准备工作：
 1，确保已经安装了 AE（Adobe After Effects）（AE2018、AE2019、AE2020 皆可）<br/>
@@ -25,12 +25,12 @@ windows上安装 AE 导出插件时，因为权限和兼容性等问题，偶尔
 
 #### 2, 拷贝 QT dll 库：
 ![手动安装AE插件截图3](/img/docs/manual-install-PAGExporter3.jpg)
-    打开 PAGViewer 的安装目录下 "QT dll" 目录（如上图）的所有文件和文件夹拷贝到 AE 安装目录（如下图）
+    打开 PAGViewer 的安装目录下 "QT dll" 目录里（如上图）的所有文件和文件夹拷贝到 AE 安装目录（如下图）
 ![手动安装AE插件截图4](/img/docs/manual-install-PAGExporter4.jpg)
 
 #### 3、拷贝其它插件：
 ![手动安装AE插件截图5](/img/docs/manual-install-PAGExporter5.jpg)
-    将 PAGViewer 安装目录（如上图）下的 ImageFillRule.aex 和 TextBackground.aex 这两个文件拷贝到 AE 公共安装目录（如下图）
+    将 PAGViewer 安装目录（如上图）下的 ImageFillRule.aex 和 TextBackground.aex 这两个文件拷贝到 AE 公共目录（如下图）
 ![手动安装AE插件截图6](/img/docs/manual-install-PAGExporter6.jpg)
 
 ### 验证
