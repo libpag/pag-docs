@@ -19,19 +19,19 @@ title: 手动安装 AE 导出插件（windows）
 	AE 公共目录（示例）： C:\Program Files\Adobe\Common\Plug-ins\7.0\MediaCore <br/>
 
 #### 1，拷贝导出插件 PAGExporter：
-![手动安装AE插件截图1](/img/docs/manual-install-PAGExporter1.jpg)
+	![手动安装AE插件截图1](/img/docs/manual-install-PAGExporter1.jpg)
 	将 PAGViewer 安装目录（如上图）下的 PAGExporter.aex 文件拷贝到 AE 安装目录下的 Plug-ins 目录（如下图）
-![手动安装AE插件截图2](/img/docs/manual-install-PAGExporter2.jpg)
+	![手动安装AE插件截图2](/img/docs/manual-install-PAGExporter2.jpg)
 
 #### 2, 拷贝 QT dll 库：
-![手动安装AE插件截图3](/img/docs/manual-install-PAGExporter3.jpg)
+	![手动安装AE插件截图3](/img/docs/manual-install-PAGExporter3.jpg)
 	打开 PAGViewer 的安装目录下 "QT dll" 目录里（如上图）的所有文件和文件夹拷贝到 AE 安装目录（如下图）
-![手动安装AE插件截图4](/img/docs/manual-install-PAGExporter4.jpg)
+	![手动安装AE插件截图4](/img/docs/manual-install-PAGExporter4.jpg)
 
 #### 3、拷贝其它插件：
-![手动安装AE插件截图5](/img/docs/manual-install-PAGExporter5.jpg)
+	![手动安装AE插件截图5](/img/docs/manual-install-PAGExporter5.jpg)
 	将 PAGViewer 安装目录（如上图）下的 ImageFillRule.aex 和 TextBackground.aex 这两个文件拷贝到 AE 公共目录（如下图）
-![手动安装AE插件截图6](/img/docs/manual-install-PAGExporter6.jpg)
+	![手动安装AE插件截图6](/img/docs/manual-install-PAGExporter6.jpg)
 
 ### 验证
 	打开AE软件，在菜单项中将会看到：“文件” -> “导出” -> “PAG File...”，则说明已经成功安装。
