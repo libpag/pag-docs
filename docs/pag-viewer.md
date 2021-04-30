@@ -77,6 +77,6 @@ PAGViewer 内置了调试 pag 文件的许多功能，比如性能分析面板�
 ![设置面板](/img/docs/player-settings.png)
 您可以通过菜单 “文件/设置” 打开设置菜单。
 
-* 显示文件中的视频序列帧。可以设置 PAGViewer 是否跳过视频序列帧的渲染。
+* 显示文件中的BMP预合成。可以设置 PAGViewer 是否跳过BMP预合成的渲染。
 * 自动检查更新。可以设置 PAGViewer 是否自定检查更新。
 * 使用 Beta 版本的 PAG 和 AE 导出工具。设置是否使用 beta 版功能。
