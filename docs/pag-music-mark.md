@@ -7,7 +7,7 @@ title: 如何在AE中到导出音频
 2. 将音频文件添加到目标合成中即可。
 
 ### 查看音频是否导出成功
-在PAGViewer中查看PAG文件结构：getRootLayer：PreComposition -> composition:VectorComposition -> audioBytes 的值，来判断pag文件中音频输入是否导出成功，为{}时导出成功，为<null>导出失败
+在PAGViewer中查看PAG文件结构：getRootLayer：PreComposeLayer -> composition:VectorComposition -> audioBytes 的值，来判断pag文件中音频输入是否导出成功，为 {} 时导出成功，为 null 时导出失败
 
 导出成功：
 ![](/img/docs/export_music_success.png)
