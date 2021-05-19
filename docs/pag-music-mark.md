@@ -1,8 +1,8 @@
 ---
 id: pag-music-mark
-title: 如何在AE中到导出音频
+title: 如何在AE中导出音频
 ---
-### 如何在AE中到导出音频
+### 如何在AE中导出音频
 1. 升级版本：升级 PAGViewer 至最新的 beta 版 （2.0.0或以上）。[<font color=blue>如何升级至beta版</font>](/docs/beta.html) <br/>
 2. 将音频文件添加到目标合成中即可。
 
