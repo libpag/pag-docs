@@ -57,16 +57,16 @@ BMP预合成导出模式可以支持所有的AE特效，设计师只需要关注
 	发光度 (Luminosity)
 
 
-### 轨道蒙板 (Track Mattes)
+### 轨道遮罩 (Track Mattes)
 	无 (None)
-	Alpha 蒙板 (Alpha)
-	反向 Alpha 蒙板 (Alpha Inverted)
+	Alpha 遮罩 (Alpha Matte)
+	Alpha 反转遮罩 (Alpha Inverted Matte)
 	[均可支持半透明擦除]
 
-### 遮罩 (Masks)
-	遮罩形状 (Mask Path)
-	遮罩扩展 (Mask Expansion)
-	遮罩模式 (Mask Modes)
+### 蒙版 (Masks)
+	蒙版路径 (Mask Path)
+	蒙版扩展 (Mask Expansion)
+	蒙版模式 (Mask Modes)
 		无 (None)
 		相加 (Add)
 		相减 (Subtract)
