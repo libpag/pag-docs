@@ -171,7 +171,6 @@ BMP预合成导出模式可以支持所有的AE特效，设计师只需要关注
 			关联（Correlation）
 			时间相位（Temporal Phase）
 			空间相位（Spatial Phase）
-			锁定维度（Lock Dimensions）
 			随机植入（Random Seed）
 		(支持多个动画制作工具/属性/选择器的叠加)
 
