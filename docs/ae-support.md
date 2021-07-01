@@ -140,6 +140,14 @@ BMP预合成导出模式可以支持所有的AE特效，设计师只需要关注
 		横排/竖排（Horizontal/Vertical）
 
 	动画制作工具（Animates）
+		属性
+			字间距（Tracking）
+				字符间距类型（Track Type）
+				字符间距大小（Tracking Amount）
+			位置（Position）
+			旋转（Rotation）
+			缩放（Scale）
+			不透明度（Opacity）
 		范围选择器（Range Selector）
 			起始（Start）
 			结束（End）
@@ -165,15 +173,7 @@ BMP预合成导出模式可以支持所有的AE特效，设计师只需要关注
 			空间相位（Spatial Phase）
 			锁定维度（Lock Dimensions）
 			随机植入（Random Seed）
-		属性
-			字间距（Tracking）
-				字符间距类型（Track Type）
-				字符间距大小（Tracking Amount）
-			位置（Position）
-			旋转（Rotation）
-			缩放（Scale）
-			不透明度（Opacity）
-		(支持多个选择器/属性/动画制作工具的叠加)
+		(支持多个动画制作工具/属性/选择器的叠加)
 
 
 # 计划中将要支持的特性
