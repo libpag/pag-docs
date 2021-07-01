@@ -139,18 +139,41 @@ BMP预合成导出模式可以支持所有的AE特效，设计师只需要关注
 			两端对齐 (Full Justify Last Line Full)
 		横排/竖排（Horizontal/Vertical）
 
-	动画制作工具（Animate）
-		范围选择器
+	动画制作工具（Animates）
+		范围选择器（Range Selector）
 			起始（Start）
 			结束（End）
 			偏移（Offset）
-			（高级属性正在开发支持中：模式、数量、形状、随机排序，等等）
+			单位（Units）: (仅支持默认值"百分比")
+			依据（Based On）:（仅支持默认值"字符"）
+			模式（Mode）
+			数量（Amount）
+			形状（Shape）
+			平滑度（Smoothness）: (仅支持默认值 100%)
+			缓和高（Ease High）:（仅支持默认值 0%）
+			缓和低（Ease Low）:（仅支持默认值 -100%）
+			随机排序（Randomize Order）
+			随机植入（Random Seed）
+		摆动选择器（Wiggly Selector）
+			模式（Mode）
+			最大量（Max Amount）
+			最小量（Min Amount）
+			依据（Based On）:（仅支持默认值"字符"）
+			摇摆/秒（Wiggly Per Secend）
+			关联（Correlation）
+			时间相位（Temporal Phase）
+			空间相位（Spatial Phase）
+			锁定维度（Lock Dimensions）
+			随机植入（Random Seed）
 		属性
 			字间距（Tracking）
 				字符间距类型（Track Type）
 				字符间距大小（Tracking Amount）
 			位置（Position）
-			（其它属性正在开发支持中：旋转、缩放、透明度，等等）
+			旋转（Rotation）
+			缩放（Scale）
+			不透明度（Opacity）
+		(支持多个选择器/属性/动画制作工具的叠加)
 
 
 # 计划中将要支持的特性
