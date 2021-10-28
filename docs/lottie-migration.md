@@ -97,18 +97,14 @@ PAG插件配置面板 [<font color=blue>文章地址</font>](/docs/plugin-config
 
 #### 开发者迁移指南
 
-##### 1.PAG使用Demo
-
-libpag SDK及范例工程的获取请联系我们的邮箱：**libpag@tencent.com**
-
-- Android端SDK为aar文件，支持armv7a
-- iOS端SDK为framework文件，分为四个版本：真机版（arm64、arm64/armv7）和真机模拟器版（arm64/x64、arm64/armv7/x64）
-
-Lottie迁移PAGSDK说明文档  [<font color=blue>文章地址</font>](/docs/SDK-migration.html)
-
-##### 2.PAG快速接入
+##### 1.PAG快速接入
 
 接入SDK [<font color=blue>文章地址</font>](/docs/sdk.html)
+
+
+##### 2.Lottie迁移说明
+
+Lottie迁移PAG SDK说明文档  [<font color=blue>文章地址</font>](/docs/SDK-migration.html)
 
 ##### 3.SDK高级使用指南
 
