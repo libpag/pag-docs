@@ -1,5 +1,5 @@
 ---
-id: pag-training
+id: pag-training-2
 title: PAG新版导出面板培训视频
 ---
 
