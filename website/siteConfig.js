@@ -35,28 +35,20 @@ const users = [
     pinned: true,
   },
   {
-    caption: 'QQ音乐',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/qqmusic.png',
-    infoLink: 'https://y.qq.com/',
-    pinned: true
-  },
-  {
-    caption: '微视',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/weishi.png',
-    infoLink: 'https://weishi.qq.com/',
-    pinned: true,
-  },
-  {
     caption: '腾讯视频',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/tencentvideo.jpg',
     infoLink: 'https://v.qq.com',
     pinned: true,
+  },
+  {
+    caption: 'QQ音乐',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/qqmusic.png',
+    infoLink: 'https://y.qq.com/',
+    pinned: true
   },
   {
     caption: '全民K歌',
@@ -99,12 +91,12 @@ const users = [
     pinned: true
   },
   {
-    caption: '猫饼',
+    caption: '微视',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/maobing.png',
-    infoLink: 'http://xiaodaotv.com/',
-    pinned: true
+    image: '/img/weishi.png',
+    infoLink: 'https://weishi.qq.com/',
+    pinned: true,
   },
   {
     caption: '腾讯动漫',
@@ -112,6 +104,27 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/dongman.png',
     infoLink: 'https://ac.qq.com',
+  },
+  {
+    caption: 'QQ阅读',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/QQReader.png',
+    infoLink: 'https://yuedu.reader.qq.com/common/common/down/dist/index.html?actid=11822',
+  },
+  {
+    caption: '智影',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/zhiying.jpeg',
+    infoLink: 'https://zenvideo.qq.com/#/home',
+  },
+  {
+    caption: '腾讯广告',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/AMS.png',
+    infoLink: 'https://e.qq.com/ads/',
   },
   {
     caption: '起点',
@@ -140,13 +153,6 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/qiedianjing.jpeg',
     infoLink: 'https://egame.qq.com/',
-  },
-  {
-    caption: '火锅视频',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/yoo.png',
-    infoLink: 'http://yoo.qq.com/',
   },
   {
     caption: 'Q音宝贝',
