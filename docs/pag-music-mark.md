@@ -15,3 +15,5 @@ title: 如何在AE中导出音频
 导出失败：
 ![](/img/docs/export_music_failed.png)
 
+### 音频文件的格式
+pag中音频文件编码格式为aac，容器格式为mpeg-4
