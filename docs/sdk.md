@@ -98,7 +98,7 @@ buildscript {
 修改App目录下的Podfile文件，添加相应的libpag的引用.
 
 ```
-	pod 'libpag', '~>3.2.4.37' 
+	pod 'libpag'
 ```
 **注意：** 最新SDK版本请参考：[<font color=blue>SDK下载页面</font>](https://github.com/libpag/libpag/releases)<br/>
 
