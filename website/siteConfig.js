@@ -328,7 +328,7 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['/javascript/page.js','https://buttons.github.io/buttons.js'],
+  scripts: ['/javascript/page.js','https://buttons.github.io/buttons.js', '/javascript/pagjs/pag.umd.js'],
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
   // No .html extensions for paths.

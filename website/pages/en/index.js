@@ -51,8 +51,8 @@ class Intro extends Component{
 class Chapter extends Component{
   render(){
     const { idx,content ,title,link} = this.props;
-    const numImg = imgUrl(`new_official_website/number_${idx+1}.png`),
-      thumbImg = imgUrl(`new_official_website/intro_${idx+1}.png`);
+    const numImg = imgUrl(`new_official_website/number_${idx+1}.png`);
+       // thumbImg = imgUrl(`new_official_website/intro_${idx+1}.png`);
     let isOdd = idx%2 == 1
     return (
       <div class='chapter'>
@@ -68,7 +68,7 @@ class Chapter extends Component{
                 <Button link={link} text='了解更多' img={'new_official_website/more-b.png'}></Button>
               </div>
           </div>
-          <img src={thumbImg}></img>
+          <canvas class='pagView' width='600px' height='400px'></canvas>
         </div>
         {
           idx !== 4 ? <img class={'arrow '+( isOdd ? 'reverse':'')} src={imgUrl(`new_official_website/arrow.png`)}/> : null
