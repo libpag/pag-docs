@@ -8,15 +8,15 @@ title: 导出面板快捷键设置
 导出插件中的唤起导出面板和预览功能对于部分设计师而言属于高频操作，支持在AE中设置快捷键
 
 #### 支持设置快捷键的功能
-1、唤起导出面板主页
-2、当前合成导出PAG文件
-3、唤起预览页面
+1、唤起导出面板主页<br/>
+2、当前合成导出PAG文件<br/>
+3、唤起预览页面<br/>
 
-![](/img/docs/pag_hotkey_0.png)
+<img src=/img/docs/pag_hotkey_0.png width=60% />
 
 #### 快捷键设置方法
 选择 Edit-> Keyboard ShortCuts
-![](/img/docs/pag_hotkey_1.png)
+<img src=/img/docs/pag_hotkey_1.png width=60% />
 
 设置快捷键
-![](/img/docs/pag_hotkey_2.png)
+<img src=/img/docs/pag_hotkey_2.png width=60% />
