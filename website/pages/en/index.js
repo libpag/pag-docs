@@ -23,18 +23,20 @@ class Intro extends Component{
         <div class='wrap'>
           <div class='main-content'>
             <img class='pag' src={imgUrl('new_official_website/fill2.png')}/>
-            <div class='paragraph'>
-              <span class='strong'>
-              Portable Animated Graphics </span> 是一套完整的动画工作流。提供从<br/>
-              AE（Adobe After Effects）导出插件，到桌面预览工具，再到各端<br/>
-              的跨平台渲染 SDK。
-            </div>
-            <div class='paragraph'>
-              <span class='strong'>PAG </span>的目标是降低或消除动画研发成本，打通设计师创作到素材交<br/>
-              付上线的流程，不断输出运行时可编辑的高质量动画内容。
+            <div>
+              <div class='paragraph'>
+                <span class='strong'>
+                Portable Animated Graphics </span>  是一套完整的跨平台渲染动画工作<br/>
+                流，支持Android、iOS、web、windows、mac OS、Linux各平台，<br/>
+                支持AE动画实时渲染、运行时编辑，可以广泛应用于UI动画、贴纸 <br/>
+                动画、视频编辑、模板设计等场景。<br/>
+              </div>
+              <div class='paragraph'>
+                <span class='strong'>PAG </span> 动画工作流包括AE导出插件、桌面预览工具和跨平台渲染SDK<br/>
+                三部分。
+              </div>
             </div>
             <div class='btn-bar'>
-              <Button link='/docs/sdk.html' img={'new_official_website/sdk.png'} text='接入 SDK'/>
               <Button img={'new_official_website/download.png'} text='免费下载' className='download-btn' blue={true}/>
             </div>
             <span class='tip'>
@@ -64,10 +66,11 @@ class Chapter extends Component{
               <img class='num' src={numImg}></img>
               <div class='title'>{title}</div>
               {content()}
-              <div class='btn-bar'>
+              <div class={'btn-bar'+(isOdd?' reverse':'')}>
                 <Button link={link} text='了解更多' img={'new_official_website/more-b.png'}></Button>
               </div>
           </div>
+          <div class='empty'></div>
           <canvas class='pagView' width='600px' height='400px'></canvas>
         </div>
         {
@@ -83,14 +86,14 @@ class Main extends Component{
       <div class='main'>
         {
           [{
-            title:"高效的动画文件",
+            title:"文件体积小",
             content:()=>{//1
               return (
                 <div class='text'>
-                  采用可扩展的二进制文件格式，可集成包含图片等<br/>
-                  任意设计资源的单文件，实现快速交付。导出相同<br/>
-                  的 AE 动画内容，在文件解码速度和压缩率上均大<br/>
-                  幅领先于同类型方案。
+                  导出相同的 AE 动画内容，在文件解码速度和压缩<br/>
+                  率上均大幅领先于同类型方案。采用可扩展的二进<br/>
+                  制文件格式，可集成包含图片等任意设计资源的单<br/>
+                  文件。
                 </div>
               )
             }
@@ -126,7 +129,8 @@ class Main extends Component{
                 <div class='text'>
                   通过导出插件内置的自动优化策略，以及预览工具<br/>
                   集成的性能监测面板，能够直观地看到每个素材的<br/>
-                  性能状态，以帮助设计师制作效果和性能俱佳的动画<br/>特效。
+                  性能状态，以帮助设计师制作效果和性能俱佳的动<br/>
+                  画特效。
                 </div>
               )
             }
@@ -176,7 +180,7 @@ class Partner extends Component{
           </div>
           <div class='btn-bar'>
             <Button text='查看更多' link='/users.html' img={'new_official_website/more-b.png'}></Button>
-            {/* <Button text='免费下载' blue={true} img={'new_official_website/download.png'} className='download-btn'></Button> */}
+            <Button text='免费使用' blue={true} img={'new_official_website/download.png'} className='download-btn'></Button>
           </div>
         </div>
       </div>

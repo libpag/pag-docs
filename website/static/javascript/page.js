@@ -1,20 +1,39 @@
+const caseVideo = {
+    HEIGHT: 640,
+    WIDTH: 360,
+}
+
+const caseBox = {
+    HEIGHT: 1080,
+    WIDTH: 460,
+}
+
 window.onload = async () => {
+    // PAG -> Canvas convert
     const options = {
         repeatCount: 0,
-        renderingMode: 'WebGL',
+        renderingMode: 'Canvas',
         scaleMode: 'LetterBox',
     }
     const canvases = document.getElementsByClassName('pagView');
     for (let i = 0; i< canvases.length; i++) {
         canvases[i].width = canvases[i].clientWidth;
         canvases[i].height = canvases[i].height * canvases[i].clientWidth / canvases[i].width;
-
         const mp4Data = await PAG.PAGFile.loadFile(`../pag/${i+1}.pag`);
         const pagView = await PAG.PAGView.create(mp4Data, canvases[i], options);
         pagView.play();
     }
-
+    // 案例展示版块添加动态交互效果
+    if (location.pathname.indexOf('/case') == 0) {
+        // luxy.init();
+        addInteractEffect();
+    } 
 }
+
+window.onresize = () => {
+    addInteractEffect();
+}
+
 
 let isAndroid = () => {
     return /(Android).*?([\d.]+)/i.test(navigator.userAgent) || /(Adr)\s+([\d.]+)/i.test(navigator.userAgent);
@@ -103,14 +122,10 @@ docReady(()=>{
     function appendBottomNav(){
         var footer = document.getElementById('footer');
         footer.children[0].innerHTML = '';
-        // git
-        var git = document.createElement("div"); 
-        git.id = 'js_git'
-        git.className='git-icon';
-        footer.children[0].appendChild(git)
-        document.getElementById('js_git').onclick = function(){
-            location.href = '//github.com/libpag/libpag'
-        }
+        // copyright
+        var copyright = document.createElement("div"); 
+        copyright.innerText = 'Copyright © 2020 pag.io'
+        footer.children[0].appendChild(copyright)
 
         //qq group
         var qqgroup = document.createElement("div");
@@ -127,10 +142,15 @@ docReady(()=>{
                 window.open('https://qm.qq.com/cgi-bin/qm/qr?k=Wa65DTnEKo2hnPsvY-1EgJOF8tvKQ-ZT&jump_from=webapi')
             }
         };
-
-        var copyright = document.createElement("div"); 
-        copyright.innerText = 'Copyright © 2020 pag.io'
-        footer.children[0].appendChild(copyright)
+        
+        // git
+        var git = document.createElement("div"); 
+        git.id = 'js_git'
+        git.className='git-icon';
+        footer.children[0].appendChild(git)
+        document.getElementById('js_git').onclick = function(){
+            location.href = '//github.com/libpag/libpag'
+        }
     }
     appendBottomNav()
     var btns = document.getElementsByClassName('download-btn');
@@ -152,4 +172,52 @@ docReady(()=>{
     else if(pathname.indexOf('/api') == 0){
         document.getElementsByClassName('nav-site')[0].children[2].classList.add('active')
     }
+    else if(pathname.indexOf('/case') == 0){
+        document.getElementsByClassName('nav-site')[0].children[3].classList.add('active')
+    }
 })
+
+function addInteractEffect() {
+    document.documentElement.scrollTop = 0;
+    
+    if (isMobile()) {
+        document.getElementById('progressBar').style.display = 'none';
+    }
+
+    let titles = document.getElementsByClassName('titleBox');
+    let marks = document.getElementsByClassName('mark');
+
+    window.addEventListener('scroll', function() {
+        let idx = parseInt(document.documentElement.scrollTop / caseBox.HEIGHT, 10);
+        let microProgress = (document.documentElement.scrollTop / (document.body.clientHeight * 2 - 3400)).toFixed(2);
+        let titleOffset = titles[idx].getBoundingClientRect().top - 90;
+
+        if (titleOffset < 0) {
+            titles[idx].style = `opacity: ${1 + 0.018 * titleOffset}`;
+        } else {
+            titles[idx].style = 'opacity: 1';
+        }
+        // 进度条更新
+        for (let i = 0; i< marks.length; i++) {
+            if (i <= idx) {
+                marks[i].className = 'mark active';
+            } else {
+                marks[i].className = 'mark';
+            }
+        }
+        console.log("microProgress: " + microProgress);
+        let bg = `linear-gradient(#333333 0%, rgb(216, 216, 216) ${microProgress * 100}%)`;
+        document.getElementById('progressBar').style.background = bg;
+
+    }, { passive: false });
+}
+
+function absoluteTop(element) {
+    var top = 0;
+    do {
+        top += element.offsetTop  || 0;
+        element = element.offsetParent;
+    } while(element);
+
+    return top
+};

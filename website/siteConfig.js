@@ -16,7 +16,6 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/wechat.png',
     infoLink: 'https://weixin.qq.com',
-    pinned: true,
   },
   {
     caption: 'QQ',
@@ -35,11 +34,19 @@ const users = [
     pinned: true,
   },
   {
-    caption: '腾讯视频',
+    caption: '微视',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/tencentvideo.jpg',
-    infoLink: 'https://v.qq.com',
+    image: '/img/weishi.png',
+    infoLink: 'https://weishi.qq.com/',
+    pinned: true,
+  },
+  {
+    caption: '天天P图',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/pitu.png',
+    infoLink: 'https://tu.qq.com/',
     pinned: true,
   },
   {
@@ -48,7 +55,31 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/qqmusic.png',
     infoLink: 'https://y.qq.com/',
-    pinned: true
+    pinned: true,
+  },
+  {
+    caption: '火锅视频',
+     // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/yoo.png',
+    infoLink: 'https://yoo.qq.com',
+    pinned: true,
+  },
+  {
+    caption: '腾讯动漫',
+     // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/dongman.png',
+    infoLink: 'https://ac.qq.com',
+    pinned: true,
+  },
+  {
+    caption: '起点读书',
+     // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/qidian.png',
+    infoLink: 'https://www.qidian.com',
+    pinned: true,
   },
   {
     caption: '全民K歌',
@@ -56,6 +87,14 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/kg.png',
     infoLink: 'https://kg.qq.com/index-pc.html',
+    pinned: true,
+  },
+  {
+    caption: '腾讯视频',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/tencentvideo.jpg',
+    infoLink: 'https://v.qq.com',
     pinned: true,
   },
   {
@@ -75,35 +114,11 @@ const users = [
     pinned: true,
   },
   {
-    caption: '天天P图',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/pitu.png',
-    infoLink: 'https://tu.qq.com/',
-    pinned: true
-  },
-  {
     caption: '腾讯云',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/tencentcloud.png',
     infoLink: 'https://cloud.tencent.com/',
-    pinned: true
-  },
-  {
-    caption: '微视',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/weishi.png',
-    infoLink: 'https://weishi.qq.com/',
-    pinned: true,
-  },
-  {
-    caption: '腾讯动漫',
-     // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/dongman.png',
-    infoLink: 'https://ac.qq.com',
   },
   {
     caption: 'QQ阅读',
@@ -125,13 +140,6 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/AMS.png',
     infoLink: 'https://e.qq.com/ads/',
-  },
-  {
-    caption: '起点',
-     // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/qidian.png',
-    infoLink: 'https://www.qidian.com',
   },
   {
     caption: '红袖添香',
@@ -272,10 +280,13 @@ const siteConfig = {
       href:'/docs/install.html',label:'说明文档'
     },
     {
-      href:'/api.html',label:'API参考'
+      href:'/api.html',label:'API 参考'
     },
     {
-      href:'/docs/sdk.html',label:'接入SDK'
+      href:'/case.html', label:'案例展示'
+    },
+    {
+      href:'https://qm.qq.com/cgi-bin/qm/qr?k=Wa65DTnEKo2hnPsvY-1EgJOF8tvKQ-ZT&jump_from=webapi',label:'加入讨论: 893379574'
     },
     {
       href:'/#download',label:'免费下载'
@@ -328,7 +339,7 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['/javascript/page.js','https://buttons.github.io/buttons.js', '/javascript/pagjs/pag.umd.js'],
+  scripts: ['/javascript/page.js','https://buttons.github.io/buttons.js', '/javascript/luxy.js', '/javascript/pagjs/pag.min.js'],
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
   // No .html extensions for paths.

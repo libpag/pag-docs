@@ -11,5 +11,7 @@
   "devDependencies": {
     "docusaurus": "^1.5.1",
     "sass": "^1.26.11"
+  },
+  "dependencies": {
   }
 }

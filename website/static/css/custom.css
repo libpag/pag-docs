@@ -10,7 +10,11 @@ body {
 }
 
 .strong {
-  font-weight: 400;
+  height: 24px;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "PingFangHK-Semibold";
 }
 
 .underline {
@@ -68,7 +72,10 @@ body {
   font-weight: 100;
 }
 .pc-mode .intro-box .wrap .paragraph {
-  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: "PingFangHK-Light";
+  font-weight: 300;
+  margin-bottom: 28px;
 }
 .pc-mode .intro-box .wrap .pag {
   width: 231px;
@@ -87,7 +94,7 @@ body {
 .pc-mode .intro-box .wrap .btn-bar a {
   margin-top: 30px;
   margin-right: 15px;
-  font-weight: 400;
+  font-weight: 600;
 }
 .pc-mode .intro-box .wrap .tip {
   margin-top: 15px;
@@ -138,7 +145,7 @@ body {
 .pc-mode .main .chapter .text {
   font-size: 16px;
   line-height: 24px;
-  font-weight: 100;
+  font-weight: 300;
 }
 .pc-mode .main .chapter .arrow {
   width: 33px;
@@ -163,6 +170,9 @@ body {
 }
 .pc-mode .main .chapter .title::after {
   content: "。";
+  display: inline-block;
+  height: 48px;
+  line-height: 48px;
 }
 .pc-mode .main .chapter .btn-bar {
   display: flex;
@@ -170,6 +180,16 @@ body {
 .pc-mode .main .chapter .btn-bar a {
   margin-top: 48px;
   margin-right: 15px;
+  font-weight: 600;
+}
+.pc-mode .main .chapter .btn-bar.reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.pc-mode .main .chapter .btn-bar.reverse a {
+  margin-top: 48px;
+  margin-right: 15px;
+  font-weight: 600;
 }
 .pc-mode .main .chapter:last-child {
   padding-bottom: 105px;
@@ -225,6 +245,7 @@ body {
 .pc-mode .partner .wrap .btn-bar a {
   margin-top: 23px;
   margin-right: 15px;
+  font-weight: 600;
 }
 .pc-mode .download {
   background-color: #222;
@@ -376,25 +397,28 @@ body {
   background-color: transparent !important;
 }
 .pc-mode .nav-site.nav-site-internal {
-  width: 223px !important;
+  width: 350px !important;
   margin: 0 auto !important;
 }
 .pc-mode .nav-site.nav-site-internal li a {
   cursor: pointer;
   color: #000 !important;
   margin-top: 23px !important;
-  font-weight: 400 !important;
+  font-weight: 600 !important;
+  padding: 6px 16px 6px 16px;
 }
 .pc-mode .nav-site.nav-site-internal li:nth-child(1) a,
 .pc-mode .nav-site.nav-site-internal li:nth-child(2) a,
-.pc-mode .nav-site.nav-site-internal li:nth-child(3) a {
+.pc-mode .nav-site.nav-site-internal li:nth-child(3) a,
+.pc-mode .nav-site.nav-site-internal li:nth-child(4) a {
   color: #000 !important;
   text-align: center;
   position: relative;
 }
 .pc-mode .nav-site.nav-site-internal li:nth-child(1) a:hover,
 .pc-mode .nav-site.nav-site-internal li:nth-child(2) a:hover,
-.pc-mode .nav-site.nav-site-internal li:nth-child(3) a:hover {
+.pc-mode .nav-site.nav-site-internal li:nth-child(3) a:hover,
+.pc-mode .nav-site.nav-site-internal li:nth-child(4) a:hover {
   background-color: transparent !important;
   color: #005AD9 !important;
 }
@@ -422,23 +446,37 @@ body {
   height: 1px;
   bottom: -13px;
 }
-.pc-mode .nav-site.nav-site-internal li:nth-child(4),
-.pc-mode .nav-site.nav-site-internal li:nth-child(5) {
+.pc-mode .nav-site.nav-site-internal li:nth-child(4) a:hover:after, .pc-mode .nav-site.nav-site-internal li:nth-child(4) a.active {
+  content: "";
+  border-top: 2px solid #005AD9;
+  position: absolute;
+  width: 65px;
+  height: 1px;
+  bottom: -13px;
+}
+.pc-mode .nav-site.nav-site-internal li:nth-child(5),
+.pc-mode .nav-site.nav-site-internal li:nth-child(6) {
   position: fixed;
 }
-.pc-mode .nav-site.nav-site-internal li:nth-child(4) {
+.pc-mode .nav-site.nav-site-internal li:nth-child(5) {
   right: 135px;
 }
-.pc-mode .nav-site.nav-site-internal li:nth-child(4) a {
+.pc-mode .nav-site.nav-site-internal li:nth-child(5) a {
   color: #005AD9 !important;
+  float: left;
+  padding-left: 24px;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: 0% 50%;
+  background-image: url("/img/new_official_website/qq_blue.png");
 }
-.pc-mode .nav-site.nav-site-internal li:nth-child(4) a:hover {
+.pc-mode .nav-site.nav-site-internal li:nth-child(5) a:hover {
   background-color: transparent !important;
 }
-.pc-mode .nav-site.nav-site-internal li:nth-child(5) {
+.pc-mode .nav-site.nav-site-internal li:nth-child(6) {
   right: 25px;
 }
-.pc-mode .nav-site.nav-site-internal li:nth-child(5) a {
+.pc-mode .nav-site.nav-site-internal li:nth-child(6) a {
   border-radius: 8px;
   background-color: #005AD9;
   color: #fff !important;
@@ -446,7 +484,7 @@ body {
   width: 88px;
   margin-top: 20px !important;
 }
-.pc-mode .nav-site.nav-site-internal li:nth-child(5) a:hover {
+.pc-mode .nav-site.nav-site-internal li:nth-child(6) a:hover {
   background-color: #005AD9 !important;
 }
 .pc-mode .nav-site.nav-site-internal li.active a {
@@ -476,10 +514,16 @@ body {
   height: 1px;
   bottom: -13px;
 }
+.pc-mode .nav-site.nav-site-internal li:nth-child(4).active a:after {
+  width: 56px;
+  height: 1px;
+  bottom: -13px;
+}
 .pc-mode .nav-footer {
   display: flex;
 }
 .pc-mode .nav-footer .copyright {
+  display: flex;
   min-width: 1080px;
   font-size: 12px;
   line-height: 24px;
@@ -494,11 +538,14 @@ body {
   background-repeat: no-repeat;
   background-size: 24px;
   margin-right: 20px;
+  margin-left: 20px;
   cursor: pointer;
-  float: left;
+  float: right;
 }
 .pc-mode .nav-footer .qq-group-icon {
-  float: left;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
   cursor: pointer;
   padding-left: 33px;
   height: 24px;
@@ -506,6 +553,7 @@ body {
   background-repeat: no-repeat;
   background-size: 24px;
   background-image: url("/img/new_official_website/qq.png");
+  background-position: 87% 50%;
   color: #ccc;
 }
 .pc-mode .nav-footer div:nth-child(3) {
@@ -729,6 +777,110 @@ body {
   width: 100%;
   text-align: center;
   bottom: 0;
+}
+.pc-mode .pagView {
+  background-color: rgba(255, 255, 255, 0);
+}
+.pc-mode .showCase-container .main {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 400px;
+}
+.pc-mode .showCase-container .wrapper {
+  width: 460px;
+  padding: 0;
+  margin-top: -40px;
+}
+.pc-mode .showCase-container .caseBox {
+  width: 460px;
+  height: 1080px;
+  display: flex;
+  align-items: center;
+}
+.pc-mode .showCase-container .caseBox .case {
+  width: 460px;
+  position: sticky;
+  top: calc(100vh / 2 - 458px);
+}
+.pc-mode .showCase-container .titleBox {
+  opacity: 1;
+}
+.pc-mode .showCase-container .titleBox .mainTitle {
+  height: 48px;
+  line-height: 48px;
+  font-size: 46px;
+  font-family: "PingFangSC-Semibold";
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.pc-mode .showCase-container .titleBox .subTitle {
+  height: 24px;
+  line-height: 24px;
+  font-size: 18px;
+  font-family: "PingFangSC-Light";
+  font-weight: 300;
+}
+.pc-mode .showCase-container .videoBox {
+  width: 360px;
+  margin: 48px auto 0 auto;
+}
+.pc-mode .showCase-container .video {
+  width: 360px;
+  height: 640px;
+}
+.pc-mode .showCase-container .progressBox {
+  position: fixed;
+  left: 20%;
+  top: 50%;
+  margin-top: -230px;
+  display: flex;
+}
+.pc-mode .showCase-container #progressBar {
+  width: 2px;
+  height: 350px;
+  background-color: #d8d8d8;
+  position: relative;
+  top: 6px;
+  left: 6px;
+}
+.pc-mode .showCase-container .progressUl {
+  margin: 0;
+  padding: 0;
+  z-index: 9;
+}
+.pc-mode .showCase-container .mark {
+  height: 18px;
+  line-height: 18px;
+  list-style-type: none;
+  font-size: 12px;
+  color: #33333334;
+  margin: 0 auto 32px auto;
+  transition-duration: 0.4s;
+}
+.pc-mode .showCase-container .mark::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #d8d8d8;
+  margin-right: 12px;
+  transition-duration: 0.4s;
+}
+.pc-mode .showCase-container .mark.active {
+  color: #333333;
+}
+.pc-mode .showCase-container .mark.active::before {
+  background-color: #333333;
+}
+.pc-mode .showCase-container .progressUl li:first-child::before {
+  background-color: #333333;
+}
+.pc-mode .showCase-container .progressUl li:first-child {
+  color: #333333;
+}
+.pc-mode .showCase-container .progressUl li:last-child {
+  margin: 0;
 }
 
 .mobile-mode {
