@@ -62,7 +62,7 @@ class Chapter extends Component{
           idx === 0 ? <img class='feature' src={imgUrl('new_official_website/feature.png')}/> : null
         }
         <div class={'wrap '+(isOdd?'reverse':'')}>
-          <div>
+          <div class={'detail ' + (isOdd?'reverse':'')}>
               <img class='num' src={numImg}></img>
               <div class='title'>{title}</div>
               {content()}
@@ -71,7 +71,7 @@ class Chapter extends Component{
               </div>
           </div>
           <div class='empty'></div>
-          <canvas class='pagView' width='600px' height='400px'></canvas>
+          <canvas class='pagView' width='578px' height='390px'></canvas>
         </div>
         {
           idx !== 4 ? <img class={'arrow '+( isOdd ? 'reverse':'')} src={imgUrl(`new_official_website/arrow.png`)}/> : null

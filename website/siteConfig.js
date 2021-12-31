@@ -93,7 +93,7 @@ const users = [
     caption: '腾讯视频',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/tencentvideo.jpg',
+    image: '/img/tencentvideo.png',
     infoLink: 'https://v.qq.com',
     pinned: true,
   },
@@ -339,7 +339,7 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['/javascript/page.js','https://buttons.github.io/buttons.js', '/javascript/luxy.js', '/javascript/pagjs/pag.min.js'],
+  scripts: ['/javascript/page.js','https://buttons.github.io/buttons.js', '/javascript/pagjs/pag.min.js'],
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
   // No .html extensions for paths.

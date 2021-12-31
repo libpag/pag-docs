@@ -508,5 +508,69 @@
             }
         }
     }
+
+    .showCase-container{
+
+        .caseMain{
+            display: flex;
+            flex-direction: column;
+
+            #wallpaper{
+                width: 640px;
+                height: 640px;
+                margin-left: -40px;
+                margin-top: -90px;
+                position: fixed;
+                background-size: 640px, 640px;
+                background-repeat: no-repeat;
+                background-image: url('/img/new_official_website/bgLogo.png');
+                transition-duration: 0.2s;
+                z-index: -1;
+            }
+            .caseWrapper{
+                padding: 0.6rem 0.32rem 0.63rem 0.32rem;;
+                margin: rem(-120) auto 0 auto;
+            }
+            .caseBox{
+                height: rem(900);
+                display: flex;
+                align-items: center;
+                
+                .case{
+                    display: flex;
+                    flex-direction: column;
+    
+                    .titleBox{
+                        opacity: 1;
+    
+                        .mainTitle{
+                            font-size: rem(36);
+                            line-height: rem(48);
+                            font-weight: 900;
+                            margin-top: rem(14);
+                            margin-bottom: rem(26);
+                            font-family: 'PingFangSC-Semibold';
+                        }
+                        .subTitle{
+                            line-height: rem(24);
+                            font-size: rem(18);
+                            font-family: 'PingFangSC-Light';
+                            font-weight: 300;
+                            font-family: 'PingFangSC-Light';
+                        }
+    
+                    }
+                    .videoBox{
+                        margin-top: rem(48);
+
+                        .video{
+                            width: calc(100vw - 0.64rem);
+                            z-index: 9;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 

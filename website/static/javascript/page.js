@@ -4,15 +4,20 @@ const caseVideo = {
 }
 
 const caseBox = {
-    HEIGHT: 1080,
+    HEIGHT_PC: 1300,
+    HEIGHT_MB: 900,
     WIDTH: 460,
 }
 
+var fixBg = false;
+
 window.onload = async () => {
+    document.documentElement.scrollTop = 0
+	document.body.scrollTop = 0;
     // PAG -> Canvas convert
     const options = {
         repeatCount: 0,
-        renderingMode: 'Canvas',
+        renderingMode: 'WebGL',
         scaleMode: 'LetterBox',
     }
     const canvases = document.getElementsByClassName('pagView');
@@ -22,12 +27,11 @@ window.onload = async () => {
         const mp4Data = await PAG.PAGFile.loadFile(`../pag/${i+1}.pag`);
         const pagView = await PAG.PAGView.create(mp4Data, canvases[i], options);
         pagView.play();
+        setTimeout(() => {canvases[i].style.visibility = 'visible'}, 50);
+        
     }
-    // 案例展示版块添加动态交互效果
-    if (location.pathname.indexOf('/case') == 0) {
-        // luxy.init();
-        addInteractEffect();
-    } 
+    // 案例展示版块动态交互效果
+    addInteractEffect();
 }
 
 window.onresize = () => {
@@ -178,36 +182,40 @@ docReady(()=>{
 })
 
 function addInteractEffect() {
-    document.documentElement.scrollTop = 0;
-    
-    if (isMobile()) {
-        document.getElementById('progressBar').style.display = 'none';
+    if (location.pathname.indexOf('/case') !== 0) {
+        return;
     }
-
+    
     let titles = document.getElementsByClassName('titleBox');
     let marks = document.getElementsByClassName('mark');
+    let progressBar = document.getElementById('progressBox');
 
+    if (isMobile()) {
+        progressBar.style.display = 'none';
+    } else {
+        progressBar.style.left = `${(window.innerWidth - 460) * 0.3}px`;
+    }
+    marks[0].className = 'mark active';
+    
+    
     window.addEventListener('scroll', function() {
-        let idx = parseInt(document.documentElement.scrollTop / caseBox.HEIGHT, 10);
-        let microProgress = (document.documentElement.scrollTop / (document.body.clientHeight * 2 - 3400)).toFixed(2);
-        let titleOffset = titles[idx].getBoundingClientRect().top - 90;
-
-        if (titleOffset < 0) {
-            titles[idx].style = `opacity: ${1 + 0.018 * titleOffset}`;
-        } else {
-            titles[idx].style = 'opacity: 1';
-        }
+        updateText(titles);
         // 进度条更新
+        let idx = parseInt(document.documentElement.scrollTop / caseBox.HEIGHT_PC, 10);
         for (let i = 0; i< marks.length; i++) {
-            if (i <= idx) {
-                marks[i].className = 'mark active';
+            if (i === idx) {
+                marks[idx].className = 'mark active';
+                if (idx > 0)
+                    marks[idx-1].className = 'mark near';
             } else {
                 marks[i].className = 'mark';
             }
         }
-        console.log("microProgress: " + microProgress);
-        let bg = `linear-gradient(#333333 0%, rgb(216, 216, 216) ${microProgress * 100}%)`;
-        document.getElementById('progressBar').style.background = bg;
+         // 背景更新
+         if (idx >= 2 && !fixBg) {
+             fixBg = true;
+         }
+         updateBg(fixBg);
 
     }, { passive: false });
 }
@@ -221,3 +229,46 @@ function absoluteTop(element) {
 
     return top
 };
+
+function updateBg(fixBg) {
+   if (!fixBg) {
+    let offsetX = (window.innerWidth - 1170);
+    let offsetY = (window.innerHeight - 745);
+    document.getElementById('wallpaper').style = `transform: scale(1.62) translate(${offsetX}px, ${offsetY}px)`;
+    } 
+}
+
+function updateText(titles) {
+    let idx,titleOffset;
+
+    if (isMobile()) {
+        idx = parseInt(document.documentElement.scrollTop / caseBox.HEIGHT_MB, 10);
+        titleOffset = titles[idx].getBoundingClientRect().top - 70;
+    } else {
+        idx = parseInt(document.documentElement.scrollTop / caseBox.HEIGHT_PC, 10);
+        titleOffset = titles[idx].getBoundingClientRect().top - 110;
+    }
+
+    if (titleOffset < 0) {
+        titles[idx].style = `opacity: ${1 + 0.012 * titleOffset}`;
+    } else {
+        titles[idx].style = 'opacity: 1';
+    }
+}
+
+/*
+function updateBgFollow() {
+    let idx = parseInt(document.documentElement.scrollTop / caseBox.HEIGHT, 10);
+    let microProgress = Number(((document.documentElement.scrollTop % caseBox.HEIGHT) / caseBox.HEIGHT).toFixed(2));
+    // console.log("microProgress: " + microProgress);
+    console.log("idx: " + idx);
+    if (idx < 1) {
+        let scale = 1 + 0.62 * microProgress;
+        let offsetX = (window.innerWidth - 1110) * microProgress;
+        let offsetY = (window.innerHeight - 745) * microProgress;
+        document.getElementById('wallpaper').style = `transform: scale(${scale}) translate(${offsetX}px, ${offsetY}px)`;
+    } else {
+        // document.getElementById('wallpaper').style = `transform: scale(${scale}); right: 37px; bottom: -238px;`;
+    }
+}
+*/
