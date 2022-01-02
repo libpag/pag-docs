@@ -12,11 +12,11 @@ title: 导出面板快捷键设置
 2、当前合成导出PAG文件<br/>
 3、唤起预览页面<br/>
 
-<img src=/img/docs/pag_hotkey_0.png width=60% />
+![img.png](/img/docs/pag_hotkey_0.png)
 
 #### 快捷键设置方法
 选择 Edit-> Keyboard ShortCuts
-<img src=/img/docs/pag_hotkey_1.png width=60% />
+![img.png](/img/docs/pag_hotkey_1.png)
 
 设置快捷键
-<img src=/img/docs/pag_hotkey_2.png width=60% />
+![img.png](/img/docs/pag_hotkey_2.png)

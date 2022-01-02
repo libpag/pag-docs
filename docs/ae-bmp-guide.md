@@ -18,7 +18,7 @@ title: BMP预合成导出
 ### 一、BMP使用前提
 如上文背景所述，当需要使用的AE特性，用矢量导出的方式无法在PAG中完美支持时，就需要将对应的合成设置成BMP进行导出。
 
-PAG目前支持的AE特性可以参考文章：![AE功能支持列表](https://pag.io/docs/ae-support.html)
+PAG目前支持的AE特性可以参考文章：[<font color=blue>AE功能支持列表</font>](/docs/ae-support.html) 
 
 ### 二、BMP使用步骤
 #### 步骤一: 从图3所示入口，进入主页面

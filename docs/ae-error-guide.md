@@ -1,6 +1,6 @@
 ---
 id: ae-error-guide
-title: 不支持特性提示
+title: AE导出提示
 ---
 
 在AE设计过程中，会由于各种[原因](https://doc.weixin.qq.com/sheet/e3_m_XGRDnzcqbbdW?scode=AJEAIQdfAAoS6Vxbt5AKUAggbdAFw&tab=BB08J2) ，导致输出PAG文件出错或者性能出现问题，比如过多的使用BMP合成，或者使用了暂不支持的特性等。之前的导出插件需要在导出过程中才能发现错误或者警告，如果能将错误和警告提前给出，则会大大提高设计师的工作效率。
