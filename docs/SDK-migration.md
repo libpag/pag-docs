@@ -1,6 +1,6 @@
 ---
 id: SDK-migration
-title: PAGSDK迁移指南
+title: PAG SDK迁移指南
 ---
 
 
