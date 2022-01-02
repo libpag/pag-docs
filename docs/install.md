@@ -32,6 +32,11 @@ PAGViewer Beta 版现在支持在 Windows 下预览 PAG 文件。安装成功后
 [<font color=blue>点击这里</font>](pag-viewer.html) 查看 PAGViewer Beta 版使用指南。
 
 
+## 检查更新
+首次安装成功后，只要有发布新版本，打开 PAGViewer 时会自动提示在线下载更新，点击确认并输入本机密码即可完成在线更新。若有插件新版本，插件更新会在 PAGViewer 更新完成重新启动时再提示。
+
+如果意外点击了跳过更新的选项，可以手动在菜单项：PAGViewer->Check for Updates... 来触发更新检查。
+
 
 
 ## 测试素材

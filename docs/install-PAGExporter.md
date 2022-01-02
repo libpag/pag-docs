@@ -6,7 +6,7 @@ title: 安装 AE 导出插件
 设计师需要安装 AE 导出插件，将AE工程导出 pag 文件
 
 ### 准备工作：
-1，确保已经安装了 AE（Adobe After Effects）（AE2018、AE2019、AE2020 皆可）<br/>
+1，确保已经安装了 AE（Adobe After Effects）（AE2018及以上版本皆可）<br/>
 2，确保已经安装 PAGViewer。[<font color=blue>如何安装 PAGViewer</font>](/docs/install.html)<br/>
 
 ### 安装 AE 导出插件

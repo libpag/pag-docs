@@ -6,7 +6,7 @@ title: 手动安装 AE 导出插件（windows）
 windows上安装 AE 导出插件时，因为权限和兼容性等问题，偶尔出现安装失败的情况，这时可以采用手动安装。
 
 ### 准备工作：
-1，确保已经安装了 AE（Adobe After Effects）（AE2018、AE2019、AE2020 皆可）<br/>
+1，确保已经安装了 AE（Adobe After Effects）（AE2018及以上版本皆可）<br/>
 2，确保已经安装 PAGViewer。[<font color=blue>如何安装 PAGViewer</font>](/docs/install.html)<br/>
 3，如果 AE 正在运行，则关闭<br/>
 4，先尝试[<font color=blue>自动安装</font>](/docs/install-PAGExporter.html)，自动安装失败再进行下面的手动安装
