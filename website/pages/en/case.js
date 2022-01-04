@@ -21,13 +21,28 @@ class Main extends React.Component {
                             subTitle: '不限机型不耗性能，多视角大片运镜记录游戏高光时刻',
                             video: '/video/03.mov'
                         },{
-                            mainTitle: 'NULL',
-                            subTitle: 'null',
+                            mainTitle: '自由编辑动态效果',
+                            subTitle: '全能易操作，剪辑体验酣畅淋漓',
                             video: '/video/04.mov'
                         }
                         ,{
-                            mainTitle: 'NULL',
-                            subTitle: 'null',
+                            mainTitle: '增强广告效果',
+                            subTitle: '低门槛商品素材一键导入，促销大片立刻呈现',
+                            video: '/video/05.mov'
+                        }
+                        ,{
+                            mainTitle: '丰富视觉体验',
+                            subTitle: '动画文件使用更便捷，体积小性能好',
+                            video: '/video/05.mov'
+                        }
+                        ,{
+                            mainTitle: '直播氛围拉满',
+                            subTitle: '全面支持礼物设计，精彩创意等你探索',
+                            video: '/video/05.mov'
+                        }
+                        ,{
+                            mainTitle: '无负担极速上线',
+                            subTitle: 'H5动画、文字、音乐轻松上线，让营销变的简单',
                             video: '/video/05.mov'
                         }].map((unit, idx) => {
                             return(
@@ -57,8 +72,7 @@ class Chapter extends React.Component {
                         <center><p class='subTitle'>{subTitle}</p></center>
                     </div>
                     <div class='videoBox'>
-                        <video class='video' autoplay="autoplay" muted loop>
-                            <source src={video} />
+                        <video class='video' src={video} muted autoPlay playsInline loop>
                         </video>
                     </div>
                     
@@ -82,7 +96,8 @@ class ProgressBar extends React.Component {
                         '视频广告',
                         'UI 动画',
                         '直播打赏',
-                        '运营活动',].map((mark) => {
+                        '运营活动',
+                                ].map((mark) => {
                             return (
                                 <li class='mark'>{mark}</li>
                             )

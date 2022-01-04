@@ -516,15 +516,17 @@
             flex-direction: column;
 
             #wallpaper{
-                width: 640px;
-                height: 640px;
-                margin-left: -40px;
-                margin-top: -90px;
+                width: calc(100vw);
+                height: calc(100vw);
+                left: 0;
+                top: 0;
                 position: fixed;
-                background-size: 640px, 640px;
+                background-size: calc(100vw), calc(100vw);
                 background-repeat: no-repeat;
                 background-image: url('/img/new_official_website/bgLogo.png');
-                transition-duration: 0.2s;
+                transition-duration: 0.9s;
+                transition-timing-function: ease-out;
+                transform-origin: center;
                 z-index: -1;
             }
             .caseWrapper{
@@ -532,9 +534,10 @@
                 margin: rem(-120) auto 0 auto;
             }
             .caseBox{
-                height: rem(900);
+                height: rem(920);
                 display: flex;
                 align-items: center;
+                z-index: 9;
                 
                 .case{
                     display: flex;
@@ -558,14 +561,12 @@
                             font-weight: 300;
                             font-family: 'PingFangSC-Light';
                         }
-    
                     }
                     .videoBox{
                         margin-top: rem(48);
 
                         .video{
                             width: calc(100vw - 0.64rem);
-                            z-index: 9;
                         }
                     }
                 }

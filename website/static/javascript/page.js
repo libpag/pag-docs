@@ -5,15 +5,13 @@ const caseVideo = {
 
 const caseBox = {
     HEIGHT_PC: 1300,
-    HEIGHT_MB: 900,
+    HEIGHT_MB: 920,
     WIDTH: 460,
 }
 
 var fixBg = false;
 
 window.onload = async () => {
-    document.documentElement.scrollTop = 0
-	document.body.scrollTop = 0;
     // PAG -> Canvas convert
     const options = {
         repeatCount: 0,
@@ -26,12 +24,10 @@ window.onload = async () => {
         canvases[i].height = canvases[i].height * canvases[i].clientWidth / canvases[i].width;
         const mp4Data = await PAG.PAGFile.loadFile(`../pag/${i+1}.pag`);
         const pagView = await PAG.PAGView.create(mp4Data, canvases[i], options);
-        pagView.play();
+        await pagView.play();
         setTimeout(() => {canvases[i].style.visibility = 'visible'}, 50);
         
     }
-    // 案例展示版块动态交互效果
-    addInteractEffect();
 }
 
 window.onresize = () => {
@@ -62,6 +58,9 @@ function appendMeta(){
     document.getElementsByTagName('head')[0].appendChild(oMeta);
 }
 docReady(()=>{
+    // 案例展示版块动态交互效果
+    addInteractEffect();
+
     if(isMobile()){
         var html = document.getElementsByTagName("html")[0]; html.style.fontSize =
         Math.min(  document.documentElement.clientWidth / 375 * 75 ,80) + "px";
@@ -190,32 +189,22 @@ function addInteractEffect() {
     let marks = document.getElementsByClassName('mark');
     let progressBar = document.getElementById('progressBox');
 
-    if (isMobile()) {
+    if (isMobile() || window.innerWidth - 980 < 80) {
         progressBar.style.display = 'none';
     } else {
-        progressBar.style.left = `${(window.innerWidth - 460) * 0.3}px`;
+        progressBar.style.display = 'block';
+        progressBar.style.left = `${(window.innerWidth - 980) / 2}px`;
     }
     marks[0].className = 'mark active';
     
     
     window.addEventListener('scroll', function() {
-        updateText(titles);
         // 进度条更新
-        let idx = parseInt(document.documentElement.scrollTop / caseBox.HEIGHT_PC, 10);
-        for (let i = 0; i< marks.length; i++) {
-            if (i === idx) {
-                marks[idx].className = 'mark active';
-                if (idx > 0)
-                    marks[idx-1].className = 'mark near';
-            } else {
-                marks[i].className = 'mark';
-            }
-        }
-         // 背景更新
-         if (idx >= 2 && !fixBg) {
-             fixBg = true;
-         }
-         updateBg(fixBg);
+        updateProgressBar(marks);
+        // 背景更新
+        updateBg(fixBg);
+        // 标题渐隐
+        updateText(titles);
 
     }, { passive: false });
 }
@@ -231,11 +220,24 @@ function absoluteTop(element) {
 };
 
 function updateBg(fixBg) {
-   if (!fixBg) {
-    let offsetX = (window.innerWidth - 1170);
-    let offsetY = (window.innerHeight - 745);
-    document.getElementById('wallpaper').style = `transform: scale(1.62) translate(${offsetX}px, ${offsetY}px)`;
-    } 
+    if (isMobile()) {
+        idx = parseInt(document.documentElement.scrollTop / caseBox.HEIGHT_MB, 10);
+    } else {
+        idx = parseInt(document.documentElement.scrollTop / caseBox.HEIGHT_PC, 10);
+    }
+    console.log("updateBg idx: " + idx);
+
+    if (idx >= 2 && !fixBg) {
+        fixBg = true;
+    }
+    if (!fixBg && !isMobile()) {
+        let offsetX = window.innerWidth * 0.35;
+        let offsetY = window.innerHeight * 0.25;
+        document.getElementById('wallpaper').style = `transform: scale(1.62) translate(${offsetX}px, ${offsetY}px)`;
+    } else if (!fixBg && isMobile()) {
+        let scale = 616 / window.innerWidth;
+        document.getElementById('wallpaper').style = `transform: scale(${scale}) translateY(0.8rem)`;
+    }
 }
 
 function updateText(titles) {
@@ -253,6 +255,22 @@ function updateText(titles) {
         titles[idx].style = `opacity: ${1 + 0.012 * titleOffset}`;
     } else {
         titles[idx].style = 'opacity: 1';
+    }
+}
+
+function updateProgressBar(marks) {
+    if (isMobile()) {
+        return;
+    }
+    let idx = parseInt(document.documentElement.scrollTop / caseBox.HEIGHT_PC, 10);
+    for (let i = 0; i< marks.length; i++) {
+        if (i === idx) {
+            marks[idx].className = 'mark active';
+            if (idx > 0)
+                marks[idx-1].className = 'mark near';
+        } else {
+            marks[i].className = 'mark';
+        }
     }
 }
 

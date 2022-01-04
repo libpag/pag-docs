@@ -146,6 +146,7 @@
                 font-size: 16px;
                 line-height: 24px;
                 font-weight: 300;
+                font-family: 'PingFangSC-Light'!important;
             }
             .arrow{
                 width: 33px;
@@ -163,13 +164,20 @@
                 height: 72px;
             }
             .title{
+                height: 48px;
                 font-size: 32px;
                 line-height: 48px;
                 font-weight: 900;
                 margin-bottom: 24px;
+                font-family: 'PingFangSC-Semibold';
             }
             .title::after{
-                content: "。";
+                content: '。';
+                height: 48px;
+                font-size: 32px;
+                line-height: 48px;
+                margin-bottom: -24px;
+                font-family: 'PingFangSC-Semibold' !important; // 别动。
             }
             .btn-bar{
                 display: flex;
@@ -885,24 +893,23 @@
             background-size: 640px, 640px;
             background-repeat: no-repeat;
             background-image: url('/img/new_official_website/bgLogo.png');
-            transition-duration: 0.9s;
+            transition-duration: 1s;
             transition-timing-function: ease-in;
-            // transform-origin: top left;
         }
         .caseWrapper{
-            width: 460px;
+            width: 480px;
             padding: 0;
             margin: -80px auto 0 auto;
         }
         .caseBox{
-            width: 460px;
+            width: 480px;
             height: 1300px;
             // border: 3px skyblue solid;
             display: flex;
             align-items: center;
 
             .case{
-                width: 460px;
+                width: 480px;
                 // border: 2px orange dashed;
                 position: sticky;
                 top: calc(100vh / 2 - 458px);
@@ -918,6 +925,14 @@
                 font-family: 'PingFangSC-Semibold';
                 font-weight: 600;
                 margin-bottom: 18px;
+                margin-right: -44px;
+            }
+            .mainTitle::after{
+                content: '。';
+                height:48px;
+                line-height: 48px;
+                font-size: 46px;
+                font-family: 'PingFangSC-Semibold';
             }
             .subTitle{
                 height: 24px;
@@ -925,6 +940,14 @@
                 font-size: 18px;
                 font-family: 'PingFangSC-Light';
                 font-weight: 300;
+                margin-right: -16px;
+            }
+            .subTitle::after{
+                content: '。';
+                height: 24px;
+                line-height: 24px;
+                font-size: 18px;
+                font-family: 'PingFangSC-Light';
             }
         }
         .videoBox{
@@ -940,9 +963,11 @@
         #progressBox{
             position: fixed;
             // left: 20%;
-            top: 370px;
+            // top: 370px;
             // margin-top: -184px;
             // border: 1px orangered dashed;
+            top: 50%;
+            margin-top: -184px;
             display: flex;
             
         }

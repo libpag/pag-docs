@@ -149,6 +149,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
+  font-family: "PingFangSC-Light" !important;
 }
 .pc-mode .main .chapter .arrow {
   width: 33px;
@@ -166,13 +167,20 @@ body {
   height: 72px;
 }
 .pc-mode .main .chapter .title {
+  height: 48px;
   font-size: 32px;
   line-height: 48px;
   font-weight: 900;
   margin-bottom: 24px;
+  font-family: "PingFangSC-Semibold";
 }
 .pc-mode .main .chapter .title::after {
   content: "。";
+  height: 48px;
+  font-size: 32px;
+  line-height: 48px;
+  margin-bottom: -24px;
+  font-family: "PingFangSC-Semibold" !important;
 }
 .pc-mode .main .chapter .btn-bar {
   display: flex;
@@ -802,22 +810,22 @@ body {
   background-size: 640px, 640px;
   background-repeat: no-repeat;
   background-image: url("/img/new_official_website/bgLogo.png");
-  transition-duration: 0.9s;
+  transition-duration: 1s;
   transition-timing-function: ease-in;
 }
 .pc-mode .showCase-container .caseWrapper {
-  width: 460px;
+  width: 480px;
   padding: 0;
   margin: -80px auto 0 auto;
 }
 .pc-mode .showCase-container .caseBox {
-  width: 460px;
+  width: 480px;
   height: 1300px;
   display: flex;
   align-items: center;
 }
 .pc-mode .showCase-container .caseBox .case {
-  width: 460px;
+  width: 480px;
   position: sticky;
   top: calc(100vh / 2 - 458px);
 }
@@ -831,6 +839,14 @@ body {
   font-family: "PingFangSC-Semibold";
   font-weight: 600;
   margin-bottom: 18px;
+  margin-right: -44px;
+}
+.pc-mode .showCase-container .titleBox .mainTitle::after {
+  content: "。";
+  height: 48px;
+  line-height: 48px;
+  font-size: 46px;
+  font-family: "PingFangSC-Semibold";
 }
 .pc-mode .showCase-container .titleBox .subTitle {
   height: 24px;
@@ -838,6 +854,14 @@ body {
   font-size: 18px;
   font-family: "PingFangSC-Light";
   font-weight: 300;
+  margin-right: -16px;
+}
+.pc-mode .showCase-container .titleBox .subTitle::after {
+  content: "。";
+  height: 24px;
+  line-height: 24px;
+  font-size: 18px;
+  font-family: "PingFangSC-Light";
 }
 .pc-mode .showCase-container .videoBox {
   width: 360px;
@@ -851,7 +875,8 @@ body {
 }
 .pc-mode .showCase-container #progressBox {
   position: fixed;
-  top: 370px;
+  top: 50%;
+  margin-top: -184px;
   display: flex;
 }
 .pc-mode .showCase-container #progressUl {
@@ -1377,15 +1402,17 @@ body {
   flex-direction: column;
 }
 .mobile-mode .showCase-container .caseMain #wallpaper {
-  width: 640px;
-  height: 640px;
-  margin-left: -40px;
-  margin-top: -90px;
+  width: calc(100vw);
+  height: calc(100vw);
+  left: 0;
+  top: 0;
   position: fixed;
-  background-size: 640px, 640px;
+  background-size: calc(100vw), calc(100vw);
   background-repeat: no-repeat;
   background-image: url("/img/new_official_website/bgLogo.png");
-  transition-duration: 0.2s;
+  transition-duration: 0.9s;
+  transition-timing-function: ease-out;
+  transform-origin: center;
   z-index: -1;
 }
 .mobile-mode .showCase-container .caseMain .caseWrapper {
@@ -1393,9 +1420,10 @@ body {
   margin: -1.6rem auto 0 auto;
 }
 .mobile-mode .showCase-container .caseMain .caseBox {
-  height: 12rem;
+  height: 12.2666666667rem;
   display: flex;
   align-items: center;
+  z-index: 9;
 }
 .mobile-mode .showCase-container .caseMain .caseBox .case {
   display: flex;
@@ -1424,7 +1452,6 @@ body {
 }
 .mobile-mode .showCase-container .caseMain .caseBox .case .videoBox .video {
   width: calc(100vw - 0.64rem);
-  z-index: 9;
 }
 
 /*# sourceMappingURL=custom.css.map */
