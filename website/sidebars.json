@@ -2,9 +2,9 @@
   "docs": {
     "快速开始": ["install","install-PAGExporter","pag-export","sdk"],
     "AE能力支持": ["ae-support","ae-effect"],
-    "导出插件": ["plugin-config","ae-error-guide","ae-bmp-guide", "time-stretch", "pag-hotkey", "pag-fillmode","error-code", "pag-export-verify","editable-text", "text-background", "pag-music-mark"],
+    "导出插件": ["plugin-config","ae-error-guide","ae-bmp-guide", "pag-fillmode", "time-stretch", "pag-hotkey","error-code", "pag-export-verify","editable-text", "text-background", "pag-music-mark"],
     "预览工具": ["pag-edit","profiler","pag-file","hot-key","beta", "pag-viewer","export-png"],
-    "性能优化": ["optimization","pag-file-optimization" ],
+    "性能优化": ["optimization"],
     "更多": ["faq","pag-training","pag-training-2","lottie-migration","animation-convertor","SDK-migration"]
   }
 }

@@ -32,4 +32,4 @@ PAG同时支持「矢量预合成」直接导出和「BMP预合成」导出两�
 
 
 ### 导出含有BMP预合成的PAG文件
-具体参考[<font color=blue>BMP预合成</font>](/docs/ae-bmp-guide.html)
+具体参考[<font color=blue>BMP预合成导出</font>](/docs/ae-bmp-guide.html)
