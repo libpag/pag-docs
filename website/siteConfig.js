@@ -269,7 +269,7 @@ const siteConfig = {
       href:'/',label:'首页'
     },
     {
-      href:'/docs/install.html',label:'说明文档'
+      href:'/docs/install.html',label:'设计师文档'
     },
     {
       href:'/api.html',label:'API参考'
