@@ -280,7 +280,7 @@ const siteConfig = {
       href:'/docs/install.html',label:'说明文档'
     },
     {
-      href:'/api.html',label:'API 参考'
+      href:'/docs/techDocs/techDoc.html',label:'开发文档'
     },
     {
       href:'/case.html', label:'案例展示'

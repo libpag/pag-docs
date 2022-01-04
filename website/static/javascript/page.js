@@ -166,13 +166,14 @@ docReady(()=>{
     };
 
     var pathname = location.pathname
+    console.log(pathname);
     if( pathname == '/' ){
         document.getElementsByClassName('nav-site')[0].children[0].classList.add('active')
     }
-    else if(pathname.indexOf('/docs') == 0){
+    else if(pathname.indexOf('/docs') == 0 && pathname.indexOf('/docs/techDocs/') != 0){
         document.getElementsByClassName('nav-site')[0].children[1].classList.add('active')
     }
-    else if(pathname.indexOf('/api') == 0){
+    else if(pathname.indexOf('/docs/techDocs/') == 0){
         document.getElementsByClassName('nav-site')[0].children[2].classList.add('active')
     }
     else if(pathname.indexOf('/case') == 0){
