@@ -30,6 +30,7 @@ class Main extends React.Component {
                             subTitle: '低门槛商品素材一键导入，促销大片立刻呈现',
                             video: '/video/05.mov'
                         }
+                        /*
                         ,{
                             mainTitle: '丰富视觉体验',
                             subTitle: '动画文件使用更便捷，体积小性能好',
@@ -44,7 +45,7 @@ class Main extends React.Component {
                             mainTitle: '无负担极速上线',
                             subTitle: 'H5动画、文字、音乐轻松上线，让营销变的简单',
                             video: '/video/05.mov'
-                        }].map((unit, idx) => {
+                        }*/].map((unit, idx) => {
                             return(
                                 <Chapter
                                     idx = {idx}
@@ -94,9 +95,11 @@ class ProgressBar extends React.Component {
                         '游戏战报',
                         '视频编辑',
                         '视频广告',
+                        /*
                         'UI 动画',
                         '直播打赏',
                         '运营活动',
+                        */
                                 ].map((mark) => {
                             return (
                                 <li class='mark'>{mark}</li>
