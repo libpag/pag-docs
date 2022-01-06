@@ -133,8 +133,8 @@ docReady(()=>{
         //qq group
         var qqgroup = document.createElement("div");
         // qqgroup.id = 'js_qqgroup'
-        qqgroup.className='qq-group-icon js_qqgroup';
-        qqgroup.innerText = 'QQ 群: 893379574';
+        // qqgroup.className='qq-group-icon js_qqgroup';
+        qqgroup.innerText = '联系我们： libpag@tencent.com';
         footer.children[0].appendChild(qqgroup)
         // document.getElementById('js_qqgroup').onclick = function(){
         //     window.open('https://qm.qq.com/cgi-bin/qm/qr?k=Wa65DTnEKo2hnPsvY-1EgJOF8tvKQ-ZT&jump_from=webapi')
@@ -147,6 +147,7 @@ docReady(()=>{
         };
         
         // git
+        /*
         var git = document.createElement("div"); 
         git.id = 'js_git'
         git.className='git-icon';
@@ -154,6 +155,7 @@ docReady(()=>{
         document.getElementById('js_git').onclick = function(){
             location.href = '//github.com/libpag/libpag'
         }
+        */
     }
     appendBottomNav()
     var btns = document.getElementsByClassName('download-btn');
@@ -166,14 +168,13 @@ docReady(()=>{
     };
 
     var pathname = location.pathname
-    console.log(pathname);
     if( pathname == '/' ){
         document.getElementsByClassName('nav-site')[0].children[0].classList.add('active')
     }
-    else if(pathname.indexOf('/docs') == 0 && pathname.indexOf('/docs/techDocs/') != 0){
+    else if(pathname.indexOf('/docs') == 0 && pathname.indexOf('/docs/tech/') != 0){
         document.getElementsByClassName('nav-site')[0].children[1].classList.add('active')
     }
-    else if(pathname.indexOf('/docs/techDocs/') == 0){
+    else if(pathname.indexOf('/docs/tech/') == 0){
         document.getElementsByClassName('nav-site')[0].children[2].classList.add('active')
     }
     else if(pathname.indexOf('/case') == 0){
@@ -263,7 +264,7 @@ function updateProgressBar(marks) {
     if (isMobile()) {
         return;
     }
-    let idx = parseInt(document.documentElement.scrollTop / caseBox.HEIGHT_PC, 10);
+    let idx = parseInt((document.documentElement.scrollTop + window.innerHeight / 2 - 100) / caseBox.HEIGHT_PC, 10);
     for (let i = 0; i< marks.length; i++) {
         if (i === idx) {
             marks[idx].className = 'mark active';
@@ -274,20 +275,3 @@ function updateProgressBar(marks) {
         }
     }
 }
-
-/*
-function updateBgFollow() {
-    let idx = parseInt(document.documentElement.scrollTop / caseBox.HEIGHT, 10);
-    let microProgress = Number(((document.documentElement.scrollTop % caseBox.HEIGHT) / caseBox.HEIGHT).toFixed(2));
-    // console.log("microProgress: " + microProgress);
-    console.log("idx: " + idx);
-    if (idx < 1) {
-        let scale = 1 + 0.62 * microProgress;
-        let offsetX = (window.innerWidth - 1110) * microProgress;
-        let offsetY = (window.innerHeight - 745) * microProgress;
-        document.getElementById('wallpaper').style = `transform: scale(${scale}) translate(${offsetX}px, ${offsetY}px)`;
-    } else {
-        // document.getElementById('wallpaper').style = `transform: scale(${scale}); right: 37px; bottom: -238px;`;
-    }
-}
-*/

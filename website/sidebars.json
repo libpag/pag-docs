@@ -1,10 +1,16 @@
 {
   "docs": {
-    "快速开始": ["install","install-PAGExporter","manual-install-PAGExporter","update","sdk","sdk-download"],
-    "使用指南": ["pag-export", "ae-support", "pag-export-verify", "editable-text","plugin-config","profiler","optimization","export-png","pag-edit","pag-file","pag-file-optimization", "hot-key", "error-code","beta", "export-font", "pag-music-mark", "text-background", "time-stretch","pag-viewer"],
-    "更多": ["faq","pag-training","pag-training-2","lottie-migration","animation-convertor","SDK-migration","ae-effect"]
+    "快速开始": ["install","install-PAGExporter","pag-export"],
+    "AE能力支持": ["ae-support","ae-effect"],
+    "导出插件": ["plugin-config","ae-error-guide","ae-bmp-guide", "pag-fillmode", "time-stretch", "pag-hotkey","error-code", "pag-export-verify","editable-text", "text-background", "pag-music-mark"],
+    "预览工具": ["pag-edit","profiler","pag-file","hot-key","beta", "pag-viewer","export-png"],
+    "性能优化": ["optimization"],
+    "视频教程": ["faq","pag-training","pag-training-2"]
   },
-  "techDocs": {
-    "开发文档快速开始": ["techDocs/techDoc", "techDocs/testDoc"]
+  "tech": {
+    "SDK接入": ["tech/sdk"],
+    "PAG深度解读": ["tech/pag-depth-1", "tech/pag-depth-2","tech/pag-depth-3","tech/pag-depth-4"],
+    "API参考": ["tech/sdk",""],
+    "素材迁移": ["lottie-migration","animation-convertor","SDK-migration",""]
   }
 }

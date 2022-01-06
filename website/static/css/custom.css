@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* navbar */
 * {
-  font-family: "PingFang HK", "PingFang SC", "Microsoft YaHei", "Heiti SC", "Heiti TC", "Helvetica Neue", "Helvetica", "Arial", "sans-serif" !important;
+  font-family: "-apple-system", "BlinkMacSystemFont", "PingFang SC", "Microsoft YaHei", "Heiti SC", "Heiti TC", "Helvetica Neue", "Helvetica", "Arial", "sans-serif" !important;
 }
 
 body {
@@ -73,7 +73,6 @@ body {
 }
 .pc-mode .intro-box .wrap .paragraph {
   font-size: 16px;
-  font-family: "PingFangHK-Light";
   font-weight: 300;
   margin-bottom: 23px;
 }
@@ -173,14 +172,6 @@ body {
   font-weight: 900;
   margin-bottom: 24px;
   font-family: "PingFangSC-Semibold";
-}
-.pc-mode .main .chapter .title::after {
-  content: "。";
-  height: 48px;
-  font-size: 32px;
-  line-height: 48px;
-  margin-bottom: -24px;
-  font-family: "PingFangSC-Semibold" !important;
 }
 .pc-mode .main .chapter .btn-bar {
   display: flex;
@@ -405,7 +396,7 @@ body {
   background-color: transparent !important;
 }
 .pc-mode .nav-site.nav-site-internal {
-  width: 350px !important;
+  width: 384px !important;
   margin: 0 auto !important;
   display: flex;
   align-items: center;
@@ -814,18 +805,18 @@ body {
   transition-timing-function: ease-in;
 }
 .pc-mode .showCase-container .caseWrapper {
-  width: 480px;
+  width: 460px;
   padding: 0;
   margin: -80px auto 0 auto;
 }
 .pc-mode .showCase-container .caseBox {
-  width: 480px;
+  width: 460px;
   height: 1300px;
   display: flex;
   align-items: center;
 }
 .pc-mode .showCase-container .caseBox .case {
-  width: 480px;
+  width: 460px;
   position: sticky;
   top: calc(100vh / 2 - 458px);
 }
@@ -839,14 +830,6 @@ body {
   font-family: "PingFangSC-Semibold";
   font-weight: 600;
   margin-bottom: 18px;
-  margin-right: -44px;
-}
-.pc-mode .showCase-container .titleBox .mainTitle::after {
-  content: "。";
-  height: 48px;
-  line-height: 48px;
-  font-size: 46px;
-  font-family: "PingFangSC-Semibold";
 }
 .pc-mode .showCase-container .titleBox .subTitle {
   height: 24px;
@@ -854,14 +837,6 @@ body {
   font-size: 18px;
   font-family: "PingFangSC-Light";
   font-weight: 300;
-  margin-right: -16px;
-}
-.pc-mode .showCase-container .titleBox .subTitle::after {
-  content: "。";
-  height: 24px;
-  line-height: 24px;
-  font-size: 18px;
-  font-family: "PingFangSC-Light";
 }
 .pc-mode .showCase-container .videoBox {
   width: 360px;
@@ -885,10 +860,10 @@ body {
   z-index: 9;
 }
 .pc-mode .showCase-container .mark {
-  height: 18px;
-  line-height: 18px;
+  height: 24px;
+  line-height: 24px;
   list-style-type: none;
-  font-size: 12px;
+  font-size: 16px;
   color: #33333334;
   margin: 0 auto 32px auto;
   transition-duration: 0.3s;
@@ -916,6 +891,7 @@ body {
   top: -5px;
 }
 .pc-mode .showCase-container .mark.active {
+  font-size: 18px;
   color: #333333;
   transition-duration: 0.3s;
   transition-timing-function: ease-in;

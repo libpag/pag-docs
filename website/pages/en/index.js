@@ -40,7 +40,6 @@ class Intro extends Component{
               <Button img={'new_official_website/download.png'} text='免费下载' className='download-btn' blue={true}/>
             </div>
             <span class='tip'>
-            同时支持 MacOS 与 Windows
             </span>
           </div>
           <img class='logo-l' src={imgUrl('new_official_website/logo_l.png')}/>
@@ -180,7 +179,6 @@ class Partner extends Component{
           </div>
           <div class='btn-bar'>
             <Button text='查看更多' link='/users.html' img={'new_official_website/more-b.png'}></Button>
-            <Button text='免费使用' blue={true} img={'new_official_website/download.png'} className='download-btn'></Button>
           </div>
         </div>
       </div>

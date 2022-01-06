@@ -16,6 +16,7 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/wechat.png',
     infoLink: 'https://weixin.qq.com',
+    pinned: true,
   },
   {
     caption: 'QQ',
@@ -34,19 +35,11 @@ const users = [
     pinned: true,
   },
   {
-    caption: '微视',
+    caption: '腾讯视频',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/weishi.png',
-    infoLink: 'https://weishi.qq.com/',
-    pinned: true,
-  },
-  {
-    caption: '天天P图',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/pitu.png',
-    infoLink: 'https://tu.qq.com/',
+    image: '/img/tencentvideo.jpg',
+    infoLink: 'https://v.qq.com',
     pinned: true,
   },
   {
@@ -55,31 +48,7 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/qqmusic.png',
     infoLink: 'https://y.qq.com/',
-    pinned: true,
-  },
-  {
-    caption: '火锅视频',
-     // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/yoo.png',
-    infoLink: 'https://yoo.qq.com',
-    pinned: true,
-  },
-  {
-    caption: '腾讯动漫',
-     // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/dongman.png',
-    infoLink: 'https://ac.qq.com',
-    pinned: true,
-  },
-  {
-    caption: '起点读书',
-     // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/qidian.png',
-    infoLink: 'https://www.qidian.com',
-    pinned: true,
+    pinned: true
   },
   {
     caption: '全民K歌',
@@ -87,14 +56,6 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/kg.png',
     infoLink: 'https://kg.qq.com/index-pc.html',
-    pinned: true,
-  },
-  {
-    caption: '腾讯视频',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/tencentvideo.png',
-    infoLink: 'https://v.qq.com',
     pinned: true,
   },
   {
@@ -114,11 +75,35 @@ const users = [
     pinned: true,
   },
   {
+    caption: '天天P图',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/pitu.png',
+    infoLink: 'https://tu.qq.com/',
+    pinned: true
+  },
+  {
     caption: '腾讯云',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/tencentcloud.png',
     infoLink: 'https://cloud.tencent.com/',
+    pinned: true
+  },
+  {
+    caption: '微视',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/weishi.png',
+    infoLink: 'https://weishi.qq.com/',
+    pinned: true,
+  },
+  {
+    caption: '腾讯动漫',
+     // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/dongman.png',
+    infoLink: 'https://ac.qq.com',
   },
   {
     caption: 'QQ阅读',
@@ -140,6 +125,13 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/AMS.png',
     infoLink: 'https://e.qq.com/ads/',
+  },
+  {
+    caption: '起点',
+     // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: '/img/qidian.png',
+    infoLink: 'https://www.qidian.com',
   },
   {
     caption: '红袖添香',
@@ -222,9 +214,9 @@ const users = [
 
 const links = {
   "feature":[
-    '/docs/pag-export.html',
-    '/docs/ae-support.html',
-    '/docs/install.html',
+    '/docs/tech/pag-depth-3.html',
+    '/docs/ae-bmp-guide.html',
+    '/docs/pag-edit.html',
     '/docs/profiler.html',
     '/docs/pag-edit.html'
   ],
@@ -277,10 +269,10 @@ const siteConfig = {
       href:'/',label:'首页'
     },
     {
-      href:'/docs/install.html',label:'说明文档'
+      href:'/docs/install.html',label:'设计师文档'
     },
     {
-      href:'/docs/techDocs/techDoc.html',label:'开发文档'
+      href:'/docs/tech/pag-depth-1.html',label:'开发者文档'
     },
     {
       href:'/case.html', label:'案例展示'

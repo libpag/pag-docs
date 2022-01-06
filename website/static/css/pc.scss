@@ -50,7 +50,6 @@
             font-weight: 100;
             .paragraph{
                 font-size: 16px;
-                font-family: "PingFangHK-Light";
                 font-weight: 300;
                 margin-bottom: 23px;
             }
@@ -170,14 +169,6 @@
                 font-weight: 900;
                 margin-bottom: 24px;
                 font-family: 'PingFangSC-Semibold';
-            }
-            .title::after{
-                content: '。';
-                height: 48px;
-                font-size: 32px;
-                line-height: 48px;
-                margin-bottom: -24px;
-                font-family: 'PingFangSC-Semibold' !important; // 别动。
             }
             .btn-bar{
                 display: flex;
@@ -424,7 +415,7 @@
         background-color: transparent !important;
     }
     .nav-site.nav-site-internal{
-        width: 350px !important;
+        width: 384px !important;
         margin: 0 auto !important;
         display: flex;
         align-items: center;
@@ -897,19 +888,19 @@
             transition-timing-function: ease-in;
         }
         .caseWrapper{
-            width: 480px;
+            width: 460px;
             padding: 0;
             margin: -80px auto 0 auto;
         }
         .caseBox{
-            width: 480px;
+            width: 460px;
             height: 1300px;
             // border: 3px skyblue solid;
             display: flex;
             align-items: center;
 
             .case{
-                width: 480px;
+                width: 460px;
                 // border: 2px orange dashed;
                 position: sticky;
                 top: calc(100vh / 2 - 458px);
@@ -925,14 +916,6 @@
                 font-family: 'PingFangSC-Semibold';
                 font-weight: 600;
                 margin-bottom: 18px;
-                margin-right: -44px;
-            }
-            .mainTitle::after{
-                content: '。';
-                height:48px;
-                line-height: 48px;
-                font-size: 46px;
-                font-family: 'PingFangSC-Semibold';
             }
             .subTitle{
                 height: 24px;
@@ -940,14 +923,6 @@
                 font-size: 18px;
                 font-family: 'PingFangSC-Light';
                 font-weight: 300;
-                margin-right: -16px;
-            }
-            .subTitle::after{
-                content: '。';
-                height: 24px;
-                line-height: 24px;
-                font-size: 18px;
-                font-family: 'PingFangSC-Light';
             }
         }
         .videoBox{
@@ -963,8 +938,7 @@
         #progressBox{
             position: fixed;
             top: 50%;
-            // margin-top: -184px;
-            margin-top: -109px;
+            margin-top: -184px;
             display: flex;
             
         }
@@ -974,10 +948,10 @@
             z-index: 9;
         }
         .mark{
-            height: 18px;
-            line-height: 18px;
+            height: 24px;
+            line-height: 24px;
             list-style-type: none;
-            font-size: 12px;
+            font-size: 16px;
             color: #33333334;
             margin: 0 auto 32px auto;
             transition-duration: 0.3s;
@@ -1005,6 +979,7 @@
             top: -5px;
         }
         .mark.active{
+            font-size: 18px;
             color: #333333;       
             transition-duration: 0.3s;
             transition-timing-function: ease-in;
