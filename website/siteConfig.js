@@ -214,9 +214,9 @@ const users = [
 
 const links = {
   "feature":[
-    '/docs/pag-export.html',
-    '/docs/ae-support.html',
-    '/docs/install.html',
+    '/docs/tech/pag-depth-3.html',
+    '/docs/ae-bmp-guide.html',
+    '/docs/pag-edit.html',
     '/docs/profiler.html',
     '/docs/pag-edit.html'
   ],
@@ -272,10 +272,16 @@ const siteConfig = {
       href:'/docs/install.html',label:'设计师文档'
     },
     {
-      href:'/api.html',label:'API参考'
+      href:'/docs/tech/pag-depth-1.html',label:'开发者文档'
     },
     {
-      href:'/docs/sdk.html',label:'接入SDK'
+      href:'/case.html', label:'案例展示'
+    },
+    {
+      href:'/docs/faq.html', label:'F&Q'
+    },
+    {
+      href:'https://qm.qq.com/cgi-bin/qm/qr?k=Wa65DTnEKo2hnPsvY-1EgJOF8tvKQ-ZT&jump_from=webapi',label:'加入讨论: 893379574'
     },
     {
       href:'/#download',label:'免费下载'
@@ -328,7 +334,7 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['/javascript/page.js','https://buttons.github.io/buttons.js'],
+  scripts: ['/javascript/page.js','https://buttons.github.io/buttons.js', '/javascript/pagjs/pag.min.js'],
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
   // No .html extensions for paths.
