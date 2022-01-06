@@ -386,6 +386,7 @@
             a{
                 float: left;
                 .logo{
+                    position: fixed;
                     margin-top: 39px;
                     width: 133px;
                     height: 48px;
@@ -415,7 +416,7 @@
         background-color: transparent !important;
     }
     .nav-site.nav-site-internal{
-        width: 384px !important;
+        width: 448px !important;
         margin: 0 auto !important;
         display: flex;
         align-items: center;
@@ -432,7 +433,8 @@
         li:nth-child(1),
         li:nth-child(2),
         li:nth-child(3),
-        li:nth-child(4){
+        li:nth-child(4),
+        li:nth-child(5){
             a{
                 color: #000 !important;
                 text-align: center;
@@ -484,11 +486,21 @@
                 bottom: -8px;
             }
         }
-        li:nth-child(5),
-        li:nth-child(6){
+        li:nth-child(5){
+            a:hover:after,a.active{
+                content: "";
+                border-top: 2px solid $theme-blue;
+                position: absolute;
+                width: 55px;
+                height: 1px;
+                bottom: -8px;
+            }
+        }
+        li:nth-child(6),
+        li:nth-child(7){
             position: fixed;
         }
-        li:nth-child(5){
+        li:nth-child(6){
             right: 135px;
             a{
                 color: $theme-blue !important;
@@ -503,7 +515,7 @@
                 background-color: transparent  !important;
             }
         }
-        li:nth-child(6){
+        li:nth-child(7){
             right: 25px;
             a{
                 border-radius: 8px;
@@ -554,6 +566,13 @@
             }
         }
         li:nth-child(4).active{
+            a:after{
+                width: 56px;
+                height: 1px;
+                bottom: -8px;
+            }
+        }
+        li:nth-child(5).active{
             a:after{
                 width: 56px;
                 height: 1px;

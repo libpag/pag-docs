@@ -32,6 +32,15 @@ window.onload = async () => {
 
 window.onresize = () => {
     addInteractEffect();
+
+    let nav = document.getElementsByClassName('nav-site nav-site-internal');
+    if (window.innerWidth < 1140) {
+        nav[0].children[5].style.visibility= 'hidden';
+        nav[0].children[6].style.visibility= 'hidden';
+    } else {
+        nav[0].children[5].style.visibility= 'visible';
+        nav[0].children[6].style.visibility= 'visible';
+    }
 }
 
 
@@ -171,7 +180,7 @@ docReady(()=>{
     if( pathname == '/' ){
         document.getElementsByClassName('nav-site')[0].children[0].classList.add('active')
     }
-    else if(pathname.indexOf('/docs') == 0 && pathname.indexOf('/docs/tech/') != 0){
+    else if(pathname.indexOf('/docs') == 0 && (pathname.indexOf('/docs/tech/') != 0 && pathname.indexOf('/docs/faq') != 0)){
         document.getElementsByClassName('nav-site')[0].children[1].classList.add('active')
     }
     else if(pathname.indexOf('/docs/tech/') == 0){
@@ -179,6 +188,9 @@ docReady(()=>{
     }
     else if(pathname.indexOf('/case') == 0){
         document.getElementsByClassName('nav-site')[0].children[3].classList.add('active')
+    }
+    else if(pathname.indexOf('/docs/faq') == 0){
+        document.getElementsByClassName('nav-site')[0].children[4].classList.add('active')
     }
 })
 

@@ -5,12 +5,12 @@
     "导出插件": ["plugin-config","ae-error-guide","ae-bmp-guide", "pag-fillmode", "time-stretch", "pag-hotkey","error-code", "pag-export-verify","editable-text", "text-background", "pag-music-mark"],
     "预览工具": ["pag-edit","profiler","pag-file","hot-key","beta", "pag-viewer","export-png"],
     "性能优化": ["optimization"],
-    "视频教程": ["faq","pag-training","pag-training-2"]
+    "视频教程": ["pag-training","pag-training-2"]
   },
   "tech": {
     "SDK接入": ["tech/sdk"],
     "PAG深度解读": ["tech/pag-depth-1", "tech/pag-depth-2","tech/pag-depth-3","tech/pag-depth-4"],
-    "API参考": ["tech/sdk",""],
+    "API参考": ["tech/apis-ios","tech/apis-android"],
     "素材迁移": ["lottie-migration","animation-convertor","SDK-migration",""]
   }
 }
