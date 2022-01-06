@@ -3,7 +3,7 @@
     "快速开始": ["install","install-PAGExporter","pag-export"],
     "AE能力支持": ["ae-support","ae-effect"],
     "导出插件": ["plugin-config","ae-error-guide","ae-bmp-guide", "pag-fillmode", "time-stretch", "pag-hotkey","error-code", "pag-export-verify","editable-text", "text-background", "pag-music-mark"],
-    "预览工具": ["pag-edit","pag-file","hot-key","beta", "pag-viewer","export-png"],
+    "预览工具": ["pag-edit","pag-file","hot-key","beta","export-png"],
     "性能优化": ["profiler","optimization"],
     "视频教程": ["pag-training","pag-training-2"]
   },

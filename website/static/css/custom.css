@@ -21,6 +21,9 @@ body {
   text-decoration: underline;
 }
 
+.pc-mode {
+  min-width: 1200px;
+}
 .pc-mode a.btn {
   cursor: pointer;
   display: flex;
@@ -36,7 +39,7 @@ body {
   width: 24px;
   height: 24px;
   margin-right: 10px;
-  top: 10px;
+  top: 12px;
   left: 16px;
   position: relative;
 }
@@ -50,6 +53,7 @@ body {
 }
 .pc-mode .fixedHeaderContainer {
   background-color: transparent;
+  min-width: 1200px;
   padding: 0;
 }
 .pc-mode .fixedHeaderContainer .wrapper {
@@ -75,6 +79,7 @@ body {
   font-size: 16px;
   font-weight: 300;
   margin-bottom: 23px;
+  font-family: "PingFangSC-Light" !important;
 }
 .pc-mode .intro-box .wrap .pag {
   width: 231px;
@@ -171,7 +176,7 @@ body {
   line-height: 48px;
   font-weight: 900;
   margin-bottom: 24px;
-  font-family: "PingFangSC-Semibold";
+  font-family: "PingFangSC-Semibold" !important;
 }
 .pc-mode .main .chapter .btn-bar {
   display: flex;
@@ -851,7 +856,7 @@ body {
   height: 24px;
   line-height: 24px;
   font-size: 18px;
-  font-family: "PingFangSC-Light";
+  font-family: "PingFangSC-Light" !important;
   font-weight: 300;
 }
 .pc-mode .showCase-container .videoBox {
