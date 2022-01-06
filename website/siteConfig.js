@@ -278,7 +278,7 @@ const siteConfig = {
       href:'/case.html', label:'案例展示'
     },
     {
-      href:'/docs/faq.html', label:'F&Q'
+      href:'/docs/faq.html', label:'FAQ'
     },
     {
       href:'https://qm.qq.com/cgi-bin/qm/qr?k=Wa65DTnEKo2hnPsvY-1EgJOF8tvKQ-ZT&jump_from=webapi',label:'加入讨论: 893379574'
