@@ -2,22 +2,38 @@
 id: faq
 title: 常见问题
 ---
+
 ### 问：PAG什么时候开源，收费吗？<br/>
 ### 答：
-PAG将会于2022年1月14日正式对外开源，采用的协议是Apache 2.0
+PAG将会于2022年1月14日正式对外开源，采用的协议是Apache 2.0<br/>
 对外提供的制品库都是稳定的版本，可以商用，是不收费的
 
 ### 问：PAG支持哪些平台？<br/>
 ### 答：
 PAG支持Android、iOS、mac OS、windows、Linux和web
-现有的制品库支持Android和iOS，具体接入参考[<font color=blue>接入SDK</font>](/docs/sdk.html)
-1月14日开源的时候会提供web版本，基于源码可以构建windows、mac OS和Linux版本相关库文件
+现有的制品库支持Android和iOS，具体接入参考[<font color=blue>接入SDK</font>](/docs/sdk.html)<br/>
+1月14日开源的时候会提供web版本，基于源码可以构建windows、mac OS和Linux版本相关库文件<br/>
+由于PC端没有统一的UI框架，需要自己做一些适配，提供OpenGL渲染环境，PAG提供渲染到纹理的能力。<br/>
 对于小程序的支持也在进行中，预计还要过段时间
 
 ### 问：PAG支持Flutter使用吗？<br/>
 ### 答：
 PAG支持Flutter使用，目前已经有成功使用的案例，需要业务层做些适配。
 对于PAG而言，可以获取到每一帧渲染的数据，iOS获取到的是CVPixelBuffer，Android端是纹理
+
+### 问：PAG与视频编辑的关系？<br/>
+### 答：
+PAG诞生之初就是为了解决视频编辑场景贴纸动画添加渲染问题，但PAG只负责动画渲染，PAG提供了相关接口可以便捷的与原生视频渲染链路相整合<br/>
+视频编辑框架需要业务层自己开发或者接入成熟的方案，如果音视频编解码、导出视频等
+
+### 问：PAG windows版本是否可以直接和drictex11的现有游戏结合？<br/>
+### 答：
+目前没有计划要去直接支持dx的渲染后端，但是通过google的angle项目把dx包装成OpenGL接口
+
+### 问：PAG是否支持表达式？<br/>
+### 答：
+表达式还没有支持，因为涉及了JS虚拟机植入，包会很大，还在考虑最好的方案<br/>
+但是所有的表达式其实都可以简单用快捷键转换成固定关键帧导出的，AE提供了这个能力
 
 ### 问：导出的 PAG 文件在客户端渲染时为什么会有色差？<br/>
 ### 答：
