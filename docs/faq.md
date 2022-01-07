@@ -41,6 +41,11 @@ PAG诞生之初就是为了解决视频编辑场景贴纸动画添加渲染问�
 另一种是显示当前不支持的效果，对于不支持的效果，可以在对于预合成的名字上加上_bmp来导出<br/>
 可以在[<font color=blue>AE特性列表</font>](/docs/ae-support.html)了解到支持的能力
 
+### 问：添加了很多特效（Effect），但导出后不见了？<br/>
+### 答：
+可以在[<font color=blue>AE特性列表</font>](/docs/ae-support.html)里找到目前支持的特效。如果特效没有在支持列表里，同时又是比较常用的能力，可以联系我们，我们判断这个特效有必要且没有替代方案的话，会排期实现<br/>
+对于第三方插件提供的特效，目前可以通过转化为BMP预合成来导出，可以参考[<font color=blue>BMP预合成导出</font>](/docs/ae-bmp-guide.html)
+
 ### 问：在预合成的名字后边加上_BMP后，本来不支持的效果就可以导出了，但感觉清晰度不太够？<br/>
 ### 答：
 可以在对插件进行配置，参考这个文档[<font color=blue>插件选项配置面板</font>](/plugin-config.html)<br/>
