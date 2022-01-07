@@ -103,7 +103,7 @@ class Main extends Component{
               return (
                 <div class='text'>
                   在纯矢量导出方式上支持更多 AE 特性的同时，还<br/>
-                  引入了视频序列帧结合矢量的混合导出能力，实现<br/>
+                  引入了BMP预合成结合矢量的混合导出能力，实现<br/>
                   支持所有 AE 特性的同时又能保持动画运行时的可<br/>
                   编辑性。
                 </div>

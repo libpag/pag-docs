@@ -2,6 +2,23 @@
 id: faq
 title: 常见问题
 ---
+### 问：PAG什么时候开源，收费吗？<br/>
+### 答：
+PAG将会于2022年1月14日正式对外开源，采用的协议是Apache 2.0
+对外提供的制品库都是稳定的版本，可以商用，是不收费的
+
+### 问：PAG支持哪些平台？<br/>
+### 答：
+PAG支持Android、iOS、mac OS、windows、Linux和web
+现有的制品库支持Android和iOS，具体接入参考[<font color=blue>接入SDK</font>](/docs/sdk.html)
+1月14日开源的时候会提供web版本，基于源码可以构建windows、mac OS和Linux版本相关库文件
+对于小程序的支持也在进行中，预计还要过段时间
+
+### 问：PAG支持Flutter使用吗？<br/>
+### 答：
+PAG支持Flutter使用，目前已经有成功使用的案例，需要业务层做些适配。
+对于PAG而言，可以获取到每一帧渲染的数据，iOS获取到的是CVPixelBuffer，Android端是纹理
+
 ### 问：导出的 PAG 文件在客户端渲染时为什么会有色差？<br/>
 ### 答：
 桌面预览工具 PAGViewer(2.1.40版本以上) 和客户端 SDK 使用的色彩空间是 sRGB，如果 AE 设置的是其他色彩空间，导出的 PAG 文件在渲染的时候可能会出现色差。<br/>
