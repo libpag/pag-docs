@@ -233,7 +233,7 @@ const faq = [
 },
 {
   issue:"如何接入SDK?",
-  link:"/docs/sdk.html"
+  link:"/docs/tech/sdk.html"
 }
 ,
 {

@@ -99,7 +99,7 @@ PAG插件配置面板 [<font color=blue>文章地址</font>](/docs/plugin-config
 
 ##### 1.PAG快速接入
 
-接入SDK [<font color=blue>文章地址</font>](/docs/sdk.html)
+接入SDK [<font color=blue>文章地址</font>](/docs/tech/sdk.html)
 
 
 ##### 2.Lottie迁移说明

@@ -92,6 +92,8 @@ BMP预合成导出模式可以支持所有的AE特效，设计师只需要关注
     边角定位 (Corner Pin)
     动态拼贴 (Motion Tile)
     置换效果（Displacement Map）(暂要求将置换图层修改为预合成图层并改合成名为"_bmp"后缀)
+	径向模糊 (Radial Blur)
+	马赛克 (Mosaic)
     
 （效果预览：[<font color=blue>当前支持的AE内置特效</font>](/docs/ae-effect.html)）
 
