@@ -11,39 +11,47 @@ class Main extends React.Component {
                         [{
                             mainTitle: '发挥无限创意',
                             subTitle: '丰富的特效支持，满足2D/3D使用，助力创意更多可能性',
-                            video: '/video/01.mp4'
+                            video: '/video/01.mp4',
+                            poster: '/img/poster/01.png'
                         },{
                             mainTitle: '特效大片任意做',
                             subTitle: '全AE特效支持，爆款模版唾手可得',
-                            video: '/video/02.mp4'
+                            video: '/video/02.mp4',
+                            poster: '/img/poster/02.png'
                         },{
                             mainTitle: '放大游戏快感',
                             subTitle: '不限机型不耗性能，多视角大片运镜记录游戏高光时刻',
-                            video: '/video/03.mp4'
+                            video: '/video/03.mp4',
+                            poster: '/img/poster/03.png'
                         },{
                             mainTitle: '自由编辑动态效果',
                             subTitle: '全能易操作，剪辑体验酣畅淋漓',
-                            video: '/video/04.mp4'
+                            video: '/video/04.mp4',
+                            poster: '/img/poster/04.png'
                         }
                         ,{
                             mainTitle: '增强广告效果',
                             subTitle: '低门槛商品素材一键导入，促销大片立刻呈现',
-                            video: '/video/05.mp4'
+                            video: '/video/05.mp4',
+                            poster: '/img/poster/05.png'
                         }
                         ,{
                             mainTitle: '丰富视觉体验',
                             subTitle: '动画文件使用更便捷，体积小性能好',
-                            video: '/video/06.mp4'
+                            video: '/video/06.mp4',
+                            poster: '/img/poster/06.png'
                         }
                         ,{
                             mainTitle: '直播氛围拉满',
                             subTitle: '全面支持礼物设计，精彩创意等你探索',
-                            video: '/video/07.mp4'
+                            video: '/video/07.mp4',
+                            poster: '/img/poster/07.png'
                         }
                         ,{
                             mainTitle: '无负担极速上线',
                             subTitle: 'H5动画、文字、音乐轻松上线，让营销变的简单',
-                            video: '/video/08.mp4'
+                            video: '/video/08.mp4',
+                            poster: '/img/poster/08.png'
                         }].map((unit, idx) => {
                             return(
                                 <Chapter
@@ -51,6 +59,7 @@ class Main extends React.Component {
                                     mainTitle = {unit.mainTitle}
                                     subTitle = {unit.subTitle}
                                     video = {unit.video}
+                                    poster = {unit.poster}
                                 />
                             )
                         })
@@ -63,7 +72,7 @@ class Main extends React.Component {
 
 class Chapter extends React.Component {
     render() {
-        const {idx, mainTitle, subTitle, video} = this.props
+        const {mainTitle, subTitle, video, poster} = this.props
         return(
             <div class='caseBox'>
                 <div class='case'>
@@ -72,7 +81,7 @@ class Chapter extends React.Component {
                         <center><p class='subTitle'>{subTitle}</p></center>
                     </div>
                     <div class='videoBox'>
-                        <video class='video' src={video} preload muted autoPlay playsInline loop></video>
+                        <video class='video' src={video} poster={poster} preload muted autoPlay playsInline loop></video>
                     </div>
                     
                 </div>
