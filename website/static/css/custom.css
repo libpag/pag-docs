@@ -823,7 +823,7 @@ body {
   background-repeat: no-repeat;
   background-image: url("/img/new_official_website/bgLogo.png");
   transition-duration: 1s;
-  transition-timing-function: ease-in;
+  transition-timing-function: ease-out;
 }
 .pc-mode .showCase-container .caseWrapper {
   width: 460px;
@@ -905,11 +905,17 @@ body {
   content: "";
   display: block;
   width: 2px;
-  height: 40px;
+  height: 46px;
   background-color: #33333334;
   position: relative;
   left: 4px;
-  top: -5px;
+  top: -6px;
+}
+.pc-mode .showCase-container .mark:hover {
+  color: #3333338a;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  cursor: pointer;
 }
 .pc-mode .showCase-container .mark.active {
   font-size: 18px;
@@ -931,6 +937,14 @@ body {
 }
 .pc-mode .showCase-container #progressUl li:last-child::after {
   display: none;
+}
+@keyframes clickMark {
+  40% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .mobile-mode {

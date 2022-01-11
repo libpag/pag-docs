@@ -92,9 +92,9 @@ class ProgressBar extends React.Component {
                         'UI 动画',
                         '直播打赏',
                         '运营活动',
-                                ].map((mark) => {
+                                ].map((mark, idx) => {
                             return (
-                                <li class='mark'>{mark}</li>
+                                <li class='mark' idx={idx}>{mark}</li>
                             )
                         })
                     }
