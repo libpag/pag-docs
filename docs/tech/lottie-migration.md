@@ -2,14 +2,15 @@
 id: lottie-migration
 title: Lottie迁移指南
 ---
+---
 
 虽然PAG与Lottie在使用上基本类似，但是在迁移过程中仍然可能会遇到一些问题。本文希望能够尽可能减少相关的迁移成本，希望能够帮助设计师、运营、开发者尽快的掌握PAG。
 
 目前，PAG迁移文档还在不断的迭代，欢迎大家随时查看。如果使用过程中有什么问题，可以直接[<font color=blue>提交issue</font>](https://github.com/libpag/libpag/issues/new?assignees=&labels=&template=bug_report.md&title=)。我们会将问题转给相应的接口人。
 
-#### 通用迁移指南
+## 通用迁移指南
 
-##### 1.PAG与Lottie功能区别点
+### 1.PAG与Lottie功能区别点
 
 | Lottie                                                   | PAG                                                |
 | -------------------------------------------------------- | -------------------------------------------------- |
@@ -35,23 +36,27 @@ title: Lottie迁移指南
 | 支持Animator                                             | 不支持Animator                                     |
 | iOS有毛边                                                | 无毛边                                             |
 
-##### 2.PAGViewer和AE插件安装方法
+</br>
+
+---
+
+### 2.PAGViewer和AE插件安装方法
 
 安装 [<font color=blue>文章地址</font>](/docs/install.html)
 
-##### 3.PAGViewer快捷键说明
+### 3.PAGViewer快捷键说明
 
 PAGViewer 快捷键说明 [<font color=blue>文章地址</font>](/docs/hot-key.html)
 
 
 
-#### 设计师迁移指南
+## 设计师迁移指南
 
-##### 1.PAG支持的AE效果
+### 1.PAG支持的AE效果
 
 AE功能支持列表 [<font color=blue>文章地址</font>](/docs/ae-support.html)
 
-##### 2.PAG素材在AE中的导出方法
+### 2.PAG素材在AE中的导出方法
 
 导出：
 
@@ -67,7 +72,7 @@ AE功能支持列表 [<font color=blue>文章地址</font>](/docs/ae-support.htm
 
 PAG插件配置面板 [<font color=blue>文章地址</font>](/docs/plugin-config.html)
 
-##### 3.PAGViewer使用方法
+### 3.PAGViewer使用方法
 
 查看可编辑的图层并查看编辑后效果：
 
@@ -83,30 +88,30 @@ PAG插件配置面板 [<font color=blue>文章地址</font>](/docs/plugin-config
 
 
 
-#### 运营迁移指南
+## 运营迁移指南
 
-##### 1.素材迁移 
+### 1.素材迁移 
 
 素材迁移说明 [<font color=blue>文章地址</font>](/docs/animation-convertor.html)
 
-##### 2.导出APNG/图片序列帧：
+### 2.导出APNG/图片序列帧：
 
 从 PAG 导出其他图片格式 [<font color=blue>文章地址</font>](/docs/export-png.html)
 
 
 
-#### 开发者迁移指南
+## 开发者迁移指南
 
-##### 1.PAG快速接入
+### 1.PAG快速接入
 
 接入SDK [<font color=blue>文章地址</font>](/docs/tech/sdk.html)
 
 
-##### 2.Lottie迁移说明
+### 2.Lottie迁移说明
 
 Lottie迁移PAG SDK说明文档  [<font color=blue>文章地址</font>](/docs/SDK-migration.html)
 
-##### 3.SDK高级使用指南
+### 3.SDK高级使用指南
 
 自定义软解
 
@@ -116,6 +121,8 @@ API参考
 
 API参考 [<font color=blue>文章地址</font>](/api.html)
 
-##### 4.PAGViewer使用方法
+### 4.PAGViewer使用方法
 
 使用PAGViewer查看PAG文件结构 [<font color=blue>文章地址</font>](/docs/pag-file.html)
+
+---

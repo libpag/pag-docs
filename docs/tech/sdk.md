@@ -2,7 +2,7 @@
 id: sdk
 title: 接入SDK
 ---
-
+---
 # 快速接入
 
 libpag 目前支持Android和iOS平台，web的支持目前处于开发过程中，接入采用SDK的方式<br/>
@@ -116,3 +116,5 @@ buildscript {
 PAG动画测试素材下载：[<font color=blue> pag_files.zip </font>](/file/pag_files.zip) 
 
 接入使用过程若遇到问题请[<font color=blue>提交issue</font>](https://github.com/libpag/libpag/issues/new?assignees=&labels=&template=bug_report.md&title=)<br/>
+
+---

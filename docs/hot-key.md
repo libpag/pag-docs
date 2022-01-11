@@ -2,8 +2,9 @@
 id: hot-key
 title: PAGViewer 快捷键说明
 ---
+---
+## PAGViewer 快捷键说明
 
-### PAGViewer 快捷键说明
 
 | 快捷键 | 说明 |
 | ------ | -------- |
@@ -18,3 +19,5 @@ title: PAGViewer 快捷键说明
 | 方向键右 → | 暂停并回到后一帧 |
 | 空格键 | 暂停/播放 |
 | Commond + W | 关闭当前窗口 |
+
+---

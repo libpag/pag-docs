@@ -2,39 +2,74 @@
 id: ae-effect
 title: AE内置特效支持
 ---
+---
+## 当前支持的AE内置特效:
 
-# 当前支持的AE内置特效
++ ### 运动模糊 (Motion Blur)
+    - 开启运动模糊
 
-### 运动模糊 (Motion Blur)
+    <img 
+    alt='启用运动模糊' 
+    src='/img/docs/Effect/2.1.gif' 
+    style='width: 520px; margin: 16px 0;' 
+    />
+    ---
 
-启用运动模糊效果：
+    - 关闭运动模糊
 
-![启用运动模糊](/img/docs/Effect/2.1.gif)
+    <img 
+    alt='关闭运动模糊' 
+    src='/img/docs/Effect/2.2.gif' 
+    style='width: 520px; margin: 16px 0;' 
+    />
 
-关闭运动模糊效果：
+    ---
 
-![关闭运动模糊](/img/docs/Effect/2.2.gif)
++ ### 凹凸效果 (Bulge)
+    <img 
+    alt='启用凹凸效果' 
+    src='/img/docs/Effect/3.1.gif' 
+    style='width: 520px; margin:  32px 0;' 
+    />
 
-### 凹凸效果 (Bulge)
+---
++ ### 辉光效果 (Glow)
+    <img 
+    alt='启用辉光效果' 
+    src='/img/docs/Effect/1.1.gif' 
+    style='width: 520px; margin:  32px 0;' 
+    />
 
-![启用凹凸效果](/img/docs/Effect/3.1.gif)
+---        
++ ### 色阶控制 (Levels Individual Controls)
+    <img 
+    alt='启用色阶控制' 
+    src='/img/docs/Effect/5.1.gif' 
+    style='width: 520px; margin:  32px 0;' 
+    />
 
-### 辉光效果 (Glow)
+---
++ ### 边角定位 (Corner Pin)
+    <img 
+    alt='启用边角定位' 
+    src='/img/docs/Effect/6.1.gif' 
+    style='width: 520px; margin:  32px 0;' 
+    />
 
-![启用辉光效果](/img/docs/Effect/1.1.gif)
-	
-### 色阶控制 (Levels Individual Controls)
+---
++ ### 动态拼贴 （Motion Tile）
+    <img 
+    alt='启用动态拼贴' 
+    src='/img/docs/Effect/4.1.gif' 
+    style='width: 520px; margin:  32px 0;' 
+    />
 
-![启用色阶控制](/img/docs/Effect/5.1.gif)
+---
++ ### 置换效果 （Displacement Map）
+    <img 
+    alt='启用置换效果' 
+    src='/img/docs/Effect/7.1.gif' 
+    style='width: 520px; margin:  32px 0;' 
+    />
 
-### 边角定位 (Corner Pin)
-
-![启用边角定位](/img/docs/Effect/6.1.gif)
-
-### 动态拼贴 （Motion Tile）
-
-![启用动态拼贴](/img/docs/Effect/4.1.gif)
-
-### 置换效果 （Displacement Map）
-
-![启用置换效果](/img/docs/Effect/7.1.gif)
+---

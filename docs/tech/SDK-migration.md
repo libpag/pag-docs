@@ -2,12 +2,10 @@
 id: SDK-migration
 title: PAG SDK迁移指南
 ---
+---
 
-
-
-目前PAG更专注于编辑能力，因此Lottie与PAG大部分接口比较类似，但有些Lottie接口PAG并没有支持，目前我们基于iOS接口简单对常用接口迁移进行说明。
-
-
+> 目前PAG更专注于编辑能力，因此Lottie与PAG大部分接口比较类似，但有些Lottie接口PAG并没有支持，目前我们基于iOS接口简单对常用接口迁移进行说明。
+---
 
 在iOS端，PAG目前只提供了OC对应接口，没有对swift进行进一步的支持。Lottie目前推荐使用swift，也同时提供了对应的OC接口。
 
@@ -15,7 +13,7 @@ title: PAG SDK迁移指南
 
 #### Animation(swift) /CompatibleAnimation(OC)
 
-##### 动画加载
+### 动画加载
 
 Animation/CompatibleAnimation在Lottie中提供动画的加载功能，在PAG中，我们使用PAGFile来加载动画。
 
@@ -44,7 +42,7 @@ PAGFile* pagFile = [PAGFile Load:[[NSBundle mainBundle] pathForResource:@"Lottie
 
 
 
-##### 动画基本信息
+### 动画基本信息
 
 其中Lottie可以获取动画的基本信息，包括`version、type、startFrame、endFrame、frameRate、duration、width、height`。
 
@@ -95,7 +93,7 @@ PAG:
 
 
 
-##### contentMode
+### contentMode
 
 Lottie直接支持`UIView`的`contentMode`，在PAG中，对应属性为`scaleMode`。具体对应关系如下：
 
@@ -109,7 +107,7 @@ PAGScaleModeZoom -- UIViewContentModeScaleAspectFill
 
 
 
-##### 图片替换
+### 图片替换
 
 Lottie通过接口`setImageProvider`进行图片替换，在PAG中，`PAGView`有`- (void)replaceImage:(int)index data:(PAGImage*)value;`这一接口。
 
@@ -117,7 +115,7 @@ Lottie通过接口`setImageProvider`进行图片替换，在PAG中，`PAGView`�
 
 
 
-##### 文字替换
+### 文字替换
 
 Lottie通过接口`setTextProvider`进行文字替换，在PAG中，`PAGView`有`- (void)setTextData:(int)index data:(PAGText*)value;`这一接口
 
@@ -125,33 +123,33 @@ Lottie通过接口`setTextProvider`进行文字替换，在PAG中，`PAGView`有
 
 
 
-##### 播放控制
+### 播放控制
 
-###### `isAnimationPlaying`
+#### `isAnimationPlaying`
 
 播放状态在PAG中为`isPlaying`，获取结果与Lottie一致。
 
 
 
-###### `loopMode`
+#### `loopMode`
 
 循环模式在PAG中为`setRepeatCount`，其中0表示无限循环。loopMode中`autoReverse` \\`repeat`\ `repeatBackwards`暂时不支持。
 
 
 
-###### `backgroundBehavior`
+#### `backgroundBehavior`
 
 PAG目前不支持`backgroundBehavior`，默认会继续计算进度。
 
 
 
-###### `shouldRasterizeWhenIdle`
+#### `shouldRasterizeWhenIdle`
 
 PAG目前不支持`shouldRasterizeWhenIdle`，需要上层设置progress控制进度。
 
 
 
-###### `progress`
+#### `progress`
 
 `currentProgress`与PAG中`progress`一致。（注*：在PAG中，setProgress是不会刷新界面的，默认会在下一次绘制时更新界面。如果需要立即更新，比如暂停状态下，需要调用`flush`方法进行更新）
 
@@ -159,13 +157,13 @@ PAG目前不支持`shouldRasterizeWhenIdle`，需要上层设置progress控制�
 
 
 
-###### `animationSpeed`
+#### `animationSpeed`
 
 目前PAGView不支持`speed`控制，请直接控制`progress`来控制`speed`。
 
 
 
-###### `respectAnimationFrameRate`
+#### `respectAnimationFrameRate`
 
 目前PAGView不支持`respectAnimationFrameRate`的选择，默认是按照设备屏幕刷新频率进行更新的。
 
@@ -179,7 +177,7 @@ PAGView的`play`方法既从当前`progress`开始播放。
 
 
 
-###### `stop/pasue`
+#### `stop/pasue`
 
 PAG中`stop`方法不会改变进度，只会停止更新画面，效果与Lottie中`pasue`相同。如果需要实现Lottie中`stop`效果，可以使用如下代码块：
 
@@ -190,7 +188,8 @@ PAG中`stop`方法不会改变进度，只会停止更新画面，效果与Lotti
 ```
 
 
-
-###### `forceDisplayUpdate`
+#### `forceDisplayUpdate`
 
 PAG中`flush`相当于`forceDisplayUpdate`方法，当flush调用时，如果画面有变化，会立刻刷新界面。如果需要画面无变化下也刷新，请调用`- (BOOL)flush:(BOOL)force;`方法
+
+---
