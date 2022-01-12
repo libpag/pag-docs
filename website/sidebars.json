@@ -10,7 +10,7 @@
   "tech": {
     "SDK接入": ["tech/sdk"],
     "PAG深度解读": ["tech/pag-depth-1", "tech/pag-depth-2","tech/pag-depth-3","tech/pag-depth-4"],
-    "API参考": ["tech/apis-ios","tech/apis-android"],
+    "API参考": ["tech/apis-ios","tech/apis-android", "tech/apis-web"],
     "素材迁移": ["tech/lottie-migration","tech/animation-convertor","tech/SDK-migration"]
   }
 }
