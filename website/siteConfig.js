@@ -263,7 +263,13 @@ const siteConfig = {
   //   organizationName: 'JoelMarcey'
 
   // For no header links in the top nav bar -> headerLinks: [],
-  separateCss: ["static/apis/android/stylesheet.css", "static/apis/ios/css/style.css"],
+  separateCss: [
+    "static/apis/android/stylesheet.css",
+    "static/apis/ios/css/style.css",
+    "static/apis/web/css/style.css",
+    "static/apis/web/css/highlight.css",
+    "static/apis/web/css/icons.css",
+  ],
   headerLinks: [
     {
       href:'/',label:'首页'
