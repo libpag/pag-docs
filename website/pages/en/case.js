@@ -11,41 +11,48 @@ class Main extends React.Component {
                         [{
                             mainTitle: '发挥无限创意',
                             subTitle: '丰富的特效支持，满足2D/3D使用，助力创意更多可能性',
+                            video: 'https://videorendertvh5.cdp.qq.com/pagiocase_01.mp4'
                         },{
                             mainTitle: '特效大片任意做',
                             subTitle: '全AE特效支持，爆款模版唾手可得',
+                            video: 'https://videorendertvh5.cdp.qq.com/pagiocase_02.mp4'
                         },{
                             mainTitle: '放大游戏快感',
                             subTitle: '不限机型不耗性能，多视角大片运镜记录游戏高光时刻',
+                            video: 'https://videorendertvh5.cdp.qq.com/pagiocase_03.mp4'
                         },{
                             mainTitle: '自由编辑动态效果',
                             subTitle: '全能易操作，剪辑体验酣畅淋漓',
+                            video: 'https://pagio-1251316161.file.myqcloud.com/video/pagiocase_04_1641955776.mp4'
                         }
                         ,{
                             mainTitle: '增强广告效果',
                             subTitle: '低门槛商品素材一键导入，促销大片立刻呈现',
+                            video: 'https://videorendertvh5.cdp.qq.com/pagiocase_05.mp4'
                         }
                         ,{
                             mainTitle: '丰富视觉体验',
                             subTitle: '动画文件使用更便捷，体积小性能好',
+                            video: 'https://pagio-1251316161.file.myqcloud.com/video/pagiocase_06_1641955776.mp4'
                         }
                         ,{
                             mainTitle: '直播氛围拉满',
                             subTitle: '全面支持礼物设计，精彩创意等你探索',
+                            video: 'https://pagio-1251316161.file.myqcloud.com/video/pagiocase_07_1641955776.mp4'
                         }
                         ,{
                             mainTitle: '无负担极速上线',
                             subTitle: 'H5动画、文字、音乐轻松上线，让营销变的简单',
+                            video: 'https://videorendertvh5.cdp.qq.com/pagiocase_08.mp4'
                         }].map((unit, idx) => {
                             let index = idx < 9? `0${idx+1}`: `${idx+1}`;
-                            let video = `https://videorendertvh5.cdp.qq.com/pagiocase_${index}.mp4`
                             let poster = `/img/poster/${index}.png`
                             return(
                                 <Chapter
                                     idx = {idx}
                                     mainTitle = {unit.mainTitle}
                                     subTitle = {unit.subTitle}
-                                    video = {video}
+                                    video = {unit.video}
                                     poster = {poster}
                                 />
                             )
