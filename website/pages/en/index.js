@@ -89,7 +89,7 @@ class Main extends Component{
             title:"文件体积小",
             content:()=>{//1
               return (
-                <div id='test' class='text'>
+                <div class='text'>
                   导出相同的 AE 动画内容，在文件解码速度和压缩<br/>
                   率上均大幅领先于同类型方案。采用可扩展的二进<br/>
                   制文件格式，可集成包含图片等任意设计资源的单<br/>

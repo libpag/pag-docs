@@ -33,7 +33,7 @@ class Main extends React.Component {
                         ,{
                             mainTitle: '丰富视觉体验',
                             subTitle: '动画文件使用更便捷，体积小性能好',
-                            video: 'https://pagio-1251316161.file.myqcloud.com/video/pagiocase_06_1641955776.mp4'
+                            video: 'https://pagio-1251316161.file.myqcloud.com/video/e917e18a9759b4b6b7a06ad0f37f1e14.mov'
                         }
                         ,{
                             mainTitle: '直播氛围拉满',
