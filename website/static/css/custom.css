@@ -1072,6 +1072,7 @@ body {
   font-weight: 900;
   margin-top: 0.1866666667rem;
   margin-bottom: 0.3466666667rem;
+  font-family: "PingFangSC-Semibold" !important;
 }
 .mobile-mode .main .wrap > div .title::after {
   content: "。";

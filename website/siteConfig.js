@@ -272,7 +272,7 @@ const siteConfig = {
       href:'/docs/install.html',label:'设计师文档'
     },
     {
-      href:'/docs/tech/pag-depth-1.html',label:'开发者文档'
+      href:'/docs/tech/sdk.html',label:'开发者文档'
     },
     {
       href:'/case.html', label:'案例展示'

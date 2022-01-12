@@ -11,5 +11,8 @@
   "devDependencies": {
     "docusaurus": "^1.5.1",
     "sass": "^1.26.11"
+  },
+  "dependencies": {
+    "@octokit/core": "^3.5.1"
   }
 }
