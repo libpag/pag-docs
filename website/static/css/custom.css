@@ -1462,11 +1462,10 @@ body {
 }
 .mobile-mode .showCase-container .caseMain .caseBox .case .videoBox {
   margin-top: 0.64rem;
-  box-shadow: 10px 10px 10px red !important;
 }
 .mobile-mode .showCase-container .caseMain .caseBox .case .videoBox .video {
   width: calc(100vw - 0.64rem);
-  box-shadow: 10px 10px 10px red;
+  box-shadow: 0 0 0.1333333333rem rgba(0, 0, 0, 0.16);
 }
 
 /*# sourceMappingURL=custom.css.map */

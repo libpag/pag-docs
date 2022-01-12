@@ -565,11 +565,10 @@
                     }
                     .videoBox{
                         margin-top: rem(48);
-                        box-shadow: 10px 10px 10px red!important;
 
                         .video{
                             width: calc(100vw - 0.64rem);
-                            box-shadow: 10px 10px 10px red;
+                            box-shadow: 0 0 rem(10) rgba(0,0,0,.16);
                         }
                     }
                 }
