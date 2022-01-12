@@ -49,7 +49,7 @@ PAG目前支持的AE特性可以参考文章：[<font color=blue>AE功能支持�
 <p style='margin: -24px 0 48px 260px'><font size="2">图5 合成设置页—BMP复选框</font></p>
 
 ---
-#### 步骤四：如图6所示，勾选GMP复选框后，会有二次确认弹框，点击确认完成
+#### 步骤四：如图6所示，勾选BMP复选框后，会有二次确认弹框，点击确认完成
 <img 
   src='/img/docs/bmpGuide/bmp_guide_6.png' 
   style='width: 620px; margin: 32px 0 48px 0' 
