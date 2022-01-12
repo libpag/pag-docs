@@ -266,9 +266,9 @@ const siteConfig = {
   separateCss: [
     "static/apis/android/stylesheet.css",
     "static/apis/ios/css/style.css",
-    "static/apis/web/css/style.css",
-    "static/apis/web/css/highlight.css",
-    "static/apis/web/css/icons.css",
+    "static/apis/web/assets/style.css",
+    "static/apis/web/assets/highlight.css",
+    "static/apis/web/assets/icons.css",
   ],
   headerLinks: [
     {
