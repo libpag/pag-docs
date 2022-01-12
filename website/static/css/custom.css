@@ -868,6 +868,7 @@ body {
   height: 640px;
   border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
 }
 .pc-mode .showCase-container #progressBox {
   position: fixed;
@@ -1461,9 +1462,11 @@ body {
 }
 .mobile-mode .showCase-container .caseMain .caseBox .case .videoBox {
   margin-top: 0.64rem;
+  box-shadow: 10px 10px 10px red !important;
 }
 .mobile-mode .showCase-container .caseMain .caseBox .case .videoBox .video {
   width: calc(100vw - 0.64rem);
+  box-shadow: 10px 10px 10px red;
 }
 
 /*# sourceMappingURL=custom.css.map */
