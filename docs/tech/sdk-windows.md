@@ -1,5 +1,5 @@
 ---
-id: windows-readme
+id: sdk-windows
 title: Windows接入指南
 ---
 
