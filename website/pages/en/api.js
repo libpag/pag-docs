@@ -20,6 +20,7 @@ class Page extends React.Component {
                                             <p>最新版本的API文档请点击如下链接查看：</p>
                                             <p id='js_ios_doc'><font color="blue">iOS API文档</font></p>
                                             <p id='js_android_doc'><font color="blue">Android API文档</font></p>
+                                            <p id='js_web_doc'><font color="blue">Web API文档</font></p>
                                         </span>
                                     </div>
                                 </article>
@@ -40,6 +41,7 @@ class Page extends React.Component {
                         var iframe = document.getElementById('ifame');
                         var iosPathname = "/apis/ios/";
                         var androidPathname = "/apis/android/";
+                        var webPathname = "/apis/web/";
                         var innerDocClick = false;
                         var hasInit = false;
                         var ignore = false;
@@ -92,6 +94,11 @@ class Page extends React.Component {
                             ignore = true;
                             updateIframe(androidPathname)
                             window.location.hash = '#'+androidPathname + 'org/libpag/package-summary.html' ;
+                        }
+                        document.getElementById('js_web_doc').onclick = ()=>{ 
+                            document.getElementById('js_original_part').style.display = 'none';
+                            document.getElementById('js_iframe_part').style.display = 'block';
+                            updateIframe(webPathname)
                         }
                         //监听子页面URL的变化事件，同步到壳的URL
                         window.addEventListener("message", function(e){
