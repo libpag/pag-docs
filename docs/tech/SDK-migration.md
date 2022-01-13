@@ -11,7 +11,7 @@ title: PAG SDK 迁移指南
 
 下面我们将从 Lottie 的 `Animation(swift)`/`CompatibleAnimation(OC)`和`AnimationView(swift)`/`CompatibleAnimationView(OC)` 来简述 Lottie 和 PAG 常用接口的迁移。
 
-#### Animation(swift)/CompatibleAnimation(OC)
+## Animation(swift)/CompatibleAnimation(OC)
 
 ### 动画加载
 
@@ -68,7 +68,7 @@ Lottie 中 `width/height` 对应 PAGFile 中的 `width/height`，单位和意义
 
 
 
-#### AnimationView(swift)/CompatibleAnimationView(OC)
+## AnimationView(swift)/CompatibleAnimationView(OC)
 
 AnimationView/CompatibleAnimationView 提供动画的播放功能，在 PAG 中，我们使用 PAGView 来进行基础动画的播放。
 
@@ -169,7 +169,7 @@ PAG 目前不支持 `shouldRasterizeWhenIdle`，需要上层设置 progress 控�
 
 
 
-###### `play`
+#### `play`
 
 PAGView 的 `play` 方法既从当前 `progress` 开始播放。
 

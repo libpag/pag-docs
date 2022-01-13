@@ -45,7 +45,7 @@ PAGConvertor 使用方法有两种：convert.sh 脚本或者直接使用 PAGConv
 
 ### PAGConvertor 可执行文件使用方法：
 
-1.打开终端，cd到资源所在文件夹。
+1.打开终端，cd 到资源所在文件夹。
 
 2.在终端执行`./PAGConvertor <文件名/文件夹名称> [帧率]` 
 
