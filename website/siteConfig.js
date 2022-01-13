@@ -278,7 +278,7 @@ const siteConfig = {
       href:'/docs/install.html',label:'设计师文档'
     },
     {
-      href:'/docs/tech/sdk.html',label:'开发者文档'
+      href:'/docs/sdk.html',label:'开发者文档'
     },
     {
       href:'/case.html', label:'案例展示'
@@ -286,8 +286,13 @@ const siteConfig = {
     {
       href:'/docs/faq.html', label:'FAQ'
     },
+    /*
     {
-      href:'https://qm.qq.com/cgi-bin/qm/qr?k=Wa65DTnEKo2hnPsvY-1EgJOF8tvKQ-ZT&jump_from=webapi',label:'加入讨论: 893379574'
+      href:'https://github.com/Tencent/libpag',label:'GitHub'
+    },
+    */
+    {
+      href:'https://qm.qq.com/cgi-bin/qm/qr?k=Wa65DTnEKo2hnPsvY-1EgJOF8tvKQ-ZT&jump_from=webapi',label:'官方群'
     },
     {
       href:'/#download',label:'免费下载'

@@ -8,9 +8,9 @@
     "视频教程": ["pag-training","pag-training-2"]
   },
   "tech": {
-    "SDK接入": ["tech/sdk"],
-    "PAG深度解读": ["tech/pag-depth-1", "tech/pag-depth-2","tech/pag-depth-3","tech/pag-depth-4"],
-    "API参考": ["tech/apis-ios","tech/apis-android", "tech/apis-web"],
-    "素材迁移": ["tech/lottie-migration","tech/animation-convertor","tech/SDK-migration"]
+    "SDK接入": ["sdk"],
+    "PAG深度解读": ["pag-depth-1", "pag-depth-2","pag-depth-3","pag-depth-4"],
+    "API参考": ["apis-ios","apis-android", "apis-web"],
+    "素材迁移": ["lottie-migration","animation-convertor","SDK-migration"]
   }
 }
