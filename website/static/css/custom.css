@@ -443,7 +443,7 @@ body {
   content: "";
   border-top: 2px solid #005AD9;
   position: absolute;
-  width: 65px;
+  width: 80px;
   height: 1px;
   bottom: -8px;
 }
@@ -451,7 +451,7 @@ body {
   content: "";
   border-top: 2px solid #005AD9;
   position: absolute;
-  width: 56px;
+  width: 80px;
   height: 1px;
   bottom: -8px;
 }
@@ -554,12 +554,12 @@ body {
   bottom: -8px;
 }
 .pc-mode .nav-site.nav-site-internal li:nth-child(2).active a:after {
-  width: 65px;
+  width: 80px;
   height: 1px;
   bottom: -8px;
 }
 .pc-mode .nav-site.nav-site-internal li:nth-child(3).active a:after {
-  width: 56px;
+  width: 80px;
   height: 1px;
   bottom: -8px;
 }
@@ -846,7 +846,6 @@ body {
 .pc-mode .onPageNav {
   position: fixed;
   top: 90px;
-  right: 138px;
 }
 .pc-mode .docMainWrapper > *:first-child {
   flex: 0 0 360px;

@@ -286,13 +286,11 @@ const siteConfig = {
     {
       href:'/docs/faq.html', label:'FAQ'
     },
-    /*
     {
-      href:'https://github.com/Tencent/libpag',label:'GitHub'
+      href:'/',label:'GitHub'
     },
-    */
     {
-      href:'https://qm.qq.com/cgi-bin/qm/qr?k=Wa65DTnEKo2hnPsvY-1EgJOF8tvKQ-ZT&jump_from=webapi',label:'官方群'
+      href:'https://qm.qq.com/cgi-bin/qm/qr?k=Wa65DTnEKo2hnPsvY-1EgJOF8tvKQ-ZT&jump_from=webapi', label:'官方群',
     },
     {
       href:'/#download',label:'免费下载'

@@ -2,7 +2,6 @@
 id: sdk-web
 title: 接入 Web SDK
 ---
-
 ---
 
 > **当前版本为 Alpha 版本，更多特性持续开发中**
@@ -98,3 +97,5 @@ await pagView.play();
 **Web DEMO 下载:**
 
 [<font color=blue>https://github.com/libpag/pag-web.git</font>](https://github.com/libpag/pag-web.git)
+
+---
