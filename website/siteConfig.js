@@ -287,7 +287,7 @@ const siteConfig = {
       href:'/docs/faq.html', label:'FAQ'
     },
     {
-      href:'/',label:'GitHub'
+      href:'https://github.com/Tencent/libpag',label:'GitHub'
     },
     {
       href:'https://qm.qq.com/cgi-bin/qm/qr?k=Wa65DTnEKo2hnPsvY-1EgJOF8tvKQ-ZT&jump_from=webapi', label:'官方群',

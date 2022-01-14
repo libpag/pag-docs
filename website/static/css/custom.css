@@ -477,7 +477,6 @@ body {
   position: fixed;
 }
 .pc-mode .nav-site.nav-site-internal li:nth-child(6) {
-  display: none;
   right: 263px;
 }
 .pc-mode .nav-site.nav-site-internal li:nth-child(6) a {
@@ -564,7 +563,7 @@ body {
   bottom: -8px;
 }
 .pc-mode .nav-site.nav-site-internal li:nth-child(4).active a:after {
-  width: 56px;
+  width: 65px;
   height: 1px;
   bottom: -8px;
 }
