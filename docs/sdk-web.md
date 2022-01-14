@@ -4,7 +4,11 @@ title: Web端接入指南
 ---
 ---
 
-> **当前版本为 Alpha 版本，更多特性持续开发中**
+> **当前版本为 Alpha 版本，部分功能不够稳定**
+> 
+> **有问题可到[Issues](https://github.com/Tencent/libpag/issues)或者 QQ 群反馈，会尽快修复**
+>
+> **更多特性持续开发中**
 
 # 快速接入
 
@@ -15,6 +19,8 @@ libpag Web 端 SDK 为 Javascript 文件，分为四个版本：ES Modules、Com
 | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Safari |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Chrome >= 87                                                                                                                                                                                                  | Safari >= 11.1                                                                                                                                                                                                |
+
+Chrome 69+ 与 Firefox 兼容工作正在进行中
 
 ## 快速开始
 
