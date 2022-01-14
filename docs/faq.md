@@ -6,9 +6,9 @@ title: 常见问题
 
 <div id='faq' style='width: 720px; margin: 0 auto'>
 
-> ### 问：PAG什么时候开源，收费吗？<br/>
+> ### 问：PAG收费吗？<br/>
 ### 答：
-PAG将会于2022年1月14日正式对外开源，采用的协议是Apache 2.0<br/>
+PAG已正式对外开源，采用的协议是Apache 2.0<br/>
 对外提供的制品库都是稳定的版本，可以商用，是不收费的
 
 ---
