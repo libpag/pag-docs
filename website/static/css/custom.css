@@ -481,7 +481,7 @@ body {
 }
 .pc-mode .nav-site.nav-site-internal li:nth-child(6) a {
   height: 40px;
-  color: #333333 100% !important;
+  color: #333333 !important;
   font-size: 16px;
   font-weight: 600;
   font-family: "PingFangSC-Semibold" !important;
@@ -493,8 +493,13 @@ body {
   background-image: url("/img/new_official_website/github_top.png");
   border: 1px solid #cccccc;
   border-radius: 8px;
+  background-color: #ffffff !important;
+  box-shadow: none;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .pc-mode .nav-site.nav-site-internal li:nth-child(6) a:hover {
+  box-shadow: inset 0 0 4px #3495fc3e, 0 0 4px #3495fc3e;
+  border-color: #005ad975;
   background-color: transparent !important;
 }
 .pc-mode .nav-site.nav-site-internal li:nth-child(7) {
@@ -502,7 +507,7 @@ body {
 }
 .pc-mode .nav-site.nav-site-internal li:nth-child(7) a {
   height: 40px;
-  color: #333333 100% !important;
+  color: #333333 !important;
   font-size: 16px;
   font-weight: 600;
   font-family: "PingFangSC-Semibold" !important;
@@ -514,8 +519,12 @@ body {
   background-image: url("/img/new_official_website/qq_group.png");
   border: 1px solid #cccccc;
   border-radius: 8px;
+  background-color: #ffffff !important;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .pc-mode .nav-site.nav-site-internal li:nth-child(7) a:hover {
+  box-shadow: inset 0 0 4px #3495fc3e, 0 0 4px #3495fc3e;
+  border-color: #005ad975;
   background-color: transparent !important;
 }
 .pc-mode .nav-site.nav-site-internal li:nth-child(8) {
@@ -932,8 +941,7 @@ body {
   background-size: 640px, 640px;
   background-repeat: no-repeat;
   background-image: url("/img/new_official_website/bgLogo.png");
-  transition-duration: 1s;
-  transition-timing-function: ease-out;
+  transition: all 1.6s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .pc-mode .showCase-container .caseWrapper {
   width: 460px;
