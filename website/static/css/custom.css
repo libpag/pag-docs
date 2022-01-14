@@ -941,7 +941,6 @@ body {
   background-size: 640px, 640px;
   background-repeat: no-repeat;
   background-image: url("/img/new_official_website/bgLogo.png");
-  transition: all 1.6s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .pc-mode .showCase-container .caseWrapper {
   width: 460px;
@@ -1083,8 +1082,8 @@ body {
   display: block;
   width: 640px;
   height: 640px;
-  -webkit-backdrop-filter: saturate(180%) blur(6px);
-  backdrop-filter: saturate(180%) blur(6px);
+  -webkit-backdrop-filter: saturate(180%) blur(8px);
+  backdrop-filter: saturate(180%) blur(8px);
   z-index: 9;
 }
 
@@ -1351,6 +1350,7 @@ body {
 .mobile-mode .nav-footer .git-icon {
   float: left;
   margin-right: 0.32rem;
+  margin-top: 0.32rem;
   width: 0.32rem;
   height: 0.32rem;
   background-repeat: no-repeat;
@@ -1361,6 +1361,7 @@ body {
   display: inline-block;
   flex: 1;
   cursor: pointer;
+  margin-top: 0.32rem;
   padding-left: 0.4rem;
   font-size: 0.16rem;
   height: 0.32rem;
@@ -1563,16 +1564,16 @@ body {
   background-size: calc(100vw), calc(100vw);
   background-repeat: no-repeat;
   background-image: url("/img/new_official_website/bgLogo.png");
-  transition: all 1.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 2s cubic-bezier(0.645, 0.045, 0.355, 1);
   transform-origin: center;
   z-index: -1;
 }
 .mobile-mode .showCase-container .caseMain .caseWrapper {
   padding: 0.6rem 0.32rem 0.63rem 0.32rem;
-  margin: -1.6rem auto 0 auto;
+  margin: -1.3333333333rem auto 0 auto;
 }
 .mobile-mode .showCase-container .caseMain .caseBox {
-  height: 12.2666666667rem;
+  height: 11.4666666667rem;
   display: flex;
   align-items: center;
   z-index: 9;
@@ -1603,7 +1604,8 @@ body {
   margin-top: 0.64rem;
 }
 .mobile-mode .showCase-container .caseMain .caseBox .case .videoBox .video {
-  width: calc(100vw - 0.64rem);
+  width: calc(100vw - 1.28rem);
+  margin: 0 0.32rem;
   box-shadow: 0 0 0.1333333333rem rgba(0, 0, 0, 0.16);
 }
 .mobile-mode #faq blockquote {
@@ -1626,8 +1628,8 @@ body {
   display: block;
   width: calc(100vw);
   height: calc(100vw);
-  -webkit-backdrop-filter: saturate(180%) blur(6px);
-  backdrop-filter: saturate(180%) blur(6px);
+  -webkit-backdrop-filter: saturate(180%) blur(8px);
+  backdrop-filter: saturate(180%) blur(8px);
   z-index: 9;
 }
 
