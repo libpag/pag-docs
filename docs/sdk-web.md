@@ -1,6 +1,6 @@
 ---
 id: sdk-web
-title: 接入 Web SDK
+title: Web端接入指南
 ---
 ---
 

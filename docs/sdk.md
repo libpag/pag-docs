@@ -1,19 +1,18 @@
 ---
 id: sdk
-title: 接入SDK
+title: 移动端接入指南
 ---
 ---
-# 快速接入
-
-libpag 目前支持Android和iOS平台，web的支持目前处于开发过程中，接入采用SDK的方式<br/>
+# 移动端快速接入
 
 ### SDK获取
-最新SDK：[<font color=blue>SDK下载页面</font>](https://github.com/libpag/libpag/releases)<br/>
+最新SDK：[<font color=blue>SDK下载页面</font>](https://github.com/tencent/libpag/releases)<br/>
 
  - Android端SDK为aar文件，支持armeabi, armv7a, arm64
  - iOS端SDK为framework文件，分为四个版本：真机版（arm64、arm64/armv7）和真机模拟器版（arm64/x64、arm64/armv7/x64）
 
 
+---
 ## Android端接入
 
 ### 基本要求
@@ -82,6 +81,7 @@ buildscript {
 ```
 配置完以后，sync一下，再编译。<br/><br/>
 
+---
 ## iOS端接入
 
 ### 基本要求<br/>
