@@ -214,7 +214,7 @@ const users = [
 
 const links = {
   "feature":[
-    '/docs/tech/pag-depth-3.html',
+    '/docs/pag-depth-3.html',
     '/docs/ae-bmp-guide.html',
     '/docs/pag-edit.html',
     '/docs/profiler.html',
@@ -233,7 +233,7 @@ const faq = [
 },
 {
   issue:"如何接入SDK?",
-  link:"/docs/tech/sdk.html"
+  link:"/docs/sdk.html"
 }
 ,
 {

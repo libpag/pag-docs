@@ -16,7 +16,7 @@ PAG将会于2022年1月14日正式对外开源，采用的协议是Apache 2.0<br
 > ### 问：PAG支持哪些平台？<br/>
 ### 答：
 PAG支持Android、iOS、mac OS、windows、Linux和web<br/>
-现有的制品库支持Android和iOS，具体接入参考[<font color=blue>接入SDK</font>](/docs/tech/sdk.html)<br/>
+现有的制品库支持Android和iOS，具体接入参考[<font color=blue>接入SDK</font>](/docs/sdk.html)<br/>
 1月14日开源的时候会提供web版本，基于源码可以构建windows、mac OS和Linux版本相关库文件<br/>
 由于PC端没有统一的UI框架，需要自己做一些适配，提供OpenGL渲染环境，PAG提供渲染到纹理的能力。<br/>
 对于小程序的支持也在进行中，预计还要过段时间

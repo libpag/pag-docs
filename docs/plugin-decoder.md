@@ -127,4 +127,4 @@ VideoDecoder.SetMaxHardwareDecoderCount(0);
 ```
 
 ### 注入解码器范例工程：
-libpag 注入视频软件解码器的示例已经整合到我们的标准[<font color=blue>范例工程</font>](/docs/tech/sdk.html)中。
+libpag 注入视频软件解码器的示例已经整合到我们的标准[<font color=blue>范例工程</font>](/docs/sdk.html)中。
