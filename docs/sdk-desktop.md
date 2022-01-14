@@ -33,7 +33,7 @@ title: 桌面端接入指南
 * `PAG Source Code` 从[<font color=blue>Github</font>](https://github.com/tencent/libpag)获取最新的PAG源码<br/>
 * `Node.js` PAG依赖管理的基础
 * `depsync` 用于PAG的依赖管理
----
+
 
 ### 环境准备
 
@@ -43,14 +43,12 @@ title: 桌面端接入指南
     npm install depsync -g
     ```
 
----
 
 ### 运行Demo
 
 1. 执行`libpag\win\Win32Demo.sln`启动Demo工程
 2. 运行Demo。首次执行时会同步依赖和编译PAG，会比较耗时
 
----
 
 ### 使用PAG【Angle backend】
 
@@ -100,7 +98,7 @@ title: 桌面端接入指南
 3. 编译生成的头文件和库文件位于vendor/pag 目录下
 
 ### Demo工程
-预计本周内完善提供
+* 预计本周内完善提供
 
 
 
