@@ -100,7 +100,7 @@ buildscript {
 ```
 	pod 'libpag'
 ```
-**注意：** 最新SDK版本请参考：[<font color=blue>SDK下载页面</font>](https://github.com/libpag/libpag/releases)<br/>
+**注意：** 最新SDK版本请参考：[<font color=blue>SDK下载页面</font>](https://github.com/tencent/libpag/releases)<br/>
 
 
 # DEMO下载
