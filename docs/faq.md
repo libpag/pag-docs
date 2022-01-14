@@ -2,8 +2,9 @@
 id: faq
 title: 常见问题
 ---
----
 
+</br>
+</br>
 <div id='faq' style='width: 720px; margin: 0 auto'>
 
 > ### 问：PAG收费吗？<br/>

@@ -1632,5 +1632,8 @@ body {
   backdrop-filter: saturate(180%) blur(8px);
   z-index: 9;
 }
+.mobile-mode .hljs {
+  padding-left: 0.24rem;
+}
 
 /*# sourceMappingURL=custom.css.map */
