@@ -16,7 +16,7 @@ title: PAG深度解读（二）：AE全特性支持
 我们在PAG 2.0版本里引入了「BMP预合成」的概念，设计师只需要对指定的预合成名字加上 _bmp后缀就可以实现局部图层的截图导出。在确定了要引入序列帧导出模式后，剩下的挑战就是使用什么格式来存储导出的序列帧。相比传统的图片序列帧，「BMP预合成」使用了视频序列帧的格式存储，可以充分利用起极限的帧间压缩能力，轻松压缩到图片序列帧百分之一点几的大小。
 
 <img 
-  src='/img/docs/tech/bmp_data.jpeg' 
+  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/tech/bmp_data.jpeg' 
   style='width: 600px; margin: 32px 0 48px 0' 
 />
 
@@ -25,7 +25,7 @@ title: PAG深度解读（二）：AE全特性支持
 上表是各种序列帧方案文件大小的对比。APNG由于在PNG基础上做了简单的帧间压缩，只记录前一帧变化的区域，可以压缩到72.2%的大小。而这里的位图序列帧是我们在过渡时期的一种序列帧格式，它是在APNG的帧间压缩能力上结合了WebP改造出来的，压缩率也比较不错，平均可以做到5.53%。它主要的问题是分辨率大时CPU占用率较高，目前已经不怎么使用。而视频序列帧最小，平均可以压缩到1.24%左右，比位图序列帧还小78%。另外视频的格式还可以在运行时利用硬件加速的解码，可以几乎不占CPU，从而获得更高的渲染性能。但视频格式也有一个明显的缺点，就是不支持透明通道。目前业内在扩展视频透明通道上已经有了成熟的解决方案。
 
 <img 
-  src='/img/docs/tech/bmp_realize.jpeg' 
+  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/tech/bmp_realize.jpeg' 
   style='width: 600px; margin: 32px 0 48px 0' 
 />
 
@@ -37,7 +37,7 @@ title: PAG深度解读（二）：AE全特性支持
 ## 三、数据容器封装realize
 
 <img 
-  src='/img/docs/tech/bmp_struct.jpeg' 
+  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/tech/bmp_struct.jpeg' 
   style='width: 600px; margin: 32px 0 48px 0' 
 />
 
@@ -47,7 +47,7 @@ title: PAG深度解读（二）：AE全特性支持
 
 另外定制的数据结构也可以优化渲染性能。第一个方面在动画场景下，可以理解为每次刷新都是随机Seek。例如外部使用的帧率跟我们不一致时，就会以固定间隔跳跃式的播放。要解决这个随机Seek的性能问题，核心点就需要数据结构能一次返回所有的关键帧列表，而不需要额外的查询操作。然后执行一个非常高效的算法，每次刷新都向前查找第一个遇到的关键帧，或者上次解码过的帧号，从那个位置开始解码到当前位置即可。另外一方面，视频序列帧虽然是视频，但是它本质上还是代表了一个动画。因此就存在前面提到过的静态区间。PAG的导出插件会自动在静态区间交接处设置关键帧，并且把静态区间信息存储到我们设计的数据结构内。而这些处于静态区间的视频帧，虽然不影响导出的文件大小，但是提交给硬件解码器还是会存在固定的等待延迟。这里我们可以利用静态区间信息直接返回上次解码的内容，而跳过这部分等待。
 
-<video id="video" controls="" preload="none" width="400" style='margin: 24px 0; border-radius: 8px' poster="/img/docs/tech/bmp.png">
+<video id="video" controls="" preload="none" width="400" style='margin: 24px 0; border-radius: 8px' poster="https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/tech/bmp.png">
    <source id="mp4" src="/video/bmp.mp4" type="video/mp4">
 </video>
 

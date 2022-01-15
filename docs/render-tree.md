@@ -5,7 +5,7 @@ title: PAG的渲染树
 
 在3.0版本的PAG提供了渲染树的组装功能，让PAG素材可以成为一个大模板的一部分。整个渲染树由PAGComposition和PAGLayer组建而成，对于外部来说PAGComposition作为渲染树的分支节点，PAGLayer作为渲染树的叶子结点。一个PAG渲染树的样式大致如下：
 
-![render-tree](/img/docs/render-tree.png)
+![render-tree](https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/render-tree.png)
 
 ## PAGLayer
 

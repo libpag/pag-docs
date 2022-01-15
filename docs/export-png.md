@@ -15,7 +15,7 @@ title: 从 PAG 导出其他图片格式
 5. 点击顶部菜单 File -> 导出 -> 保存当前帧为PNG, 或按快捷键 “Ctrl + P”。(1.4.34后，菜单路径为 文件 -> 导出 -> 保存当前帧为PNG)
 
 <img 
-  src='/img/docs/export_png.png' 
+  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/export_png.png' 
   style='width: 640px; margin: 32px 0 48px 0' 
 />
 ---
@@ -23,7 +23,7 @@ title: 从 PAG 导出其他图片格式
 6. 在弹窗中选择导出文件目录（默认为PAG文件同级目录），点击保存。
 
 <img 
-  src='/img/docs/export_select_png_path.png' 
+  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/export_select_png_path.png' 
   style='width: 640px; margin: 32px 0 48px 0' 
 />
 ---
@@ -38,14 +38,14 @@ title: 从 PAG 导出其他图片格式
 
 3. 点击顶部菜单 File -> 导出 -> 导出PNG序列帧。(1.4.34后，菜单路径为 文件 -> 导出 -> 导出PNG序列帧)
 <img 
-  src='/img/docs/export_pngs.png' 
+  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/export_pngs.png' 
   style='width: 640px; margin: 32px 0 48px 0' 
 />
 ---
 
 4. 在弹窗中选择导出文件目录（默认为PAG文件同级目录），点击保存。
 <img 
-  src='/img/docs/export_select_png_path.png' 
+  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/export_select_png_path.png' 
   style='width: 640px; margin: 32px 0 48px 0' 
 />
 ---
@@ -53,14 +53,14 @@ title: 从 PAG 导出其他图片格式
 5. 将在所目录中生存一个PAG同名 + \_PNGs文件夹，文件夹内包含PAG文件导出的所有序列帧文件
 (比如test.pag, 将生成test\_PNGs文件夹,也可自定义修改), PNG序列帧将导出在所生成文件夹中。
 <img 
-  src='/img/docs/export_PNGs_dir.png' 
+  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/export_PNGs_dir.png' 
   style='width: 640px; margin: 32px 0 48px 0' 
 />
 ---
 
 6. 所有PNG序列帧文件导出成功后将弹窗提示导出结果。
 <img 
-  src='/img/docs/export_pngs_success.png' 
+  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/export_pngs_success.png' 
   style='width: 640px; margin: 32px 0 48px 0' 
 />
 ---
@@ -70,21 +70,21 @@ title: 从 PAG 导出其他图片格式
 2. 正常打开某pag文件。
 3. 点击顶部菜单 File -> 导出 -> 导出APNG。(1.4.34后，菜单路径为文件->导出-> 导出APNG)
 <img 
-  src='/img/docs/export_apng.png' 
+  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/export_apng.png' 
   style='width: 640px; margin: 32px 0 48px 0' 
 />
 ---
 
 4. 在弹窗中选择导出文件目录（默认为PAG文件同级目录)。 默认文件名为 PAG同名 + _apng.png 如 test\_apng.png(也可自定义修改),点击保存。
 <img 
-  src='/img/docs/export_select_apng_path.png' 
+  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/export_select_apng_path.png' 
   style='width: 640px; margin: 32px 0 48px 0' 
 />
 ---
 
 5. APNG 文件导出成功后将弹窗提示导出结果。
 <img 
-  src='/img/docs/export_pngs_success.png' 
+  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/export_pngs_success.png' 
   style='width: 640px; margin: 32px 0 48px 0' 
 />
 ---

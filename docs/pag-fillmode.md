@@ -20,13 +20,13 @@ PAG填充模式主要出现在以下两种场景：
 +  Zoom：裁剪，在保持高宽比的情况下缩放到完全填满可用的屏幕大小
 
 <img 
-  src='/img/docs/pag_fillmode.jpeg' 
+  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/pag_fillmode.jpeg' 
   style='width: 620px; margin: 32px 0 48px 0' 
 />
 
 ---
 <img 
-  src='/img/docs/image_fill_setting.jpg' 
+  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/image_fill_setting.jpg' 
   style='width: 620px; margin: 32px 0 48px 0' 
 />
 

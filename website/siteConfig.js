@@ -14,7 +14,7 @@ const users = [
     caption: '微信',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/wechat.png',
+    image: 'https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/wechat.png',
     infoLink: 'https://weixin.qq.com',
     pinned: true,
   },
@@ -22,7 +22,7 @@ const users = [
     caption: 'QQ',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/qq.png',
+    image: 'https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/qq.png',
     infoLink: 'https://im.qq.com',
     pinned: true,
   },
@@ -30,7 +30,7 @@ const users = [
     caption: '王者荣耀',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/wangzhe.png',
+    image: 'https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/wangzhe.png',
     infoLink: 'https://pvp.qq.com',
     pinned: true,
   },
@@ -38,7 +38,7 @@ const users = [
     caption: '腾讯视频',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/tencentvideo.jpg',
+    image: 'https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/tencentvideo.jpg',
     infoLink: 'https://v.qq.com',
     pinned: true,
   },
@@ -46,7 +46,7 @@ const users = [
     caption: 'QQ音乐',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/qqmusic.png',
+    image: 'https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/qqmusic.png',
     infoLink: 'https://y.qq.com/',
     pinned: true
   },
@@ -54,7 +54,7 @@ const users = [
     caption: '全民K歌',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/kg.png',
+    image: 'https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/kg.png',
     infoLink: 'https://kg.qq.com/index-pc.html',
     pinned: true,
   },
@@ -62,7 +62,7 @@ const users = [
     caption: 'QQ空间',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/qzone.png',
+    image: 'https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/qzone.png',
     infoLink: 'https://qzone.qq.com/',
     pinned: true,
   },
@@ -70,7 +70,7 @@ const users = [
     caption: 'NOW直播',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/now.png',
+    image: 'https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/now.png',
     infoLink: 'https://now.qq.com/',
     pinned: true,
   },
@@ -78,7 +78,7 @@ const users = [
     caption: '天天P图',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/pitu.png',
+    image: 'https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/pitu.png',
     infoLink: 'https://tu.qq.com/',
     pinned: true
   },

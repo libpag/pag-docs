@@ -11,7 +11,7 @@ title: AE导出提示
 ## 错误定位步骤
 #### 步骤一:  从图1所示入口，进入主页面
 <img 
-  src='/img/docs/bmpGuide/bmp_guide_3.png' 
+  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/bmpGuide/bmp_guide_3.png' 
   style='width: 620px; margin: 32px 0 48px 0' 
 />
 <p style='margin: -24px 0 48px 262px'><font size="2">图1 导出主面板入口</font></p>

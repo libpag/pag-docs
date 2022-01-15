@@ -13,7 +13,7 @@ title: 导出面板快捷键设置
 - 唤起预览页面<br/>
 
 <img 
-  src='/img/docs/pag_hotkey_0.png' 
+  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/pag_hotkey_0.png' 
   style='width: 620px; margin: 32px 0 48px 0' 
 />
 ---
@@ -22,14 +22,14 @@ title: 导出面板快捷键设置
 1. 选择 Edit-> Keyboard ShortCuts
 
 <img 
-  src='/img/docs/pag_hotkey_1.png' 
+  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/pag_hotkey_1.png' 
   style='width: 620px; margin: 32px 0 48px 0' 
 />
 
 2. 设置快捷键
 
 <img 
-  src='/img/docs/pag_hotkey_2.png' 
+  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/pag_hotkey_2.png' 
   style='margin: 32px 0 48px 0' 
 />
 ---

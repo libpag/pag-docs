@@ -13,21 +13,21 @@ title: PAG时间伸缩
 #### 1. 打开导出面板: “文件”菜单 -> “导出” -> "PAG Panel...". 如下图：<br/>
 
 <img 
-  src='/img/docs/export_panel_entrance.jpg' 
+  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/export_panel_entrance.jpg' 
   style='width: 620px; margin: 32px 0 48px 0' 
 />
 
 #### 2. 在导出面板中点击“设置”下的按钮，如下图：<br/>
 
 <img 
-  src='/img/docs/export_panel_setting.jpg' 
+  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/export_panel_setting.jpg' 
   style='width: 620px; margin: 32px 0 48px 0' 
 />
 
 #### 3. 在设置面板中点击“时间伸缩”页，即可设置时间伸缩的相关参数，如下图：<br/>
 
 <img 
-  src='/img/docs/time-stretch-3.jpg' 
+  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/time-stretch-3.jpg' 
   style='width: 620px; margin: 32px 0 48px 0' 
 />
    伸缩模式：<br/>
