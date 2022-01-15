@@ -310,9 +310,9 @@ const siteConfig = {
   links,
   faq,
   /* path to images for header/footer */
-  headerIcon: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website/logo.png',
-  footerIcon: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/pag-256x256.png',
-  favicon: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/favicon.png',
+  headerIcon: 'img/new_official_website/logo.png',
+  footerIcon: 'img/pag-256x256.png',
+  favicon: 'img/favicon.png',
 
   /* Colors for website */
   colors: {
@@ -350,8 +350,8 @@ const siteConfig = {
   cleanUrl: false,
 
   // Open Graph and Twitter card images.
-  ogImage: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/docusaurus.png',
-  twitterImage: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/docusaurus.png',
+  ogImage: 'img/docusaurus.png',
+  twitterImage: 'img/docusaurus.png',
 
   // Show documentation's last contributor's name.
   // enableUpdateBy: true,
