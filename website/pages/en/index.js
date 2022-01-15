@@ -27,14 +27,14 @@ class Intro extends Component{
             <div>
               <div class='paragraph'>
                 <span class='strong'>
-                Portable Animated Graphics </span>  是一套完整的跨平台渲染动画工作<br/>
-                流，支持Android、iOS、Web、Windows、macOS、Linux各平台，<br/>
-                支持AE动画实时渲染、运行时编辑，可以广泛应用于UI动画、贴纸 <br/>
-                动画、视频编辑、模板设计等场景。<br/>
+                Portable Animated Graphics </span>是一套完整的动画工作流解决方案。<br/>
+              提供从 AE (Adobe After Effects) 导出插件，到桌面预览工具，再<br/>
+              到覆盖 iOS，Android，macOS，Windows，Linux 和 Web 等各平<br/>
+              台的渲染 SDK。<br/>
               </div>
               <div class='paragraph'>
-                <span class='strong'>PAG </span> 动画工作流包括AE导出插件、桌面预览工具和跨平台渲染SDK<br/>
-                三部分。
+                <span class='strong'>PAG </span>的目标是降低或消除动画研发相关的成本，打通设计师创作到<br/>
+                素材上线的自动化流程，不断输出运行时可编辑的高质量动画内容。
               </div>
             </div>
             <div class='btn-bar'>
