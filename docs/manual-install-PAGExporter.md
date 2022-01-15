@@ -1,9 +1,9 @@
 ---
 id: manual-install-PAGExporter
-title: 手动安装 AE 导出插件（windows）
+title: 手动安装 AE 导出插件（Windows）
 ---
 
-windows上安装 AE 导出插件时，因为权限和兼容性等问题，偶尔出现安装失败的情况，这时可以采用手动安装。
+Windows上安装 AE 导出插件时，因为权限和兼容性等问题，偶尔出现安装失败的情况，这时可以采用手动安装。
 
 ### 准备工作：
 1，确保已经安装了 AE（Adobe After Effects）（AE2018及以上版本皆可）<br/>

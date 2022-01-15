@@ -28,7 +28,7 @@ class Intro extends Component{
               <div class='paragraph'>
                 <span class='strong'>
                 Portable Animated Graphics </span>  是一套完整的跨平台渲染动画工作<br/>
-                流，支持Android、iOS、web、windows、mac OS、Linux各平台，<br/>
+                流，支持Android、iOS、Web、Windows、macOS、Linux各平台，<br/>
                 支持AE动画实时渲染、运行时编辑，可以广泛应用于UI动画、贴纸 <br/>
                 动画、视频编辑、模板设计等场景。<br/>
               </div>
