@@ -12,7 +12,7 @@ title: 使用PAGViewer编辑预览图层
 3. 点击顶部菜单视图->显示/隐藏图层编辑面板，或按快捷键"L"。
 
 <img 
-  src='/img/docs/layer_edit_text_0.jpg' 
+  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/layer_edit_text_0.jpg' 
   style='width: 700px; margin: 32px 0 48px 0' 
 />
 ---
@@ -21,7 +21,7 @@ title: 使用PAGViewer编辑预览图层
 1. 在图层编辑面板中点击希望更改的文字区域，可以直接修改图层文字。
 
 <img 
-  src='/img/docs/layer_edit_text_1.jpg' 
+  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/layer_edit_text_1.jpg' 
   style='width: 700px; margin: 32px 0 48px 0' 
 />
 ---
@@ -29,7 +29,7 @@ title: 使用PAGViewer编辑预览图层
 2. 编辑完成后，对应图层会展示更改后的文字。
 
 <img 
-  src='/img/docs/layer_edit_text_2.jpg' 
+  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/layer_edit_text_2.jpg' 
   style='width: 700px; margin: 32px 0 48px 0' 
 />
 ---
@@ -38,7 +38,7 @@ title: 使用PAGViewer编辑预览图层
 
 1. 在图层编辑面板中点击对应图层的编辑按钮，打开对应文本图层编辑窗口。
 <img 
-  src='/img/docs/layer_edit_text_1.jpg' 
+  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/layer_edit_text_1.jpg' 
   style='width: 700px; margin: 32px 0 48px 0' 
 />
 
@@ -60,7 +60,7 @@ title: 使用PAGViewer编辑预览图层
 
 点击对应图层的"撤销"按钮，会将图层恢复至图层最初状态。
 <img 
-  src='/img/docs/layer_edit_text_8.jpg' 
+  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/layer_edit_text_8.jpg' 
   style='width: 700px; margin: 32px 0 48px 0' 
 />
 ---
@@ -70,7 +70,7 @@ title: 使用PAGViewer编辑预览图层
 2. 正常打开某pag文件。
 3. 点击顶部菜单 视图 -> 显示/隐藏 图层编辑面板，或按快捷键"L", 图层编辑版面展开在右侧。
 <img 
-  src='/img/docs/layer_edit_image.png' 
+  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/layer_edit_image.png' 
   style='width: 700px; margin: 32px 0 48px 0' 
 />
 

@@ -46,7 +46,7 @@ class Main extends React.Component {
                             video: 'https://videorendertvh5.cdp.qq.com/pagiocase_08.mp4'
                         }].map((unit, idx) => {
                             let index = idx < 9? `0${idx+1}`: `${idx+1}`;
-                            let poster = `https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/poster/${index}.png`
+                            let poster = `https://pagio-1251316161.file.myqcloud.com/website/static/img/poster/${index}.png`
                             return(
                                 <Chapter
                                     idx = {idx}

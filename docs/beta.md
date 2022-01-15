@@ -13,35 +13,35 @@ PAGViewer是一个不断更新，不断优化的浏览工具。为了在满足�
 1. 打开PAGViewer，检查软件版本，确保PAGViewer的版本号为 1.4.39 或以上。(如果低于 1.4.39 请更新到最新版本)
 3. 点击顶部菜单 PAGViewer-> 设置。(1.4.40后，菜单路径为 PAGViewer -> 首选项)
 <img 
-  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/beta_step1.jpg' 
+  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/beta_step1.jpg' 
   style='width: 700px; margin: 32px 0 48px 0' 
 />
 ---
 
 4. 在弹窗中选择使用beta版本。
 <img 
-  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/beta_step2.jpg' 
+  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/beta_step2.jpg' 
   style='width: 700px; margin: 32px 0 48px 0' 
 />
 ---
 
 4. 点击顶部菜单 PAGViewer-> 检查更新
 <img 
-  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/beta_step3.jpg' 
+  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/beta_step3.jpg' 
   style='width: 700px; margin: 32px 0 48px 0' 
 />
 ---
 
 5. 更新后，点击顶部菜单 PAGViewer->关于PAGViewer
 <img 
-  src='/img/docs/beta_step4.png' 
+  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/beta_step4.png' 
   style='width: 700px; margin: 32px 0 48px 0' 
 />
 ---
 
 6. 版本变为beta版本啦。
 <img 
-  src='/img/docs/beta_step5.png' 
+  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/beta_step5.png' 
   style='width: 700px; margin: 32px 0 48px 0' 
 />
 ---

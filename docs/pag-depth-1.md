@@ -13,7 +13,7 @@ title: PAG深度解读（一）：编辑架构演进
 另外，我们在PAG 1.0里还设计了文件，控制器和渲染画布分离的架构，来组织大量的贴纸字幕。API层面共有三大核心对象。PAGRenderer代表控制器，跟实际动画实例的个数一一对应。PAGFile代表文件，可以把同一个动画文件设置给多个不同的PAGRenderer。PAGSurface，代表平台相关的渲染画布，PAGSurface上可以摆放多个PAGRenderer的动画实例。
 
 <img 
-  src='/img/docs/tech/pag_1_0.jpeg' 
+  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/tech/pag_1_0.jpeg' 
   style='width: 600px; margin: 32px 0 48px 0' 
 />
 
@@ -30,7 +30,7 @@ title: PAG深度解读（一）：编辑架构演进
 到PAG 2.0时，我们的三大核心对象的架构没有明显变化，但是新增了视频模板的应用场景。整体是从文本的编辑原理受到启发：前面说运行时替换文本内容可以套用动画，那我们是不是可以对视频本身也套用各种动画，于是2.0版本引入了占位图的概念来解决视频模板的需求。核心原理就是运行时将视频逐帧替换到指定的占位图上，由PAG文件来控制视频的画面的动效和层级关系，输出完整的内容。这样我们的编辑架构也从多个PAG文件跟视频的叠加关系，转变为单个PAG文件对多个视频的嵌套关系。
 
 <img 
-  src='/img/docs/tech/pag_2_0.jpeg' 
+  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/tech/pag_2_0.jpeg' 
   style='width: 600px; margin: 32px 0 48px 0' 
 />
 
@@ -42,7 +42,7 @@ title: PAG深度解读（一）：编辑架构演进
 到PAG3.0时，我们的编辑需求进入了智能模板的阶段。跟2.0的视频模板的主要区别是引入了前置位分析的过程，会根据用户传的视频内容，自动生成一个针对性的模板。2.0的视频模板更像是一个命题作文，让用户传视频填空的模式。而3.0的智能模板存在无限种可能性，设计师没法靠穷举每种可能性去生产素材。最佳方式是生产一个个小的PAG效果组件，然后进行组合。因此也对编辑性提出了新的挑战：就是要能对多个PAG文件，同时具有空间位置和时间轴的组合能力。
 
 <img 
-  src='/img/docs/tech/pag_3_0.jpeg' 
+  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/tech/pag_3_0.jpeg' 
   style='width: 640px; margin: 32px 0 48px 0' 
 />
 

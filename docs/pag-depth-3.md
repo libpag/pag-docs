@@ -10,7 +10,7 @@ title: PAG深度解读（三）：高效动画文件
 ## 一、AE动画结构
 
 <img 
-  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/tech/pag_file_1.jpeg' 
+  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/tech/pag_file_1.jpeg' 
   style='width: 600px; margin: 32px 0 48px 0' 
 />
 
@@ -35,7 +35,7 @@ title: PAG深度解读（三）：高效动画文件
 ## 三、二进制文件结构
 
 <img 
-  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/tech/pag_file2.jpeg' 
+  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/tech/pag_file2.jpeg' 
   style='width: 600px; margin: 32px 0 48px 0' 
 />
 
@@ -48,21 +48,21 @@ title: PAG深度解读（三）：高效动画文件
 第一个压缩策略是利用时间轴属性存在默认值的特点。前面说过一个AE动画文件存在大量的时间轴属性，而通常情况下大部分时间轴属性都等于默认值。这里其实可以用一个标志位就跳过存储。例如一个Point类型的时间轴属性，默认值最少需要8个字节存储。而我们如果使用一个字节的标志位来跳过默存储，单个属性就可以节省7个字节的空间。这是非常可观的。
 
 <img 
-  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/tech/pag_file_3.jpeg' 
+  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/tech/pag_file_3.jpeg' 
   style='width: 600px; margin: 32px 0 48px 0' 
 />
 
 第二个压缩策略是尽可能聚合相似的数据类型。例如前面的说的一个字节的标志位，如果我们按照实际一个个属性的顺序分散存储，因为要字节对齐，每个符号位就必须占用一个字节。而如果重组一下顺序，将符号位和值分别聚合在一起存储，就形成了相似的连续数组。这时候每个符号位可以只使用一个Bit存储，如图可以从4个字节压缩到4个Bit，再考虑字节对齐后可以节省3个字节。而聚合后的连续属性值，也是可以进一步压缩的。如果连续的数据是整型的，我们可以采用下图的整型数组编码压缩。
 
 <img 
-  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/tech/pag_file_4.jpeg' 
+  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/tech/pag_file_4.jpeg' 
   style='width: 600px; margin: 32px 0 48px 0' 
 />
 
 原理就是数组中的数字通常都不会特别大，我们可以根据实际需要的最大Bit位数来紧凑存储每个整型，不用完整字节。例如100个32位整型，最大值是500。通过这种压缩方式后，可以减少71.5%的存储空间。这也是相当可观的。那但如果不是整形数组，比如浮点类型要怎么压缩？这里还是要利用动画文件的特点。因为在动画文件浮点数实际上不需要特别精确，例如表示像素的浮点数，精度达到1/20就足够了，我们可以根据这个特点把浮点数组转换为整型数组，然后采用刚才的方式进行压缩。这个1/20也不是随便定的，它有个特定的单位名叫Twip，广泛应用于Windows平台，打印机驱动，OpenOffice等产品作为最小像素精度。
 
 <img 
-  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/tech/pag_file_5.jpeg' 
+  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/tech/pag_file_5.jpeg' 
   style='width: 600px; margin: 32px 0 48px 0' 
 />
 

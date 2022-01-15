@@ -23,12 +23,12 @@ title: 导出面板使用指南 — 时间伸缩
 
 #### 二、设置时间伸缩：<br/>
 2. 打开导出面板: “文件”菜单 -> “导出” -> "PAG Panel...". 如下图：<br/>
-![导出面板入口](https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/export_panel_entrance.jpg)
+![导出面板入口](https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/export_panel_entrance.jpg)
 <br/>
 3. 在导出面板中点击“设置”下的按钮，如下图：<br/>
-![时间伸缩](https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/export_panel_setting.jpg)
+![时间伸缩](https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/export_panel_setting.jpg)
 <br/>
 4. 在设置面板中点击“时间伸缩”页，即可设置时间伸缩的相关参数，如下图：<br/>
-![时间伸缩](https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/time-stretch-3.jpg)
+![时间伸缩](https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/time-stretch-3.jpg)
 <br/>
 5. 点击“确定”结束设置。<br/>

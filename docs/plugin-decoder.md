@@ -7,7 +7,7 @@ title: 注入视频软件解码器
 当 PAG 文件中包含视频格式的BMP预合成时会需要视频解码器，在平台支持的情况下默认会优先选择硬解码器解码。目前在移动端上，能够支持动态注入用户自研的软件解码器。
 
 ### 如何接入
-#### 1、include [<font color=blue>SoftwareDecoder.h</font>](/file/SoftwareDecoder.h),派生实现如下2个父类：
+#### 1、include [<font color=blue>SoftwareDecoder.h</font>](https://pagio-1251316161.file.myqcloud.com/website/static/file/SoftwareDecoder.h),派生实现如下2个父类：
 
 ```
 namespace pag {

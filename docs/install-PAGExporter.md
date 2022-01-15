@@ -15,7 +15,7 @@ title: 安装 AE 导出插件
 2，打开 PAGViewer。PAGViewer 将自动检测是否需要安装/更新 AE 导出插件，按提示安装即可。
 <img 
   alt='自动安装AE插件截图' 
-  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/install-PAGExporter1.jpg' 
+  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/install-PAGExporter1.jpg' 
   style='width: 500px; margin: 24px 0 48px 0' 
 />
 
@@ -28,7 +28,7 @@ title: 安装 AE 导出插件
 
 <img 
   alt='点击触发安装AE插件截图' 
-  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/install-PAGExporter2.jpg' 
+  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/install-PAGExporter2.jpg' 
   style='width: 500px; margin: 24px 0 48px 0' 
 />
 

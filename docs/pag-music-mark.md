@@ -14,7 +14,7 @@ title: 如何在AE中导出音频
 
 ### 导出成功：
 <img 
-  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/export_music_success.png' 
+  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/export_music_success.png' 
   style='width: 700px; margin: 32px 0 48px 0' 
 />
 
@@ -22,7 +22,7 @@ title: 如何在AE中导出音频
 
 ### 导出失败：
 <img 
-  src='https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/img/docs/export_music_failed.png' 
+  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/export_music_failed.png' 
   style='width: 700px; margin: 32px 0 48px 0' 
 />
 

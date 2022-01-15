@@ -51,7 +51,7 @@ class Users extends React.Component {
             <div className="logos">
               {showcase}
               <a class='contact js_qqgroup'>
-                <img src='/img/new_official_website/contact_us.png'/>
+                <img src='https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website//contact_us.png'/>
                 <div class='name'>正在使用 PAG?</div>
                 <div class='ts'>告诉我们</div>
               </a>

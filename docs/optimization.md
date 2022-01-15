@@ -13,7 +13,7 @@ title: PAG素材优化指南
 PAGViewer不仅仅是PAG素材的桌面预览工具，同时还提供了性能面板用来查看PAG文件素材的基本信息，可以定性的评估PAG素材的性能。 <br/>
 
 <img 
-  src='/img/docs/opt.png' 
+  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/opt.png' 
   style='width: 600px; margin: 32px 0 48px 0' 
 />
 ---
@@ -97,14 +97,14 @@ PAGViewer不仅仅是PAG素材的桌面预览工具，同时还提供了性能�
 *   满足最低需求原则，降低图片素材分辨率 <br/>
 
 	<img 
-	src='/img/docs/opt_7.png#pic_left' 
+	src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/opt_7.png#pic_left' 
 	style='width: 700px; margin: 32px 0 48px 0' 
 	/>
 
 	---
 
 	<img 
-	src='/img/docs/opt_8.png#pic_left' 
+	src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/opt_8.png#pic_left' 
 	style='width: 700px; margin: 32px 0 48px 0' 
 	/>
 
@@ -114,7 +114,7 @@ PAGViewer不仅仅是PAG素材的桌面预览工具，同时还提供了性能�
 
 * 	对于BMP预合成素材一样，BMP预合成的尺寸也不宜大于所在图层的尺寸 <br/>
 
-	<img src='/img/docs/opt_9.png' style='width: 640px; margin: 32px 0 48px 0'/>
+	<img src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/opt_9.png' style='width: 640px; margin: 32px 0 48px 0'/>
 	
 	同时，降低BMP预合成素材的分辨率同样可以提升性能 <br/>
 

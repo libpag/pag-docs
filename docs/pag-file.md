@@ -12,7 +12,7 @@ title: 使用PAGViewer查看PAG文件结构
 
 
 <img 
-  src='/img/docs/pag-structure.png' 
+  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/pag-structure.png' 
   style='width: 640px; margin: 32px 0 48px 0' 
 />
 
