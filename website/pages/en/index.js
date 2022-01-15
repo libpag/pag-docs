@@ -23,7 +23,7 @@ class Intro extends Component{
       <div class='intro-box'>
         <div class='wrap'>
           <div class='main-content'>
-            <img class='pag' src={imgUrl('https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website//fill2.png')}/>
+            <img class='pag' src={imgUrl('https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website/fill2.png')}/>
             <div>
               <div class='paragraph'>
                 <span class='strong'>
@@ -38,12 +38,12 @@ class Intro extends Component{
               </div>
             </div>
             <div class='btn-bar'>
-              <Button img={'https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website//download.png'} text='免费下载' className='download-btn' blue={true}/>
+              <Button img={'https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website/download.png'} text='免费下载' className='download-btn' blue={true}/>
             </div>
             <span class='tip'>
             </span>
           </div>
-          <img class='logo-l' src={imgUrl('https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website//logo_l.png')}/>
+          <img class='logo-l' src={imgUrl('https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website/logo_l.png')}/>
         </div>
       </div>
     )
@@ -53,13 +53,13 @@ class Intro extends Component{
 class Chapter extends Component{
   render(){
     const { idx,content ,title,link} = this.props;
-    const numImg = imgUrl(`https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website//number_${idx+1}.png`);
-       // thumbImg = imgUrl(`https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website//intro_${idx+1}.png`);
+    const numImg = imgUrl(`https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website/number_${idx+1}.png`);
+       // thumbImg = imgUrl(`https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website/intro_${idx+1}.png`);
     let isOdd = idx%2 == 1
     return (
       <div class='chapter'>
         {
-          idx === 0 ? <img class='feature' src={imgUrl('https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website//feature.png')}/> : null
+          idx === 0 ? <img class='feature' src={imgUrl('https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website/feature.png')}/> : null
         }
         <div class={'wrap '+(isOdd?'reverse':'')}>
           <div class={'detail ' + (isOdd?'reverse':'')}>
@@ -67,14 +67,14 @@ class Chapter extends Component{
               <div class='title'>{title}</div>
               {content()}
               <div class={'btn-bar'+(isOdd?' reverse':'')}>
-                <Button link={link} text='了解更多' img={'https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website//more-b.png'}></Button>
+                <Button link={link} text='了解更多' img={'https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website/more-b.png'}></Button>
               </div>
           </div>
           <div class='empty'></div>
           <canvas class='pagView' width='578px' height='390px'></canvas>
         </div>
         {
-          idx !== 4 ? <img class={'arrow '+( isOdd ? 'reverse':'')} src={imgUrl(`https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website//arrow.png`)}/> : null
+          idx !== 4 ? <img class={'arrow '+( isOdd ? 'reverse':'')} src={imgUrl(`https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website/arrow.png`)}/> : null
         }
       </div>
     )
@@ -164,7 +164,7 @@ class Partner extends Component{
     return (
       <div class='partner'>
         <div class='wrap'>
-          <img class='users' src={imgUrl(`https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website//user.png`)}/>
+          <img class='users' src={imgUrl(`https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website/user.png`)}/>
           <div class='title'>他们都在使用……</div>
           <div class='gallery'>
           {
@@ -179,7 +179,7 @@ class Partner extends Component{
           }
           </div>
           <div class='btn-bar'>
-            <Button text='查看更多' link='/users.html' img={'https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website//more-b.png'}></Button>
+            <Button text='查看更多' link='/users.html' img={'https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website/more-b.png'}></Button>
           </div>
         </div>
       </div>
@@ -235,7 +235,7 @@ class CustomerService extends Component{
               请前往<span class='strong'> <a href='/docs/install'>说明文档</a> </span> 或 <span class='strong'> <a class='js_qqgroup'>联系我们</a> </span>
           </div>
         </div>
-        <img id='js_cs' src={imgUrl('https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website//cs.png')}/>
+        <img id='js_cs' src={imgUrl('https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website/cs.png')}/>
       </div>
     )
   }

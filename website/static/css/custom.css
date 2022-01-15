@@ -1136,7 +1136,7 @@ body {
   justify-content: space-between;
 }
 .mobile-mode .fixedHeaderContainer .headerWrapper header > a:first-child {
-  background-image: url("/img/new_official_website/logo_l.png");
+  background-image: url("https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website/logo_l.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 0.4266666667rem;
@@ -1314,7 +1314,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("/img/new_official_website/pkg-download-m.png");
+  background-image: url("https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website/pkg-download-m.png");
 }
 .mobile-mode .download .wrap .pkg .mac-download,
 .mobile-mode .download .wrap .pkg .win-download {
@@ -1355,7 +1355,7 @@ body {
   height: 0.32rem;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("/img/new_official_website/github.png");
+  background-image: url("https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website/github.png");
 }
 .mobile-mode .nav-footer .qq-group-icon {
   display: inline-block;
@@ -1368,7 +1368,7 @@ body {
   line-height: 0.32rem;
   background-repeat: no-repeat;
   background-size: 0.32rem;
-  background-image: url("/img/new_official_website/qq.png");
+  background-image: url("https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website/qq.png");
   color: #ccc;
   margin-right: 0.32rem;
   margin-bottom: 0.2rem;
@@ -1402,10 +1402,10 @@ body {
   right: 0.2rem;
   position: fixed;
   background-size: 0.32rem;
-  background-image: url("/img/new_official_website/nav-m.png");
+  background-image: url("https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website/nav-m.png");
 }
 .mobile-mode .expand {
-  background-image: url("/img/new_official_website/close.png");
+  background-image: url("https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website/close.png");
 }
 .mobile-mode .navigationSlider .slidingNav ul li a:focus, .mobile-mode .navigationSlider .slidingNav ul li a:hover, .mobile-mode .navigationSlider .slidingNav ul li.siteNavItemActive a, .mobile-mode .navigationSlider .slidingNav ul li.siteNavGroupActive a {
   background: none;
@@ -1448,7 +1448,7 @@ body {
   top: -3px;
   border-radius: 0.5333333333rem;
   border: 1px solid #333;
-  background-image: url("/img/new_official_website/arrow_right.png");
+  background-image: url("https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website/arrow_right.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -1470,7 +1470,7 @@ body {
   top: -3px;
   border-radius: 0.5333333333rem;
   border: 1px solid #333;
-  background-image: url("/img/new_official_website/arrow_right.png");
+  background-image: url("https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website/arrow_right.png");
   transform: scaleX(-1);
   background-repeat: no-repeat;
   background-position: center center;
@@ -1484,7 +1484,7 @@ body {
   width: 0.7733333333rem;
   height: 0.7733333333rem;
   background-size: contain;
-  background-image: url("/img/new_official_website/category_menu.png");
+  background-image: url("https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website/category_menu.png");
   background-position: 0.0266666667rem 0.0533333333rem;
   position: absolute;
   left: 0.32rem;
@@ -1563,7 +1563,7 @@ body {
   position: fixed;
   background-size: calc(100vw), calc(100vw);
   background-repeat: no-repeat;
-  background-image: url("/img/new_official_website/bgLogo.png");
+  background-image: url("https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website/bgLogo.png");
   transition: all 2.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   transform-origin: center;
   z-index: -1;
@@ -1619,7 +1619,7 @@ body {
   position: fixed;
   background-size: calc(100vw), calc(100vw);
   background-repeat: no-repeat;
-  background-image: url("/img/new_official_website/bgLogo.png");
+  background-image: url("https://pagio-1251316161.file.myqcloud.com/website/static/img/new_official_website/bgLogo.png");
   transform-origin: center;
   z-index: -1;
 }

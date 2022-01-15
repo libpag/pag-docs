@@ -48,37 +48,37 @@ PAGViewer不仅仅是PAG素材的桌面预览工具，同时还提供了性能�
 
 	(1)  相邻多个不同BMP预合成可合并
 	
-	![](/img/docs/opt_0.png#pic_left)
+	![](https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/opt_0.png#pic_left)
 
 	---
 	
 	(2）不同BlendMode的BMP预合成不能合并
 	
-	![](/img/docs/opt_1.png#pic_left)
+	![](https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/opt_1.png#pic_left)
 
 	---
 	
 	(3）不可编辑图层内容合入相近BMP预合成
 	
-	![](/img/docs/opt_2.png#pic_left)
+	![](https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/opt_2.png#pic_left)
 
 	---
 	
 	(4) 跨图层BMP预合成合并 <br/>
 	如下图，有两个BMP预合成，分别处于不同的图层
 	
-	![](/img/docs/opt_3.png#pic_left)
+	![](https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/opt_3.png#pic_left)
 	
 	BMP预合成跨图层合并后，只有一个BMP预合成
 	
-	![](/img/docs/opt_4.png#pic_left)
+	![](https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/opt_4.png#pic_left)
 
 	---
 	
 	(5）BMP预合成反面使用案例 <br/>
 	如下图，做了两个内容和名字都相同的预合成
 	
-	![](/img/docs/opt_5.png#pic_left)
+	![](https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/opt_5.png#pic_left)
 
 	#### 正确做法：一个预合成被引用两次 <br/>
 
@@ -86,7 +86,7 @@ PAGViewer不仅仅是PAG素材的桌面预览工具，同时还提供了性能�
 	
 	(6）重叠区间BMP预合成优化
 
-	![](/img/docs/opt_6.png#pic_left)
+	![](https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/opt_6.png#pic_left)
 
 	如上图，虽然是相同内容，但是有重叠时间段，不能做成一个预合成复用，否则重叠时间段内会不断seek解码 <br/>
 	优化建议：合成一个BMP预合成 <br/>

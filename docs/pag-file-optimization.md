@@ -25,11 +25,11 @@ title: PAG文件体积优化
 ![](https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/FileOptimization/compare.png)
 #### 备注：
 如下图，在“AE导出素材尺寸压缩设置”功能中。当用户导出素材中只包含图片素材时，将只弹出“图片压缩设置”面板；当只包含BMP预合成素材时将只弹出“BMP预合成压缩设置"面板。只有同时包含图片与BMP预合成素材时才会弹出“素材压缩面板“。
-![](/img/docs/FileOptimization/onlyImage.png)
+![](https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/FileOptimization/onlyImage.png)
 当只包含图片素材时
-![](/img/docs/FileOptimization/onlySequence.png)
+![](https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/FileOptimization/onlySequence.png)
 当只包含BMP预合成素材时
-![](/img/docs/FileOptimization/imageAndSequence.png)
+![](https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/FileOptimization/imageAndSequence.png)
 当同时包含图片素材与BMP预合成素材
 
 
