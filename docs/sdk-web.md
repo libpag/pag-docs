@@ -49,9 +49,8 @@ $ npm i libpag
 Browser
 
 ```html
-<div>
-  <canvas class="canvas" id="pag"></canvas>
-</div>
+<canvas class="canvas" id="pag"></canvas>
+
 <script src="https://unpkg.com/libpag@latest/lib/libpag.min.js"></script>
 <script>
   window.libpag
