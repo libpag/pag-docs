@@ -343,7 +343,10 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['https://pagio-1251316161.file.myqcloud.com/website/static/javascript/page.js','https://buttons.github.io/buttons.js', 'https://pagio-1251316161.file.myqcloud.com/website/static/javascript/pagjs/pag.min.js'],
+  scripts: ['/javascript/page.js'
+            , 'https://buttons.github.io/buttons.js'
+            , 'https://pagio-1251316161.file.myqcloud.com/website/static/javascript/pagjs/pag.min.js'
+          ],
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
   // No .html extensions for paths.

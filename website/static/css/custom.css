@@ -1606,7 +1606,29 @@ body {
 .mobile-mode .showCase-container .caseMain .caseBox .case .videoBox .video {
   width: calc(100vw - 1.28rem);
   margin: 0 0.32rem;
+  border-radius: 8px;
+  overflow: hidden;
   box-shadow: 0 0 0.1333333333rem rgba(0, 0, 0, 0.16);
+}
+.mobile-mode .showCase-container .caseMain .caseBox .case .videoBox .video.wechat {
+  opacity: 0;
+  box-shadow: none;
+}
+.mobile-mode .showCase-container #arrowTip {
+  display: none;
+}
+.mobile-mode .showCase-container #arrowTip::after {
+  content: "<";
+  width: 0.8533333333rem;
+  font-size: 0.8533333333rem;
+  transform: rotate(90deg) scale(0.5, 1);
+  position: fixed;
+  left: 50%;
+  bottom: 0.4266666667rem;
+  margin-left: -0.4266666667rem;
+  opacity: 0.8;
+  color: #686666;
+  animation: tipArrow 1.4s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
 }
 .mobile-mode #faq blockquote {
   color: #605600 !important;
@@ -1634,6 +1656,12 @@ body {
 }
 .mobile-mode .hljs {
   padding-left: 0.24rem;
+}
+@keyframes tipArrow {
+  100% {
+    opacity: 0;
+    bottom: 1.12rem;
+  }
 }
 
 /*# sourceMappingURL=custom.css.map */

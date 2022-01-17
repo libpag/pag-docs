@@ -59,6 +59,7 @@ class Main extends React.Component {
                         })
                     }
                 </div>
+                <div id='arrowTip'></div>
             </div>
         )
     }
