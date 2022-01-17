@@ -17,15 +17,22 @@ PAG已正式对外开源，采用的协议是Apache 2.0<br/>
 > ### 问：PAG支持哪些平台？<br/>
 ### 答：
 PAG支持Android、iOS、macOS、Windows、Linux和Web<br/>
-现有的制品库支持Android和iOS，具体接入参考[<font color=blue>接入SDK</font>](/docs/sdk.html)<br/>
-1月14日开源的时候会提供Web版本，基于源码可以构建Windows、macOS和Linux版本相关库文件<br/>
+现有的制品库支持Android、iOS和Web，具体接入参考[<font color=blue>移动端接入SDK</font>](/docs/sdk.html)、[<font color=blue>Web端接入SDK</font>](/docs/sdk-web.html)<br/>
+也可以基于源码构建Windows、macOS和Linux版本相关库文件<br/>
 由于PC端没有统一的UI框架，需要自己做一些适配，提供OpenGL渲染环境，PAG提供渲染到纹理的能力。<br/>
 对于小程序的支持也在进行中，预计还要过段时间
 
 ---
 
+> ### 问：PAG源码编译的时候报错了怎么处理？<br/>
+### 答：
+请阅读位于根目录的README.md，根据指引进行编译。如还有问题，可以在Q群向我们反馈。
+
+---
+
 > ### 问：PAG支持模拟器吗？在模拟器上测试性能是否准确？<br/>
 ### 答：
+<font color=red>不推荐在模拟器上使用，部分功能缺失或无法运行</font><br/>
 PAG是全链路GPU加速渲染的，部分效果在模拟器没法渲染。而且模拟器开启不了GPU加速，CPU的占用会比实际使用高<br/>
 并且模拟器也不是真实的用户场景，我们只保证基本的预览，性能测试建议使用真机进行
 
