@@ -24,33 +24,26 @@ Chrome 69+ 与 Firefox 兼容工作正在进行中
 
 ## 快速开始
 
-### CDN
+可以用 `locateFile` 函数返回 `.wasm` 文件的路径，默认为 libpag.js 文件同目录下。
 
-unpkg
+### Browser（推荐）
+
+公共CDN unpkg
 
 ``` html
 <script src="https://unpkg.com/libpag@latest/lib/libpag.min.js"></script>
 ```
 
-jsdelivr
+公共CDN jsdelivr
 
 ``` html
 <script src="https://cdn.jsdelivr.net/npm/libpag@latest/lib/libpag.min.js"></script>
 ```
 
-### NPM
-
-```bash
-$ npm i libpag
-```
-
-### PAG Initialize
-
-Browser
+PAG Initialize
 
 ```html
 <canvas class="canvas" id="pag"></canvas>
-
 <script src="https://unpkg.com/libpag@latest/lib/libpag.min.js"></script>
 <script>
   window.libpag
@@ -67,7 +60,15 @@ Browser
 </script>
 ```
 
-ES Module
+### ES Module
+
+NPM
+
+```bash
+$ npm i libpag
+```
+
+PAG Initialize
 
 ```javascript
 import { PAGInit } from 'libpag';
@@ -99,8 +100,8 @@ await pagView.play();
 
 更多 Web SDK 的内容请参考：[<font color=blue>这里</font>](https://github.com/Tencent/libpag/blob/main/web/README.md)
 
-**Web DEMO 下载:**
+**Web DEMO:**
 
-[<font color=blue>https://github.com/libpag/pag-web.git</font>](https://github.com/libpag/pag-web.git)
+[<font color=blue>https://github.com/Tencent/libpag/tree/main/web</font>](https://github.com/Tencent/libpag/tree/main/web)
 
 ---
