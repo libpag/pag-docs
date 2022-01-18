@@ -48,6 +48,7 @@ title: 桌面端接入指南
 
 1. 执行`libpag\win\Win32Demo.sln`启动Demo工程
 2. 运行Demo。首次执行时会同步依赖和编译PAG，会比较耗时
+3. 随Demo构建的pag.lib是release的，需要构建debug版可以参考下边的指引
 
 
 ### 使用PAG【Angle backend】
@@ -57,7 +58,7 @@ title: 桌面端接入指南
     depsync
     ```
 
-2. 在根目录执行cmake-build生成PAG
+2. 在根目录执行cmake-build生成PAG，会同时生成32位和64位的pag.lib
     ```
     node .\vendor_tools\cmake-build -p win -o .\win\paglib -v -i -DPAG_BUILD_SHARED=OFF
     ```
@@ -69,13 +70,18 @@ title: 桌面端接入指南
     * `DPAG_BUILD_SHARED` 动态库编译开关
    
 
-
 3. 头文件位置
     ```
     libpag\include
     ```
 
-4. 在使用Angle backend时，可执行程序需要链接Angle动态库
+4. 在自己的工程内使用的时候，还需要添加两个系统库
+    ```
+    Bcrypt.lib
+    ws2_32.lib
+    ```
+
+5. 在使用Angle backend时，可执行程序需要链接Angle动态库
     ```
     libpag\vendor\angle\win\
     ```
