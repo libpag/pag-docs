@@ -52,9 +52,8 @@ class Intro extends Component{
 
 class Chapter extends Component{
   render(){
-    const { idx,content ,title,link} = this.props;
+    const { idx, content, title, link, imgSrc} = this.props;
     const numImg = imgUrl(`new_official_website/number_${idx+1}.png`);
-       // thumbImg = imgUrl(`new_official_website/intro_${idx+1}.png`);
     let isOdd = idx%2 == 1
     return (
       <div class='chapter'>
@@ -71,7 +70,7 @@ class Chapter extends Component{
               </div>
           </div>
           <div class='empty'></div>
-          <canvas class='pagView' width='578px' height='390px'></canvas>
+          <img class='pagApng' src={imgSrc}></img>
         </div>
         {
           idx !== 4 ? <img class={'arrow '+( isOdd ? 'reverse':'')} src={imgUrl(`new_official_website/arrow.png`)}/> : null
@@ -151,7 +150,9 @@ class Main extends Component{
               <Chapter idx={idx}
                       link={siteConfig.links.feature[idx]}
                       content={unit.content}
-                      title={unit.title}/>
+                      title={unit.title}
+                      imgSrc={`https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/website/static/pag/apng/${idx+1}.png`}
+              />
             )
           })
         }
