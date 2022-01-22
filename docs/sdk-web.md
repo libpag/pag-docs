@@ -113,4 +113,4 @@ Web demo:
 
 [<font color=blue>https://github.com/Tencent/libpag/tree/main/web</font>](https://github.com/Tencent/libpag/tree/main/web)
 
-Web SDK 未来能力支持规划可以点击 [<font color=blue>这里</font>](https://github.com/Tencent/libpag/discussions/53) 查看
+Web SDK 未来能力支持规划可以点击 [<font color=blue>这里</font>](https://github.com/Tencent/libpag/wiki/PAG-Web-roadmap) 查看
