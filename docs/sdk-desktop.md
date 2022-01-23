@@ -94,17 +94,28 @@ title: 桌面端接入指南
 ---
 ## Linux端接入
 ### 基本要求
-+ **gcc版本不低于4.9**
++ **gcc版本不低于7.0**
 
 ### 编译构建
 1. 开发者参照源码根目录下的Linux_build.md完成依赖环境的安装
 
 2. 通过根目录下的build_linux.sh完成pag库文件的构建
 
-3. 编译生成的头文件和库文件位于vendor/pag 目录下
+3. 编译生成的头文件和库文件位于linux/vendor 目录下
 
 ### Demo工程
-* 预计本周内完善提供
+  Demo工程通过CMake来组织，依赖的库文件来自于上一步的构建
+  
+  在linux目录下
+   ```
+    mkdir build
+    cd build
+    cmake ../
+    make -j8
+    ./pag-linux
+ ```
+   Demo工程仅仅提供了库文件的编译和简单的使用范例，如果需要占位图填充视频或者导出视频，需要使用者自行开发
+  
 
 
 
