@@ -34,8 +34,8 @@ title: 移动端接入指南
 	
 	dependencies {
 	    //libpag的核心库
-	    //将libpag_release_3.2.5.1换成你下载的aar文件名
-    	implementation(name: 'libpag_release_3.2.5.1', ext: 'aar')
+	    //将libpag_release_3.2.7.34换成你下载的aar文件名
+    	implementation(name: 'libpag_release_3.2.7.34', ext: 'aar')
 	}
 	
 ``` 
@@ -48,13 +48,13 @@ title: 移动端接入指南
 配置完以后，sync一下，再编译。<br/><br/>
 
 ### maven接入
-   i. 在root工程目录下面修改build.gradle文件，增加**jcenter**的maven仓库
+   i. 在root工程目录下面修改build.gradle文件，增加**mavenCentral()**
    
 ```
 buildscript {
 
     repositories {
-		jcenter()
+		mavenCentral()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.2.1'
@@ -69,7 +69,7 @@ buildscript {
 	
 	dependencies {
 	    //libpag的核心库
-		implementation 'com.tencent.tav:libpag:3.2.5.1'
+		implementation 'com.tencent.tav:libpag:3.2.7.34'
 	}
 	
 ``` 
