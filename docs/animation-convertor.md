@@ -54,7 +54,7 @@ etc. `./PAGConvertor animation.mov 25`
 其中帧率为可选项，当希望转换后的帧率与原素材不一致时，可以主动设置帧率。注意：可变帧率的文件格式，最好在使用时设置输出帧率。（注*：Lottie 文件目前不支持帧率修改）
 
 3.转换完成后，在文件夹内可以看到转换后的同名.pag 文件
-### 转换完成后，请注意检查素材效果是否一致，如果有转换效果不正确的素材，或者在使用 PAGConvertor 中有什么疑问和建议，请[<font color=blue>提交issue</font>](https://github.com/libpag/libpag/issues/new?assignees=&labels=&template=bug_report.md&title=)。
+### 转换完成后，请注意检查素材效果是否一致，如果有转换效果不正确的素材，或者在使用 PAGConvertor 中有什么疑问和建议，请[<font color=blue>提交issue</font>](https://github.com/Tencent/libpag/issues/new/choose)。
 
 
 ---

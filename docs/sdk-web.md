@@ -7,7 +7,7 @@ title: Web端接入指南
 
 > **当前版本为 Alpha 版本，部分功能不够稳定**
 >
-> **有问题可到[Issues](https://github.com/Tencent/libpag/issues)或者 QQ 群反馈，会尽快修复**
+> **有问题可到[Issues](https://github.com/Tencent/libpag/issues/new/choose)或者 QQ 群反馈，会尽快修复**
 >
 > **更多特性持续开发中**
 

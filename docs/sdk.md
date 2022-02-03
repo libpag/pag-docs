@@ -115,6 +115,6 @@ buildscript {
 ## 测试素材
 PAG动画测试素材下载：[<font color=blue> pag_files.zip </font>](https://pagio-1251316161.file.myqcloud.com/website/static/file/pag_files.zip) 
 
-接入使用过程若遇到问题请[<font color=blue>提交issue</font>](https://github.com/libpag/libpag/issues/new?assignees=&labels=&template=bug_report.md&title=)<br/>
+接入使用过程若遇到问题请[<font color=blue>提交issue</font>](https://github.com/Tencent/libpag/issues/new/choose)<br/>
 
 ---

@@ -6,7 +6,7 @@ title: 安装PAGViewer
 
 目前 PAG 预览程序支持 macOS 和 Windows 操作系统。
 
-> 安装若遇到问题请提交 [<font color=blue>issue</font>](https://github.com/libpag/libpag/issues/new?assignees=&labels=&template=bug_report.md&title=) 反馈<br/>
+> 安装若遇到问题请提交 [<font color=blue>issue</font>](https://github.com/Tencent/libpag/issues/new/choose) 反馈<br/>
 
 ## macOS
 #### 命令行安装
