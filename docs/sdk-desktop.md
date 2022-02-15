@@ -60,7 +60,7 @@ title: 桌面端接入指南
 
 2. 在根目录执行cmake-build生成PAG，会同时生成32位和64位的pag.lib
     ```
-    node .\vendor_tools\cmake-build -p win -o .\win\paglib -v -i -DPAG_BUILD_SHARED=OFF
+    node .\vendor_tools\cmake-build pag -p win -o .\win\paglib -v -i -DPAG_BUILD_SHARED=OFF
     ```
     * `-p` platform，在Windows下选择`win`
     * `-o` output，指定输出目录
