@@ -21,9 +21,9 @@ libpag Web 端 SDK 为 Javascript 文件，分为四个版本：ES Modules、Com
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Chrome >= 69                                                 | Safari >= 11.3                                               | Android >= 7.0                                               | iOS >= 11.3                                                                                                                                                                                                  |
 
-Chrome 69+ 与移动端浏览器兼容工作正在进行中
+更多版本的兼容工作正在进行中
 
-**因受到微信浏览器“用户与页面交互之后才可以使用 Video 标签进行视频播放”规则的限制，PAG Web SDK 无法在微信浏览器下自动播放带有视频序列帧的 PAG 动画，建议设计师使用矢量导出。计划后续版本中提供一个解码器注入的接口，以及对应的 h264 解码器插件去解决这个问题。**
+**因受到微信浏览器“用户与页面交互之后才可以使用 Video 标签进行视频播放”规则的限制，PAG Web SDK无法在微信浏览器下自动播放带有视频序列帧的PAG动画，建议设计师使用矢量导出。计划后续版本中提供一个解码器注入的接口，以及对应的h264解码器插件去解决这个问题。**
 
 ## 快速开始
 
@@ -50,14 +50,11 @@ PAG Initialize
 <script src="https://unpkg.com/libpag@latest/lib/libpag.min.js"></script>
 <script>
   window.libpag.PAGInit().then((PAG) => {
-    const url = "https://pag.io/file/like.pag";
+    const url = 'https://pag.io/file/like.pag';
     fetch(url)
       .then((response) => response.blob())
       .then(async (blob) => {
-        const file = new window.File(
-          [blob],
-          url.replace(/(.*\/)*([^.]+)/i, "$2")
-        );
+        const file = new window.File([blob], url.replace(/(.*\/)*([^.]+)/i, '$2'));
         // Do Something.
       });
   });
@@ -75,32 +72,31 @@ $ npm i libpag
 PAG Initialize
 
 ```javascript
-import { PAGInit } from "libpag";
+import { PAGInit } from 'libpag';
 
 PAGInit({
-  locateFile: (file) => "./node_modules/libpag/lib/" + file,
+  locateFile: (file) => './node_modules/libpag/lib/' + file,
 }).then((PAG) => {
-  const url = "https://pag.io/file/like.pag";
+  const url = 'https://pag.io/file/like.pag';
   fetch(url)
     .then((response) => response.blob())
     .then(async (blob) => {
-      const file = new window.File(
-        [blob],
-        url.replace(/(.*\/)*([^.]+)/i, "$2")
-      );
+      const file = new window.File([blob], url.replace(/(.*\/)*([^.]+)/i, '$2'));
       // Do Something.
     });
 });
 ```
+
+ESModule 引入的方式需要打包构建的时候，需要把 node_modules 下的 libpag/lib 中的 libpag.wasm 文件打包到最终产物中。并使用 `locateFile` 函数指向 libpag.wasm 文件
 
 ### PAG simple demo
 
 ```javascript
 // <canvas class="canvas" id="pag"></canvas>
 const pagFile = await PAG.PAGFile.load(file);
-document.getElementById("pag").width = await pagFile.width();
-document.getElementById("pag").height = await pagFile.height();
-const pagView = await PAG.PAGView.init(pagFile, "#pag");
+document.getElementById('pag').width = pagFile.width();
+document.getElementById('pag').height = pagFile.height();
+const pagView = await PAG.PAGView.init(pagFile, '#pag');
 pagView.setRepeatCount(0);
 await pagView.play();
 ```
