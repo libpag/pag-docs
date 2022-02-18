@@ -86,8 +86,8 @@ buildscript {
 
 ### 基本要求<br/>
 
-- **支持iOS8及以上** 
-- **需要使用Xcode8.0及以上版本进行编译**
+- **支持iOS9及以上** 
+- **需要使用Xcode11.0及以上版本进行编译**
 
 ### Framework接入<br>
    1. 将libpag的framework文件放置在iOS工程项目目录下
