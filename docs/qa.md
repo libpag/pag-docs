@@ -1,5 +1,5 @@
 ---
-id: pag-training-3
+id: qa
 title: 线上答疑
 ---
 ---
