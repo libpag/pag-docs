@@ -5,7 +5,7 @@
     "导出插件": ["plugin-config","ae-error-guide","ae-bmp-guide", "pag-fillmode", "time-stretch", "pag-hotkey","error-code", "pag-export-verify","editable-text", "text-background", "pag-music-mark"],
     "预览工具": ["pag-edit","pag-file","hot-key","beta","export-png"],
     "性能优化": ["profiler","optimization"],
-    "视频教程": ["pag-training","pag-training-2"]
+    "视频教程": ["pag-training","pag-training-2","pag-training-3"]
   },
   "tech": {
     "SDK接入": ["sdk","sdk-web","sdk-desktop"],
