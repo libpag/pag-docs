@@ -16,6 +16,10 @@ jobs:
       - uses: webfactory/ssh-agent@v0.5.0
         with:
           ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY }}
+      - name: Send Velocity deployment
+        uses: codeclimate/velocity-deploy-action@master
+        with:
+          token: ${{ secrets.GH_PAGES_DEPLOY }} 
       - name: Deploy to GitHub Pages
         env:
           USE_SSH: true
@@ -24,6 +28,5 @@ jobs:
           git config --global user.email "kevingpqi@gmail.com"
           git config --global user.name "kevingpqi123"
           yarn install --frozen-lockfile
-          npm install gh-pages-deploy -g
           deploy --help
           yarn deploy
