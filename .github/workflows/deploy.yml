@@ -23,5 +23,6 @@ jobs:
           cd website 
           git config --global user.email "kevingpqi@gmail.com"
           git config --global user.name "kevingpqi123"
-          pip install deployfish
-          yarn deploy        
+          echo "machine github.com login "kevingpqi123" password ${{ secrets.GH_PAGES_DEPLOY }}" > ~/.netrc
+          yarn install
+          GIT_USER="kevingpqi123" yarn deploy        
