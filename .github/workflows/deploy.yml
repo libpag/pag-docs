@@ -24,4 +24,5 @@ jobs:
           git config --global user.email "kevingpqi@gmail.com"
           git config --global user.name "kevingpqi123"
           yarn install --frozen-lockfile
+          pip show -f deployfish
           yarn deploy
