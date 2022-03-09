@@ -9,5 +9,6 @@ website/translated_docs
 website/build/
 website/yarn.lock
 website/node_modules
+website/package-lock.json
 website/i18n/*
 .idea/
