@@ -23,5 +23,5 @@ jobs:
           cd website 
           git config --global user.email "kevingpqi@gmail.com"
           git config --global user.name "kevingpqi123"
-          npm install --global yarn
+          yarn add dice-forged-in-the-dark
           yarn deploy        
