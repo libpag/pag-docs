@@ -14,6 +14,7 @@ jobs:
         persist-credentials: false
     - name: Install and Build
       run: |
+        cd website
         npm install
         npm run-script build 
     - name: Deploy
@@ -22,4 +23,4 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.GH_PAGES_DEPLOY }}
         BRANCH: gh-pages
         FOLDER: build
-        BUILD_SCRIPT: npm install && npm run build
+        BUILD_SCRIPT: cd website && npm install && npm run build
