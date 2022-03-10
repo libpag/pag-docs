@@ -25,6 +25,5 @@ jobs:
           git config --global user.name "kevingpqi123"
           
           echo "*********start***********"
-          near dev-deploy --wasmFile="./contract.wasm" -f
           yarn install --frozen-lockfile
           yarn deploy
