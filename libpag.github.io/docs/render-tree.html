@@ -1,0 +1,139 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>PAG的渲染树 · PAG</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="在3.0版本的PAG提供了渲染树的组装功能，让PAG素材可以成为一个大模板的一部分。整个渲染树由PAGComposition和PAGLayer组建而成，对于外部来说PAGComposition作为渲染树的分支节点，PAGLayer作为渲染树的叶子结点。一个PAG渲染树的样式大致如下："/><meta name="docsearch:language" content="en"/><meta property="og:title" content="PAG的渲染树 · PAG"/><meta property="og:type" content="website"/><meta property="og:url" content="https://pag.io/index.html"/><meta property="og:description" content="在3.0版本的PAG提供了渲染树的组装功能，让PAG素材可以成为一个大模板的一部分。整个渲染树由PAGComposition和PAGLayer组建而成，对于外部来说PAGComposition作为渲染树的分支节点，PAGLayer作为渲染树的叶子结点。一个PAG渲染树的样式大致如下："/><meta property="og:image" content="https://pag.io/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://pag.io/img/docusaurus.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/website/static/javascript/page.js"></script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script type="text/javascript" src="https://pagio-1251316161.file.myqcloud.com/website/static/javascript/pagjs/pag.min.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/new_official_website/logo.png" alt="PAG"/><h2 class="headerTitleWithLogo">PAG</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/" target="_self">首页</a></li><li class=""><a href="/docs/install.html" target="_self">设计师文档</a></li><li class=""><a href="/docs/sdk.html" target="_self">开发者文档</a></li><li class=""><a href="/case.html" target="_self">案例展示</a></li><li class=""><a href="/docs/faq.html" target="_self">FAQ</a></li><li class=""><a href="https://github.com/Tencent/libpag" target="_self">GitHub</a></li><li class=""><a href="https://qm.qq.com/cgi-bin/qm/qr?k=Wa65DTnEKo2hnPsvY-1EgJOF8tvKQ-ZT&amp;jump_from=webapi" target="_self">官方群</a></li><li class=""><a href="/#download" target="_self">免费下载</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">PAG的渲染树</h1></header><article><div><span><p>在3.0版本的PAG提供了渲染树的组装功能，让PAG素材可以成为一个大模板的一部分。整个渲染树由PAGComposition和PAGLayer组建而成，对于外部来说PAGComposition作为渲染树的分支节点，PAGLayer作为渲染树的叶子结点。一个PAG渲染树的样式大致如下：</p>
+<p><img src="https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/render-tree.png" alt="render-tree"></p>
+<h2><a class="anchor" aria-hidden="true" id="paglayer"></a><a href="#paglayer" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PAGLayer</h2>
+<p>PAGLayer是渲染节点的基类，pag提供对PAGLayer的startTime进行控制。</p>
+<pre><code class="hljs css language-objectivec"><span class="hljs-comment">//iOS</span>
+<span class="hljs-class"><span class="hljs-keyword">@interface</span> <span class="hljs-title">PAGLayer</span> : <span class="hljs-title">NSObject</span></span>
+……
+- (<span class="hljs-keyword">void</span>)setStartTime:(int64_t)time;
+……
+<span class="hljs-keyword">@end</span>
+</code></pre>
+<pre><code class="hljs css language-java"><span class="hljs-comment">//Android</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PAGLayer</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">native</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setStartTime</span><span class="hljs-params">(<span class="hljs-keyword">long</span> time)</span></span>;
+}
+</code></pre>
+<p>由于Layer可以进行组装，这导致了外部统一控制Layer替换内容的难度剧增。因此除了属性的控制外，根据Layer类型不同 ，对PAGTextLayer和PAGImageLayer也提供了直接替换显示内容的接口。</p>
+<pre><code class="hljs css language-objectivec"><span class="hljs-comment">//iOS</span>
+<span class="hljs-class"><span class="hljs-keyword">@interface</span> <span class="hljs-title">PAGTextLayer</span> : <span class="hljs-title">PAGLayer</span></span>
+……
+- (<span class="hljs-keyword">void</span>)setFillColor:(<span class="hljs-built_in">UIColor</span>*)color;
+
+- (<span class="hljs-keyword">void</span>)setFont:(PAGFont*)font;
+
+- (<span class="hljs-keyword">void</span>)setFontSize:(<span class="hljs-built_in">CGFloat</span>)size;
+
+- (<span class="hljs-keyword">void</span>)setStrokeColor:(<span class="hljs-built_in">UIColor</span>*)color;
+
+- (<span class="hljs-keyword">void</span>)setText:(<span class="hljs-built_in">NSString</span>*)text;
+……
+<span class="hljs-keyword">@end</span>
+
+<span class="hljs-class"><span class="hljs-keyword">@interface</span> <span class="hljs-title">PAGImageLayer</span> : <span class="hljs-title">PAGLayer</span></span>
+……
+- (<span class="hljs-keyword">void</span>)replaceImage:(PAGImage*)image;
+……
+<span class="hljs-keyword">@end</span>
+</code></pre>
+<pre><code class="hljs css language-java"><span class="hljs-comment">//Android</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PAGTextLayer</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">PAGLayer</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">native</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setFillColor</span><span class="hljs-params">(<span class="hljs-keyword">int</span> color)</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setFont</span><span class="hljs-params">(PAGFont font)</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">native</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setFontSize</span><span class="hljs-params">(<span class="hljs-keyword">float</span> fontSize)</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">native</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setStrokeColor</span><span class="hljs-params">(<span class="hljs-keyword">int</span> color)</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">native</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setText</span><span class="hljs-params">(String text)</span></span>;
+}
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PAGImageLayer</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">PAGLayer</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">replaceImage</span><span class="hljs-params">(PAGImage image)</span></span>;
+}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="pagcomposition"></a><a href="#pagcomposition" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PAGComposition</h2>
+<p>PAGComposition继承自PAGLayer，拥有Layer的所有对外接口。作为渲染树的容器，一个空的PAGComposition容器可以快速的通过Make函数构造。</p>
+<pre><code class="hljs css language-objectivec"><span class="hljs-comment">//iOS</span>
+<span class="hljs-class"><span class="hljs-keyword">@interface</span> <span class="hljs-title">PAGComposition</span> : <span class="hljs-title">PAGLayer</span></span>
+
++ (PAGComposition*)Make:(<span class="hljs-built_in">CGSize</span>)size;
+……
+<span class="hljs-keyword">@end</span>
+</code></pre>
+<pre><code class="hljs css language-java"><span class="hljs-comment">//Android</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PAGComposition</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">PAGLayer</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">native</span> PAGComposition <span class="hljs-title">Make</span><span class="hljs-params">(<span class="hljs-keyword">int</span> width, <span class="hljs-keyword">int</span> height)</span></span>;
+}
+</code></pre>
+<p>一个空的PAGComposition是不会也不必被渲染，因此libpag提供了接口对Composition的包含的内容进行修改。</p>
+<pre><code class="hljs css language-objectivec"><span class="hljs-comment">//iOS</span>
+<span class="hljs-class"><span class="hljs-keyword">@interface</span> <span class="hljs-title">PAGComposition</span> : <span class="hljs-title">PAGLayer</span></span>
+……
+- (<span class="hljs-keyword">void</span>)setLayerIndex:(<span class="hljs-built_in">NSInteger</span>)index layer:(PAGLayer*)child;
+
+- (<span class="hljs-built_in">BOOL</span>)addLayer:(PAGLayer*)pagLayer;
+
+- (<span class="hljs-built_in">BOOL</span>)addLayer:(PAGLayer*)pagLayer atIndex:(<span class="hljs-keyword">int</span>)index;
+
+- (<span class="hljs-built_in">BOOL</span>)contains:(PAGLayer*)pagLayer;
+
+- (PAGLayer*)removeLayer:(PAGLayer*)pagLayer;
+
+- (PAGLayer*)removeLayerAt:(<span class="hljs-keyword">int</span>)index;
+
+- (<span class="hljs-keyword">void</span>)removeAllLayers;
+
+- (<span class="hljs-keyword">void</span>)swapLayer:(PAGLayer*)pagLayer1 withLayer:(PAGLayer*)pagLayer2;
+
+- (<span class="hljs-keyword">void</span>)swapLayerAt:(<span class="hljs-keyword">int</span>)index1 withIndex:(<span class="hljs-keyword">int</span>)index2;
+……
+<span class="hljs-keyword">@end</span>
+</code></pre>
+<pre><code class="hljs css language-java"><span class="hljs-comment">//Android</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PAGComposition</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">PAGLayer</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">native</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setLayerIndex</span><span class="hljs-params">(PAGLayer layer, <span class="hljs-keyword">int</span> index)</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">native</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addLayer</span><span class="hljs-params">(PAGLayer pagLayer)</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">native</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addLayerAt</span><span class="hljs-params">(PAGLayer pagLayer, <span class="hljs-keyword">int</span> index)</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">native</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">contains</span><span class="hljs-params">(PAGLayer pagLayer)</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">native</span> PAGLayer <span class="hljs-title">removeLayer</span><span class="hljs-params">(PAGLayer pagLayer)</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">native</span> PAGLayer <span class="hljs-title">removeLayerAt</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">native</span> <span class="hljs-keyword">void</span> <span class="hljs-title">removeAllLayers</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">native</span> <span class="hljs-keyword">void</span> <span class="hljs-title">swapLayer</span><span class="hljs-params">(PAGLayer pagLayer1, PAGLayer pagLayer2)</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">native</span> <span class="hljs-keyword">void</span> <span class="hljs-title">swapLayerAt</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index1, <span class="hljs-keyword">int</span> index2)</span></span>;
+}
+</code></pre>
+<p><strong>addLayer时，PAGLayer会自动从其父节点中移除并添加进当前PAGComposition。</strong>同时addLayer会有以下几种情况会添加失败：</p>
+<blockquote>
+<p>//PAGLayer为空</p>
+<p>1）pagLayer == nullptr</p>
+<p>//PAGComposition添加自己</p>
+<p>2）pagLayer == this</p>
+<p>//循环添加</p>
+<p>3）pagLayer-&gt;layerType() == LayerType::PreCompose &amp;&amp; pagLayer-&gt;Contains(this) == true</p>
+</blockquote>
+<p><strong>removeLayer和swapLayer都需要保证输入的layer都在composition之中，否则也会失败。</strong></p>
+<p>PAGComposition无法被主动设置duration和frameRate。具体情况如下：</p>
+<p><strong>当PAGComposition从PAGFile中获取，PAGComposition的duration和frameRate由设计师在AE中决定；</strong></p>
+<p><strong>当PAGComposition是Make出来的，PAGComposition会根据添加的Layer变化自己的duration和frameRate。</strong></p>
+<blockquote>
+<p>具体为：</p>
+<p>for layer in PAGComposition-&gt;layers</p>
+<p>PAGComposition-&gt;duration = MAX(layer-&gt;startTime + layer-&gt;duration, PAGComposition-&gt;duration)</p>
+<p>PAGComposition-&gt;frameRate = MAX(layer-&gt;frameRate, PAGComposition-&gt;frameRate)</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="pagfile"></a><a href="#pagfile" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PAGFile</h2>
+<p>与此同时，PAGFile作为素材文件在内存中的实例，不再只存储文件数据，更是一个PAG中的渲染节点。3.0中PAGFile继承自PAGCompostion，可以直接被添加进其他的PAGComposition中。除了PAGComposition中的对应接口，PAGFile新增了copyOriginal方法。</p>
+<pre><code class="hljs css language-objectivec"><span class="hljs-comment">//iOS</span>
+<span class="hljs-class"><span class="hljs-keyword">@interface</span> <span class="hljs-title">PAGFile</span> : <span class="hljs-title">PAGComposition</span></span>
+……
+- (PAGFile*)copyOriginal;
+……
+<span class="hljs-keyword">@end</span>
+</code></pre>
+<pre><code class="hljs css language-java"><span class="hljs-comment">//Android</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PAGFile</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">PAGComposition</span> </span>{
+}
+</code></pre>
+<p>copyOriginal这个方法是用于直接基于原始素材再生成一份同样的渲染树。</p>
+<p>这里有一点需要注意，<strong>当前对于PAGFile所做的一切修改都不会被copy到返回值中，而后续对于PAGFile的修改也不会影响到copy出的数据。</strong></p>
+<h2><a class="anchor" aria-hidden="true" id="渲染树的范例工程"></a><a href="#渲染树的范例工程" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>渲染树的范例工程：</h2>
+<p>渲染树的范例工程已经整合到我们的标准<a href="/docs/sdk.html"><font color=blue>范例工程</font></a>中。</p>
+</span></div></article></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#paglayer">PAGLayer</a></li><li><a href="#pagcomposition">PAGComposition</a></li><li><a href="#pagfile">PAGFile</a></li><li><a href="#渲染树的范例工程">渲染树的范例工程：</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="copyright">Copyright © 2022 pag.io</section></footer></div></body></html>

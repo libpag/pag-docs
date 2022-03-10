@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>PAGSurface Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">libpag </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Tencent</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/FromCVPixelBuffer:">+ FromCVPixelBuffer:</option>
+		
+		<option value="//api/name/FromCVPixelBuffer:context:">+ FromCVPixelBuffer:context:</option>
+		
+		<option value="//api/name/FromLayer:">+ FromLayer:</option>
+		
+		<option value="//api/name/MakeFromGPU:">+ MakeFromGPU:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/clearAll">- clearAll</option>
+		
+		<option value="//api/name/freeCache">- freeCache</option>
+		
+		<option value="//api/name/getCVPixelBuffer">- getCVPixelBuffer</option>
+		
+		<option value="//api/name/height">- height</option>
+		
+		<option value="//api/name/updateSize">- updateSize</option>
+		
+		<option value="//api/name/width">- width</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">PAGSurface Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>PAGSurface.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/FromLayer:" title="FromLayer:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/FromLayer:">+&nbsp;FromLayer:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a new PAGSurface from specified CAEAGLLayer. The GPU context will be created internally
+by PAGSurface.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (PAGSurface *)FromLayer:(CAEAGLLayer *)<em>layer</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PAGSurface.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/FromCVPixelBuffer:" title="FromCVPixelBuffer:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/FromCVPixelBuffer:">+&nbsp;FromCVPixelBuffer:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a new PAGSurface from specified CVPixelBuffer. The GPU context will be created internally
+by PAGSurface.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (PAGSurface *)FromCVPixelBuffer:(CVPixelBufferRef)<em>pixelBuffer</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PAGSurface.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/FromCVPixelBuffer:context:" title="FromCVPixelBuffer:context:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/FromCVPixelBuffer:context:">+&nbsp;FromCVPixelBuffer:context:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a new PAGSurface from specified CVPixelBuffer and EAGLContext. Multiple PAGSurfaces with
+the same context share the same GPU caches. The caches are not destroyed when resetting a
+PAGPlayer&rsquo;s surface to another PAGSurface with the same context.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (PAGSurface *)FromCVPixelBuffer:(CVPixelBufferRef)<em>pixelBuffer</em> context:(EAGLContext *)<em>eaglContext</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PAGSurface.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/MakeFromGPU:" title="MakeFromGPU:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/MakeFromGPU:">+&nbsp;MakeFromGPU:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a offscreen PAGSurface of specified size. PAGSurface internally creates a CVPixelBuffer
+which can be accessed by <a href="#//api/name/getCVPixelBuffer">[PAGSurface getCVPixelBuffer]</a> after the first [PAGPLayer flush].</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (PAGSurface *)MakeFromGPU:(CGSize)<em>size</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PAGSurface.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/width" title="width"></a>
+	<h3 class="method-title"><code><a href="#//api/name/width">&ndash;&nbsp;width</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The width of surface in pixels.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)width</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PAGSurface.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/height" title="height"></a>
+	<h3 class="method-title"><code><a href="#//api/name/height">&ndash;&nbsp;height</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The height of surface in pixels.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)height</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PAGSurface.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateSize" title="updateSize"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateSize">&ndash;&nbsp;updateSize</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Update the size of surface, and reset the internal surface.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateSize</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PAGSurface.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clearAll" title="clearAll"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearAll">&ndash;&nbsp;clearAll</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Erases all pixels of this surface with transparent color. Returns true if the content has
+changed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)clearAll</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PAGSurface.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/freeCache" title="freeCache"></a>
+	<h3 class="method-title"><code><a href="#//api/name/freeCache">&ndash;&nbsp;freeCache</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Free the cache created by the surface immediately. Can be called to reduce memory pressure.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)freeCache</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PAGSurface.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getCVPixelBuffer" title="getCVPixelBuffer"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCVPixelBuffer">&ndash;&nbsp;getCVPixelBuffer</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the CVPixelBuffer object created by MakeFromGPU.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (CVPixelBufferRef)getCVPixelBuffer</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PAGSurface.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2022 Tencent. All rights reserved. Updated: 2022-01-14</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
