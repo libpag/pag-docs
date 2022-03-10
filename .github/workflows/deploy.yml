@@ -6,24 +6,20 @@ on:
 
 jobs:
   deploy:
-    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16.x
-      - uses: webfactory/ssh-agent@v0.5.0
-        with:
-          ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY }}
-      - name: Deploy to GitHub Pages
-        env:
-          USE_SSH: true
-        run: |
-          cd website 
-          git config --global user.email "kevingpqi@gmail.com"
-          git config --global user.name "kevingpqi123"
-          
-          echo "*********start***********"
-          npm ci
-          npm run build
+    - name: Checkout
+      uses: actions/checkout@master
+      with:
+        persist-credentials: false
+    - name: Install and Build
+      run: |
+        npm install
+        npm run-script build 
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        ACCESS_TOKEN: ${{ secrets.GH_PAGES_DEPLOY }}
+        BRANCH: gh-pages
+        FOLDER: build
+        BUILD_SCRIPT: npm install && npm run build
