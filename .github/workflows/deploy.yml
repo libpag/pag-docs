@@ -26,4 +26,5 @@ jobs:
           
           echo "*********start***********"
           yarn install --frozen-lockfile
+          yarn add deploy
           yarn deploy
