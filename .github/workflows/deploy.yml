@@ -16,6 +16,7 @@ jobs:
       run: |
         cd website
         npm install
+        echo "********* begin build ***********"
         npm run-script build 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
