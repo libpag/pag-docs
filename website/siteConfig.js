@@ -343,9 +343,10 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/website/static/javascript/page.js'
-            , 'https://buttons.github.io/buttons.js'
-            , 'https://pagio-1251316161.file.myqcloud.com/website/static/javascript/pagjs/pag.min.js'
+  scripts: ['/javascript/page.js',
+            'https://buttons.github.io/buttons.js',
+            'https://pagio-1251316161.file.myqcloud.com/website/static/javascript/pagjs/pag.min.js',
+            'https://cdn.bootcdn.net/ajax/libs/axios/0.26.1/axios.min.js'
           ],
   // On page navigation for the current documentation page.
   onPageNav: 'separate',

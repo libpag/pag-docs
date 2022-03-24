@@ -2,6 +2,7 @@
   "scripts": {
     "examples": "docusaurus-examples",
     "start": "docusaurus-start & sass --watch ./static/css/custom.scss ./static/css/custom.css",
+    "watch": "docusaurus-start & sass --watch ./static/css/custom.scss ./static/css/custom.css",
     "build": "sass ./static/css/custom.scss ./static/css/custom.css && docusaurus-build",
     "publish-gh-pages": "docusaurus-publish",
     "write-translations": "docusaurus-write-translations",
