@@ -99,6 +99,14 @@ const users = [
     pinned: true,
   },
   {
+    caption: '智影',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/zhiying.jpeg',
+    infoLink: 'https://zenvideo.qq.com/#/home',
+    pinned: true,
+  },
+  {
     caption: '腾讯动漫',
      // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
@@ -111,13 +119,6 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/QQReader.png',
     infoLink: 'https://yuedu.reader.qq.com/common/common/down/dist/index.html?actid=11822',
-  },
-  {
-    caption: '智影',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/zhiying.jpeg',
-    infoLink: 'https://zenvideo.qq.com/#/home',
   },
   {
     caption: '腾讯广告',
