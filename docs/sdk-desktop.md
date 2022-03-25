@@ -19,7 +19,7 @@ title: 桌面端接入指南
 ## macOS端接入
 
 ### 基本要求
-+ **macOS 10.13 or later**
++ **macOS 10.14 or later**
 
 ### 编译构建
    macOS端的项目工程位于源码根目录mac文件夹下，为Xcode工程，开发者可以自行构建
