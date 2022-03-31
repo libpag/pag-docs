@@ -5,6 +5,8 @@ title: 移动端接入指南
 ---
 # 移动端快速接入
 
+SDK的接入和使用请遵守 [<font color=blue>PAG SDK个人信息保护规则</font>](https://privacy.qq.com/document/preview/01e79d0cc7a2427ba774b88c6beff0fd)
+
 ### SDK获取
 最新SDK：[<font color=blue>SDK下载页面</font>](https://github.com/tencent/libpag/releases)<br/>
 

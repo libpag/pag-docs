@@ -13,6 +13,9 @@ title: Web端接入指南
 
 # 快速接入
 
+SDK的接入和使用请遵守 [<font color=blue>PAG SDK个人信息保护规则</font>](https://privacy.qq.com/document/preview/01e79d0cc7a2427ba774b88c6beff0fd)
+
+
 libpag Web 端 SDK 为 Javascript 文件，分为四个版本：ES Modules、CommonJS Modules、UMD 模块标准和 UMD 模块标准 Minify 后的压缩版。
 
 ## 浏览器兼容性
