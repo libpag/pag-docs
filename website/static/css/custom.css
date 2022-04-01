@@ -538,7 +538,7 @@ code {
   color: #000 !important;
   text-align: center;
   position: relative;
-  background-color: transparent !important;
+  background-color: #ffffff !important;
   color: #005AD9 !important;
 }
 .pc-mode .nav-site.nav-site-internal li.active a:after {
