@@ -23,7 +23,7 @@ class Main extends React.Component {
                         },{
                             mainTitle: '自由编辑动态效果',
                             subTitle: '全能易操作，剪辑体验酣畅淋漓',
-                            video: 'https://pagio-1251316161.file.myqcloud.com/video/pagiocase_04_1641955776.mp4'
+                            video: 'https://pag.qq.com/video/pagiocase_04_1641955776.mp4'
                         }
                         ,{
                             mainTitle: '增强广告效果',
@@ -33,12 +33,12 @@ class Main extends React.Component {
                         ,{
                             mainTitle: '丰富视觉体验',
                             subTitle: '动画文件使用更便捷，体积小性能好',
-                            video: 'https://pagio-1251316161.file.myqcloud.com/video/e917e18a9759b4b6b7a06ad0f37f1e14.mov'
+                            video: 'https://pag.qq.com/video/e917e18a9759b4b6b7a06ad0f37f1e14.mov'
                         }
                         ,{
                             mainTitle: '直播氛围拉满',
                             subTitle: '全面支持礼物设计，精彩创意等你探索',
-                            video: 'https://pagio-1251316161.file.myqcloud.com/video/pagiocase_07_1641955776.mp4'
+                            video: 'https://pag.qq.com/video/pagiocase_07_1641955776.mp4'
                         }
                         ,{
                             mainTitle: '无负担极速上线',
@@ -46,7 +46,7 @@ class Main extends React.Component {
                             video: 'https://videorendertvh5.cdp.qq.com/pagiocase_08.mp4'
                         }].map((unit, idx) => {
                             let index = idx < 9? `0${idx+1}`: `${idx+1}`;
-                            let poster = `https://pagio-1251316161.file.myqcloud.com/website/static/img/poster/${index}.png`
+                            let poster = `https://pag.qq.com/website/static/img/poster/${index}.png`
                             return(
                                 <Chapter
                                     idx = {idx}

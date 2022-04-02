@@ -14,7 +14,7 @@ const users = [
     caption: '微信',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/wechat.png',
+    image: 'https://pag.qq.com/website/static/img/wechat.png',
     infoLink: 'https://weixin.qq.com',
     pinned: true,
   },
@@ -22,7 +22,7 @@ const users = [
     caption: 'QQ',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/qq.png',
+    image: 'https://pag.qq.com/website/static/img/qq.png',
     infoLink: 'https://im.qq.com',
     pinned: true,
   },
@@ -30,7 +30,7 @@ const users = [
     caption: '王者荣耀',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/wangzhe.png',
+    image: 'https://pag.qq.com/website/static/img/wangzhe.png',
     infoLink: 'https://pvp.qq.com',
     pinned: true,
   },
@@ -38,7 +38,7 @@ const users = [
     caption: '腾讯视频',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/tencentvideo.jpg',
+    image: 'https://pag.qq.com/website/static/img/tencentvideo.jpg',
     infoLink: 'https://v.qq.com',
     pinned: true,
   },
@@ -46,7 +46,7 @@ const users = [
     caption: 'QQ音乐',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/qqmusic.png',
+    image: 'https://pag.qq.com/website/static/img/qqmusic.png',
     infoLink: 'https://y.qq.com/',
     pinned: true
   },
@@ -54,7 +54,7 @@ const users = [
     caption: '全民K歌',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/kg.png',
+    image: 'https://pag.qq.com/website/static/img/kg.png',
     infoLink: 'https://kg.qq.com/index-pc.html',
     pinned: true,
   },
@@ -62,7 +62,7 @@ const users = [
     caption: 'QQ空间',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/qzone.png',
+    image: 'https://pag.qq.com/website/static/img/qzone.png',
     infoLink: 'https://qzone.qq.com/',
     pinned: true,
   },
@@ -70,7 +70,7 @@ const users = [
     caption: 'NOW直播',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/now.png',
+    image: 'https://pag.qq.com/website/static/img/now.png',
     infoLink: 'https://now.qq.com/',
     pinned: true,
   },
@@ -78,7 +78,7 @@ const users = [
     caption: '天天P图',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/pitu.png',
+    image: 'https://pag.qq.com/website/static/img/pitu.png',
     infoLink: 'https://tu.qq.com/',
     pinned: true
   },
@@ -86,7 +86,7 @@ const users = [
     caption: '腾讯云',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/tencentcloud.png',
+    image: 'https://pag.qq.com/website/static/img/tencentcloud.png',
     infoLink: 'https://cloud.tencent.com/',
     pinned: true
   },
@@ -94,7 +94,7 @@ const users = [
     caption: '微视',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/weishi.png',
+    image: 'https://pag.qq.com/website/static/img/weishi.png',
     infoLink: 'https://weishi.qq.com/',
     pinned: true,
   },
@@ -102,7 +102,7 @@ const users = [
     caption: '智影',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/zhiying.jpeg',
+    image: 'https://pag.qq.com/website/static/img/zhiying.jpeg',
     infoLink: 'https://zenvideo.qq.com/#/home',
     pinned: true,
   },
@@ -110,105 +110,105 @@ const users = [
     caption: '腾讯动漫',
      // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/dongman.png',
+    image: 'https://pag.qq.com/website/static/img/dongman.png',
     infoLink: 'https://ac.qq.com',
   },
   {
     caption: 'QQ阅读',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/QQReader.png',
+    image: 'https://pag.qq.com/website/static/img/QQReader.png',
     infoLink: 'https://yuedu.reader.qq.com/common/common/down/dist/index.html?actid=11822',
   },
   {
     caption: '腾讯广告',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/AMS.png',
+    image: 'https://pag.qq.com/website/static/img/AMS.png',
     infoLink: 'https://e.qq.com/ads/',
   },
   {
     caption: '起点',
      // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/qidian.png',
+    image: 'https://pag.qq.com/website/static/img/qidian.png',
     infoLink: 'https://www.qidian.com',
   },
   {
     caption: '红袖添香',
      // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/hongxiu.png',
+    image: 'https://pag.qq.com/website/static/img/hongxiu.png',
     infoLink: 'https://www.hongxiu.com/',
   },
   {
     caption: '央视频',
      // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/yangvideo.png',
+    image: 'https://pag.qq.com/website/static/img/yangvideo.png',
     infoLink: 'https://www.yangshipin.cn/',
   },
   {
     caption: '企鹅电竞',
      // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/qiedianjing.jpeg',
+    image: 'https://pag.qq.com/website/static/img/qiedianjing.jpeg',
     infoLink: 'https://egame.qq.com/',
   },
   {
     caption: 'Q音宝贝',
      // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/qyingbaby.png',
+    image: 'https://pag.qq.com/website/static/img/qyingbaby.png',
     infoLink: '',
   },
   {
     caption: '欢遇',
      // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/huanyu.png',
+    image: 'https://pag.qq.com/website/static/img/huanyu.png',
     infoLink: '',
   },
   {
     caption: '猫呼',
      // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/catcall.png',
+    image: 'https://pag.qq.com/website/static/img/catcall.png',
     infoLink: '',
   },
   {
     caption: '猜歌星球',
      // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/caige.png',
+    image: 'https://pag.qq.com/website/static/img/caige.png',
     infoLink: 'https://caige.qq.com/',
   },
   {
     caption: 'Q音探歌',
      // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/tangge.png',
+    image: 'https://pag.qq.com/website/static/img/tangge.png',
     infoLink: '',
   },
   {
     caption: '相册管家',
      // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/xianchemanager.png',
+    image: 'https://pag.qq.com/website/static/img/xianchemanager.png',
     infoLink: '',
   },
   {
     caption: '轻聊',
      // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/qingliao.png',
+    image: 'https://pag.qq.com/website/static/img/qingliao.png',
     infoLink: '',
   },
   {
     caption: '波动星球',
      // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pagio-1251316161.file.myqcloud.com/website/static/img/bodongxingqiu.png',
+    image: 'https://pag.qq.com/website/static/img/bodongxingqiu.png',
     infoLink: '',
   },
 ];
@@ -346,8 +346,7 @@ const siteConfig = {
   // Add custom scripts here that would be placed in <script> tags.
   scripts: ['/javascript/page.js',
             'https://buttons.github.io/buttons.js',
-            'https://pagio-1251316161.file.myqcloud.com/website/static/javascript/pagjs/pag.min.js',
-            'https://cdn.bootcdn.net/ajax/libs/axios/0.26.1/axios.min.js'
+            'https://pag.qq.com/website/static/javascript/pagjs/pag.min.js',
           ],
   // On page navigation for the current documentation page.
   onPageNav: 'separate',

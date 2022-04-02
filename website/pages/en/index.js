@@ -3,7 +3,7 @@ const siteConfig = require(`${process.cwd()}/siteConfig.js`);
 const Component = React.Component;
 
 function imgUrl(img) {
-  return `${siteConfig.baseUrl}img/${img}`;
+  return `https://pag.qq.com/website/static/img/${img}`;
 }
 
 class Button extends Component{
@@ -151,7 +151,7 @@ class Main extends Component{
                       link={siteConfig.links.feature[idx]}
                       content={unit.content}
                       title={unit.title}
-                      imgSrc={`https://pagio-1251316161.cos.ap-nanjing.myqcloud.com/website/static/pag/apng/${idx+1}.png`}
+                      imgSrc={`https://pag.qq.com/website/static/pag/apng/${idx+1}.png`}
               />
             )
           })
