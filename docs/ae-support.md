@@ -12,7 +12,7 @@ BMP预合成导出模式可以支持所有的AE特效，设计师只需要关注
 
 <img 
   alt='导出格式文件大小对比' 
-  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/sequence.png' 
+  src='https://pag.qq.com/website/static/img/docs/sequence.png' 
   style='width: 600px; margin: 48px 0' 
 />
 

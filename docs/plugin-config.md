@@ -22,7 +22,7 @@ title: 插件选项配置面板
 
 #### "After Effects CC" -> "首选项" -> "PAG Config..." （如下图）
 <img 
-  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/plugin_config1.png' 
+  src='https://pag.qq.com/website/static/img/docs/plugin_config1.png' 
   style='width: 600px; margin: 32px 0 48px 0' 
 />
 
@@ -30,7 +30,7 @@ title: 插件选项配置面板
 
 #### 「“通用”页」可配置整个PAG文件相关的参数（如下图：）
 <img 
-  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/plugin_config2.jpg' 
+  src='https://pag.qq.com/website/static/img/docs/plugin_config2.jpg' 
   style='width: 600px; margin: 32px 0 48px 0' 
 />
 
@@ -78,7 +78,7 @@ title: 插件选项配置面板
 
 #### 可配置BMP预合成导出方式的相关参数（如下图：）
 <img 
-  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/plugin_config3.jpg' 
+  src='https://pag.qq.com/website/static/img/docs/plugin_config3.jpg' 
   style='width: 600px; margin: 32px 0 48px 0' 
 />
 

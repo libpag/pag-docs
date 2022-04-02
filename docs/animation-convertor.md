@@ -13,7 +13,7 @@ title: 素材迁移说明
 ### 针对接入项目中的视频素材、图片序列帧素材和部分 Lottie 素材：
 
 视频素材和图片序列帧素材可以直接转换为 PAG 素材文件，转换工具为 PAGConvertor。
-[<font color=blue>PAGConvertor下载</font>](https://pagio-1251316161.file.myqcloud.com/website/static/file/PAGConvertor.zip) 
+[<font color=blue>PAGConvertor下载</font>](https://pag.qq.com/website/static/file/PAGConvertor.zip) 
 
 #### PAGConvertor 是一个可以把视频、gif、apng、图片序列帧和 Lottie 的 json 转成 PAG 文件的工具。
 

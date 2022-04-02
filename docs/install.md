@@ -43,6 +43,6 @@ PAGViewer Beta 版现在支持在 Windows 下预览 PAG 文件。安装成功后
 
 
 ## 测试素材
-下载 [<font color=blue> pag_files.zip </font>](https://pagio-1251316161.file.myqcloud.com/website/static/file/pag_files.zip) 并解压，直接双击文件夹里的 pag 文件，即可看到动画的预览效果。其中的 **Replacement.pag** 文件是个占位图动画示例，你可以双击打开它后拖拽任意一张其他图片到窗口里，即可看到窗口里的动画效果被套用到了拖进去的图片上。您也可以直接使用压缩包里的 AE 源文件自行导出 pag 文件进行预览。
+下载 [<font color=blue> pag_files.zip </font>](https://pag.qq.com/website/static/file/pag_files.zip) 并解压，直接双击文件夹里的 pag 文件，即可看到动画的预览效果。其中的 **Replacement.pag** 文件是个占位图动画示例，你可以双击打开它后拖拽任意一张其他图片到窗口里，即可看到窗口里的动画效果被套用到了拖进去的图片上。您也可以直接使用压缩包里的 AE 源文件自行导出 pag 文件进行预览。
 
 ---

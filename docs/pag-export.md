@@ -25,7 +25,7 @@ PAG同时支持「矢量预合成」直接导出和「BMP预合成」导出两�
    PAG文件导出提供了两种方式，如下图所示：直接导出和导出插件面板导出，后置增加了导出插件面板的显示，方便查看AE工程中直接导出存在的问题，以及多了一些智能化的处理，具体参考导出插件版块<br/>
 <img 
   alt='PAG文件导出' 
-  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/pag_hotkey_0.png' 
+  src='https://pag.qq.com/website/static/img/docs/pag_hotkey_0.png' 
   style='width: 600px; height: 560px; margin: 48px 0; border-radius: 8px' 
 />
 ---

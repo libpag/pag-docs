@@ -12,7 +12,7 @@ PAG贴纸现在支持两类导出方式，BMP预合成导出和矢量导出。BM
 PAGViewer上的Profiler性能检测面板可以很直观地帮助设计师进行性能调优。预览贴纸时按下键盘上的P键即可呼出该面板，再次按下关闭面板。<br/><br/>
 
 <img 
-  src='https://pagio-1251316161.file.myqcloud.com/website/static/img/docs/profiler.jpg' 
+  src='https://pag.qq.com/website/static/img/docs/profiler.jpg' 
   style='width: 700px; margin: 32px 0 48px 0' 
 />
 ---
