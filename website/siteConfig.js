@@ -311,7 +311,7 @@ const siteConfig = {
   links,
   faq,
   /* path to images for header/footer */
-  headerIcon: 'img/new_official_website/logo.png',
+  headerIcon: "img/new_official_website/logo.png",
   footerIcon: 'img/pag-256x256.png',
   favicon: 'img/favicon.png',
 
