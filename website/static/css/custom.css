@@ -383,6 +383,9 @@ code {
   width: 1080px !important;
   margin: 0 auto !important;
 }
+.pc-mode .navigationSlider .slidingNav ul {
+  background: transparent !important;
+}
 .pc-mode .navigationSlider .slidingNav ul li > a:focus, .pc-mode .navigationSlider .slidingNav ul li > a:hover, .pc-mode .navigationSlider .slidingNav ul li.siteNavItemActive > a, .pc-mode .navigationSlider .slidingNav ul li.siteNavGroupActive > a:focus {
   background-color: transparent !important;
 }
