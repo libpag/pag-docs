@@ -347,6 +347,7 @@ const siteConfig = {
   scripts: ['/javascript/page.js',
             'https://buttons.github.io/buttons.js',
             'https://pag.qq.com/website/static/javascript/pagjs/pag.min.js',
+            'https://cdn-go.cn/aegis/aegis-sdk/latest/aegis.min.js',
           ],
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
