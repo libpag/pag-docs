@@ -45,7 +45,7 @@ SDK的接入和使用请遵守 [<font color=blue>PAG SDK个人信息保护规则
 **注意：** 需要在混淆列表里面，添加libpag的keep规则：
    
 ```
-	-keep class org.libpag.* {*;}
+	-keep class org.libpag.** {*;}
 ```
 配置完以后，sync一下，再编译。<br/><br/>
 
