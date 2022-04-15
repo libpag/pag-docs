@@ -83,7 +83,9 @@ ESModule 引入的方式需要打包构建的时候，需要把 node_modules 下
 
 ```javascript
 // <canvas class="canvas" id="pag"></canvas>
-const arrayBuffer = fetch("https://pag.io/file/like.pag").then((response) => response.arrayBuffer());
+const arrayBuffer = fetch("https://pag.io/file/like.pag").then((response) =>
+  response.arrayBuffer()
+);
 const pagFile = await PAG.PAGFile.load(arrayBuffer);
 document.getElementById("pag").width = pagFile.width();
 document.getElementById("pag").height = pagFile.height();
@@ -94,9 +96,15 @@ await pagView.play();
 
 ## 渲染相关
 
+### PAG 渲染尺寸
+
+在 Web 平台上，设备像素分辨率与 CSS 像素分辨率是不同的，而它们之比被称为 `devicePixelRatio`。所以当我们需要显示 CSS 像素 1px 时， 需要 1px \* `devicePixelRatio` 的渲染尺寸。
+
+PAG 默认会对 Canvas 在屏幕中的可视尺寸进行缩放计算后进行渲染，因此会对 Canvas 的宽高以及 `style` 产生副作用。如果希望 PAG 不对 Canvas 产生副作用， 可以在 `PAGView.init` 的时候传入 `{ useScale: false }` 来取消缩放。
+
 ### PAGView 尺寸过大
 
-为了高清的渲染效果，PAGView 会按照 Canvas 尺寸 \* `devicePixelRatio` 作为实际渲染尺寸。
+为了高清的渲染效果，PAGView 默认会按照 Canvas 尺寸 \* `devicePixelRatio` 作为实际渲染尺寸。
 受设备自身性能影响 WebGL 的最大渲染尺寸可能各不相同。会出现渲染尺寸过大导致白屏的情况。
 
 建议移动端下，实际渲染尺寸不大于 2560px。
