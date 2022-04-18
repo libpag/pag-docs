@@ -1,5 +1,5 @@
 ---
-id: pdf
+id: pag-spec
 title: PAG文件格式规范
 ---
 
