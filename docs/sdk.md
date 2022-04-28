@@ -36,8 +36,9 @@ SDK的接入和使用请遵守 [<font color=blue>PAG SDK个人信息保护规则
 	
 	dependencies {
 	    //libpag的核心库
-	    //将libpag_release_3.2.7.34换成你下载的aar文件名
-    	implementation(name: 'libpag_release_3.2.7.34', ext: 'aar')
+	    //将libpag_release_4.0.5.5换成你下载的aar文件名
+    	implementation(name: 'libpag_release_4.0.5.5', ext: 'aar')
+        implementation("androidx.exifinterface:exifinterface:1.3.3")
 	}
 	
 ``` 
@@ -50,6 +51,12 @@ SDK的接入和使用请遵守 [<font color=blue>PAG SDK个人信息保护规则
 配置完以后，sync一下，再编译。<br/><br/>
 
 ### maven接入
+   提供两个版本（以4.0.5.5版本为例）：
+   
+   **full版本**：com.tencent.tav:libpag:4.0.5.5，内部包含软件解码器，当硬解失败时使用
+   
+   **noffavc版本**：com.tencent.tav:libpag:4.0.5.5-noffavc，内部不包含软件解码器，支持解码器外部注入
+
    i. 在root工程目录下面修改build.gradle文件，增加**mavenCentral()**
    
 ```
@@ -71,7 +78,7 @@ buildscript {
 	
 	dependencies {
 	    //libpag的核心库
-		implementation 'com.tencent.tav:libpag:3.2.7.34'
+		implementation 'com.tencent.tav:libpag:4.0.5.5'
 	}
 	
 ``` 
