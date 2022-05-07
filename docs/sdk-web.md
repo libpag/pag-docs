@@ -122,6 +122,6 @@ PAG 默认会对 Canvas 在屏幕中的可视尺寸进行缩放计算后进行�
 
 Web demo:
 
-[<font color=blue>https://github.com/Tencent/libpag/tree/main/web</font>](https://github.com/Tencent/libpag/tree/main/web)
+[<font color=blue>https://github.com/libpag/pag-web</font>](https://github.com/libpag/pag-web)
 
 Web SDK 未来能力支持规划可以点击 [<font color=blue>这里</font>](https://github.com/Tencent/libpag/wiki/PAG-Web-roadmap) 查看
