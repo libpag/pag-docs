@@ -1726,5 +1726,8 @@ code {
 .mobile-mode #pdfViewer {
   display: none;
 }
+.mobile-mode #iframe {
+  padding: 0 !important;
+}
 
 /*# sourceMappingURL=custom.css.map */

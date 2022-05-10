@@ -33,12 +33,12 @@ class Page extends React.Component {
 
                 {/* iframe part */}
                 <div id='js_iframe_part' style={{width:"100%"}}>
-                    <iframe id="ifame" style={{width:"100%",paddingTop:'32px'}}></iframe>
+                    <iframe id="iframe" style={{width:"100%",paddingTop:'32px'}}></iframe>
                 </div>
                 <script
                     dangerouslySetInnerHTML={{
                         __html: `
-                        var iframe = document.getElementById('ifame');
+                        var iframe = document.getElementById('iframe');
                         var iosPathname = "/apis/ios/";
                         var androidPathname = "/apis/android/";
                         var webPathname = "/apis/web/";
