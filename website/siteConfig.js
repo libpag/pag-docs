@@ -215,7 +215,7 @@ const users = [
 
 const links = {
   "feature":[
-    '/docs/pag-depth-3.html',
+    '/docs/pag-spec.html',
     '/docs/ae-bmp-guide.html',
     '/docs/pag-edit.html',
     '/docs/profiler.html',
