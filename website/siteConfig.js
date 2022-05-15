@@ -191,14 +191,6 @@ const users = [
     pinned: true
   },
   {
-    caption: '轻聊',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pag.qq.com/website/static/img/qingliao.png',
-    infoLink: 'https://m.ruan8.com/soft/60397.html',
-    pinned: true
-  },
-  {
     caption: '鹅剪',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
