@@ -62,7 +62,7 @@ const users = [
     caption: '腾讯新闻',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pag.qq.com/website/static/imgtencentnews.webp',
+    image: 'https://pag.qq.com/website/static/img/tencentnews.webp',
     infoLink: 'https://news.qq.com/',
     pinned: true,
   },
@@ -91,22 +91,6 @@ const users = [
     pinned: true,
   },
   {
-    caption: 'NOW直播',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pag.qq.com/website/static/img/now.png',
-    infoLink: 'https://now.qq.com/',
-    pinned: true,
-  },
-  {
-    caption: '腾讯云',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pag.qq.com/website/static/img/tencentcloud.png',
-    infoLink: 'https://cloud.tencent.com/',
-    pinned: true
-  },
-  {
     caption: '京东内容助手',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
@@ -120,6 +104,22 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: 'https://pag.qq.com/website/static/img/huya.webp',
     infoLink: 'https://www.huya.com/',
+    pinned: true
+  },
+  {
+    caption: 'NOW直播',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: 'https://pag.qq.com/website/static/img/now.png',
+    infoLink: 'https://now.qq.com/',
+    pinned: true,
+  },
+  {
+    caption: '腾讯云',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: 'https://pag.qq.com/website/static/img/tencentcloud.png',
+    infoLink: 'https://cloud.tencent.com/',
     pinned: true
   },
   {
