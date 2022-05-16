@@ -60,6 +60,14 @@ const users = [
     pinned: true,
   },
   {
+    caption: '哔哩哔哩',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: 'https://pag.qq.com/website/static/img/bilibili.webp',
+    infoLink: 'https://www.bilibili.com/',
+    pinned: true,
+  },
+  {
     caption: '腾讯新闻',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
@@ -84,14 +92,6 @@ const users = [
     pinned: true,
   },
   {
-    caption: '全民K歌',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pag.qq.com/website/static/img/kg.png',
-    infoLink: 'https://kg.qq.com/index-pc.html',
-    pinned: true,
-  },
-  {
     caption: '京东内容助手',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
@@ -106,6 +106,13 @@ const users = [
     image: 'https://pag.qq.com/website/static/img/huya.webp',
     infoLink: 'https://www.huya.com/',
     pinned: true
+  },
+  {
+    caption: '全民K歌',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: 'https://pag.qq.com/website/static/img/kg.png',
+    infoLink: 'https://kg.qq.com/index-pc.html',
   },
   {
     caption: 'NOW直播',
