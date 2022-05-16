@@ -9,6 +9,7 @@
 // site configuration options.
 
 // List of projects/orgs using your project for the users page.
+// 规则：拥有 pinned: true 属性的users成员会出现在首页的logo墙版块
 const users = [
   {
     caption: '微信',
@@ -112,7 +113,6 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: 'https://pag.qq.com/website/static/img/now.png',
     infoLink: 'https://now.qq.com/',
-    pinned: true,
   },
   {
     caption: '腾讯云',
@@ -120,7 +120,6 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: 'https://pag.qq.com/website/static/img/tencentcloud.png',
     infoLink: 'https://cloud.tencent.com/',
-    pinned: true
   },
   {
     caption: '腾讯动漫',
@@ -142,7 +141,6 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: 'https://pag.qq.com/website/static/img/zhiying.jpeg',
     infoLink: 'https://zenvideo.qq.com/#/home',
-    pinned: true,
   },
   {
     caption: '天天P图',
@@ -150,7 +148,6 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: 'https://pag.qq.com/website/static/img/pitu.png',
     infoLink: 'https://tu.qq.com/',
-    pinned: true
   },
   {
     caption: 'QQ阅读',
@@ -165,7 +162,6 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: 'https://pag.qq.com/website/static/img/weishi.png',
     infoLink: 'https://weishi.qq.com/',
-    pinned: true,
   },
   {
     caption: '起点',
@@ -180,7 +176,6 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: 'https://pag.qq.com/website/static/img/niuke.webp',
     infoLink: 'https://m.nowcoder.com/app',
-    pinned: true
   },
   {
     caption: '心悦俱乐部',
@@ -188,7 +183,6 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: 'https://pag.qq.com/website/static/img/xinyue.webp',
     infoLink: 'https://xinyue.qq.com/beta/#/',
-    pinned: true
   },
   {
     caption: '鹅剪',
@@ -196,7 +190,6 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: 'https://pag.qq.com/website/static/img/ejian.webp',
     infoLink: 'https://a.app.qq.com/o/simple.jsp?pkgname=com.tencent.vcut',
-    pinned: true
   },
   {
     caption: '红袖添香',
@@ -225,7 +218,6 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: 'https://pag.qq.com/website/static/img/fotoplay.webp',
     infoLink: 'https://fotoplayapp.com/',
-    pinned: true
   },
   {
     caption: '小睡眠',
@@ -233,7 +225,6 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: 'https://pag.qq.com/website/static/img/xiaoshuimian.webp',
     infoLink: 'http://psy-1.com/',
-    pinned: true
   },
   {
     caption: 'Q音宝贝',
