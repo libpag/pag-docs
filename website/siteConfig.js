@@ -283,13 +283,6 @@ const users = [
     infoLink: 'https://intoo.qq.com/',
   },
   {
-    caption: '腾讯视频直播助手',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pag.qq.com/website/static/img/zhibozhushou.webp',
-    infoLink: 'https://apps.apple.com/cn/app/%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91%E7%9B%B4%E6%92%AD%E5%8A%A9%E6%89%8B/id1503274217',
-  },
-  {
     caption: '口袋节奏',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
