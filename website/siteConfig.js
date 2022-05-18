@@ -108,6 +108,20 @@ const users = [
     pinned: true
   },
   {
+    caption: '腾讯体育',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: 'https://pag.qq.com/website/static/img/tengxuntiyu.webp',
+    infoLink: 'https://v.qq.com/x/live/sport.html',
+  },
+  {
+    caption: '腾讯地图',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: 'https://pag.qq.com/website/static/img/tencentmap.webp',
+    infoLink: 'https://map.qq.com/mobile/',
+  },
+  {
     caption: '全民K歌',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
@@ -164,6 +178,20 @@ const users = [
     infoLink: 'https://yuedu.reader.qq.com/common/common/down/dist/index.html?actid=11822',
   },
   {
+    caption: 'WeSing',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: 'https://pag.qq.com/website/static/img/wesing.webp',
+    infoLink: 'https://play.google.com/store/apps/details?id=com.tencent.wesing&hl=zh&gl=US',
+  },
+  {
+    caption: '荔枝',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: 'https://pag.qq.com/website/static/img/lizhi.webp',
+    infoLink: 'https://www.lizhi.fm/',
+  },
+  {
     caption: '微视',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
@@ -185,6 +213,13 @@ const users = [
     infoLink: 'https://m.nowcoder.com/app',
   },
   {
+    caption: '王者营地',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: 'https://pag.qq.com/website/static/img/wangzheyingdi.webp',
+    infoLink: 'https://sj.qq.com/myapp/detail.htm?apkName=com.tencent.gamehelper.smoba',
+  },
+  {
     caption: '心悦俱乐部',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
@@ -192,11 +227,11 @@ const users = [
     infoLink: 'https://xinyue.qq.com/beta/#/',
   },
   {
-    caption: '鹅剪',
+    caption: '长城汽车',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: 'https://pag.qq.com/website/static/img/ejian.webp',
-    infoLink: 'https://a.app.qq.com/o/simple.jsp?pkgname=com.tencent.vcut',
+    image: 'https://pag.qq.com/website/static/img/changchengqiche.webp',
+    infoLink: 'https://apps.apple.com/cn/app/%E9%95%BF%E5%9F%8E%E6%B1%BD%E8%BD%A6-%E4%BE%BF%E6%90%BA%E5%BC%8F%E8%AF%8A%E6%96%AD%E5%B7%A5%E5%85%B7/id1460223651',
   },
   {
     caption: '红袖添香',
@@ -232,6 +267,69 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: 'https://pag.qq.com/website/static/img/xiaoshuimian.webp',
     infoLink: 'http://psy-1.com/',
+  },
+  {
+    caption: '鹅剪',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: 'https://pag.qq.com/website/static/img/ejian.webp',
+    infoLink: 'https://a.app.qq.com/o/simple.jsp?pkgname=com.tencent.vcut',
+  },
+  {
+    caption: '腾讯音兔',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: 'https://pag.qq.com/website/static/img/yintu.webp',
+    infoLink: 'https://intoo.qq.com/',
+  },
+  {
+    caption: '腾讯视频直播助手',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: 'https://pag.qq.com/website/static/img/zhibozhushou.webp',
+    infoLink: 'https://apps.apple.com/cn/app/%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91%E7%9B%B4%E6%92%AD%E5%8A%A9%E6%89%8B/id1503274217',
+  },
+  {
+    caption: '口袋节奏',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: 'https://pag.qq.com/website/static/img/koudaijiezou.webp',
+    infoLink: 'https://apps.apple.com/cn/app/%E5%8F%A3%E8%A2%8B%E8%8A%82%E5%A5%8F/id1552355503',
+  },
+  {
+    caption: 'JOOX Music',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: 'https://pag.qq.com/website/static/img/joox.webp',
+    infoLink: 'https://play.google.com/store/apps/details?id=com.tencent.ibg.joox&hl=zh&gl=US',
+  },
+  {
+    caption: 'doX',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: 'https://pag.qq.com/website/static/img/dox.webp',
+    infoLink: 'https://apps.apple.com/cn/app/dox-%E5%8F%82%E4%B8%8E%E6%88%91%E4%BB%AC%E7%9A%84%E7%94%9F%E6%B4%BB/id1583688580',
+  },
+  {
+    caption: 'TRTC',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: 'https://pag.qq.com/website/static/img/trtc.webp',
+    infoLink: 'https://apps.apple.com/us/app/trtc/id1400663224',
+  },
+  {
+    caption: '盯潮',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: 'https://pag.qq.com/website/static/img/dingchao.webp',
+    infoLink: 'https://dingstock.com.cn/',
+  },
+  {
+    caption: '话萌小说',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+    image: 'https://pag.qq.com/website/static/img/huameng.png',
+    infoLink: 'https://huameng.qidian.com/',
   },
   {
     caption: 'Q音宝贝',
