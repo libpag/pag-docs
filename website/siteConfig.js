@@ -455,6 +455,7 @@ const siteConfig = {
     },
     {
       href:'/docs/faq.html', label:'FAQ'
+      // href:'/docs/faq/faq-1.html', label:'FAQ' // 侧边栏分类模式的FAQ版块
     },
     {
       href:'https://github.com/Tencent/libpag',label:'GitHub'
@@ -465,14 +466,6 @@ const siteConfig = {
     {
       href:'/#download',label:'免费下载'
     }
-
-
-    // {doc: 'pag-export', label: '文档'},
-    // {doc: 'sdk-download', label: 'SDK下载'},
-    // {href: '/api', label: 'API参考'},
-    // {href: 'https://github.com/Tencent/libpag/issues/new/choose', label: '问题反馈'}
-    //{ search: true },
-    //{ languages: true }
   ],
 
   // If you have users set above, you add it here:

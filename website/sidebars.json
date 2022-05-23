@@ -13,5 +13,15 @@
     "API参考": ["apis-ios","apis-android", "apis-web"],
     "素材迁移": ["lottie-migration","animation-convertor","SDK-migration"],
     "视频分享": ["qa"]
+  },
+  "faq": {
+    "FAQ分类一": ["faq/faq-1", "faq/faq-2"],
+    "FAQ分类二": ["faq/faq-3", "faq/faq-4"],
+    "FAQ分类三": [
+      "faq/faq-5", "faq/faq-6", "faq/faq-6", "faq/faq-7", "faq/faq-8", 
+      "faq/faq-9", "faq/faq-10", "faq/faq-11", "faq/faq-12", "faq/faq-13", 
+      "faq/faq-14", "faq/faq-15", "faq/faq-16", "faq/faq-17", "faq/faq-18", 
+      "faq/faq-19", "faq/faq-20", "faq/faq-21"
+    ]
   }
 }

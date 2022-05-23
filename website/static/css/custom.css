@@ -815,7 +815,7 @@ code {
 .pc-mode .toc .toggleNav .navGroup .navGroupCategoryTitle {
   font-size: 24px;
   line-height: 32px;
-  height: 40px;
+  min-height: 40px;
   padding-left: 33px;
   font-weight: 700;
 }
@@ -831,7 +831,7 @@ code {
   font-weight: 400;
   color: #333;
   padding: 0;
-  height: 40px;
+  min-height: 40px;
 }
 .pc-mode .toc .toggleNav ul li:last-child {
   margin-bottom: 24px !important;
@@ -854,7 +854,7 @@ code {
   top: 90px;
 }
 .pc-mode .docMainWrapper > *:first-child {
-  flex: 0 0 360px;
+  flex: 0 0 380px;
 }
 .pc-mode.separateOnPageNav .toc {
   width: 360px;
@@ -1461,7 +1461,7 @@ code {
   line-height: 0.4266666667rem;
 }
 .mobile-mode .docsNavContainer .toc .toggleNav .navGroup ul li a {
-  height: 0.64rem;
+  min-height: 0.64rem;
   line-height: 0.64rem;
   font-size: 0.2133333333rem;
   padding: 0;
@@ -1535,6 +1535,9 @@ code {
 .mobile-mode .navPusher .usersContainer {
   margin-top: -0.6933333333rem;
   padding: 0;
+}
+.mobile-mode .navPusher .mainContainer {
+  min-height: calc(100vh - 160px);
 }
 .mobile-mode .navPusher .mainContainer .container {
   padding-top: 0;
