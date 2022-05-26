@@ -1125,6 +1125,18 @@ code {
   justify-content: center;
   cursor: pointer;
 }
+.pc-mode .playerMain {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 64px;
+}
+.pc-mode #playerSlider {
+  width: 450px;
+  height: 64px;
+  transform: scale(1.2);
+}
 
 .mobile-mode {
   background-size: 100%;

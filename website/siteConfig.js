@@ -508,8 +508,8 @@ const siteConfig = {
   // Add custom scripts here that would be placed in <script> tags.
   scripts: ['/javascript/page.js',
             'https://buttons.github.io/buttons.js',
-            'https://pag.qq.com/website/static/javascript/pagjs/pag.min.js',
             'https://cdn-go.cn/aegis/aegis-sdk/latest/aegis.min.js',
+            'https://unpkg.com/libpag@latest/lib/libpag.min.js'
           ],
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
