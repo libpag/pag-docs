@@ -1487,9 +1487,18 @@ code {
 .mobile-mode .docs-prevnext {
   display: flex;
   justify-content: flex-end;
+  position: fixed;
+  bottom: 0.32rem;
+  right: 0.32rem;
+  margin: 0;
 }
 .mobile-mode .docs-prevnext .docs-prev {
   margin-right: 0.2933333333rem;
+  background: #fff;
+  width: 0.5333333333rem;
+  height: 0.5333333333rem;
+  border-radius: 0.5333333333rem;
+  box-shadow: 2px 2px 6px #d2d2d2;
 }
 .mobile-mode .docs-prevnext .docs-prev > span:nth-child(1) {
   color: transparent;
@@ -1509,6 +1518,13 @@ code {
 }
 .mobile-mode .docs-prevnext .docs-prev > span:nth-child(2) {
   display: none;
+}
+.mobile-mode .docs-prevnext .docs-next {
+  background: #fff;
+  width: 0.5333333333rem;
+  height: 0.5333333333rem;
+  border-radius: 0.5333333333rem;
+  box-shadow: 2px 2px 6px #d2d2d2;
 }
 .mobile-mode .docs-prevnext .docs-next > span:nth-child(1) {
   display: none;
@@ -1541,8 +1557,9 @@ code {
   background-size: contain;
   background-image: url("https://pag.qq.com/website/static/img/new_official_website/category_menu.png");
   background-position: 0.0266666667rem 0.0533333333rem;
-  position: absolute;
+  position: fixed;
   left: 0.32rem;
+  bottom: 0.32rem;
 }
 .mobile-mode .navPusher .usersContainer {
   margin-top: -0.6933333333rem;
@@ -1713,7 +1730,7 @@ code {
   z-index: 9;
 }
 .mobile-mode .hljs {
-  padding-left: 0.24rem;
+  padding: 0.25rem !important;
 }
 @keyframes tipArrow {
   100% {
