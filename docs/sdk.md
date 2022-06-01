@@ -88,6 +88,7 @@ buildscript {
    
 ```
 	-keep class org.libpag.** {*;}
+	-keep class androidx.exifinterface.** {*;}
 ```
 配置完以后，sync一下，再编译。<br/><br/>
 
