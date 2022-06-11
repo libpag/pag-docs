@@ -7,9 +7,9 @@ title: 导出PAG文件
 
 PAG同时支持「矢量预合成」直接导出和「BMP预合成」导出两种方式。
 
-+ 「BMP预合成」：在导出时会自动进行截图方式导出，因此可以支持所有的AE特性，但是文件体积较大，也无法运行时编辑内容。BMP预合成通常用于无法矢量导出的场景，例如用了粒子效果或者第三方插件等。
-
 + 「矢量预合成」：导出的方式文件极小，并性能会优于BMP预合成，但仅支持部分AE特性。矢量预合成导出通常用于UI动画等对于文件大小和性能敏感，以及需要贴纸内容可编辑的场合。
+
++ 「BMP预合成」：可以支持所有的AE特性，但是文件体积较大，也无法运行时编辑内容。BMP预合成通常用于无法矢量导出的场景，例如用了粒子效果或者第三方插件等。
 
 为了保持动画的可编辑性，支持矢量和BMP预合成混合导出，BMP预合成可以被矢量预合成嵌套，作为它的一个图层来实现AE特效和可编辑的结合。
 
@@ -34,6 +34,22 @@ PAG同时支持「矢量预合成」直接导出和「BMP预合成」导出两�
 点击选中需要导出的合成(Composition)，然后点击菜单“文件” -> “导出” -> “PAG File...”，选择要保存的路径即可导出。<br/>
 导出成功后双击导出的PAG文件可以直接预览动画。
 
+### 导出全BMP预合成的PAG文件
+点击菜单“文件” -> “导出” -> “PAG File(Panel)...”,选择需要导出的合成，点击设置按钮，在根节点勾选BMP，导出全BMP预合成的PAG文件
 
-### 导出含有BMP预合成的PAG文件
-> 具体参考[<font color=blue>BMP预合成导出</font>](/docs/ae-bmp-guide.html)
+<img
+src='https://pag.qq.com/website/static/img/docs/bmpGuide/bmp_guide_5.png'
+style='width: 620px; margin: 32px 0 48px 0'
+/>
+
+### 导出矢量和BMP预合成混合的PAG文件
+点击菜单“文件” -> “导出” -> “PAG File(Panel)...”,选择需要导出的合成，点击设置按钮，在子节点勾选BMP，导出矢量和BMP预合成混合的PAG文件
+
+**注意**：如果图层需要替换文本或占位图，该图层不能包含在勾选的合成或预合成中
+
+<img
+src='https://pag.qq.com/website/static/img/docs/bmpGuide/bmp_guide_5_1.png'
+style='width: 620px; margin: 32px 0 48px 0'
+/>
+
+> 关于BMP预合成导出的更多详细信息，参考[<font color=blue>BMP预合成导出</font>](/docs/ae-bmp-guide.html)

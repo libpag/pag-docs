@@ -42,25 +42,37 @@ PAG目前支持的AE特性可以参考文章：[<font color=blue>AE功能支持�
 
 ---
 #### 步骤三：在合成设置页中, 点击对应合成的BMP复选框
+##### 导出全BMP预合成的PAG文件
+在根节点勾选BMP
+
 <img 
   src='https://pag.qq.com/website/static/img/docs/bmpGuide/bmp_guide_5.png' 
   style='width: 620px; margin: 32px 0 48px 0' 
 />
-<p style='margin: -24px 0 48px 260px'><font size="2">图5 合成设置页—BMP复选框</font></p>
+<p style='margin: -24px 0 48px 260px'><font size="2">图5 全BMP预合成导出</font></p>
 
+##### 导出矢量和BMP预合成混合的PAG文件
+在子节点根据需要需要勾选BMP
+
+<img
+src='https://pag.qq.com/website/static/img/docs/bmpGuide/bmp_guide_5_1.png'
+style='width: 620px; margin: 32px 0 48px 0'
+/>
+<p style='margin: -24px 0 48px 260px'><font size="2">图6 矢量和BMP预合成混合导出</font></p>
 ---
 #### 步骤四：如图6所示，勾选BMP复选框后，会有二次确认弹框，点击确认完成
 <img 
   src='https://pag.qq.com/website/static/img/docs/bmpGuide/bmp_guide_6.png' 
   style='width: 620px; margin: 32px 0 48px 0' 
 />
-<p style='margin: -24px 0 48px 260px'><font size="2">图6 BMP确认提示框</font></p>
+<p style='margin: -24px 0 48px 260px'><font size="2">图7 BMP确认提示框</font></p>
 
-如图7所示完成勾选之后，AE中可以看到对应的合成名称，自动带上了BMP后缀，说明当前合成在导出过程中，将会以BMP的格式进行编码。
+如图8所示完成勾选之后，AE中可以看到对应的合成名称，自动带上了BMP后缀，说明当前合成在导出过程中，将会以BMP的格式进行编码。
 <img 
   src='https://pag.qq.com/website/static/img/docs/bmpGuide/bmp_guide_7.png' 
   style='width: 620px; margin: 32px 0 48px 0' 
 />
+<p align="center"><font size="2">图8</font></p>
 
 ---
 
