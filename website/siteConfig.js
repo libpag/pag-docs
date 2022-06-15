@@ -465,7 +465,10 @@ const siteConfig = {
     },
     {
       href:'/#download',label:'免费下载'
-    }
+    },
+    {
+      href:'/player.html',label:'素材预览'
+    },
   ],
 
   // If you have users set above, you add it here:
@@ -509,7 +512,7 @@ const siteConfig = {
   scripts: ['/javascript/page.js',
             'https://buttons.github.io/buttons.js',
             'https://cdn-go.cn/aegis/aegis-sdk/latest/aegis.min.js',
-            'https://unpkg.com/libpag@latest/lib/libpag.min.js'
+            'https://cdn.jsdelivr.net/npm/libpag@latest/lib/libpag.min.js'
           ],
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
