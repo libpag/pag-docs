@@ -56,7 +56,7 @@ class Users extends React.Component {
                 <div class='ts'>告诉我们</div>
               </a>
             </div>
-            {/* <p>正在使用PAG动画方案?</p>
+            {/* <p>正在使用PAG动效方案?</p>
             <a href="https://github.com/libpag/pag-docs/blob/master/website/siteConfig.js" className="button">
               提交你的应用
             </a> */}

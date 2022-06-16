@@ -124,7 +124,7 @@ buildscript {
 [<font color=blue>https://github.com/libpag/pag-android.git</font>](https://github.com/libpag/pag-android.git)
 
 ## 测试素材
-PAG动画测试素材下载：[<font color=blue> pag_files.zip </font>](https://pag.qq.com/website/static/file/pag_files.zip) 
+PAG动效测试素材下载：[<font color=blue> pag_files.zip </font>](https://pag.qq.com/website/static/file/pag_files.zip) 
 
 接入使用过程若遇到问题请[<font color=blue>提交issue</font>](https://github.com/Tencent/libpag/issues/new/choose)<br/>
 

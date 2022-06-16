@@ -27,14 +27,14 @@ class Intro extends Component{
             <div>
               <div class='paragraph'>
                 <span class='strong'>
-                Portable Animated Graphics </span>是一套完整的动画工作流解决方案。<br/>
+                Portable Animated Graphics </span>是一套完整的动效工作流解决方案。<br/>
               提供从 AE (Adobe After Effects) 导出插件，到桌面预览工具，再<br/>
               到覆盖 iOS，Android，macOS，Windows，Linux 和 Web 等各平<br/>
               台的渲染 SDK。<br/>
               </div>
               <div class='paragraph'>
-                <span class='strong'>PAG </span>的目标是降低或消除动画研发相关的成本，打通设计师创作到<br/>
-                素材上线的自动化流程，不断输出运行时可编辑的高质量动画内容。
+                <span class='strong'>PAG </span>的目标是降低或消除动效研发相关的成本，打通设计师创作到<br/>
+                素材上线的自动化流程，不断输出运行时可编辑的高质量动效内容。
               </div>
             </div>
             <div class='btn-bar'>
@@ -90,7 +90,7 @@ class Main extends Component{
               return (
                 <div class='text'>
                   采用可扩展的二进制文件格式，可单文件集成图片<br/>
-                  音频等资源，实现快速交付。导出相同的 AE 动画<br/>
+                  音频等资源，实现快速交付。导出相同的 AE 动效<br/>
                   内容，在文件解码速度和压缩率上均大幅领先于同<br/>
                   类型方案。
                 </div>
@@ -104,7 +104,7 @@ class Main extends Component{
                 <div class='text'>
                   在纯矢量导出方式上支持更多 AE 特性的同时，还<br/>
                   引入了BMP预合成结合矢量的混合导出能力，实现<br/>
-                  支持所有 AE 特性的同时又能保持动画运行时的可<br/>
+                  支持所有 AE 特性的同时又能保持动效运行时的可<br/>
                   编辑性。
                 </div>
               )
@@ -138,7 +138,7 @@ class Main extends Component{
             content:()=>{//5
               return (
                 <div class='text'>
-                  运行时，可在保留动画效果前提下，动态修改替换<br/>
+                  运行时，可在保留动效效果前提下，动态修改替换<br/>
                   文本或替换占位图内容，甚至对任意子图层进行增<br/>
                   删改及移动，轻松实现照片和视频模板等素材的批<br/>
                   量化生产。

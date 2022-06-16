@@ -32,7 +32,7 @@ class Main extends React.Component {
                         }
                         ,{
                             mainTitle: '丰富视觉体验',
-                            subTitle: '动画文件使用更便捷，体积小性能好',
+                            subTitle: '动效文件使用更便捷，体积小性能好',
                             video: 'https://pag.qq.com/video/e917e18a9759b4b6b7a06ad0f37f1e14.mov'
                         }
                         ,{
@@ -42,7 +42,7 @@ class Main extends React.Component {
                         }
                         ,{
                             mainTitle: '无负担极速上线',
-                            subTitle: 'H5动画、文字、音乐轻松上线，让营销变的简单',
+                            subTitle: 'H5动效、文字、音乐轻松上线，让营销变的简单',
                             video: 'https://videorendertvh5.cdp.qq.com/pagiocase_08.mp4'
                         }].map((unit, idx) => {
                             let index = idx < 9? `0${idx+1}`: `${idx+1}`;
@@ -97,7 +97,7 @@ class ProgressBar extends React.Component {
                         '游戏战报',
                         '视频编辑',
                         '视频广告',
-                        'UI 动画',
+                        'UI 动效',
                         '直播打赏',
                         '运营活动',
                                 ].map((mark, idx) => {

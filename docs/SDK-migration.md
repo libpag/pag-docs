@@ -13,9 +13,9 @@ title: PAG SDK 迁移指南
 
 ## Animation(swift)/CompatibleAnimation(OC)
 
-### 动画加载
+### 动效加载
 
-Animation/CompatibleAnimation 在 Lottie 中提供动画的加载功能，在 PAG 中，我们使用 PAGFile 来加载动画。
+Animation/CompatibleAnimation 在 Lottie 中提供动效的加载功能，在 PAG 中，我们使用 PAGFile 来加载动效。
 
 Lottie:
 
@@ -42,9 +42,9 @@ PAGFile* pagFile = [PAGFile Load:[[NSBundle mainBundle] pathForResource:@"Lottie
 
 
 
-### 动画基本信息
+### 动效基本信息
 
-其中 Lottie 可以获取动画的基本信息，包括 `version、type、startFrame、endFrame、frameRate、duration、width、height`。
+其中 Lottie 可以获取动效的基本信息，包括 `version、type、startFrame、endFrame、frameRate、duration、width、height`。
 
 在 PAG 中，PAGFile 也可以获取相关信息。
 
@@ -70,7 +70,7 @@ Lottie 中 `width/height` 对应 PAGFile 中的 `width/height`，单位和意义
 
 ## AnimationView(swift)/CompatibleAnimationView(OC)
 
-AnimationView/CompatibleAnimationView 提供动画的播放功能，在 PAG 中，我们使用 PAGView 来进行基础动画的播放。
+AnimationView/CompatibleAnimationView 提供动效的播放功能，在 PAG 中，我们使用 PAGView 来进行基础动效的播放。
 
 Lottie:
 
@@ -89,7 +89,7 @@ PAG:
 
 
 
-> PAGView 无法根据动画自动适应 View 的大小，需要通过代码根据 PAGFile 的信息控制 View 的 Frame。
+> PAGView 无法根据动效自动适应 View 的大小，需要通过代码根据 PAGFile 的信息控制 View 的 Frame。
 
 
 
