@@ -35,6 +35,13 @@ class Main extends React.Component {
             accept=".pag"
           ></input>
         </div>
+        <p className="guide">
+          更多PAG文件信息，请下载
+          <a href="/docs/install.html" style={{ color: "#005AD9" }}>
+            PAGViewer
+          </a>
+          进行查看
+        </p>
       </div>
     );
   }

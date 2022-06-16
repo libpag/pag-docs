@@ -1138,7 +1138,7 @@ code {
   -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.06);
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.06);
 }
-.pc-mode .pag-player .tip {
+.pc-mode .pag-player .box .tip {
   position: absolute;
   top: 172px;
   left: 50%;
@@ -1147,15 +1147,15 @@ code {
   text-align: center;
   pointer-events: none;
 }
-.pc-mode .pag-player .tip .text {
+.pc-mode .pag-player .box .tip .text {
   margin-top: 24px;
 }
-.pc-mode .pag-player .canvas {
+.pc-mode .pag-player .box .canvas {
   display: block;
   margin: 24px auto 0;
   border: 1px #dae1e7 dashed;
 }
-.pc-mode .pag-player .btn-load {
+.pc-mode .pag-player .box .btn-load {
   display: block;
   margin: 16px auto 16px;
   font-size: 14px;
@@ -1164,8 +1164,13 @@ code {
   color: #005AD9;
   cursor: pointer;
 }
-.pc-mode .pag-player .input-load {
+.pc-mode .pag-player .box .input-load {
   display: none;
+}
+.pc-mode .pag-player .guide {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 14px;
 }
 
 .mobile-mode {
@@ -1798,13 +1803,13 @@ code {
 .mobile-mode .pag-player .box {
   position: relative;
   width: 360px;
-  margin: 0 auto 70px;
+  margin: 0 auto;
   border: 1px #dae1e7 solid;
   border-radius: 8px;
   -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.06);
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.06);
 }
-.mobile-mode .pag-player .tip {
+.mobile-mode .pag-player .box .tip {
   position: absolute;
   top: 88px;
   left: 50%;
@@ -1813,15 +1818,15 @@ code {
   text-align: center;
   pointer-events: none;
 }
-.mobile-mode .pag-player .tip .text {
+.mobile-mode .pag-player .box .tip .text {
   margin-top: 24px;
 }
-.mobile-mode .pag-player .canvas {
+.mobile-mode .pag-player .box .canvas {
   display: block;
   margin: 24px auto 0;
   border: 1px #dae1e7 dashed;
 }
-.mobile-mode .pag-player .btn-load {
+.mobile-mode .pag-player .box .btn-load {
   display: block;
   margin: 16px auto 16px;
   font-size: 14px;
@@ -1830,8 +1835,13 @@ code {
   color: #005AD9;
   cursor: pointer;
 }
-.mobile-mode .pag-player .input-load {
+.mobile-mode .pag-player .box .input-load {
   display: none;
+}
+.mobile-mode .pag-player .guide {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 36px;
 }
 
 /*# sourceMappingURL=custom.css.map */
