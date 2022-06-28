@@ -11,7 +11,7 @@ class Button extends Component{
     const {text,img,blue,link ,className} = this.props;
     return (
       <a href={link} class={'btn ' + (blue ? 'blue':'') + ( className ? ` ${className} ` : '')}>
-        <img src={imgUrl(img)}/>
+        <img src={imgUrl(img)} width={24} height={24}/>
         <span>{text}</span>
       </a>
     )
@@ -39,6 +39,7 @@ class Intro extends Component{
             </div>
             <div class='btn-bar'>
               <Button img={'new_official_website/download.png'} text='免费下载' className='download-btn' blue={true}/>
+              <Button img={'new_official_website/browser.png'} text='素材预览' blue={false} link={'/player/index.html'}/>
             </div>
             <span class='tip'>
             </span>

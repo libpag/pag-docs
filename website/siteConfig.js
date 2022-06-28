@@ -466,9 +466,6 @@ const siteConfig = {
     {
       href:'/#download',label:'免费下载'
     },
-    {
-      href:'/player.html',label:'素材预览'
-    },
   ],
 
   // If you have users set above, you add it here:
