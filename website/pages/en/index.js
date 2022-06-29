@@ -39,7 +39,7 @@ class Intro extends Component{
             </div>
             <div class='btn-bar'>
               <Button img={'new_official_website/download.png'} text='免费下载' className='download-btn' blue={true}/>
-              <Button img={'new_official_website/browser.png'} text='素材预览' blue={false} link={'/player/index.html'}/>
+              <Button img={'new_official_website/browser.png'} text='在线预览' blue={false} link={'/player.html'}/>
             </div>
             <span class='tip'>
             </span>
