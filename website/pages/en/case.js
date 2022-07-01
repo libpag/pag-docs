@@ -97,7 +97,7 @@ class ProgressBar extends React.Component {
                         '游戏战报',
                         '视频编辑',
                         '视频广告',
-                        'UI 动效',
+                        'UI 动画',
                         '直播打赏',
                         '运营活动',
                                 ].map((mark, idx) => {

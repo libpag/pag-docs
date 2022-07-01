@@ -29,6 +29,6 @@ title: AE导出自动检测规则
 | 自动检测在时间轴上，不能出现某个videoTrack图层的时间完全包含另一个<br/>videoTrack图层，videotrack图层要连续，中间不能插入其它videotrack图层 | 视频编辑 |
 | 自动检测到段落中需要填充的资源小于0.5s时弹窗提示 | 视频编辑 |
 | 自动检测到TimeRemap为倒放（endTime小于startTime）时弹窗提示 | 视频编辑 |
-| 自动检测UI场景下自动检测到含有BMP预合成时弹窗提示 | UI动效 |
+| 自动检测UI场景下自动检测到含有BMP预合成时弹窗提示 | UI 动画 |
 
 ---
