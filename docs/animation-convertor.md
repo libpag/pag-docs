@@ -57,6 +57,26 @@ etc. `./PAGConvertor animation.mov 25`
 3.转换完成后，在文件夹内可以看到转换后的同名.pag 文件
 ### 转换完成后，请注意检查素材效果是否一致，如果有转换效果不正确的素材，或者在使用 PAGConvertor 中有什么疑问和建议，请[<font color=blue>提交issue</font>](https://github.com/Tencent/libpag/issues/new/choose)。
 
+---
+
+### 注意事项
+
+mac系统在执行脚本过程中可能会出现`permission denied`
+
+此时，请在`convert.sh所在目录下`执行下
+``` 
+chmod +x ./* 
+```
+
+再执行
+
+``` 
+./convert.sh
+```
+
+如果执行过程中系统提示 ` 无法打开“PAGConvertor”，因为无法验证开发者。`
+
+请在`系统偏好设置` - `安全性与隐私` 允许PAGConvertor的运行
 
 ---
 
